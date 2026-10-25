@@ -1,0 +1,4 @@
+nct_id,compound_name,role_verdict,policy,approved,evidence
+NCT05376761,Dexmedetomidine,PROCEDURAL_CONTEXT,TD-032 P1 (label -> 0),2026-10-14 owner,CASE_STUDIES.md §9.1: EC50 study during DBS implantation
+NCT06658132,Remifentanil,PROCEDURAL_CONTEXT,TD-032 P1 (label -> 0),2026-10-14 owner,CASE_STUDIES.md §9.1: general-anaesthesia regimen for DBS surgery
+NCT07085195,Clozapine,CO_ADMINISTERED,TD-032 P1 (label -> 0),2026-10-14 owner,CASE_STUDIES.md §9.1: actuator of chemogenetic gene therapy

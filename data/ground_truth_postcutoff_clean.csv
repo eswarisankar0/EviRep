@@ -1,0 +1,58 @@
+compound_id,compound_name,nct_id,phase,status,enrollment,first_posted,match_type,matched_intervention,matched_alias,match_source
+Compound::DB00254,Doxycycline,NCT05492019,PHASE2,UNKNOWN,60,2022-08-08,exact_name,Doxycycline,Doxycycline,compound_name
+Compound::DB00281,Lidocaine,NCT06319625,,UNKNOWN,80,2024-03-20,token_name,Lidocaine hydrochloride,Lidocaine,compound_name
+Compound::DB00281,Lidocaine,NCT06370195,,UNKNOWN,100,2024-04-17,token_name,Lidocaine hydrochloride,Lidocaine,compound_name
+Compound::DB00281,Lidocaine,NCT06301724,,UNKNOWN,80,2024-03-08,exact_othername,Lidocaine hydrochloride,Lidocaine,compound_name
+Compound::DB00289,Atomoxetine,NCT07316296,PHASE3,RECRUITING,60,2026-01-05,exact_name,Atomoxetine,Atomoxetine,compound_name
+Compound::DB00300,Tenofovir,NCT06356662,PHASE1,RECRUITING,60,2024-04-10,synonym_exact_name,Tenofovir Disoproxil Fumarate,tenofovir disoproxil fumarate,chembl_synonym
+Compound::DB00331,Metformin,NCT07055958,PHASE3,ACTIVE_NOT_RECRUITING,74,2025-07-09,exact_name,Metformin,Metformin,compound_name
+Compound::DB00331,Metformin,NCT07229651,PHASE2,RECRUITING,60,2025-11-17,exact_name,Metformin,Metformin,compound_name
+Compound::DB00331,Metformin,NCT05781711,PHASE2,COMPLETED,60,2023-03-23,exact_name,Metformin,Metformin,compound_name
+Compound::DB00331,Metformin,NCT07806019,PHASE4,NOT_YET_RECRUITING,70,2026-09-08,token_name,Metformin 500mg,Metformin,compound_name
+Compound::DB00363,Clozapine,NCT07085195,EARLY_PHASE1,NOT_YET_RECRUITING,6,2025-07-25,exact_name,clozapine,Clozapine,compound_name
+Compound::DB00370,Mirtazapine,NCT06530290,PHASE2,UNKNOWN,64,2024-07-31,token_name,Mirtazapine 15 MG,Mirtazapine,compound_name
+Compound::DB00422,Methylphenidate,NCT05669170,PHASE2,NOT_YET_RECRUITING,60,2022-12-30,exact_name,Methylphenidate,Methylphenidate,compound_name
+Compound::DB00471,Montelukast,NCT06113640,PHASE2,COMPLETED,60,2023-11-02,exact_name,Montelukast,Montelukast,compound_name
+Compound::DB00482,Celecoxib,NCT05962957,PHASE2,COMPLETED,80,2023-07-27,token_name,Celecoxib 200mg,Celecoxib,compound_name
+Compound::DB00482,Celecoxib,NCT07246278,PHASE1,RECRUITING,80,2025-11-24,token_name,Celecoxib 200mg,Celecoxib,compound_name
+Compound::DB00545,Pyridostigmine,NCT05603715,PHASE2,RECRUITING,16,2022-11-03,token_name,Pyridostigmine Bromide,Pyridostigmine,compound_name
+Compound::DB00564,Carbamazepine,NCT05581823,PHASE1,COMPLETED,16,2022-10-17,exact_name,Carbamazepine,Carbamazepine,compound_name
+Compound::DB00571,Propranolol,NCT07113015,,COMPLETED,220,2025-08-08,exact_name,propranolol,Propranolol,compound_name
+Compound::DB00633,Dexmedetomidine,NCT05376761,PHASE4,UNKNOWN,40,2022-05-17,exact_name,Dexmedetomidine,Dexmedetomidine,compound_name
+Compound::DB00674,Galantamine,NCT07284290,PHASE4,RECRUITING,120,2025-12-16,token_name,Galantamine HBr extended-release 8mg capsules (8mg ER).,Galantamine,compound_name
+Compound::DB00695,Furosemide,NCT04706910,PHASE3,RECRUITING,800,2021-01-13,synonym_exact_name,Furosemide Injection,furosemide injection,chembl_synonym
+Compound::DB00806,Pentoxifylline,NCT05962957,PHASE2,COMPLETED,80,2023-07-27,token_name,Pentoxifylline 400 MG,Pentoxifylline,compound_name
+Compound::DB00825,Menthol,NCT07294469,PHASE2,NOT_YET_RECRUITING,80,2025-12-19,token_name,Menthol gloves and socks,Menthol,compound_name
+Compound::DB00843,Donepezil,NCT05709301,PHASE2,UNKNOWN,120,2023-02-02,token_name,Donepezil Hydrochloride,Donepezil,compound_name
+Compound::DB00843,Donepezil,NCT06903910,PHASE2,COMPLETED,6,2025-04-01,token_name,Donepezil (Aricept),Donepezil,compound_name
+Compound::DB00899,Remifentanil,NCT06658132,,COMPLETED,20,2024-10-26,token_name,0.5~1ug/kg/min remifentanil combined with 0.2~0.5mg/kg/h esketamine for the physiological testing phase of DBS surgery.,Remifentanil,compound_name
+Compound::DB01065,Melatonin,NCT07375693,PHASE2,ENROLLING_BY_INVITATION,70,2026-01-29,token_name,MELATONIN (MELATL07959),Melatonin,compound_name
+Compound::DB01162,Terazosin,NCT05109364,PHASE2,ACTIVE_NOT_RECRUITING,15,2021-11-05,token_name,Terazosin therapy,Terazosin,compound_name
+Compound::DB01162,Terazosin,NCT05855577,PHASE4,UNKNOWN,50,2023-05-11,exact_name,Terazosin,Terazosin,compound_name
+Compound::DB01162,Terazosin,NCT07464028,PHASE2,SUSPENDED,120,2026-03-11,token_name,Terazosin 5 MG,Terazosin,compound_name
+Compound::DB01162,Terazosin,NCT07288450,PHASE1,NOT_YET_RECRUITING,100,2025-12-17,token_name,Terazosin Hydrochloride,Terazosin,compound_name
+Compound::DB01162,Terazosin,NCT07207057,PHASE3,RECRUITING,1200,2025-10-03,token_name,Terazosin (Hytrin),Terazosin,compound_name
+Compound::DB01166,Cilostazol,NCT06612593,PHASE2,UNKNOWN,50,2024-09-25,exact_name,Cilostazol,Cilostazol,compound_name
+Compound::DB01202,Levetiracetam,NCT05824728,PHASE2,RECRUITING,30,2023-04-24,synonym_exact_name,AGB101,agb101,chembl_synonym
+Compound::DB01203,Nadolol,NCT04739423,PHASE2,COMPLETED,41,2021-02-04,token_name,"clenbuterol (CST-103), nadolol (CST-107), matching placebo",Nadolol,compound_name
+Compound::DB01220,Rifaximin,NCT04730245,PHASE1,COMPLETED,14,2021-01-29,token_name,"sodium phosphate enema, oral rifaximin and polyethylene glycol",Rifaximin,compound_name
+Compound::DB01221,Ketamine,NCT04944017,PHASE2,COMPLETED,51,2021-06-29,token_name,Ketamine Infusion,Ketamine,compound_name
+Compound::DB01221,Ketamine,NCT06231563,PHASE2,RECRUITING,80,2024-01-30,exact_name,Ketamine,Ketamine,compound_name
+Compound::DB01221,Ketamine,NCT06543563,,UNKNOWN,102,2024-08-09,synonym_exact_name,esketamine,esketamine,chembl_synonym
+Compound::DB01221,Ketamine,NCT06021756,PHASE1,UNKNOWN,9,2023-09-01,token_name,Intervention: Ketamine,Ketamine,compound_name
+Compound::DB01221,Ketamine,NCT06402955,PHASE2,RECRUITING,120,2024-05-07,token_name,ketamine hydrochloride,Ketamine,compound_name
+Compound::DB01224,Quetiapine,NCT05590637,PHASE4,RECRUITING,94,2022-10-21,exact_name,Quetiapine,Quetiapine,compound_name
+Compound::DB01241,Gemfibrozil,NCT05931484,PHASE2,WITHDRAWN,0,2023-07-05,exact_name,Gemfibrozil,Gemfibrozil,compound_name
+Compound::DB01261,Sitagliptin,NCT06263673,PHASE4,COMPLETED,18,2024-02-16,exact_name,Sitagliptin,Sitagliptin,compound_name
+Compound::DB01261,Sitagliptin,NCT07804381,PHASE2,NOT_YET_RECRUITING,160,2026-09-04,exact_name,Sitagliptin,Sitagliptin,compound_name
+Compound::DB01273,Varenicline,NCT06679374,PHASE2,RECRUITING,102,2024-11-07,exact_name,Varenicline,Varenicline,compound_name
+Compound::DB01407,Clenbuterol,NCT04739423,PHASE2,COMPLETED,41,2021-02-04,token_name,"clenbuterol (CST-103), nadolol (CST-107), matching placebo",Clenbuterol,compound_name
+Compound::DB01611,Hydroxychloroquine,NCT06816810,PHASE2,NOT_YET_RECRUITING,40,2025-02-10,token_name,Hydroxychloroquine (HCQ),Hydroxychloroquine,compound_name
+Compound::DB01628,Etoricoxib,NCT07370532,PHASE2,RECRUITING,60,2026-01-27,exact_name,Etoricoxib,Etoricoxib,compound_name
+Compound::DB04876,Vildagliptin,NCT06951334,,NOT_YET_RECRUITING,66,2025-04-30,token_name,Vildagliptin 50 mg bid,Vildagliptin,compound_name
+Compound::DB04946,Iloperidone,NCT05344365,PHASE2,WITHDRAWN,0,2022-04-25,exact_name,Iloperidone,Iloperidone,compound_name
+Compound::DB06151,Acetylcysteine,NCT07093944,PHASE2,COMPLETED,42,2025-07-30,token_name,N-Acetylcysteine (NAC) Treatment,Acetylcysteine,compound_name
+Compound::DB06292,Dapagliflozin,NCT06263673,PHASE4,COMPLETED,18,2024-02-16,exact_name,Dapagliflozin,Dapagliflozin,compound_name
+Compound::DB08893,Mirabegron,NCT07187466,PHASE4,NOT_YET_RECRUITING,146,2025-09-23,exact_name,mirabegron,Mirabegron,compound_name
+Compound::DB00950,Fexofenadine,NCT06785298,PHASE2,RECRUITING,46,2025-01-21,exact_name,Fexofenadine,Fexofenadine,compound_name
+Compound::DB00966,Telmisartan,NCT07207057,PHASE3,RECRUITING,1200,2025-10-03,exact_name,Telmisartan,Telmisartan,compound_name

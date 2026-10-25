@@ -1,0 +1,6 @@
+compound_name,chembl_id,resolved,molecular_plausibility_score,confidence,direct_component,pathway_component,n_targets,n_genes,n_pathways,n_pathways_in_disease_module,n_direct_disease_links,n_evidence_direct,n_evidence_indirect,n_evidence_inferred,n_evidence_missing,n_limitations
+Caffeine,CHEMBL113,True,0.395686,1.0,0.437255,0.333333,4,4,6,2,4,5,4,8,0,5
+Isradipine,CHEMBL1648,True,0.066667,1.0,0.0,0.166667,4,4,6,1,4,4,1,9,0,5
+NotARealDrugXyz,,False,0.0,0.0,,,0,0,0,0,0,0,0,0,1,6
+Rasagiline,CHEMBL887,True,0.0,1.0,0.0,0.0,1,1,1,0,1,1,0,1,0,5
+Ropinirole,CHEMBL589,True,0.4,1.0,0.0,1.0,3,3,2,2,3,3,5,0,0,5

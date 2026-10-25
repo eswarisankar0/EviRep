@@ -1,0 +1,869 @@
+{
+ "agent": "10e Reproducibility",
+ "agent_id": "10e",
+ "agent_version": "10e-0.1",
+ "coverage": {
+  "findings": 14,
+  "paper_structures": 1,
+  "publication_records": 40
+ },
+ "diagnostics": [],
+ "disease": {
+  "id": "MONDO_0005180",
+  "name": "Parkinson's disease"
+ },
+ "finding_status_counts": {
+  "REPLICATED": 1,
+  "SECONDARY_ONLY": 7,
+  "SINGLE_STUDY": 6
+ },
+ "finding_status_meaning": {
+  "INCONSISTENT_SINGLE_STUDIES": "independent single studies point in different directions",
+  "INCONSISTENT_WITHIN_GROUP": "primary studies that are not independent of each other (shared author, trial or data) point in different directions",
+  "INSUFFICIENT_METADATA": "source records not available offline",
+  "REPLICATED": ">=2 primary-study clusters with no shared author/trial/documented data agree in direction; none disagrees. Independence is at best PLAUSIBLE (see cluster_independence); sample size and design quality are not assessed here (10a)",
+  "REPLICATED_WITH_DISAGREEMENT": ">=2 agreeing primary clusters, but another independent cluster differs",
+  "SECONDARY_ONLY": "only reviews/meta-analyses; replication depends on included studies (not resolvable here)",
+  "SINGLE_STUDY": "one primary-study cluster",
+  "UNDETERMINED": "metadata missing for a primary-study pair"
+ },
+ "findings": [
+  {
+   "cluster_independence": null,
+   "compound": "Domperidone",
+   "directions_by_cluster": {
+    "NULL_RESULT": [
+     [
+      "17557339"
+     ]
+    ]
+   },
+   "finding": "efficacy:orthostatic_hypotension",
+   "missing_records": [],
+   "n_independent_primary_clusters": 1,
+   "n_primary": 1,
+   "n_records": 2,
+   "n_secondary": 1,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Domperidone:PMID29103053:OH",
+     "design": "SYSTEMATIC_REVIEW",
+     "design_source": "PubMed PublicationType",
+     "direction": "NULL_RESULT",
+     "n_authors": 4,
+     "overlap_group": null,
+     "pmid": "29103053",
+     "trial_ids": [],
+     "year": "2017"
+    },
+    {
+     "claim_id": "Domperidone:PMID17557339:OH",
+     "design": "RCT",
+     "design_source": "PubMed PublicationType",
+     "direction": "NULL_RESULT",
+     "n_authors": 4,
+     "overlap_group": null,
+     "pmid": "17557339",
+     "trial_ids": [],
+     "year": "2007"
+    }
+   ],
+   "relationships": [
+    {
+     "cites": false,
+     "independence": "PLAUSIBLY_INDEPENDENT",
+     "pmids": [
+      "17557339",
+      "29103053"
+     ],
+     "rationale": "no shared author, trial ID or documented data overlap; populations/datasets not persisted, so independence is plausible, not proven",
+     "relation": "NO_SHARED_INDICATOR"
+    }
+   ],
+   "status": "SINGLE_STUDY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Domperidone",
+   "directions_by_cluster": {
+    "SUPPORTS": [
+     [
+      "9399220"
+     ]
+    ]
+   },
+   "finding": "efficacy:upper_gi_symptoms",
+   "missing_records": [],
+   "n_independent_primary_clusters": 1,
+   "n_primary": 1,
+   "n_records": 1,
+   "n_secondary": 0,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Domperidone:PMID9399220:GI",
+     "design": "CLINICAL_TRIAL",
+     "design_source": "PubMed PublicationType",
+     "direction": "SUPPORTS",
+     "n_authors": 5,
+     "overlap_group": null,
+     "pmid": "9399220",
+     "trial_ids": [],
+     "year": "1997"
+    }
+   ],
+   "relationships": [],
+   "status": "SINGLE_STUDY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Domperidone",
+   "directions_by_cluster": {
+    "OPPOSES": [
+     [
+      "27062307"
+     ]
+    ]
+   },
+   "finding": "safety:ventricular_arrhythmia_scd",
+   "missing_records": [],
+   "n_independent_primary_clusters": 1,
+   "n_primary": 1,
+   "n_records": 1,
+   "n_secondary": 0,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Domperidone:PMID27062307:cardiac",
+     "design": "OBSERVATIONAL",
+     "design_source": "curated claim (docs/CASE_STUDIES.md)",
+     "direction": "OPPOSES",
+     "n_authors": 13,
+     "overlap_group": null,
+     "pmid": "27062307",
+     "trial_ids": [],
+     "year": "2016"
+    }
+   ],
+   "relationships": [],
+   "status": "SINGLE_STUDY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Donepezil",
+   "directions_by_cluster": {
+    "NULL_RESULT": [
+     [
+      "22915447"
+     ]
+    ]
+   },
+   "finding": "efficacy:cognition",
+   "missing_records": [],
+   "n_independent_primary_clusters": 1,
+   "n_primary": 1,
+   "n_records": 2,
+   "n_secondary": 1,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Donepezil:PMID22915447:cognition",
+     "design": "RCT",
+     "design_source": "PubMed PublicationType",
+     "direction": "NULL_RESULT",
+     "n_authors": 12,
+     "overlap_group": "ChEI-PDD-RCTs (overlap with PMID 25224676 probable, not verified)",
+     "pmid": "22915447",
+     "trial_ids": [],
+     "year": "2012"
+    },
+    {
+     "claim_id": "Donepezil:PMID25224676:cognition",
+     "design": "META_ANALYSIS",
+     "design_source": "PubMed PublicationType",
+     "direction": "SUPPORTS",
+     "n_authors": 7,
+     "overlap_group": "ChEI-PDD-RCTs (overlap with PMID 22915447 probable, not verified)",
+     "pmid": "25224676",
+     "trial_ids": [],
+     "year": "2015"
+    }
+   ],
+   "relationships": [
+    {
+     "cites": false,
+     "independence": "PLAUSIBLY_INDEPENDENT",
+     "pmids": [
+      "22915447",
+      "25224676"
+     ],
+     "rationale": "no shared author, trial ID or documented data overlap; populations/datasets not persisted, so independence is plausible, not proven",
+     "relation": "NO_SHARED_INDICATOR"
+    }
+   ],
+   "status": "SINGLE_STUDY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Donepezil",
+   "directions_by_cluster": {
+    "NULL_RESULT": [
+     [
+      "35860451"
+     ]
+    ]
+   },
+   "finding": "efficacy:dementia_incidence",
+   "missing_records": [],
+   "n_independent_primary_clusters": 1,
+   "n_primary": 1,
+   "n_records": 1,
+   "n_secondary": 0,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Donepezil:PMID35860451:incident_PDD",
+     "design": "RCT",
+     "design_source": "curated claim (docs/CASE_STUDIES.md)",
+     "direction": "NULL_RESULT",
+     "n_authors": 7,
+     "overlap_group": null,
+     "pmid": "35860451",
+     "trial_ids": [],
+     "year": "2022"
+    }
+   ],
+   "relationships": [],
+   "status": "SINGLE_STUDY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Donepezil",
+   "directions_by_cluster": {},
+   "finding": "efficacy:falls",
+   "missing_records": [],
+   "n_independent_primary_clusters": 0,
+   "n_primary": 0,
+   "n_records": 1,
+   "n_secondary": 1,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Donepezil:PMID25224676:falls",
+     "design": "META_ANALYSIS",
+     "design_source": "PubMed PublicationType",
+     "direction": "NULL_RESULT",
+     "n_authors": 7,
+     "overlap_group": null,
+     "pmid": "25224676",
+     "trial_ids": [],
+     "year": "2015"
+    }
+   ],
+   "relationships": [],
+   "status": "SECONDARY_ONLY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Donepezil",
+   "directions_by_cluster": {
+    "NULL_RESULT": [
+     [
+      "31675664"
+     ]
+    ]
+   },
+   "finding": "efficacy:gait_balance",
+   "missing_records": [],
+   "n_independent_primary_clusters": 1,
+   "n_primary": 1,
+   "n_records": 1,
+   "n_secondary": 0,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Donepezil:PMID31675664:gait",
+     "design": "RCT",
+     "design_source": "PubMed PublicationType",
+     "direction": "NULL_RESULT",
+     "n_authors": 8,
+     "overlap_group": null,
+     "pmid": "31675664",
+     "trial_ids": [],
+     "year": "2019"
+    }
+   ],
+   "relationships": [],
+   "status": "SINGLE_STUDY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Donepezil",
+   "directions_by_cluster": {},
+   "finding": "safety:tolerability",
+   "missing_records": [],
+   "n_independent_primary_clusters": 0,
+   "n_primary": 0,
+   "n_records": 1,
+   "n_secondary": 1,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Donepezil:PMID25224676:tolerability",
+     "design": "META_ANALYSIS",
+     "design_source": "PubMed PublicationType",
+     "direction": "OPPOSES",
+     "n_authors": 7,
+     "overlap_group": null,
+     "pmid": "25224676",
+     "trial_ids": [],
+     "year": "2015"
+    }
+   ],
+   "relationships": [],
+   "status": "SECONDARY_ONLY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Melatonin",
+   "directions_by_cluster": {},
+   "finding": "efficacy:daytime_sleepiness",
+   "missing_records": [],
+   "n_independent_primary_clusters": 0,
+   "n_primary": 0,
+   "n_records": 2,
+   "n_secondary": 2,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Melatonin:PMID40588412:ESS",
+     "design": "META_ANALYSIS",
+     "design_source": "PubMed PublicationType",
+     "direction": "SUPPORTS",
+     "n_authors": 7,
+     "overlap_group": "melatonin-PD-RCT-pool",
+     "pmid": "40588412",
+     "trial_ids": [],
+     "year": "2026"
+    },
+    {
+     "claim_id": "Melatonin:PMID40387966:ESS",
+     "design": "META_ANALYSIS",
+     "design_source": "PubMed PublicationType",
+     "direction": "NULL_RESULT",
+     "n_authors": 3,
+     "overlap_group": "melatonin-PD-RCT-pool",
+     "pmid": "40387966",
+     "trial_ids": [],
+     "year": "2025"
+    }
+   ],
+   "relationships": [
+    {
+     "cites": false,
+     "independence": "DEPENDENT",
+     "pmids": [
+      "40387966",
+      "40588412"
+     ],
+     "rationale": "documented overlap: melatonin-PD-RCT-pool",
+     "relation": "DOCUMENTED_SHARED_DATA"
+    }
+   ],
+   "status": "SECONDARY_ONLY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Melatonin",
+   "directions_by_cluster": {},
+   "finding": "efficacy:motor",
+   "missing_records": [],
+   "n_independent_primary_clusters": 0,
+   "n_primary": 0,
+   "n_records": 1,
+   "n_secondary": 1,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Melatonin:PMID40387966:UPDRS3",
+     "design": "META_ANALYSIS",
+     "design_source": "PubMed PublicationType",
+     "direction": "NULL_RESULT",
+     "n_authors": 3,
+     "overlap_group": "melatonin-PD-RCT-pool",
+     "pmid": "40387966",
+     "trial_ids": [],
+     "year": "2025"
+    }
+   ],
+   "relationships": [],
+   "status": "SECONDARY_ONLY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Melatonin",
+   "directions_by_cluster": {},
+   "finding": "efficacy:rbd",
+   "missing_records": [],
+   "n_independent_primary_clusters": 0,
+   "n_primary": 0,
+   "n_records": 1,
+   "n_secondary": 1,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Melatonin:PMID40588412:RBD",
+     "design": "META_ANALYSIS",
+     "design_source": "PubMed PublicationType",
+     "direction": "NULL_RESULT",
+     "n_authors": 7,
+     "overlap_group": "melatonin-PD-RCT-pool",
+     "pmid": "40588412",
+     "trial_ids": [],
+     "year": "2026"
+    }
+   ],
+   "relationships": [],
+   "status": "SECONDARY_ONLY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Melatonin",
+   "directions_by_cluster": {},
+   "finding": "efficacy:sleep_quality",
+   "missing_records": [],
+   "n_independent_primary_clusters": 0,
+   "n_primary": 0,
+   "n_records": 2,
+   "n_secondary": 2,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Melatonin:PMID40588412:PSQI",
+     "design": "META_ANALYSIS",
+     "design_source": "PubMed PublicationType",
+     "direction": "SUPPORTS",
+     "n_authors": 7,
+     "overlap_group": "melatonin-PD-RCT-pool",
+     "pmid": "40588412",
+     "trial_ids": [],
+     "year": "2026"
+    },
+    {
+     "claim_id": "Melatonin:PMID40387966:PSQI",
+     "design": "META_ANALYSIS",
+     "design_source": "PubMed PublicationType",
+     "direction": "SUPPORTS",
+     "n_authors": 3,
+     "overlap_group": "melatonin-PD-RCT-pool",
+     "pmid": "40387966",
+     "trial_ids": [],
+     "year": "2025"
+    }
+   ],
+   "relationships": [
+    {
+     "cites": false,
+     "independence": "DEPENDENT",
+     "pmids": [
+      "40387966",
+      "40588412"
+     ],
+     "rationale": "documented overlap: melatonin-PD-RCT-pool",
+     "relation": "DOCUMENTED_SHARED_DATA"
+    }
+   ],
+   "status": "SECONDARY_ONLY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": null,
+   "compound": "Propranolol",
+   "directions_by_cluster": {},
+   "finding": "disease_risk:incident_pd",
+   "missing_records": [],
+   "n_independent_primary_clusters": 0,
+   "n_primary": 0,
+   "n_records": 2,
+   "n_secondary": 2,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Propranolol:PMID35718329:PD_risk",
+     "design": "META_ANALYSIS",
+     "design_source": "PubMed PublicationType",
+     "direction": "OPPOSES",
+     "n_authors": 11,
+     "overlap_group": null,
+     "pmid": "35718329",
+     "trial_ids": [],
+     "year": "2022"
+    },
+    {
+     "claim_id": "Propranolol:PMID40200766:PD_risk",
+     "design": "META_ANALYSIS",
+     "design_source": "PubMed PublicationType",
+     "direction": "OPPOSES",
+     "n_authors": 9,
+     "overlap_group": null,
+     "pmid": "40200766",
+     "trial_ids": [],
+     "year": "2025"
+    }
+   ],
+   "relationships": [
+    {
+     "cites": false,
+     "independence": "PLAUSIBLY_INDEPENDENT",
+     "pmids": [
+      "35718329",
+      "40200766"
+     ],
+     "rationale": "no shared author, trial ID or documented data overlap; populations/datasets not persisted, so independence is plausible, not proven",
+     "relation": "NO_SHARED_INDICATOR"
+    }
+   ],
+   "status": "SECONDARY_ONLY",
+   "status_caveat": null
+  },
+  {
+   "cluster_independence": "PLAUSIBLY_INDEPENDENT",
+   "compound": "Propranolol",
+   "directions_by_cluster": {
+    "SUPPORTS": [
+     [
+      "3619710"
+     ],
+     [
+      "39707791"
+     ]
+    ]
+   },
+   "finding": "efficacy:tremor",
+   "missing_records": [],
+   "n_independent_primary_clusters": 2,
+   "n_primary": 2,
+   "n_records": 2,
+   "n_secondary": 0,
+   "note": "secondary syntheses (reviews/meta-analyses) are listed but never counted as replicates; replication here means independent primary studies agreeing in direction, not efficacy",
+   "records": [
+    {
+     "claim_id": "Propranolol:PMID3619710:tremor",
+     "design": "CONTROLLED_TRIAL",
+     "design_source": "PubMed PublicationType",
+     "direction": "SUPPORTS",
+     "n_authors": 2,
+     "overlap_group": null,
+     "pmid": "3619710",
+     "trial_ids": [],
+     "year": "1987"
+    },
+    {
+     "claim_id": "Propranolol:PMID39707791:tremor",
+     "design": "RCT",
+     "design_source": "PubMed PublicationType",
+     "direction": "SUPPORTS",
+     "n_authors": 9,
+     "overlap_group": null,
+     "pmid": "39707791",
+     "trial_ids": [],
+     "year": "2025"
+    }
+   ],
+   "relationships": [
+    {
+     "cites": false,
+     "independence": "PLAUSIBLY_INDEPENDENT",
+     "pmids": [
+      "3619710",
+      "39707791"
+     ],
+     "rationale": "no shared author, trial ID or documented data overlap; populations/datasets not persisted, so independence is plausible, not proven",
+     "relation": "NO_SHARED_INDICATOR"
+    }
+   ],
+   "status": "REPLICATED",
+   "status_caveat": null
+  }
+ ],
+ "generated_utc": "2026-10-21T09:29:24+00:00",
+ "independence_scale": {
+  "DEPENDENT": "same record, shared trial ID, documented shared data, or >=1 shared author",
+  "PLAUSIBLY_INDEPENDENT": "metadata present and nothing shared; populations/datasets not persisted, so not proven",
+  "UNDETERMINED": "author metadata missing for at least one record"
+ },
+ "input_files": [
+  {
+   "md5": "1e39f307bf85c04d6ce11209cd5895b2",
+   "path": "data/cache/pubmed_efetch_case_claims.xml",
+   "retrieved_utc": "2026-10-14T13:47:48+00:00"
+  },
+  {
+   "md5": "f75afc0b96c05b1105205598e132cdea",
+   "path": "data/cache/pubmed_efetch_droxidopa.xml",
+   "retrieved_utc": "2026-10-13T18:20:49+00:00"
+  },
+  {
+   "md5": "367265503617b1cafdb34c0ea3d6ac1a",
+   "path": "data/conflict_claims_curated.json"
+  },
+  {
+   "md5": "f4d702ac87ba68be9e72de70d3fd6b10",
+   "path": "data/literature_graph_droxidopa.json"
+  },
+  {
+   "md5": "54a99dce1e173ef5c693031bac71cd1d",
+   "path": "data/clinical_maturity_precutoff_clean.csv"
+  },
+  {
+   "md5": "c83e30bbb44f37e5aeb51a6010d7af5e",
+   "path": "data/ground_truth_postcutoff_clean.csv"
+  }
+ ],
+ "inputs": {
+  "data/cache/pubmed_efetch_case_claims.xml": "1e39f307bf85c04d6ce11209cd5895b2",
+  "data/cache/pubmed_efetch_droxidopa.xml": "f75afc0b96c05b1105205598e132cdea",
+  "data/clinical_maturity_precutoff_clean.csv": "54a99dce1e173ef5c693031bac71cd1d",
+  "data/conflict_claims_curated.json": "367265503617b1cafdb34c0ea3d6ac1a",
+  "data/ground_truth_postcutoff_clean.csv": "c83e30bbb44f37e5aeb51a6010d7af5e",
+  "data/literature_graph_droxidopa.json": "f4d702ac87ba68be9e72de70d3fd6b10"
+ },
+ "integration": "diagnostic only; not read by scripts/06_vps_fusion.py",
+ "limitations": [
+  "Coverage: findings exist only for case-study compounds with curated claims; the 90-compound pool has no persisted per-compound PMIDs (TD-021).",
+  "Author matching uses last name + first initial: homonyms can create false dependencies; name variants can hide true ones.",
+  "Institutions and funding are not used (affiliations are inconsistently present in PubMed records).",
+  "Trial IDs are found only when PubMed lists them (DataBank) or the abstract quotes them; pre-2005 trials rarely have one.",
+  "Independence is about study identity, not quality (10a) and not efficacy."
+ ],
+ "n_publication_records": 40,
+ "publication_structures": [
+  {
+   "citation_pairs_between_records": 10,
+   "compound": "Droxidopa",
+   "designs": {
+    "CASE_REPORT": 3,
+    "NARRATIVE_REVIEW": 13,
+    "OBSERVATIONAL": 1,
+    "OPINION": 1,
+    "UNKNOWN": 8
+   },
+   "finding_replication": "NOT_ASSESSED: no curated outcome directions for these papers",
+   "missing_metadata": [],
+   "n_10g_components": 16,
+   "n_independent_primary_clusters": 4,
+   "n_papers_in_graph": 26,
+   "n_primary": 4,
+   "n_with_metadata": 26,
+   "primary_clusters": [
+    [
+     "31517701"
+    ],
+    [
+     "32019498"
+    ],
+    [
+     "32560740"
+    ],
+    [
+     "39441810"
+    ]
+   ],
+   "relation_counts": {
+    "METADATA_MISSING": 0,
+    "NO_SHARED_INDICATOR": 320,
+    "SHARED_AUTHORS": 5,
+    "SHARED_TRIAL": 0
+   },
+   "source": "scripts/04b_export_literature_graph.py (re-derived via stage 04 functions)"
+  }
+ ],
+ "run_status": "SUCCESS",
+ "schema_version": "1.0",
+ "shared_trials_across_compounds": {
+  "n_shared": 21,
+  "trials": [
+   {
+    "compounds": [
+     "Nortriptyline",
+     "Paroxetine"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT00062738"
+   },
+   {
+    "compounds": [
+     "Paroxetine",
+     "Venlafaxine"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT00086190"
+   },
+   {
+    "compounds": [
+     "Isoflurane",
+     "Propofol",
+     "Remifentanil"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT00615472"
+   },
+   {
+    "compounds": [
+     "Amoxicillin",
+     "Omeprazole"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT00664209"
+   },
+   {
+    "compounds": [
+     "Darifenacin",
+     "Oxybutynin"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT00892450"
+   },
+   {
+    "compounds": [
+     "Naloxone",
+     "Oxycodone"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT01439100"
+   },
+   {
+    "compounds": [
+     "Doxepin",
+     "Zopiclone"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT01489982"
+   },
+   {
+    "compounds": [
+     "Dextromethorphan",
+     "Quinidine"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT01767129"
+   },
+   {
+    "compounds": [
+     "Dexmedetomidine",
+     "Propofol"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT02256319"
+   },
+   {
+    "compounds": [
+     "Donepezil",
+     "Duloxetine"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT02857244"
+   },
+   {
+    "compounds": [
+     "Atomoxetine",
+     "Methylphenidate"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT02879136"
+   },
+   {
+    "compounds": [
+     "Droxidopa",
+     "Midodrine"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT02897063"
+   },
+   {
+    "compounds": [
+     "Clarithromycin",
+     "Flumazenil"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT03440112"
+   },
+   {
+    "compounds": [
+     "Escitalopram",
+     "Nortriptyline"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT03652870"
+   },
+   {
+    "compounds": [
+     "Midazolam",
+     "Rosuvastatin"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT03970798"
+   },
+   {
+    "compounds": [
+     "Clarithromycin",
+     "Rifampicin"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT04070495"
+   },
+   {
+    "compounds": [
+     "Methylprednisolone",
+     "Sirolimus"
+    ],
+    "file": "data/clinical_maturity_precutoff_clean.csv",
+    "nct_id": "NCT04127578"
+   },
+   {
+    "compounds": [
+     "Clenbuterol",
+     "Nadolol"
+    ],
+    "file": "data/ground_truth_postcutoff_clean.csv",
+    "nct_id": "NCT04739423"
+   },
+   {
+    "compounds": [
+     "Celecoxib",
+     "Pentoxifylline"
+    ],
+    "file": "data/ground_truth_postcutoff_clean.csv",
+    "nct_id": "NCT05962957"
+   },
+   {
+    "compounds": [
+     "Dapagliflozin",
+     "Sitagliptin"
+    ],
+    "file": "data/ground_truth_postcutoff_clean.csv",
+    "nct_id": "NCT06263673"
+   },
+   {
+    "compounds": [
+     "Telmisartan",
+     "Terazosin"
+    ],
+    "file": "data/ground_truth_postcutoff_clean.csv",
+    "nct_id": "NCT07207057"
+   }
+  ]
+ }
+}

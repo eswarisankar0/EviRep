@@ -1,0 +1,7 @@
+model,precision@10,precision@50,AUROC,weights_fitted,heldout_nested_cv_auroc
+VPS equal weights (4 dim),0.4,0.2,0.7,False,
+VPS grid-searched (4 dim),0.3,0.24,0.725,True,0.607
+VPS grid-searched (3 dim),0.3,0.24,0.72,True,0.584
+Molecular dimension only,0.6,0.18,0.627,False,
+VPS equal weights (5 dim),0.5,0.26,0.775,False,
+VPS grid-searched (5 dim),0.4,0.26,0.774,True,0.639

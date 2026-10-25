@@ -1,0 +1,30 @@
+{
+ "stage": "05h",
+ "status": "SUCCESS",
+ "cutoff": "2020-12-31",
+ "generated_utc": "2026-10-21T09:42:44+00:00",
+ "states": {
+  "NO_PRE_CUTOFF_VERSION": 52,
+  "PRE_CUTOFF_VERSION_SCORED": 31,
+  "NO_CURRENT_LABEL": 7
+ },
+ "failures": [],
+ "parser_check_current_version_agrees_with_stage05": {
+  "agree": 83,
+  "checked": 83
+ },
+ "serious_terms": [
+  "death",
+  "fatal",
+  "life-threatening",
+  "suicide",
+  "seizure",
+  "hepatotoxicity",
+  "cardiac arrest",
+  "stroke"
+ ],
+ "limitations": [
+  "only the set ID of the current openFDA label is followed; a drug relabelled under a new set ID shows NO_PRE_CUTOFF_VERSION although an older label existed",
+  "DailyMed publication date is used as the version date"
+ ]
+}

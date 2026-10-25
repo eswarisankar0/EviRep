@@ -1,0 +1,827 @@
+{
+ "agent": "Literature Credibility",
+ "agent_version": "10a-0.1 (2026-10-13)",
+ "pair": {
+  "drug": "Droxidopa",
+  "disease": "Parkinson's disease"
+ },
+ "cutoff_date": "2021-01-01",
+ "scope": "credibility of study DESIGN only. Not efficacy, not clinical relevance, not independence (independence consumed from stage 04 components when supplied).",
+ "efficacy": "NOT_ASSESSED",
+ "criteria": {
+  "design_priority": [
+   [
+    "Retracted Publication",
+    "RETRACTED"
+   ],
+   [
+    "Retraction of Publication",
+    "RETRACTION_NOTICE"
+   ],
+   [
+    "Meta-Analysis",
+    "META_ANALYSIS"
+   ],
+   [
+    "Systematic Review",
+    "SYSTEMATIC_REVIEW"
+   ],
+   [
+    "Randomized Controlled Trial",
+    "RCT"
+   ],
+   [
+    "Controlled Clinical Trial",
+    "CONTROLLED_TRIAL"
+   ],
+   [
+    "Clinical Trial, Phase IV",
+    "CLINICAL_TRIAL"
+   ],
+   [
+    "Clinical Trial, Phase III",
+    "CLINICAL_TRIAL"
+   ],
+   [
+    "Clinical Trial, Phase II",
+    "CLINICAL_TRIAL"
+   ],
+   [
+    "Clinical Trial, Phase I",
+    "CLINICAL_TRIAL"
+   ],
+   [
+    "Clinical Trial",
+    "CLINICAL_TRIAL"
+   ],
+   [
+    "Observational Study",
+    "OBSERVATIONAL"
+   ],
+   [
+    "Case Reports",
+    "CASE_REPORT"
+   ],
+   [
+    "Review",
+    "NARRATIVE_REVIEW"
+   ],
+   [
+    "Editorial",
+    "OPINION"
+   ],
+   [
+    "Comment",
+    "OPINION"
+   ],
+   [
+    "Letter",
+    "OPINION"
+   ]
+  ],
+  "tier_by_design": {
+   "META_ANALYSIS": "A",
+   "SYSTEMATIC_REVIEW": "A",
+   "RCT": "A",
+   "CONTROLLED_TRIAL": "B",
+   "CLINICAL_TRIAL": "B",
+   "OBSERVATIONAL": "B",
+   "CASE_REPORT": "C",
+   "NARRATIVE_REVIEW": "C",
+   "OPINION": "D",
+   "RETRACTED": "X",
+   "RETRACTION_NOTICE": "X"
+  },
+  "tier_score": {
+   "A": 1.0,
+   "B": 0.6,
+   "C": 0.3,
+   "D": 0.1,
+   "X": 0.0
+  },
+  "preclinical_cap": "C",
+  "sample_size_regex": "\\b(?:n\\s*=\\s*(\\d[\\d,]*)|(\\d[\\d,]*)\\s+(?:patients|participants|subjects|individuals|cases|people))\\b"
+ },
+ "summary_all": {
+  "n_papers": 26,
+  "n_design_known": 18,
+  "coverage": 0.692,
+  "mean_credibility_score_known": 0.306,
+  "by_tier": {
+   "B": 1,
+   "C": 16,
+   "D": 1,
+   "U": 8
+  },
+  "by_design": {
+   "CASE_REPORT": 3,
+   "NARRATIVE_REVIEW": 13,
+   "OBSERVATIONAL": 1,
+   "OPINION": 1,
+   "UNKNOWN": 8
+  },
+  "by_population": {
+   "HUMAN": 17,
+   "UNKNOWN": 9
+  },
+  "n_human_tier_A_or_B": 1,
+  "replication_indicator": {
+   "distinct_components_among_human_A_B": 1,
+   "note": "components come from the stage 04/04b graph (shared author/citation); None when not supplied"
+  },
+  "conflict": false,
+  "n_direction_assessed": 0
+ },
+ "summary_pre_cutoff": {
+  "n_papers": 8,
+  "n_design_known": 8,
+  "coverage": 1.0,
+  "mean_credibility_score_known": 0.3,
+  "by_tier": {
+   "C": 8
+  },
+  "by_design": {
+   "CASE_REPORT": 3,
+   "NARRATIVE_REVIEW": 5
+  },
+  "by_population": {
+   "HUMAN": 8
+  },
+  "n_human_tier_A_or_B": 0,
+  "replication_indicator": {
+   "distinct_components_among_human_A_B": null,
+   "note": "components come from the stage 04/04b graph (shared author/citation); None when not supplied"
+  },
+  "conflict": false,
+  "n_direction_assessed": 0
+ },
+ "n_temporal_unknown": 0,
+ "uncertainty": [
+  "8 of 26 papers have no mapped design and are excluded from the mean, not scored as 0",
+  "tiers rank DESIGN only; a tier-A study can be small, negative or irrelevant to PD",
+  "input sample is whatever retrieval supplied (stage 04 caps at 30, recency-ordered, TD-021)"
+ ],
+ "papers": [
+  {
+   "pmid": "31517701",
+   "title": "Cognitive and Behavioral Changes in Patients Treated With Droxidopa for Neurogenic Orthostatic Hypotension: A Retrospective Review.",
+   "year": "2019",
+   "temporal": "PRE_CUTOFF",
+   "design": "CASE_REPORT",
+   "design_source": "PublicationType 'Case Reports'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": 101,
+   "sample_size_candidates": [
+    {
+     "value": 101,
+     "span": "101 patients"
+    }
+   ],
+   "sample_size_source": "single explicit count in abstract",
+   "component": 0,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "PublicationType 'Case Reports' conflicts with an abstract count of 101; design tag may be wrong (kept as indexed)"
+   ]
+  },
+  {
+   "pmid": "31733702",
+   "title": "Orthostatic Hypotension in Parkinson Disease.",
+   "year": "2020",
+   "temporal": "PRE_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 0,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract"
+   ]
+  },
+  {
+   "pmid": "31957505",
+   "title": "State-of-the-art pharmacotherapy for autonomic dysfunction in Parkinson's disease.",
+   "year": "2020",
+   "temporal": "PRE_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 1,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract"
+   ]
+  },
+  {
+   "pmid": "32019498",
+   "title": "Persistent unexplained chest pain and dyspnea in a patient with coronary artery disease: a case report.",
+   "year": "2020",
+   "temporal": "PRE_CUTOFF",
+   "design": "CASE_REPORT",
+   "design_source": "PublicationType 'Case Reports'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 0,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "sample size not determinable from abstract"
+   ]
+  },
+  {
+   "pmid": "32067502",
+   "title": "Managing autonomic dysfunction in Parkinson's disease: a review of emerging drugs.",
+   "year": "2020",
+   "temporal": "PRE_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 2,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract"
+   ]
+  },
+  {
+   "pmid": "32560740",
+   "title": "Droxidopa as an effective treatment for refractory neurogenic orthostatic hypotension and reflex bradycardia in amyloid light-chain amyloidosis: a case report.",
+   "year": "2020",
+   "temporal": "PRE_CUTOFF",
+   "design": "CASE_REPORT",
+   "design_source": "PublicationType 'Case Reports'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 3,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "sample size not determinable from abstract"
+   ]
+  },
+  {
+   "pmid": "32906173",
+   "title": "Clinical Trials for Neurogenic Orthostatic Hypotension: A Comprehensive Review of Endpoints, Pitfalls, and Challenges.",
+   "year": "2020",
+   "temporal": "PRE_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 0,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract"
+   ]
+  },
+  {
+   "pmid": "32979782",
+   "title": "Pharmacologic treatment of orthostatic hypotension.",
+   "year": "2020",
+   "temporal": "PRE_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 0,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract"
+   ]
+  },
+  {
+   "pmid": "33705537",
+   "title": "Neurogenic Orthostatic Hypotension. Lessons From Synucleinopathies.",
+   "year": "2021",
+   "temporal": "POST_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 0,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "33886735",
+   "title": "Dysautonomia: A Forgotten Condition - Part 1.",
+   "year": "2021",
+   "temporal": "POST_CUTOFF",
+   "design": "UNKNOWN",
+   "design_source": "no mapped PublicationType among ['Journal Article']",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "U",
+   "credibility_score": null,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 4,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "study design unknown",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "34493421",
+   "title": "Stress cardiomyopathy (Takotsubo syndrome) in patients who received adrenergic agonist drugs: A pharmacovigilance study using the Japanese Adverse Drug Event Report (JADER) database.",
+   "year": "2022",
+   "temporal": "POST_CUTOFF",
+   "design": "UNKNOWN",
+   "design_source": "no mapped PublicationType among ['Journal Article', \"Research Support, Non-U.S. Gov't\"]",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "U",
+   "credibility_score": null,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 5,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "study design unknown",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "34494209",
+   "title": "Management of Neurogenic Orthostatic Hypotension in Neurodegenerative Disorders: A Collaboration Between Cardiology and Neurology.",
+   "year": "2021",
+   "temporal": "POST_CUTOFF",
+   "design": "UNKNOWN",
+   "design_source": "no mapped PublicationType among ['Journal Article']",
+   "population": "UNKNOWN",
+   "population_source": "no MeSH headings (record may not be indexed yet)",
+   "credibility_tier": "U",
+   "credibility_score": null,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 6,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "study design unknown",
+    "population unknown (not MeSH-indexed)",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "34977548",
+   "title": "Rasagiline does not exacerbate autonomic blood pressure dysregulation in early or mild Parkinson's disease.",
+   "year": "2022",
+   "temporal": "POST_CUTOFF",
+   "design": "UNKNOWN",
+   "design_source": "no mapped PublicationType among ['Journal Article']",
+   "population": "UNKNOWN",
+   "population_source": "no MeSH headings (record may not be indexed yet)",
+   "credibility_tier": "U",
+   "credibility_score": null,
+   "sample_size": null,
+   "sample_size_candidates": [
+    {
+     "value": 4,
+     "span": "n\u00a0=\u00a04"
+    },
+    {
+     "value": 10,
+     "span": "n\u00a0=\u00a010"
+    },
+    {
+     "value": 1,
+     "span": "n\u00a0=\u00a01"
+    },
+    {
+     "value": 2,
+     "span": "n\u00a0=\u00a02"
+    },
+    {
+     "value": 1,
+     "span": "n\u00a0=\u00a01"
+    },
+    {
+     "value": 1,
+     "span": "n\u00a0=\u00a01"
+    }
+   ],
+   "sample_size_source": "several different counts - ambiguous, not chosen",
+   "component": 7,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "study design unknown",
+    "population unknown (not MeSH-indexed)",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "35193486",
+   "title": "An Update on Nondopaminergic Treatments for Motor and Non-motor Symptoms of Parkinson's Disease.",
+   "year": "2023",
+   "temporal": "POST_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 8,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "35293295",
+   "title": "Advances in the Pharmacological and Non-pharmacological Management of Non-motor Symptoms in Parkinson's Disease: An Update Since 2017.",
+   "year": "2023",
+   "temporal": "POST_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 1,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "35605513",
+   "title": "Droxidopa reduces postural sway in Parkinson disease patients with orthostatic hypotension.",
+   "year": "2022",
+   "temporal": "POST_CUTOFF",
+   "design": "OPINION",
+   "design_source": "PublicationType 'Letter'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "D",
+   "credibility_score": 0.1,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 9,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "35936586",
+   "title": "Pure Autonomic Failure-A Localized Alpha Synucleinopathy with a Potential for Conversion to More Extensive Alpha Synucleinopathies.",
+   "year": "2022",
+   "temporal": "POST_CUTOFF",
+   "design": "UNKNOWN",
+   "design_source": "no mapped PublicationType among ['Journal Article']",
+   "population": "UNKNOWN",
+   "population_source": "no MeSH headings (record may not be indexed yet)",
+   "credibility_tier": "U",
+   "credibility_score": null,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 10,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "study design unknown",
+    "population unknown (not MeSH-indexed)",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "37303338",
+   "title": "Ampreloxetine Versus Droxidopa in Neurogenic Orthostatic Hypotension: A Comparative Review.",
+   "year": "2023",
+   "temporal": "POST_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "UNKNOWN",
+   "population_source": "no MeSH headings (record may not be indexed yet)",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 0,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "population unknown (not MeSH-indexed)",
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "37426443",
+   "title": "Prescribing patterns and determinants for elderly patients with Parkinson's disease in Japan: a retrospective observational study using insurance claims databases.",
+   "year": "2023",
+   "temporal": "POST_CUTOFF",
+   "design": "UNKNOWN",
+   "design_source": "no mapped PublicationType among ['Journal Article']",
+   "population": "UNKNOWN",
+   "population_source": "no MeSH headings (record may not be indexed yet)",
+   "credibility_tier": "U",
+   "credibility_score": null,
+   "sample_size": null,
+   "sample_size_candidates": [
+    {
+     "value": 39731,
+     "span": "39,731 patients"
+    },
+    {
+     "value": 100,
+     "span": "100 people"
+    }
+   ],
+   "sample_size_source": "several different counts - ambiguous, not chosen",
+   "component": 11,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "study design unknown",
+    "population unknown (not MeSH-indexed)",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "39441810",
+   "title": "Prescription trends in Japanese advanced Parkinson's disease patients with non-motor symptoms: J-FIRST.",
+   "year": "2024",
+   "temporal": "POST_CUTOFF",
+   "design": "OBSERVATIONAL",
+   "design_source": "PublicationType 'Observational Study'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "B",
+   "credibility_score": 0.6,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 12,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "39621520",
+   "title": "Finding the Balance: Review of Pharmacological Management of Orthostatic Hypotension in Patients With Parkinson's Disease.",
+   "year": "2024",
+   "temporal": "POST_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 0,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "39860637",
+   "title": "Neurogenic Orthostatic Hypotension in Parkinson Disease-A Narrative Review of Diagnosis and Management.",
+   "year": "2025",
+   "temporal": "POST_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "UNKNOWN",
+   "population_source": "no MeSH headings (record may not be indexed yet)",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 0,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "population unknown (not MeSH-indexed)",
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "40379165",
+   "title": "Engineering of an L-threonine aldolase from Firmicutes bacterium for the stereoselective synthesis of Droxidopa.",
+   "year": "2025",
+   "temporal": "POST_CUTOFF",
+   "design": "UNKNOWN",
+   "design_source": "no mapped PublicationType among ['Journal Article']",
+   "population": "UNKNOWN",
+   "population_source": "MeSH present but neither 'Humans' nor 'Animals'",
+   "credibility_tier": "U",
+   "credibility_score": null,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 13,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "study design unknown",
+    "population unknown (not MeSH-indexed)",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "40851689",
+   "title": "Intersection of Autonomic Dysfunction and Parkinson's Disease: Insights Into Neurogenic and Classical Orthostatic Hypotension.",
+   "year": "2025",
+   "temporal": "POST_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "UNKNOWN",
+   "population_source": "no MeSH headings (record may not be indexed yet)",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 0,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "population unknown (not MeSH-indexed)",
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "41520443",
+   "title": "Evaluating the interactions of L-DOPA and droxidopa toward D3 dopamine receptor through computational study: A comparison with dopamine.",
+   "year": "2026",
+   "temporal": "POST_CUTOFF",
+   "design": "UNKNOWN",
+   "design_source": "no mapped PublicationType among ['Comparative Study', 'Journal Article', \"Research Support, Non-U.S. Gov't\"]",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "U",
+   "credibility_score": null,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 14,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "study design unknown",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "41745708",
+   "title": "Consensus Molecules Associated with Parkinson's Disease.",
+   "year": "2026",
+   "temporal": "POST_CUTOFF",
+   "design": "NARRATIVE_REVIEW",
+   "design_source": "PublicationType 'Review'",
+   "population": "UNKNOWN",
+   "population_source": "no MeSH headings (record may not be indexed yet)",
+   "credibility_tier": "C",
+   "credibility_score": 0.3,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": 15,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "population unknown (not MeSH-indexed)",
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  }
+ ],
+ "rejected_records": [],
+ "provenance": {
+  "source": "saved PubMed efetch XML",
+  "path": "data/cache/pubmed_efetch_droxidopa.xml",
+  "graph": "data/literature_graph_droxidopa.json",
+  "n_returned": 26,
+  "missing_pmids": []
+ },
+ "agent_id": "10a",
+ "schema_version": "1.0",
+ "run_status": "SUCCESS",
+ "generated_utc": "2026-10-15T01:18:43+00:00",
+ "inputs": {
+  "data/literature_graph_droxidopa.json": "f4d702ac87ba68be9e72de70d3fd6b10",
+  "data/cache/pubmed_efetch_droxidopa.xml": "f75afc0b96c05b1105205598e132cdea"
+ },
+ "coverage": {
+  "papers": 26,
+  "design_known": 18,
+  "human_tier_A_or_B": 1
+ },
+ "limitations": [
+  "8 of 26 papers have no mapped design and are excluded from the mean, not scored as 0",
+  "tiers rank DESIGN only; a tier-A study can be small, negative or irrelevant to PD",
+  "input sample is whatever retrieval supplied (stage 04 caps at 30, recency-ordered, TD-021)",
+  "direction is copied from curated annotations only; efficacy is never assessed"
+ ],
+ "diagnostics": []
+}

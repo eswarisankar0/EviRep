@@ -1,0 +1,285 @@
+{
+ "compound": "Droxidopa",
+ "source": "scripts/04b_export_literature_graph.py (re-derived via stage 04 functions)",
+ "verified_against": "data/_literature_checkpoint.jsonl",
+ "counts": {
+  "raw_paper_count": 26,
+  "effective_independent_count": 16,
+  "edges_shared_author": 4,
+  "edges_citation": 10
+ },
+ "nodes": [
+  {
+   "pmid": "31517701",
+   "component": 0,
+   "year": "2019",
+   "n_authors": 6,
+   "title": "Cognitive and Behavioral Changes in Patients Treated With Droxidopa for Neurogenic Orthostatic Hypotension: A Retrospective Review."
+  },
+  {
+   "pmid": "31733702",
+   "component": 0,
+   "year": "2020",
+   "n_authors": 2,
+   "title": "Orthostatic Hypotension in Parkinson Disease."
+  },
+  {
+   "pmid": "31957505",
+   "component": 1,
+   "year": "2020",
+   "n_authors": 4,
+   "title": "State-of-the-art pharmacotherapy for autonomic dysfunction in Parkinson's disease."
+  },
+  {
+   "pmid": "32019498",
+   "component": 0,
+   "year": "2020",
+   "n_authors": 1,
+   "title": "Persistent unexplained chest pain and dyspnea in a patient with coronary artery disease: a case report."
+  },
+  {
+   "pmid": "32067502",
+   "component": 2,
+   "year": "2020",
+   "n_authors": 3,
+   "title": "Managing autonomic dysfunction in Parkinson's disease: a review of emerging drugs."
+  },
+  {
+   "pmid": "32560740",
+   "component": 3,
+   "year": "2020",
+   "n_authors": 5,
+   "title": "Droxidopa as an effective treatment for refractory neurogenic orthostatic hypotension and reflex bradycardia in amyloid light-chain amyloidosis: a case report."
+  },
+  {
+   "pmid": "32906173",
+   "component": 0,
+   "year": "2020",
+   "n_authors": 2,
+   "title": "Clinical Trials for Neurogenic Orthostatic Hypotension: A Comprehensive Review of Endpoints, Pitfalls, and Challenges."
+  },
+  {
+   "pmid": "32979782",
+   "component": 0,
+   "year": "2020",
+   "n_authors": 4,
+   "title": "Pharmacologic treatment of orthostatic hypotension."
+  },
+  {
+   "pmid": "33705537",
+   "component": 0,
+   "year": "2021",
+   "n_authors": 4,
+   "title": "Neurogenic Orthostatic Hypotension. Lessons From Synucleinopathies."
+  },
+  {
+   "pmid": "33886735",
+   "component": 4,
+   "year": "2021",
+   "n_authors": 6,
+   "title": "Dysautonomia: A Forgotten Condition - Part 1."
+  },
+  {
+   "pmid": "34493421",
+   "component": 5,
+   "year": "2022",
+   "n_authors": 5,
+   "title": "Stress cardiomyopathy (Takotsubo syndrome) in patients who received adrenergic agonist drugs: A pharmacovigilance study using the Japanese Adverse Drug Event Report (JADER) database."
+  },
+  {
+   "pmid": "34494209",
+   "component": 6,
+   "year": "2021",
+   "n_authors": 2,
+   "title": "Management of Neurogenic Orthostatic Hypotension in Neurodegenerative Disorders: A Collaboration Between Cardiology and Neurology."
+  },
+  {
+   "pmid": "34977548",
+   "component": 7,
+   "year": "2022",
+   "n_authors": 4,
+   "title": "Rasagiline does not exacerbate autonomic blood pressure dysregulation in early or mild Parkinson's disease."
+  },
+  {
+   "pmid": "35193486",
+   "component": 8,
+   "year": "2023",
+   "n_authors": 5,
+   "title": "An Update on Nondopaminergic Treatments for Motor and Non-motor Symptoms of Parkinson's Disease."
+  },
+  {
+   "pmid": "35293295",
+   "component": 1,
+   "year": "2023",
+   "n_authors": 4,
+   "title": "Advances in the Pharmacological and Non-pharmacological Management of Non-motor Symptoms in Parkinson's Disease: An Update Since 2017."
+  },
+  {
+   "pmid": "35605513",
+   "component": 9,
+   "year": "2022",
+   "n_authors": 8,
+   "title": "Droxidopa reduces postural sway in Parkinson disease patients with orthostatic hypotension."
+  },
+  {
+   "pmid": "35936586",
+   "component": 10,
+   "year": "2022",
+   "n_authors": 2,
+   "title": "Pure Autonomic Failure-A Localized Alpha Synucleinopathy with a Potential for Conversion to More Extensive Alpha Synucleinopathies."
+  },
+  {
+   "pmid": "37303338",
+   "component": 0,
+   "year": "2023",
+   "n_authors": 13,
+   "title": "Ampreloxetine Versus Droxidopa in Neurogenic Orthostatic Hypotension: A Comparative Review."
+  },
+  {
+   "pmid": "37426443",
+   "component": 11,
+   "year": "2023",
+   "n_authors": 5,
+   "title": "Prescribing patterns and determinants for elderly patients with Parkinson's disease in Japan: a retrospective observational study using insurance claims databases."
+  },
+  {
+   "pmid": "39441810",
+   "component": 12,
+   "year": "2024",
+   "n_authors": 10,
+   "title": "Prescription trends in Japanese advanced Parkinson's disease patients with non-motor symptoms: J-FIRST."
+  },
+  {
+   "pmid": "39621520",
+   "component": 0,
+   "year": "2024",
+   "n_authors": 1,
+   "title": "Finding the Balance: Review of Pharmacological Management of Orthostatic Hypotension in Patients With Parkinson's Disease."
+  },
+  {
+   "pmid": "39860637",
+   "component": 0,
+   "year": "2025",
+   "n_authors": 5,
+   "title": "Neurogenic Orthostatic Hypotension in Parkinson Disease-A Narrative Review of Diagnosis and Management."
+  },
+  {
+   "pmid": "40379165",
+   "component": 13,
+   "year": "2025",
+   "n_authors": 9,
+   "title": "Engineering of an L-threonine aldolase from Firmicutes bacterium for the stereoselective synthesis of Droxidopa."
+  },
+  {
+   "pmid": "40851689",
+   "component": 0,
+   "year": "2025",
+   "n_authors": 11,
+   "title": "Intersection of Autonomic Dysfunction and Parkinson's Disease: Insights Into Neurogenic and Classical Orthostatic Hypotension."
+  },
+  {
+   "pmid": "41520443",
+   "component": 14,
+   "year": "2026",
+   "n_authors": 2,
+   "title": "Evaluating the interactions of L-DOPA and droxidopa toward D"
+  },
+  {
+   "pmid": "41745708",
+   "component": 15,
+   "year": "2026",
+   "n_authors": 13,
+   "title": "Consensus Molecules Associated with Parkinson's Disease."
+  }
+ ],
+ "edges": [
+  {
+   "source": "32906173",
+   "target": "31733702",
+   "reason": "shared_author"
+  },
+  {
+   "source": "32979782",
+   "target": "31517701",
+   "reason": "shared_author"
+  },
+  {
+   "source": "32979782",
+   "target": "31733702",
+   "reason": "citation"
+  },
+  {
+   "source": "33705537",
+   "target": "31517701",
+   "reason": "shared_author"
+  },
+  {
+   "source": "33705537",
+   "target": "32019498",
+   "reason": "citation"
+  },
+  {
+   "source": "33705537",
+   "target": "32979782",
+   "reason": "shared_author"
+  },
+  {
+   "source": "35293295",
+   "target": "31957505",
+   "reason": "citation"
+  },
+  {
+   "source": "37303338",
+   "target": "31733702",
+   "reason": "citation"
+  },
+  {
+   "source": "37303338",
+   "target": "33705537",
+   "reason": "citation"
+  },
+  {
+   "source": "39621520",
+   "target": "31733702",
+   "reason": "citation"
+  },
+  {
+   "source": "39621520",
+   "target": "33705537",
+   "reason": "citation"
+  },
+  {
+   "source": "39860637",
+   "target": "32906173",
+   "reason": "citation"
+  },
+  {
+   "source": "39860637",
+   "target": "33705537",
+   "reason": "citation"
+  },
+  {
+   "source": "40851689",
+   "target": "31733702",
+   "reason": "citation"
+  }
+ ],
+ "component_sizes": [
+  10,
+  2,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1
+ ]
+}

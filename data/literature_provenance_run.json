@@ -1,0 +1,20 @@
+{
+ "cutoff": "2020-12-31",
+ "failures": [],
+ "from_cache": 90,
+ "from_network": 0,
+ "generated_utc": "2026-10-21T09:39:52+00:00",
+ "limitations": [
+  "PubMed is queried today: the sample may differ from the one stage 04 used when it ran (new papers, re-indexing); sample_size_matches_stage04 flags count differences only",
+  "the cutoff-bounded search uses PubMed's publication date (pdat); cutoff_status uses the earliest of the journal and electronic dates and may differ for papers near the cutoff",
+  "duplicate detection covers shared DOI, identical title and explicit PubMed links only"
+ ],
+ "n_compounds": 90,
+ "n_failed": 0,
+ "n_no_results": 1,
+ "n_paper_records": 4220,
+ "n_retrieved": 90,
+ "n_sample_size_mismatch_vs_stage04": 15,
+ "stage": "04p",
+ "status": "SUCCESS"
+}

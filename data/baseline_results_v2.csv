@@ -1,0 +1,4 @@
+,precision@10,precision@50,AUROC
+Proximity only,0.2,0.18,0.578
+Publication count only,0.2,0.22,0.629
+Naive unweighted sum (raw scales),0.2,0.22,0.641

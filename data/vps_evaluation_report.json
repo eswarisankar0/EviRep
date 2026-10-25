@@ -1,0 +1,332 @@
+{
+ "ablation_5d": {
+  "caveat": "reference row is in-sample (grid weights); 'Without X' rows are equal-weight (TD-025)",
+  "rows": {
+   "Full VPS (grid-searched weights, 5 dims)": 0.774,
+   "Without clinical": 0.693,
+   "Without literature": 0.74,
+   "Without molecular": 0.7,
+   "Without proximity": 0.77,
+   "Without safety": 0.755
+  }
+ },
+ "baselines": {
+  "Naive unweighted sum (raw scales)": 0.641,
+  "Proximity only": 0.578,
+  "Publication count only": 0.629
+ },
+ "calibration": {
+  "applicable": false,
+  "reason": "VPS is a mean of percentile ranks used for ordering, not a probability; with 14 positives a reliability curve would rest on very few events per bin. Report discrimination (AUROC, AUPRC) only; do not read a VPS value as a probability."
+ },
+ "cohort": {
+  "duplicate_compounds": 0,
+  "label_definition": "continued clinical investigation (D-010), not efficacy",
+  "n": 90,
+  "negatives": 76,
+  "positives": 14,
+  "prevalence": 0.15555555555555556
+ },
+ "dimension_spearman": {
+  "r_clinical": {
+   "r_clinical": 1.0,
+   "r_literature": 0.022,
+   "r_molecular": -0.139,
+   "r_proximity": 0.253,
+   "r_safety": -0.069
+  },
+  "r_literature": {
+   "r_clinical": 0.022,
+   "r_literature": 1.0,
+   "r_molecular": -0.099,
+   "r_proximity": 0.435,
+   "r_safety": -0.363
+  },
+  "r_molecular": {
+   "r_clinical": -0.139,
+   "r_literature": -0.099,
+   "r_molecular": 1.0,
+   "r_proximity": -0.197,
+   "r_safety": 0.353
+  },
+  "r_proximity": {
+   "r_clinical": 0.253,
+   "r_literature": 0.435,
+   "r_molecular": -0.197,
+   "r_proximity": 1.0,
+   "r_safety": -0.228
+  },
+  "r_safety": {
+   "r_clinical": -0.069,
+   "r_literature": -0.363,
+   "r_molecular": 0.353,
+   "r_proximity": -0.228,
+   "r_safety": 1.0
+  }
+ },
+ "duplicate_evidence": {
+  "feature_trials_shared": 17,
+  "feature_trials_shared_by_pool_compounds": 17,
+  "label_trials_shared": [
+   {
+    "compounds": [
+     "Clenbuterol",
+     "Nadolol"
+    ],
+    "file": "data/ground_truth_postcutoff_clean.csv",
+    "nct_id": "NCT04739423"
+   },
+   {
+    "compounds": [
+     "Celecoxib",
+     "Pentoxifylline"
+    ],
+    "file": "data/ground_truth_postcutoff_clean.csv",
+    "nct_id": "NCT05962957"
+   },
+   {
+    "compounds": [
+     "Dapagliflozin",
+     "Sitagliptin"
+    ],
+    "file": "data/ground_truth_postcutoff_clean.csv",
+    "nct_id": "NCT06263673"
+   },
+   {
+    "compounds": [
+     "Telmisartan",
+     "Terazosin"
+    ],
+    "file": "data/ground_truth_postcutoff_clean.csv",
+    "nct_id": "NCT07207057"
+   }
+  ],
+  "meaning": "the same pre-cutoff trial raises clinical maturity for every compound it names (combination arms, comparators, multi-drug protocols); see TD-023",
+  "pool_compounds_affected": [
+   "Amoxicillin",
+   "Atomoxetine",
+   "Clarithromycin",
+   "Darifenacin",
+   "Dexmedetomidine",
+   "Dextromethorphan",
+   "Donepezil",
+   "Doxepin",
+   "Droxidopa",
+   "Duloxetine",
+   "Escitalopram",
+   "Flumazenil",
+   "Isoflurane",
+   "Methylphenidate",
+   "Methylprednisolone",
+   "Midazolam",
+   "Midodrine",
+   "Naloxone",
+   "Nortriptyline",
+   "Omeprazole",
+   "Oxybutynin",
+   "Oxycodone",
+   "Paroxetine",
+   "Propofol",
+   "Quinidine",
+   "Remifentanil",
+   "Rifampicin",
+   "Rosuvastatin",
+   "Sirolimus",
+   "Venlafaxine",
+   "Zopiclone"
+  ]
+ },
+ "grid_search": {
+  "note": "weights are selected on training folds only inside CV; the persisted single split is one draw",
+  "persisted_single_split": {
+   "VPS grid-searched (3 dim)": 0.584,
+   "VPS grid-searched (4 dim)": 0.607,
+   "VPS grid-searched (5 dim)": 0.639
+  },
+  "repeated_nested_cv": {
+   "3d": {
+    "folds": 5,
+    "max": 0.6706944444444445,
+    "mean": 0.5714965277777778,
+    "min": 0.4341666666666667,
+    "p2_5": 0.4502638888888889,
+    "p97_5": 0.6536076388888888,
+    "repeats": 20,
+    "seeds": "0..19"
+   },
+   "4d": {
+    "folds": 5,
+    "max": 0.6827777777777777,
+    "mean": 0.5741215277777778,
+    "min": 0.4419444444444444,
+    "p2_5": 0.4588993055555555,
+    "p97_5": 0.6787534722222222,
+    "repeats": 20,
+    "seeds": "0..19"
+   },
+   "5d": {
+    "folds": 5,
+    "max": 0.7340277777777777,
+    "mean": 0.6482673611111112,
+    "min": 0.5519444444444445,
+    "p2_5": 0.5613125,
+    "p97_5": 0.7280902777777777,
+    "repeats": 20,
+    "seeds": "0..19"
+   }
+  }
+ },
+ "inputs": {
+  "data/ablation_results_5d.csv": "d59f0cb44c195fa8a77e174f3c44b2ad",
+  "data/baseline_results_v2.csv": "99c0b8f83cff2d70c1ea8a746044dace",
+  "data/bootstrap_ci_equal5d_vs_4d.csv": "dbf5308edea225b813a34d55daaf0905",
+  "data/ground_truth_postcutoff_clean.csv": "c83e30bbb44f37e5aeb51a6010d7af5e",
+  "data/label_role_exclusions.csv": "e9ba11aa99309f82cd0cfc301839d10e",
+  "data/vps_scores_v2.csv": "8f414c59800c24627d4dec88ae56c2bd",
+  "data/vps_variant_results.csv": "3045cc2cdc702017e8332cf0f2459daa"
+ },
+ "max_offdiagonal_abs_spearman": 0.435,
+ "missing_data": {
+  "imputation_paths": [
+   "proximity_z missing -> median of the pool (06 impute_missing); rank lands near the middle",
+   "no openFDA label -> safety not imputed; neutral rank 0.5 + safety_label_missing (D-004)",
+   "no ChEMBL mechanism target -> molecular neutral rank 0.5 + molecular_evidence_missing (D-004)",
+   "compound absent from molecular_pathway.csv -> median (0 such compounds now)",
+   "clinical, literature: always present for pool compounds (pool requires a pre-cutoff trial)"
+  ],
+  "n_dimensions_measured": {
+   "3": 2,
+   "4": 19,
+   "5": 69
+  },
+  "not_measured_by_dimension": {
+   "clinical": 0,
+   "literature": 0,
+   "molecular": 16,
+   "proximity": 0,
+   "safety": 7
+  },
+  "positives_among_missing": {
+   "molecular": 2,
+   "safety": 0
+  }
+ },
+ "n_boot": 2000,
+ "paired_5d_vs_4d": {
+  "ci95": [
+   -0.024979854955680784,
+   0.17606444188722659
+  ],
+  "diff": 0.07518796992481214,
+  "matches_persisted_ci_file": true,
+  "p_diff_gt_0": 0.935,
+  "rerun_identical": true,
+  "significant": false
+ },
+ "primary": [
+  {
+   "auprc": 0.4243147574234414,
+   "auprc_ci95": [
+    0.22629135578499396,
+    0.6791546701153208
+   ],
+   "auprc_over_prevalence": 2.727737726293552,
+   "auroc": 0.775375939849624,
+   "auroc_ci95": [
+    0.6559117720760206,
+    0.8809429295366793
+   ],
+   "column": "VPS_equal_5d",
+   "model": "equal-weight 5d (primary)",
+   "skipped_resamples": 0
+  },
+  {
+   "auprc": 0.35816198806767274,
+   "auprc_ci95": [
+    0.1762610896161913,
+    0.602860819742961
+   ],
+   "auprc_over_prevalence": 2.3024699232921817,
+   "auroc": 0.7001879699248119,
+   "auroc_ci95": [
+    0.5674148275710775,
+    0.834295025473823
+   ],
+   "column": "VPS_equal",
+   "model": "equal-weight 4d (primary)",
+   "skipped_resamples": 0
+  },
+  {
+   "auprc": 0.3616379811944328,
+   "auprc_ci95": [
+    0.16769427415680496,
+    0.6466730917956406
+   ],
+   "auprc_over_prevalence": 2.324815593392782,
+   "auroc": 0.6273496240601504,
+   "auroc_ci95": [
+    0.4325212238342334,
+    0.8184288317923185
+   ],
+   "column": "VPS_molecular_only",
+   "model": "molecular only (baseline)",
+   "skipped_resamples": 0
+  }
+ ],
+ "report_version": "vps-eval-1.0",
+ "reproduction": {
+  "all_match": true,
+  "rows": [
+   {
+    "column": "VPS_equal",
+    "match": true,
+    "model": "VPS equal weights (4 dim)",
+    "persisted": 0.7,
+    "recomputed": 0.7,
+    "type": "unfitted"
+   },
+   {
+    "column": "VPS_grid_4d",
+    "match": true,
+    "model": "VPS grid-searched (4 dim)",
+    "persisted": 0.725,
+    "recomputed": 0.725,
+    "type": "in-sample (weights fitted on all labels)"
+   },
+   {
+    "column": "VPS_grid_3d",
+    "match": true,
+    "model": "VPS grid-searched (3 dim)",
+    "persisted": 0.72,
+    "recomputed": 0.72,
+    "type": "in-sample (weights fitted on all labels)"
+   },
+   {
+    "column": "VPS_molecular_only",
+    "match": true,
+    "model": "Molecular dimension only",
+    "persisted": 0.627,
+    "recomputed": 0.627,
+    "type": "unfitted"
+   },
+   {
+    "column": "VPS_equal_5d",
+    "match": true,
+    "model": "VPS equal weights (5 dim)",
+    "persisted": 0.775,
+    "recomputed": 0.775,
+    "type": "unfitted"
+   },
+   {
+    "column": "VPS_grid_5d",
+    "match": true,
+    "model": "VPS grid-searched (5 dim)",
+    "persisted": 0.774,
+    "recomputed": 0.774,
+    "type": "in-sample (weights fitted on all labels)"
+   }
+  ]
+ },
+ "seed": 42,
+ "temporal_validity": "Not leakage-free: literature, safety and molecular use current data (TD-033, B-001, B-002). Without literature the score stays above chance; proximity + clinical alone do not (D-012)."
+}

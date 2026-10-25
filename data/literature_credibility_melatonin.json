@@ -1,0 +1,227 @@
+{
+ "agent": "Literature Credibility",
+ "agent_version": "10a-0.1 (2026-10-13)",
+ "pair": {
+  "drug": "Melatonin",
+  "disease": "Parkinson's disease"
+ },
+ "cutoff_date": "2021-01-01",
+ "scope": "credibility of study DESIGN only. Not efficacy, not clinical relevance, not independence (independence consumed from stage 04 components when supplied).",
+ "efficacy": "NOT_ASSESSED",
+ "criteria": {
+  "design_priority": [
+   [
+    "Retracted Publication",
+    "RETRACTED"
+   ],
+   [
+    "Retraction of Publication",
+    "RETRACTION_NOTICE"
+   ],
+   [
+    "Meta-Analysis",
+    "META_ANALYSIS"
+   ],
+   [
+    "Systematic Review",
+    "SYSTEMATIC_REVIEW"
+   ],
+   [
+    "Randomized Controlled Trial",
+    "RCT"
+   ],
+   [
+    "Controlled Clinical Trial",
+    "CONTROLLED_TRIAL"
+   ],
+   [
+    "Clinical Trial, Phase IV",
+    "CLINICAL_TRIAL"
+   ],
+   [
+    "Clinical Trial, Phase III",
+    "CLINICAL_TRIAL"
+   ],
+   [
+    "Clinical Trial, Phase II",
+    "CLINICAL_TRIAL"
+   ],
+   [
+    "Clinical Trial, Phase I",
+    "CLINICAL_TRIAL"
+   ],
+   [
+    "Clinical Trial",
+    "CLINICAL_TRIAL"
+   ],
+   [
+    "Observational Study",
+    "OBSERVATIONAL"
+   ],
+   [
+    "Case Reports",
+    "CASE_REPORT"
+   ],
+   [
+    "Review",
+    "NARRATIVE_REVIEW"
+   ],
+   [
+    "Editorial",
+    "OPINION"
+   ],
+   [
+    "Comment",
+    "OPINION"
+   ],
+   [
+    "Letter",
+    "OPINION"
+   ]
+  ],
+  "tier_by_design": {
+   "META_ANALYSIS": "A",
+   "SYSTEMATIC_REVIEW": "A",
+   "RCT": "A",
+   "CONTROLLED_TRIAL": "B",
+   "CLINICAL_TRIAL": "B",
+   "OBSERVATIONAL": "B",
+   "CASE_REPORT": "C",
+   "NARRATIVE_REVIEW": "C",
+   "OPINION": "D",
+   "RETRACTED": "X",
+   "RETRACTION_NOTICE": "X"
+  },
+  "tier_score": {
+   "A": 1.0,
+   "B": 0.6,
+   "C": 0.3,
+   "D": 0.1,
+   "X": 0.0
+  },
+  "preclinical_cap": "C",
+  "sample_size_regex": "\\b(?:n\\s*=\\s*(\\d[\\d,]*)|(\\d[\\d,]*)\\s+(?:patients|participants|subjects|individuals|cases|people))\\b"
+ },
+ "summary_all": {
+  "n_papers": 2,
+  "n_design_known": 2,
+  "coverage": 1.0,
+  "mean_credibility_score_known": 1.0,
+  "by_tier": {
+   "A": 2
+  },
+  "by_design": {
+   "META_ANALYSIS": 2
+  },
+  "by_population": {
+   "HUMAN": 2
+  },
+  "n_human_tier_A_or_B": 2,
+  "replication_indicator": {
+   "distinct_components_among_human_A_B": null,
+   "note": "components come from the stage 04/04b graph (shared author/citation); None when not supplied"
+  },
+  "conflict": false,
+  "n_direction_assessed": 0
+ },
+ "summary_pre_cutoff": {
+  "n_papers": 0,
+  "n_design_known": 0,
+  "coverage": null,
+  "mean_credibility_score_known": null,
+  "by_tier": {},
+  "by_design": {},
+  "by_population": {},
+  "n_human_tier_A_or_B": 0,
+  "replication_indicator": {
+   "distinct_components_among_human_A_B": null,
+   "note": "components come from the stage 04/04b graph (shared author/citation); None when not supplied"
+  },
+  "conflict": false,
+  "n_direction_assessed": 0
+ },
+ "n_temporal_unknown": 0,
+ "uncertainty": [
+  "0 of 2 papers have no mapped design and are excluded from the mean, not scored as 0",
+  "tiers rank DESIGN only; a tier-A study can be small, negative or irrelevant to PD",
+  "input sample is whatever retrieval supplied (stage 04 caps at 30, recency-ordered, TD-021)"
+ ],
+ "papers": [
+  {
+   "pmid": "40387966",
+   "title": "Exploring the role of melatonin in managing sleep and motor symptoms in Parkinson's disease: a pooled analysis of double-blinded randomized controlled trials.",
+   "year": "2025",
+   "temporal": "POST_CUTOFF",
+   "temporal_source": "publication year",
+   "design": "META_ANALYSIS",
+   "design_source": "PublicationType 'Meta-Analysis'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "A",
+   "credibility_score": 1.0,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": null,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  },
+  {
+   "pmid": "40588412",
+   "title": "The Effectiveness of Melatonin for Sleep Disturbances in Parkinson' Disease: Systematic Review and Meta-Analysis.",
+   "year": "2026",
+   "temporal": "POST_CUTOFF",
+   "temporal_source": "publication year",
+   "design": "META_ANALYSIS",
+   "design_source": "PublicationType 'Meta-Analysis'",
+   "population": "HUMAN",
+   "population_source": "MeSH check tag 'Humans'",
+   "credibility_tier": "A",
+   "credibility_score": 1.0,
+   "sample_size": null,
+   "sample_size_candidates": [],
+   "sample_size_source": "no explicit count",
+   "component": null,
+   "direction": "NOT_ASSESSED",
+   "direction_source": null,
+   "limitations": [
+    "secondary literature - may duplicate primary studies",
+    "sample size not determinable from abstract",
+    "published after the 2021-01-01 cutoff"
+   ]
+  }
+ ],
+ "rejected_records": [],
+ "provenance": {
+  "source": "saved PubMed efetch XML",
+  "path": "data/cache/pubmed_efetch_case_claims.xml",
+  "claims": "data/conflict_claims_curated.json",
+  "missing_pmids": [],
+  "note": "papers are the curated case-study sources, not a literature search"
+ },
+ "agent_id": "10a",
+ "schema_version": "1.0",
+ "run_status": "SUCCESS",
+ "generated_utc": "2026-10-20T17:45:25+00:00",
+ "inputs": {
+  "data/cache/pubmed_efetch_case_claims.xml": "1e39f307bf85c04d6ce11209cd5895b2",
+  "data/conflict_claims_curated.json": "367265503617b1cafdb34c0ea3d6ac1a"
+ },
+ "coverage": {
+  "papers": 2,
+  "design_known": 2,
+  "human_tier_A_or_B": 2
+ },
+ "limitations": [
+  "0 of 2 papers have no mapped design and are excluded from the mean, not scored as 0",
+  "tiers rank DESIGN only; a tier-A study can be small, negative or irrelevant to PD",
+  "input sample is whatever retrieval supplied (stage 04 caps at 30, recency-ordered, TD-021)",
+  "direction is copied from curated annotations only; efficacy is never assessed"
+ ],
+ "diagnostics": []
+}

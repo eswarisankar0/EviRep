@@ -3,7 +3,7 @@ STEP 2: Optimized Network Proximity Analysis
 
 Input:
     data/hetionet_edges.csv
-    data/pd_candidates.csv
+    data/pd_candidates_filtered.csv   (from scripts/00_exclusion_filter.py)
 
 Output:
     data/network_proximity.csv
@@ -58,8 +58,14 @@ def load_data():
         "data/hetionet_edges.csv"
     )
 
+    # Reads the EXCLUSION-FILTERED candidate list (produced by
+    # scripts/00_exclusion_filter.py). Previously this read the unfiltered
+    # pd_candidates.csv, so ~39 nutrient/vitamin/amino-acid compounds were
+    # scored here and discarded later in step 06 -- wasted compute, and the
+    # summary counts below described the unfiltered pool. See TECHNICAL_DEBT
+    # TD-010.
     candidates = pd.read_csv(
-        "data/pd_candidates.csv"
+        "data/pd_candidates_filtered.csv"
     )
 
     return edges, candidates
@@ -309,6 +315,9 @@ def build_degree_bins(G):
             node
         )
 
+    for nodes in degree_bins.values():      # draw order independent of graph construction order
+        nodes.sort()
+
     return degree_bins
 
 
@@ -324,7 +333,9 @@ def generate_random_target_set(
 
     random_targets = []
 
-    for target in real_targets:
+    # sorted(): a set's iteration order depends on per-process string hashing (PYTHONHASHSEED), which made
+    # the seeded random draws, and so proximity_z, differ between runs (found 2026-10-19).
+    for target in sorted(real_targets):
 
         # Ignore targets outside PPI
         if target not in G:
@@ -713,5 +724,8 @@ def main():
 # ============================================================
 
 if __name__ == "__main__":
-
+    import argparse
+    # No options yet: parse anyway so --help or a stray argument exits before any
+    # work is done (TD-034; incident E-017 ran stages 05/06 via --help).
+    argparse.ArgumentParser(description=__doc__.strip().splitlines()[0] if __doc__ else None).parse_args()
     main()

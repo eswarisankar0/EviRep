@@ -267,12 +267,22 @@ def _md5(path):
 def run(root="."):
     j = lambda p: os.path.join(root, p)
     inputs, recs = [], {}
+    # git does not preserve mtimes, so keep the retrieval time already recorded for an unchanged file
+    prior = {}
+    if os.path.exists(j(OUT)):
+        try:
+            with open(j(OUT), encoding="utf-8") as fh:
+                prior = {i["path"]: i for i in json.load(fh).get("input_files", []) if i.get("retrieved_utc")}
+        except (OSError, ValueError, AttributeError, TypeError, KeyError):
+            prior = {}
     for rel in XML_FILES:
         if os.path.exists(j(rel)):
             with open(j(rel), "rb") as fh:
                 recs.update(parse_records(fh.read(), rel))
-            inputs.append({"path": rel, "md5": _md5(j(rel)), "retrieved_utc":
-                           datetime.fromtimestamp(os.path.getmtime(j(rel)), timezone.utc).isoformat(timespec="seconds")})
+            md5 = _md5(j(rel))
+            retrieved = (prior[rel]["retrieved_utc"] if prior.get(rel, {}).get("md5") == md5 else
+                         datetime.fromtimestamp(os.path.getmtime(j(rel)), timezone.utc).isoformat(timespec="seconds"))
+            inputs.append({"path": rel, "md5": md5, "retrieved_utc": retrieved})
     claims = []
     if os.path.exists(j(CURATED)):
         with open(j(CURATED), encoding="utf-8") as fh:

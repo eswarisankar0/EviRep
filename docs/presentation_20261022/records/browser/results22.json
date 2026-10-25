@@ -1,0 +1,155 @@
+[
+ {
+  "step": "1 overview: cohort 90 / 14 and AUROC shown",
+  "ok": true,
+  "detail": {
+   "len": 3553
+  }
+ },
+ {
+  "step": "1 overview: leakage caveat present",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "step": "2 candidates: 90 rows, '90 of 90 shown'",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "step": "3 search 'donep' -> Donepezil only",
+  "ok": true,
+  "detail": {
+   "rows": [
+    "1 Donepezil 0.773 Strong: literature independence, molecular"
+   ]
+  }
+ },
+ {
+  "step": "4 sort: header click changes aria-sort",
+  "ok": true,
+  "detail": {
+   "column": "Rank",
+   "before": "ascending",
+   "after": "descending"
+  }
+ },
+ {
+  "step": "5 filter 'new trial after 2020 = yes' -> 14 rows (the positives)",
+  "ok": true,
+  "detail": {
+   "rows": 14
+  }
+ },
+ {
+  "step": "6 clear filters -> 90 rows",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "step": "7 Donepezil page: score 0.773 and the five ranks",
+  "ok": true,
+  "detail": {
+   "missing": []
+  }
+ },
+ {
+  "step": "7 Donepezil page: rank 1 of 90 and not-efficacy statement",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "step": "8 evidence loads",
+  "ok": true,
+  "detail": {
+   "len": 22531
+  }
+ },
+ {
+  "step": "8 mechanism loads",
+  "ok": true,
+  "detail": {
+   "len": 4871
+  }
+ },
+ {
+  "step": "8 conflicts loads",
+  "ok": true,
+  "detail": {
+   "len": 24319
+  }
+ },
+ {
+  "step": "8 review loads",
+  "ok": true,
+  "detail": {
+   "len": 18897
+  }
+ },
+ {
+  "step": "9 validation: 0.775, 0.424 and CI 0.656 shown",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "step": "9 validation: TD-042 candidate marked not approved (0.699)",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "step": "10 Run Center: agents described as not changing the score",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "step": "11 protected stage 06 has no Run button",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "step": "10 live run of 10h recorded SUCCESS in the manifest",
+  "ok": true,
+  "detail": {
+   "run_id": "20261022T023521Z-10h-7b74",
+   "status": "SUCCESS"
+  }
+ },
+ {
+  "step": "10 stage row shows Run completed + the new run id without reload",
+  "ok": true,
+  "detail": {
+   "row": "10h Completeness & Gap Agent Run completed Run completed \u00b7 1 s \u00b7 log 20261022T023521Z-10h-7b74 2026-10-22T02:35:22+00:00 06 Recorded baseline (before run tracki",
+   "saw_running": false
+  }
+ },
+ {
+  "step": "10 run log served by the UI API with content",
+  "ok": true,
+  "detail": {
+   "tail_lines": 6,
+   "last_line": [
+    "  molecular: {'MEASURED': 64, 'ABSENT_AT_SOURCE': 16, 'MEASURED_ZERO': 10}"
+   ]
+  }
+ },
+ {
+  "step": "12 no JS exceptions, console errors or failed requests",
+  "ok": true,
+  "detail": {
+   "exceptions": 0,
+   "console": 0,
+   "failed": []
+  }
+ },
+ {
+  "step": "13 projector width 1280: no horizontal page scroll",
+  "ok": true,
+  "detail": {
+   "overview": 0,
+   "drugs": 0,
+   "drugs/Donepezil": 0,
+   "validation": 0,
+   "live": 0
+  }
+ }
+]

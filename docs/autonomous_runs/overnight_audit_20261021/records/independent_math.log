@@ -1,0 +1,84 @@
+{
+ "n": 90,
+ "positives": 14,
+ "negatives": 76,
+ "max_abs_diff_rank": 0.0,
+ "max_abs_diff_vps5": 2.220446049250313e-16,
+ "max_abs_diff_vps4": 1.1102230246251565e-16,
+ "all_ranks_finite_in_0_1": true,
+ "n_distinct_vps5": 90,
+ "neutral_safety": 7,
+ "neutral_molecular": 16,
+ "rank_ranges": {
+  "proximity": [
+   0.0,
+   0.9888888888888889
+  ],
+  "clinical": [
+   0.05555555555555555,
+   0.8777777777777778
+  ],
+  "literature": [
+   0.011111111111111112,
+   1.0
+  ],
+  "safety": [
+   0.0,
+   0.9036144578313253
+  ],
+  "molecular": [
+   0.07432432432432433,
+   0.9864864864864865
+  ]
+ },
+ "auroc5_mw": 0.775375939849624,
+ "auroc5_sklearn": 0.775375939849624,
+ "auroc5_report": 0.775375939849624,
+ "auroc4_mw": 0.700187969924812,
+ "auroc4_report": 0.7001879699248119,
+ "ap5_stepwise": 0.42431475742344144,
+ "ap5_sklearn": 0.4243147574234414,
+ "ap5_report": 0.4243147574234414,
+ "prevalence": 0.15555555555555556,
+ "auroc5_ci_recomputed": [
+  0.6559117720760205,
+  0.8809429295366794
+ ],
+ "auroc5_ci_report": [
+  0.6559117720760206,
+  0.8809429295366793
+ ],
+ "auroc5_boot_used": 2000,
+ "auroc5_boot_skipped": 0,
+ "ap5_ci_recomputed": [
+  0.22629135578499393,
+  0.6791546701153208
+ ],
+ "ap5_ci_report": [
+  0.22629135578499396,
+  0.6791546701153208
+ ],
+ "paired_recomputed": {
+  "diff": 0.07518796992481203,
+  "ci95": [
+   -0.024979854955680895,
+   0.1760644418872267
+  ],
+  "share_draws_above_0": 0.934,
+  "n_used": 2000,
+  "skipped": 0
+ },
+ "paired_report": {
+  "ci95": [
+   -0.024979854955680784,
+   0.17606444188722659
+  ],
+  "diff": 0.07518796992481214,
+  "matches_persisted_ci_file": true,
+  "p_diff_gt_0": 0.935,
+  "rerun_identical": true,
+  "significant": false
+ },
+ "auroc5_midrank_convention": 0.7744360902255639,
+ "rank_order_identical_legacy_vs_midrank": false
+}

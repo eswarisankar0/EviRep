@@ -1,0 +1,8 @@
+start 2026-10-20T11:05:00Z
+unittest exit 0
+status exit 0
+check-manifest exit 0
+vps_verify exit 0
+ground-truth contract exit 0
+diff-check exit 0
+end 2026-10-20T11:05:52Z

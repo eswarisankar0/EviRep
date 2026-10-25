@@ -1,0 +1,41 @@
+{
+ "run": {
+  "chars": 7104,
+  "raw_codes": 0,
+  "stage_ids": 23,
+  "file_paths": 2,
+  "nav_buttons": 5,
+  "headings": 9,
+  "charts": 4,
+  "overflow": -15,
+  "title": "EviRep \u00b7 Run Center \u00b7 Pipeline health",
+  "render_s": 0.26,
+  "screenshot": "before_desktop_run.png"
+ },
+ "validation": {
+  "chars": 10733,
+  "raw_codes": 0,
+  "stage_ids": 0,
+  "file_paths": 0,
+  "nav_buttons": 5,
+  "headings": 28,
+  "charts": 9,
+  "overflow": -15,
+  "title": "EviRep \u00b7 Validation",
+  "render_s": 0.26,
+  "screenshot": "before_desktop_validation.png"
+ },
+ "live": {
+  "chars": 10923,
+  "raw_codes": 0,
+  "stage_ids": 60,
+  "file_paths": 1,
+  "nav_buttons": 5,
+  "headings": 3,
+  "charts": 2,
+  "overflow": -15,
+  "title": "EviRep \u00b7 Run Center \u00b7 Stages and runs",
+  "render_s": 0.26,
+  "screenshot": "before_desktop_live.png"
+ }
+}

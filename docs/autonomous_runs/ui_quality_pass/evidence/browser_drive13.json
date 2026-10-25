@@ -1,0 +1,87 @@
+[
+ {
+  "check": "launch from the agent page -> RUNNING shown with elapsed time and the real log line, no refresh",
+  "result": "PASS",
+  "browser_action": "click 'Run 10h' on #agent/10h",
+  "detail": {
+   "run_id": "20261020T125416Z-10h-6b8d",
+   "runner": 87889,
+   "child": 87890
+  },
+  "real_process": true
+ },
+ {
+  "check": "while running, the stage has really overwritten its output (partial write)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "partial": true
+  },
+  "real_process": true
+ },
+ {
+  "check": "timeout fires (~20 s): agent page shows FAILED and the TIMEOUT line from the real log, without refresh",
+  "result": "PASS",
+  "browser_action": "wait on #agent/10h",
+  "detail": {
+   "seconds_to_failed_in_ui": 21.7,
+   "exit_code": -9
+  },
+  "real_process": true
+ },
+ {
+  "check": "previous valid output restored byte-identical",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "md5": "3997eacf0d8adc907da4e819fe65f97f"
+  },
+  "real_process": true
+ },
+ {
+  "check": "only the stage's own child was killed: child and runner gone; unrelated sentinel and the server still alive",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "child_state": "gone",
+   "runner_state": "gone (reaped)",
+   "sentinel_alive": true
+  },
+  "real_process": true
+ },
+ {
+  "check": "no orphaned stage process and no RUNNING record remain",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "status": "FAILED",
+   "orphans": []
+  },
+  "real_process": true
+ },
+ {
+  "check": "Dashboard reports the failure (hero, failed counter, 10h card) after timeout",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "hero": "A run failed"
+  },
+  "real_process": true
+ },
+ {
+  "check": "recovery: next run (hang removed) succeeds and the page shows it",
+  "result": "PASS",
+  "browser_action": "click 'Run 10h' again",
+  "detail": {},
+  "real_process": true
+ },
+ {
+  "check": "no JS exceptions during the lifecycle",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "n": 0
+  },
+  "real_process": true
+ }
+]

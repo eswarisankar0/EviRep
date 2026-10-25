@@ -1,0 +1,10 @@
+PASS launch from the agent page -> RUNNING shown with elapsed time and the real log line, no refresh :: {"run_id": "20261021T173458Z-10h-d23b", "runner": 36022, "child": 36023}
+PASS while running, the stage has really overwritten its output (partial write) :: {"partial": true}
+PASS timeout fires (~20 s): agent page shows FAILED and the TIMEOUT line from the real log, without refresh :: {"seconds_to_failed_in_ui": 21.7, "exit_code": -9}
+PASS previous valid output restored byte-identical :: {"md5": "e504e45020255d98e92ec83fb0a095cb"}
+PASS only the stage's own child was killed: child and runner gone; unrelated sentinel and the server still alive :: {"child_state": "gone", "runner_state": "gone (reaped)", "sentinel_alive": true}
+PASS no orphaned stage process and no RUNNING record remain :: {"status": "FAILED", "orphans": []}
+PASS Dashboard reports the failure (hero, failed counter, 10h card) after timeout :: {"hero": "Last run failed; previous results retained"}
+PASS recovery: next run (hang removed) succeeds and the page shows it :: {}
+PASS no JS exceptions during the lifecycle :: {"n": 0}
+SUMMARY 9 / 9

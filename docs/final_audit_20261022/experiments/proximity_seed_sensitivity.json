@@ -1,0 +1,43 @@
+{
+ "approved": {
+  "auroc_5d": 0.7754,
+  "auroc_4d": 0.7002,
+  "proximity_alone": 0.578
+ },
+ "current_code_n100_s42": {
+  "auroc_5d": 0.7763,
+  "auroc_4d": 0.7049,
+  "proximity_alone": 0.5846,
+  "spearman_z_vs_approved": 0.991
+ },
+ "n100_s1": {
+  "auroc_5d": 0.7716,
+  "auroc_4d": 0.6955,
+  "proximity_alone": 0.5658,
+  "spearman_z_vs_approved": 0.9878
+ },
+ "n100_s2": {
+  "auroc_5d": 0.7829,
+  "auroc_4d": 0.7039,
+  "proximity_alone": 0.5949,
+  "spearman_z_vs_approved": 0.9909
+ },
+ "n100_s3": {
+  "auroc_5d": 0.7688,
+  "auroc_4d": 0.6927,
+  "proximity_alone": 0.5555,
+  "spearman_z_vs_approved": 0.9903
+ },
+ "n1000_s42": {
+  "auroc_5d": 0.7754,
+  "auroc_4d": 0.6955,
+  "proximity_alone": 0.5742,
+  "spearman_z_vs_approved": 0.9951
+ },
+ "n1000_s7": {
+  "auroc_5d": 0.7763,
+  "auroc_4d": 0.6964,
+  "proximity_alone": 0.5761,
+  "spearman_z_vs_approved": 0.9937
+ }
+}

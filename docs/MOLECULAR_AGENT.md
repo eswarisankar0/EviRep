@@ -11,7 +11,7 @@ DRUG ──▶ TARGET ──▶ GENE ──▶ PATHWAY ──▶ PARKINSON'S DIS
 |---|---|
 | Library | `scripts/molecular_agent.py` |
 | Pipeline stage | `scripts/08_molecular_pathway.py` |
-| Tests | `tests/test_molecular_agent.py` (69), `tests/test_vps_integration.py` (24) |
+| Tests | `tests/test_molecular_agent.py` (69), `tests/test_vps_integration.py` (30), `tests/test_molecular_vps_audit.py` (12) — counts as of 2026-10-12 |
 | Data source | Open Targets Platform GraphQL API — **no authentication required** |
 | Outputs | `data/molecular_pathway.csv`, `data/molecular_pathway_evidence.jsonl` |
 
@@ -146,7 +146,14 @@ score = 0.6 x direct(0.4373) + 0.4 x pathway(2/6 = 0.3333) = 0.3957
 | | score 0.0 | score > 0 |
 |---|---|---|
 | **confidence 0.0** | could not look (unresolved drug / API down) | impossible |
-| **confidence > 0** | looked, found no link | link found |
+| **confidence 0.5** (resolved, no ChEMBL target) | evidence ABSENT — nothing to test | impossible |
+| **confidence 1.0** | looked, found no link | link found |
+
+> Correction 2026-10-12: the table previously grouped every `confidence > 0` row as
+> "looked, found no link". On the real cohort, the 16 compounds with no ChEMBL mechanism
+> target have confidence 0.5 and score 0.0, which the agent itself labels "evidence absent".
+> Stage 06 nevertheless fuses them as a measured 0.0 — see TECHNICAL_DEBT TD-024.
+> `confidence` is an evidence-availability measure; it is **not** a probability of efficacy.
 
 Collapsing these would turn "we don't know" into "we know it's not plausible".
 `confidence` is the fraction of four availability checks that passed: drug resolved, has
@@ -253,10 +260,11 @@ computed exactly as before; the 5-dimension variants are *additional* columns
 If `data/molecular_pathway.csv` is absent, step 06 prints a notice and runs the original
 4-dimension analysis — the pipeline stays backwards compatible.
 
-**Imputation.** A 0.0 produced by the agent is a real measurement and is left alone. Only
-compounds *absent* from `molecular_pathway.csv` are NaN, and those are median-imputed to
-match the convention the other four dimensions already use. The imputed count is printed,
-not hidden.
+**Missing values (D-004, superseding the earlier note).** A compound with no ChEMBL mechanism
+target (`n_targets == 0`) has no molecular evidence: it is treated as missing and given the
+neutral rank 0.5, flagged in `dimensions_missing` (16 of 90). A 0.0 for a compound *with*
+targets is a real measurement and is ranked. A compound absent from `molecular_pathway.csv`
+would be median-imputed (none are).
 
 ---
 

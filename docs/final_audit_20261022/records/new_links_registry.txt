@@ -1,0 +1,12 @@
+== NCT04332276 Dopaminergic restauratIon by intraVEntriculaire Administration | 2020-04-02 | ['PHASE1', 'PHASE2'] | TREATMENT | ['Parkinson Disease']
+  ARM EXPERIMENTAL | Cerebroventricular administration of A- dopamine | Cerebroventricular administration of dopamine prepared and stored in anaerobia
+  ARM ACTIVE_COMPARATOR | Optimized oral dopaminergic treatment | Optimized oral dopaminergic treatment with L-dopa (at least 5 doses a day) with dopaminergic agonist, monoamine B inhibitor and catechol-o-methyl inhi
+  INT DRUG | A-dopamine | None | During the phase 1 (titration), it is planned to increase dopamine by maximum 0.25 mg per hour over the daytime period, which corresponds to a maximum
+  INT DRUG | optimized oral treatment | None | The patient will received his usual dopaminergic treatment.
+== NCT07214285 Evaluation of Long-term Safety in Parkinsonian Patients With Intracerebroventricular Administration of A-dopamine (Anaerobic Dopamine) | 2025-10-09 | ['PHASE1', 'PHASE2'] | TREATMENT | ['Parkinson Disease']
+  ARM EXPERIMENTAL | A-DOPAMINE | 
+  INT DRUG | A-DOPAMINE | None | Intracerebral infusion of anaerobic dopamine.
+  INT DEVICE | A-DOPAMINE | None | Intracerebral infusion of anaerobic dopamine with pump device.
+== NCT04193527 A Study to Evaluate the Diagnostic Efficacy of DaTSCAN™ Ioflupane (123I) Injection in Single Photon Emission Computed Tomography (SPECT) for the Diagnosis of Parkinsonian Syndrome (PS) in Chinese Patients | 2019-12-10 | ['PHASE3'] | DIAGNOSTIC | ['Parkinsonian Syndrome', 'Parkinson Disease(PD)', 'Multiple System Atrophy (MSA)']
+  ARM EXPERIMENTAL | DaTSCAN™ ioflupane (123I) injection | Participants with Parkinsonian Syndrome (PS), Essential Tremor (ET), and Healthy Volunteers (HV) received a single dose of DaTSCAN™ ioflupane (123I) i
+  INT DRUG | DaTSCAN™ Ioflupane (123I) Injection | ['Ioflupane (123I)'] | All participants (Participants with PS, ET, and HV) received a single dose of DaTSCAN™ ioflupane (123I) injection within the range of 111 to 185 megab

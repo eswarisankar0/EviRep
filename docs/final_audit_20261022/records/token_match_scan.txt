@@ -1,0 +1,76 @@
+== clinical_maturity_precutoff_clean: 47 token matches of 195
+                Citalopram             NCT04497168 PHASE2        | Citalopram 20mg
+                Moxifloxacin           NCT00292227 PHASE1        | Moxifloxacin infusion
+                Topiramate             NCT00296959 PHASE2        | topiramate (drug)
+                Lidocaine              NCT02236260               | Local Anesthesia (lidocaine hydrochloride)
+                Ipratropium bromide    NCT00296946 PHASE2        | ipratropium bromide (drug)
+                Omeprazole             NCT00664209 PHASE3        | clartihromycin, amoxicillin, and omeprazole
+                Methylphenidate        NCT00526630 PHASE4        | Methylphenidate (MPD)
+                Zolpidem               NCT01351168 PHASE2        | Zolpidem first dose
+                Duloxetine             NCT00437125 PHASE4        | Duloxetine hydrochloride
+                Nabilone               NCT03773796 PHASE3        | Nabilone 0.25 mg
+                Nabilone               NCT03769896 PHASE2        | Nabilone 0.25 mg
+                Darifenacin            NCT00892450               | Oxybutynin and darifenacin
+                Oxycodone              NCT01439100 PHASE3        | Oxycodone/Naloxone Prolonged Release tablets
+                Dextromethorphan       NCT01767129 PHASE2        | AVP-923-45
+                Pyridostigmine         NCT01993680 PHASE2        | Pyridostigmine bromide
+                Lisuride               NCT00605683 PHASE3        | Safinamide (as add-on therapy)
+                Lisuride               NCT00408915 PHASE3        | Continuous Subcutaneous Lisuride Infusion
+  CLASS-PHRASE? Lisuride               NCT00089622 PHASE2        | Lisuride Transdermal System
+                Dexmedetomidine        NCT00608231 PHASE2        | Dexmedetomidine Hydrochloride Infusion
+                Trimethobenzamide      NCT02373072 PHASE1        | Trimethobenzamide Hydrochloride
+                Tropicamide            NCT00761137 PHASE2        | 0.3 mg tropicamide
+                Donepezil              NCT01327859 PHASE3        | Prior Donepezil 5mg
+                Bumetanide             NCT03899324 PHASE2        | Bumetanide white, oblong, scored tablet
+                Ondansetron            NCT04167813 PHASE2        | Ondansetron 8mg or matched placebo tablets
+                Quinidine              NCT01767129 PHASE2        | AVP-923-45
+                Zonisamide             NCT04182399               | Zonisamide Capsules
+                Amoxicillin            NCT00664209 PHASE3        | clartihromycin, amoxicillin, and omeprazole
+                Oxybutynin             NCT00892450               | Oxybutynin and darifenacin
+                Melatonin              NCT03258294 PHASE4        | Melatonin(Circadin®)
+                Melatonin              NCT02768077 PHASE4        | Melatonin(Circadin®)
+                Doxepin                NCT01489982 EARLY_PHASE1  | Doxepin and Zopiclone
+                Terazosin              NCT03905811 PHASE1        | Terazosin 5 MG
+                Escitalopram           NCT00070941 PHASE2        | oral escitalopram
+                Naloxone               NCT01439100 PHASE3        | Oxycodone/Naloxone Prolonged Release tablets
+                Domperidone            NCT00006077 PHASE2        | Levodopa and Domperidone
+                Domperidone            NCT00305331 PHASE2        | Domperidone (drug)
+                Zopiclone              NCT01489982 EARLY_PHASE1  | Doxepin and Zopiclone
+                Flumazenil             NCT03440112 PHASE1        | Transdermal flumazenil (Added 4/2020)
+                Rifaximin              NCT03958708 PHASE1        | Rifaximin 550 MG
+                Yohimbine              NCT04346394 EARLY_PHASE1  | Yohimbine HCl
+                Solifenacin            NCT00584090 PHASE4        | Solifenacin Succinate (VESIcare)
+                Solifenacin            NCT01018264 PHASE4        | solifenacin succinate (VESIcare)
+                Nilotinib              NCT02954978 PHASE2        | Nilotinib 150mg oral capsule [Tasigna]
+                Nilotinib              NCT03205488 PHASE2        | Cohort 1:Nilotinib Oral Capsules (150mg or 300mg)
+                Acetylcysteine         NCT02212678 PHASE2        | N-acetylcysteine capsule
+                Droxidopa              NCT04510922 PHASE4        | Droxidopa 100 MG [Northera]
+                Agomelatine            NCT03977441 PHASE4        | Agomelatine or PIacebo
+== ground_truth_postcutoff_clean: 27 token matches of 57
+                Lidocaine              NCT06319625               | Lidocaine hydrochloride
+                Lidocaine              NCT06370195               | Lidocaine hydrochloride
+                Metformin              NCT07806019 PHASE4        | Metformin 500mg
+                Mirtazapine            NCT06530290 PHASE2        | Mirtazapine 15 MG
+                Celecoxib              NCT05962957 PHASE2        | Celecoxib 200mg
+                Celecoxib              NCT07246278 PHASE1        | Celecoxib 200mg
+                Pyridostigmine         NCT05603715 PHASE2        | Pyridostigmine Bromide
+                Galantamine            NCT07284290 PHASE4        | Galantamine HBr extended-release 8mg capsules (8mg ER).
+                Pentoxifylline         NCT05962957 PHASE2        | Pentoxifylline 400 MG
+                Menthol                NCT07294469 PHASE2        | Menthol gloves and socks
+                Donepezil              NCT05709301 PHASE2        | Donepezil Hydrochloride
+                Donepezil              NCT06903910 PHASE2        | Donepezil (Aricept)
+                Remifentanil           NCT06658132               | 0.5~1ug/kg/min remifentanil combined with 0.2~0.5mg/kg/h esketamine for the physiological 
+                Melatonin              NCT07375693 PHASE2        | MELATONIN (MELATL07959)
+                Terazosin              NCT05109364 PHASE2        | Terazosin therapy
+                Terazosin              NCT07464028 PHASE2        | Terazosin 5 MG
+                Terazosin              NCT07288450 PHASE1        | Terazosin Hydrochloride
+                Terazosin              NCT07207057 PHASE3        | Terazosin (Hytrin)
+                Nadolol                NCT04739423 PHASE2        | clenbuterol (CST-103), nadolol (CST-107), matching placebo
+                Rifaximin              NCT04730245 PHASE1        | sodium phosphate enema, oral rifaximin and polyethylene glycol
+                Ketamine               NCT04944017 PHASE2        | Ketamine Infusion
+                Ketamine               NCT06021756 PHASE1        | Intervention: Ketamine
+                Ketamine               NCT06402955 PHASE2        | ketamine hydrochloride
+                Clenbuterol            NCT04739423 PHASE2        | clenbuterol (CST-103), nadolol (CST-107), matching placebo
+                Hydroxychloroquine     NCT06816810 PHASE2        | Hydroxychloroquine (HCQ)
+                Vildagliptin           NCT06951334               | Vildagliptin 50 mg bid
+                Acetylcysteine         NCT07093944 PHASE2        | N-Acetylcysteine (NAC) Treatment

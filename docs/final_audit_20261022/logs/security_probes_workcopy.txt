@@ -1,0 +1,15 @@
+probes 2026-10-22T16:22:26Z work-copy code on :8799
+traversal /../ui/server.py           404
+GET /.env                            404
+log run_id traversal                 404
+foreign Host                         403
+POST no nonce                        403
+POST cross-origin                    403
+protected 06                         403
+protected 03                         403
+network 05h unconfirmed              428
+injection                            400
+malformed JSON                       400
+wrong content type                   415
+history unchanged: yes
+probe server stopped

@@ -1,0 +1,25 @@
+   01 ADOPTED    last success adopted-20261015T015501Z-01              
+   00 ADOPTED    last success adopted-20261015T015501Z-00              
+   02 ADOPTED    last success adopted-20261015T015501Z-02              
+   03 ADOPTED    last success adopted-20261015T015501Z-03              
+  03c ADOPTED    last success adopted-20261015T015501Z-03c             
+   04 ADOPTED    last success adopted-20261015T015501Z-04              
+   05 ADOPTED    last success adopted-20261015T015501Z-05              
+   08 ADOPTED    last success adopted-20261015T015501Z-08              
+   06 ADOPTED    last success adopted-20261015T015501Z-06              
+  04b ADOPTED    last success adopted-20261015T015502Z-04b             
+  05h SUCCESS    last success 20261020T073153Z-05h-1fbd                
+  04p SUCCESS    last success 20261019T124053Z-04p-67c4                
+   07 SUCCESS    last success 20261020T074840Z-07-f35d                 
+ diag ADOPTED    last success adopted-20261015T015502Z-diag            
+  10d SUCCESS    last success 20261020T080154Z-10d-544d                
+  10e SUCCESS    last success 20261020T080154Z-10e-df54                
+ eval ADOPTED    last success adopted-20261015T015502Z-eval            
+  10b SUCCESS    last success 20261020T091813Z-10b-7806                
+  10c SUCCESS    last success 20261020T080153Z-10c-1c4c                
+  10f SUCCESS    last success 20261019T170230Z-10f-ad2e                
+  10g SUCCESS    last success 20261020T080202Z-10g-f87d                
+  10a SUCCESS    last success 20261020T080108Z-10a-f3ce                
+10a-all SUCCESS    last success 20261019T124258Z-10a-all-72df            
+review SUCCESS    last success 20261020T075254Z-review-9af8             
+  10h SUCCESS    last success 20261020T145548Z-10h-4c74                

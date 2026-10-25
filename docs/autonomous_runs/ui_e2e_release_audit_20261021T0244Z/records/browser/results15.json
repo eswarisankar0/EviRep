@@ -1,0 +1,222 @@
+[
+ {
+  "check": "all 13 routes render without error",
+  "result": "PASS",
+  "browser_action": "visit each route",
+  "detail": {}
+ },
+ {
+  "check": "no raw MACHINE_CODE badges on any route (codes kept in tooltips)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {}
+ },
+ {
+  "check": "hero headline is derived from the tracker state (no blanket claim)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "hero": "Current against recorded inputs, with unverifiable inputs",
+   "state": "VERIFIED_WITH_GAPS"
+  }
+ },
+ {
+  "check": "last successful run time shown equals the tracker's",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "last": "2026-10-20T18:44:42+00:00"
+  }
+ },
+ {
+  "check": "dependency graph: one node per stage and one arrow per dependency",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "nodes": 25,
+   "edges": 49,
+   "expected": [
+    25,
+    49
+   ]
+  }
+ },
+ {
+  "check": "dashboard AUROC equals the approved report (0.775)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "shown": "0.775"
+  }
+ },
+ {
+  "check": "source data table lists every recorded source, unrecorded times shown as 'not recorded'",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "rows": 6
+  }
+ },
+ {
+  "check": "header shows the last successful refresh time",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {}
+ },
+ {
+  "check": "ROC and PR curves drawn (areas reproduce the approved report)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "auroc": 0.775375939849624
+  }
+ },
+ {
+  "check": "ROC polyline has one vertex per distinct threshold (+origin)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "vertices": 91,
+   "api": 91
+  }
+ },
+ {
+  "check": "missing-data chart equals the report (7 safety, 16 molecular, 2 proximity imputed)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "values": [
+    "2 median-imputed",
+    "complete",
+    "complete",
+    "7 not measured",
+    "16 not measured"
+   ]
+  }
+ },
+ {
+  "check": "paired 5D-4D interval chart shows the zero reference and says the interval includes zero",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {}
+ },
+ {
+  "check": "ranking chart's first bar is the rank-1 compound with its persisted score",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "first": "Donepezil"
+  }
+ },
+ {
+  "check": "clicking a bar opens that candidate",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "hash": "#drugs/Quetiapine"
+  }
+ },
+ {
+  "check": "keyboard: Enter on a focused bar opens the candidate",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {}
+ },
+ {
+  "check": "candidate search filters the list",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "items": [
+    "Donepezil",
+    "Domperidone",
+    "Oxycodone"
+   ]
+  }
+ },
+ {
+  "check": "ranking table sorts when a header is clicked",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "before": [
+    "Donepezil",
+    "Zonisamide",
+    "Quetiapine"
+   ],
+   "after": [
+    "Acamprosate",
+    "Acetaminophen",
+    "Acetylcysteine"
+   ]
+  }
+ },
+ {
+  "check": "compare: add and remove candidates; grouped chart drawn for the selection",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "hash": "#compare/Melatonin,Zonisamide"
+  }
+ },
+ {
+  "check": "evidence: 100 rows, 'Show 100 more', source-file toggle and compound filter all work",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "rows": [
+    100,
+    200
+   ],
+   "cols_with_source": 9
+  }
+ },
+ {
+  "check": "mechanism chain draws one node per target (max 10) from the saved record",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "targets": 1,
+   "record": 1
+  }
+ },
+ {
+  "check": "review queue: counts equal the artefact; search and reason filter narrow the list",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "all": "28 of 28 shown",
+   "alias": "2 of 28 shown"
+  }
+ },
+ {
+  "check": "back returns to the previous view",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {}
+ },
+ {
+  "check": "390px: no horizontal page overflow on 7 views (wide charts scroll inside their box)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "dashboard": 0,
+   "live": 0,
+   "drugs": 0,
+   "validation": 0,
+   "mechanism/Donepezil": 0,
+   "review": 0,
+   "compare": 0
+  }
+ },
+ {
+  "check": "no JS exceptions, console errors or failed requests",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "exceptions": 0,
+   "console": 0,
+   "failed": []
+  }
+ }
+]

@@ -1,0 +1,25 @@
+PASS all 13 routes render without error :: {}
+PASS no raw MACHINE_CODE badges on any route (codes kept in tooltips) :: {}
+PASS hero headline is derived from the tracker state (no blanket claim) :: {"hero": "Current against recorded inputs, with unverifiable inputs", "state": "VERIFIED_WITH_GAPS"}
+PASS last successful run time shown equals the tracker's :: {"last": "2026-10-21T17:19:43+00:00"}
+PASS dependency graph: one node per stage and one arrow per dependency :: {"nodes": 25, "edges": 49, "expected": [25, 49]}
+PASS dashboard AUROC equals the approved report (0.775) :: {"shown": "0.775"}
+PASS source data table lists every recorded source, unrecorded times shown as 'not recorded' :: {"rows": 6}
+PASS header shows the last successful refresh time :: {}
+PASS ROC and PR curves drawn (areas reproduce the approved report) :: {"auroc": 0.775375939849624}
+PASS ROC polyline has one vertex per distinct threshold (+origin) :: {"vertices": 91, "api": 91}
+PASS missing-data chart equals the report (7 safety, 16 molecular, 2 proximity imputed) :: {"values": ["2 median-imputed", "complete", "complete", "7 not measured", "16 not measured"]}
+PASS paired 5D-4D interval chart shows the zero reference and says the interval includes zero :: {}
+PASS ranking chart's first bar is the rank-1 compound with its persisted score :: {"first": "Donepezil"}
+PASS clicking a bar opens that candidate :: {"hash": "#drugs/Quetiapine"}
+PASS keyboard: Enter on a focused bar opens the candidate :: {}
+PASS candidate search filters the list :: {"items": ["Donepezil", "Domperidone", "Oxycodone"]}
+PASS ranking table sorts when a header is clicked :: {"before": ["Donepezil", "Zonisamide", "Quetiapine"], "after": ["Acamprosate", "Acetaminophen", "Acetylcysteine"]}
+PASS compare: add and remove candidates; grouped chart drawn for the selection :: {"hash": "#compare/Melatonin,Zonisamide"}
+PASS evidence: 100 rows, 'Show 100 more', source-file toggle and compound filter all work :: {"rows": [100, 200], "cols_with_source": 9}
+PASS mechanism chain draws one node per target (max 10) from the saved record :: {"targets": 1, "record": 1}
+PASS review queue: counts equal the artefact; search and reason filter narrow the list :: {"all": "28 of 28 shown", "alias": "2 of 28 shown"}
+PASS back returns to the previous view :: {}
+PASS 390px: no horizontal page overflow on 7 views (wide charts scroll inside their box) :: {"dashboard": 0, "live": 0, "drugs": 0, "validation": 0, "mechanism/Donepezil": 0, "review": 0, "compare": 0}
+PASS no JS exceptions, console errors or failed requests :: {"exceptions": 0, "console": 0, "failed": []}
+SUMMARY 24 / 24

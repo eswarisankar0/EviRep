@@ -1,0 +1,721 @@
+{
+ "retrieved_utc": "2026-10-20T17:18:52Z",
+ "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+ "snapshot": "2026-10-05",
+ "alias_report": {
+  "resolved": 101,
+  "total": 101,
+  "source": "ChEMBL via OpenTargets",
+  "api_requests": 5,
+  "cache_hits": 1
+ },
+ "summary": [
+  {
+   "compound": "Acamprosate",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Acetaminophen",
+   "ok": true,
+   "total_hits": 12,
+   "pages": 1,
+   "returned": 12
+  },
+  {
+   "compound": "Acetylcysteine",
+   "ok": true,
+   "total_hits": 10,
+   "pages": 1,
+   "returned": 10
+  },
+  {
+   "compound": "Agomelatine",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Amoxicillin",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Aripiprazole",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Atomoxetine",
+   "ok": true,
+   "total_hits": 7,
+   "pages": 1,
+   "returned": 7
+  },
+  {
+   "compound": "Bumetanide",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Buspirone",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Carvedilol",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Ceftriaxone",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Citalopram",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Clarithromycin",
+   "ok": true,
+   "total_hits": 5,
+   "pages": 1,
+   "returned": 5
+  },
+  {
+   "compound": "Clonidine",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Clozapine",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Conjugated Estrogens",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Darifenacin",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Deferiprone",
+   "ok": true,
+   "total_hits": 5,
+   "pages": 1,
+   "returned": 5
+  },
+  {
+   "compound": "Dexmedetomidine",
+   "ok": true,
+   "total_hits": 7,
+   "pages": 1,
+   "returned": 7
+  },
+  {
+   "compound": "Dextromethorphan",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Domperidone",
+   "ok": true,
+   "total_hits": 7,
+   "pages": 1,
+   "returned": 7
+  },
+  {
+   "compound": "Donepezil",
+   "ok": true,
+   "total_hits": 18,
+   "pages": 1,
+   "returned": 18
+  },
+  {
+   "compound": "Doxepin",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Droxidopa",
+   "ok": true,
+   "total_hits": 15,
+   "pages": 1,
+   "returned": 15
+  },
+  {
+   "compound": "Duloxetine",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Erythromycin",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Escitalopram",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Eszopiclone",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Fesoterodine",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Flumazenil",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Galantamine",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Glycerol Phenylbutyrate",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Glycopyrrolate",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Hydrocortisone",
+   "ok": true,
+   "total_hits": 8,
+   "pages": 1,
+   "returned": 8
+  },
+  {
+   "compound": "Ioflupane I 123",
+   "ok": true,
+   "total_hits": 27,
+   "pages": 1,
+   "returned": 27
+  },
+  {
+   "compound": "Ipratropium bromide",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Isoflurane",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Isradipine",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Levetiracetam",
+   "ok": true,
+   "total_hits": 8,
+   "pages": 1,
+   "returned": 8
+  },
+  {
+   "compound": "Lidocaine",
+   "ok": true,
+   "total_hits": 8,
+   "pages": 1,
+   "returned": 8
+  },
+  {
+   "compound": "Lisuride",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Lithium",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Lovastatin",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Lubiprostone",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Melatonin",
+   "ok": true,
+   "total_hits": 7,
+   "pages": 1,
+   "returned": 7
+  },
+  {
+   "compound": "Methylphenidate",
+   "ok": true,
+   "total_hits": 7,
+   "pages": 1,
+   "returned": 7
+  },
+  {
+   "compound": "Methylprednisolone",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Midazolam",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Midodrine",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Minocycline",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Mirabegron",
+   "ok": true,
+   "total_hits": 5,
+   "pages": 1,
+   "returned": 5
+  },
+  {
+   "compound": "Moxifloxacin",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Nabilone",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Naloxone",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Naltrexone",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Nilotinib",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Nortriptyline",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Omeprazole",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Ondansetron",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Oxybutynin",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Oxycodone",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Paroxetine",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Pioglitazone",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Propofol",
+   "ok": true,
+   "total_hits": 9,
+   "pages": 1,
+   "returned": 9
+  },
+  {
+   "compound": "Pyridostigmine",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Quetiapine",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Quinidine",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Remifentanil",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Repaglinide",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Rifampicin",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Rifaximin",
+   "ok": true,
+   "total_hits": 6,
+   "pages": 1,
+   "returned": 6
+  },
+  {
+   "compound": "Rosuvastatin",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Sertraline",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Sildenafil",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Simvastatin",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Sirolimus",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Solifenacin",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Tadalafil",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Terazosin",
+   "ok": true,
+   "total_hits": 7,
+   "pages": 1,
+   "returned": 7
+  },
+  {
+   "compound": "Topiramate",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Trimethobenzamide",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Tropicamide",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Ursodeoxycholic acid",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Varenicline",
+   "ok": true,
+   "total_hits": 5,
+   "pages": 1,
+   "returned": 5
+  },
+  {
+   "compound": "Venlafaxine",
+   "ok": true,
+   "total_hits": 1,
+   "pages": 1,
+   "returned": 1
+  },
+  {
+   "compound": "Warfarin",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Yohimbine",
+   "ok": true,
+   "total_hits": 4,
+   "pages": 1,
+   "returned": 4
+  },
+  {
+   "compound": "Zolpidem",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Zonisamide",
+   "ok": true,
+   "total_hits": 3,
+   "pages": 1,
+   "returned": 3
+  },
+  {
+   "compound": "Zopiclone",
+   "ok": true,
+   "total_hits": 2,
+   "pages": 1,
+   "returned": 2
+  },
+  {
+   "compound": "Benzocaine",
+   "ok": true,
+   "total_hits": 65,
+   "pages": 1,
+   "returned": 65
+  },
+  {
+   "compound": "Carboplatin",
+   "ok": true,
+   "total_hits": 49,
+   "pages": 1,
+   "returned": 49
+  },
+  {
+   "compound": "Cisplatin",
+   "ok": true,
+   "total_hits": 55,
+   "pages": 1,
+   "returned": 55
+  },
+  {
+   "compound": "Docetaxel",
+   "ok": true,
+   "total_hits": 25,
+   "pages": 1,
+   "returned": 25
+  },
+  {
+   "compound": "Dopamine",
+   "ok": true,
+   "total_hits": 280,
+   "pages": 3,
+   "returned": 280
+  },
+  {
+   "compound": "Fluorouracil",
+   "ok": true,
+   "total_hits": 29,
+   "pages": 1,
+   "returned": 29
+  },
+  {
+   "compound": "Methyldopa",
+   "ok": true,
+   "total_hits": 37,
+   "pages": 1,
+   "returned": 37
+  },
+  {
+   "compound": "Norepinephrine",
+   "ok": true,
+   "total_hits": 25,
+   "pages": 1,
+   "returned": 25
+  },
+  {
+   "compound": "Paclitaxel",
+   "ok": true,
+   "total_hits": 51,
+   "pages": 1,
+   "returned": 51
+  },
+  {
+   "compound": "Pemetrexed",
+   "ok": true,
+   "total_hits": 21,
+   "pages": 1,
+   "returned": 21
+  },
+  {
+   "compound": "Phenol",
+   "ok": true,
+   "total_hits": 137,
+   "pages": 2,
+   "returned": 137
+  }
+ ]
+}

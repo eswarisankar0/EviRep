@@ -1,0 +1,120 @@
+................................................................................................................................................................................................................................................................FAILED: no compound retrieved ([{'compound_name': 'Alpha', 'error': 'esearch.fcgi: HTTP 500 after 4 attempt(s)'}, {'compound_name': 'Beta', 'error': 'esearch.fcgi: HTTP 500 after 4 attempt(s)'}, {'compound_name': 'Gamma', 'error': 'esearch.fcgi: HTTP 500 after 4 attempt(s)'}]); nothing written
+...............[evirep-ui] launch 20261022T154706Z-ui-3b368e: scripts/run_stage.py 10h
+.[evirep-ui] launch 20261022T154710Z-ui-65afdf: scripts/run_stage.py 10h
+......[evirep-ui] launch 20261022T154712Z-ui-43374b: scripts/run_stage.py 10h
+.....[evirep-ui] launch 20261022T154715Z-ui-bc0679: scripts/run_stage.py 10h
+...................................................................................................................................stage A not started: conflicting run(s) in progress: A (live-A, pid 50053)
+.......data/run_manifest.json unreadable (JSONDecodeError); nothing was run or written. Diagnose with --check-manifest; restore the file from a recovery snapshot or data/_runs history (it is never overwritten automatically).
+..............................................................................alt1: approved 5D 1.0000, candidate 5D 1.0000, 4D 1.0000
+alt1: approved 5D 1.0000, candidate 5D 1.0000, 4D 1.0000
+{
+ "n_files": 4,
+ "bytes": 16,
+ "dest": "/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/evirep_bk_dest_dop799vp",
+ "excluded": [
+  "data/cache/opentargets_20.11"
+ ]
+}
+WARNING: NCBI_API_KEY looks like a placeholder (your...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (YOUR...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (chan...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (plac...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (abc...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (your...); ignoring it and using the unauthenticated PubMed path.
+registry: every batch failed (1); previous cache kept, output not rebuilt
+
+========== BASIC INFO ==========
+Total edges: 5
+Total candidates: 1
+
+========== METAEDGE TYPES ==========
+metaedge
+DaG    1
+DuG    1
+DrD    1
+GaD    1
+CbG    1
+Name: count, dtype: int64
+
+========== CbG EDGES ==========
+CbG edges: 1
+         source   target metaedge
+4  Compound::C1  Gene::1      CbG
+
+========== CANDIDATE TARGET CHECK ==========
+Candidates: 1
+Candidates having CbG targets: 1
+Candidates WITHOUT CbG targets: 0
+
+========== DISEASE GENE CHECK ==========
+PD disease-gene edges: 2
+                source   target metaedge
+0  Disease::DOID:14330  Gene::1      DaG
+1  Disease::DOID:14330  Gene::2      DuG
+PD genes: 2
+
+========== SAMPLE CANDIDATE ==========
+Compound ID: Compound::C1
+Compound name: C1
+Targets found: 1
+Targets: ['Gene::1']
+Saved data/completeness_gaps.json: 0 compounds, 0 gaps; stage-06 agreement True
+  proximity: {}
+  clinical: {}
+  literature: {}
+  safety: {}
+  molecular: {}
+Saved data/completeness_gaps.json: 0 compounds, 0 gaps; stage-06 agreement True
+  proximity: {}
+  clinical: {}
+  literature: {}
+  safety: {}
+  molecular: {}
+Saved data/conflict_context.json: 0 compounds; status counts {}
+Saved data/conflict_context.json: 0 compounds; status counts {}
+Saved data/conflict_context.json: 0 compounds; status counts {}
+Saved data/reproducibility.json: 0 findings {}; 0 paper structure(s); None trials shared across compounds
+Saved data/reproducibility.json: 0 findings {}; 0 paper structure(s); None trials shared across compounds
+04p: 2/3 compounds, 4 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 2/3 compounds, 4 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 2/3 compounds, 4 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 1/1 compounds, 3 paper records (cache 0, network 1); failures 0; status SUCCESS
+04p: 1/1 compounds, 3 paper records (cache 0, network 1); failures 0; status SUCCESS
+04p: 2/3 compounds, 3 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 1/1 compounds, 3 paper records (cache 0, network 1); failures 0; status SUCCESS
+04p: 1/3 compounds, 3 paper records (cache 1, network 0); failures 2; status PARTIAL
+04p: 3/3 compounds, 4 paper records (cache 0, network 3); failures 0; status SUCCESS
+04p: 3/3 compounds, 4 paper records (cache 3, network 0); failures 0; status SUCCESS
+04p: 3/3 compounds, 4 paper records (cache 0, network 3); failures 0; status SUCCESS
+{
+ "ok": false,
+ "problems": [
+  "data/run_manifest.json unreadable (JSONDecodeError)"
+ ],
+ "summary": {}
+}
+05h: {'PRE_CUTOFF_VERSION_SCORED': 1, 'NO_PRE_CUTOFF_VERSION': 1, 'NO_CURRENT_LABEL': 1}; parser check {'agree': 2, 'checked': 2}; failures 0
+05h: {'PRE_CUTOFF_VERSION_SCORED': 1, 'NO_PRE_CUTOFF_VERSION': 1, 'NO_CURRENT_LABEL': 1}; parser check {'agree': 2, 'checked': 2}; failures 0
+05h: {'PRE_CUTOFF_VERSION_SCORED': 1, 'NO_PRE_CUTOFF_VERSION': 1, 'NO_CURRENT_LABEL': 1, 'RETRIEVAL_FAILED': 1}; parser check {'agree': 2, 'checked': 2}; failures 1
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 2984.56it/s]
+...................................  SEARCH FAILED for X: HTTP 500
+  0%|          | 0/5 [00:00<?, ?it/s]100%|██████████| 5/5 [00:00<00:00, 18724.57it/s]
+.  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 15141.89it/s]
+.  0%|          | 0/200 [00:00<?, ?it/s]  4%|▍         | 9/200 [00:00<00:00, 23876.49it/s]
+.  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 142987.64it/s]
+.F  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 141381.03it/s]
+........................................................................................................................................................................................................................................
+======================================================================
+FAIL: test_filter_refuses_a_check_file_with_errors (test_stage03_failure_handling.Stage03cFailures.test_filter_refuses_a_check_file_with_errors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/thrisha/EviRep_work_20261022T1504Z/tests/test_stage03_failure_handling.py", line 117, in test_filter_refuses_a_check_file_with_errors
+    with self.assertRaises(SystemExit), mock.patch("builtins.print"):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: SystemExit not raised
+
+----------------------------------------------------------------------
+Ran 771 tests in 85.701s
+
+FAILED (failures=1)
+exit 1

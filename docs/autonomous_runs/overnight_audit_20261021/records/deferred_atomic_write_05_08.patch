@@ -1,0 +1,45 @@
+--- /private/tmp/claude-501/-Users-thrisha-Drup-Rep-PF-EviRep/e6733d36-fdb7-40b2-a548-915362746462/scratchpad/sci05.yg9d/scripts/05_safety_signal.py	2026-10-15 06:32:31
++++ scripts/05_safety_signal.py	2026-10-20 23:10:12
+@@ -68,8 +68,10 @@
+         return
+     os.makedirs(LABEL_CACHE_DIR, exist_ok=True)
+     safe = "".join(ch if ch.isalnum() else "_" for ch in compound_name)
+-    with open(os.path.join(LABEL_CACHE_DIR, f"{safe}.json"), "w") as fh:
++    dest = os.path.join(LABEL_CACHE_DIR, f"{safe}.json")
++    with open(dest + ".tmp", "w") as fh:                     # atomic write (E-055 A-6)
+         json.dump(label, fh)
++    os.replace(dest + ".tmp", dest)
+ 
+ def main():
+     candidates = pd.read_csv("data/clinical_maturity_precutoff_clean.csv")
+\ No newline at end of file
+@@ -107,7 +109,8 @@
+             rows.append(json.loads(line))
+ 
+     out = pd.DataFrame(rows).drop_duplicates("compound_name")
+-    out.to_csv("data/safety_signal.csv", index=False)
++    out.to_csv("data/safety_signal.csv.tmp", index=False)   # atomic write (E-055 A-6)
++    os.replace("data/safety_signal.csv.tmp", "data/safety_signal.csv")
+     print(f"\nSaved {len(out)} compounds to data/safety_signal.csv")
+     print(f"Compounds with boxed warning: {out['boxed_warning'].sum()}")
+     print(f"Compounds with no label found: {(~out['has_label']).sum()}")
+\ No newline at end of file
+--- /private/tmp/claude-501/-Users-thrisha-Drup-Rep-PF-EviRep/e6733d36-fdb7-40b2-a548-915362746462/scratchpad/sci05.yg9d/scripts/08_molecular_pathway.py	2026-10-19 14:35:03
++++ scripts/08_molecular_pathway.py	2026-10-20 23:10:12
+@@ -354,12 +354,14 @@
+     records = [r for r in records if r["drug"] in wanted]
+     records.sort(key=lambda r: r["drug"])
+ 
+-    with open(args.out_jsonl, "w", encoding="utf-8") as fh:
++    with open(args.out_jsonl + ".tmp", "w", encoding="utf-8") as fh:   # atomic writes (E-055 A-6)
+         for rec in records:
+             fh.write(json.dumps(rec) + "\n")
+ 
+     frame = pd.DataFrame([flatten(r) for r in records], columns=CSV_COLUMNS)
+-    frame.to_csv(args.out, index=False)
++    frame.to_csv(args.out + ".tmp", index=False)
++    os.replace(args.out_jsonl + ".tmp", args.out_jsonl)
++    os.replace(args.out + ".tmp", args.out)
+ 
+     # --- summary ----------------------------------------------------------
+     print("\n" + "=" * 62)

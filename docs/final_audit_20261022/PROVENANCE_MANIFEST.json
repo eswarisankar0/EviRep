@@ -1,0 +1,205 @@
+{
+ "generated_utc": "2026-10-22T16:16:30+00:00",
+ "repository": {
+  "path_primary": "/Users/thrisha/Drup_Rep_PF/EviRep",
+  "work_copy": "/Users/thrisha/EviRep_work_20261022T1504Z",
+  "head": "576bc7f57cbf08873ca9971da469dce3500defb8",
+  "recovery_snapshot": "/Users/thrisha/EviRep_recovery_finalmission_20261022T1504Z"
+ },
+ "approved_baseline": {
+  "run_id": "adopted-20261015T015501Z-06",
+  "protected_artefacts_sha256": {
+   "data/cache/ctgov_precutoff_trials.json": "23b5fd74711bed267bf7fb948524efe60eee37f53653d28ce54310b123b58e89",
+   "data/clinical_maturity_precutoff.csv": "dc749e4f7c90ab00990cd69dfad9c08dbc50a45994abf9afe4b029b2498267d4",
+   "data/clinical_maturity_precutoff_clean.csv": "f7519c3343a404bd3ee3649b3d8f9129481835be57d461becf1ca67330d66ecf",
+   "data/clinicaltrials_match_audit.csv": "67e403c811d3bba9f037f07982a27ddec1444e5eee4926552facd0bebe146a26",
+   "data/conflict_claims_curated.json": "519c1a179e886c2ab451cd68011729b3b3c30a19d5a6ff02a53e2e3ea008e3d5",
+   "data/feature_trial_roles_td038.csv": "cfdd85ab4c27cb3e18836837d5e8a59946d189b26fe9b4f881f16e34b80f9c0d",
+   "data/ground_truth_postcutoff.csv": "5e229417bd0904b27ee49f6f0690794063490dddeaee384c43ace5f791bc6720",
+   "data/ground_truth_postcutoff_clean.csv": "a3f8a5af2ab53e6b4dfb2d48aeaf7d0059e87033823650fa60c31b1b1c3c6647",
+   "data/label_role_exclusions.csv": "8d97a169becc9cbe5324c59d1ed5f9d27b6739444aa27fbeab659c93f2df1d4b",
+   "data/literature_independence.csv": "392272cab942fb071d8b3a4cd85a3d13855904a321e6bd6c19f344e8136d672b",
+   "data/molecular_pathway.csv": "8bc0ea5664ea345434dcfc8a7ec3555bf64ca813c110c196ebcb4bbbf947d90e",
+   "data/molecular_pathway_evidence.jsonl": "68102cf8691c0ffcb047a3487e428dd38ea807b7e6711927e9db46b2362e7233",
+   "data/network_proximity.csv": "bd08d4c164ff3e582f8b796531d12fd4b4bef9345512bb7b01ca5e6cc7732906",
+   "data/pd_candidates.csv": "94b003bdb3e2dff154204e80cebbd1a9810387e425a7f1ab3e486ca041ec17f1",
+   "data/pd_candidates_filtered.csv": "e80c004bb7d285d65a68c967b922a6fcadd90a70f5b732b4a53e2fddfbe53e8e",
+   "data/pd_candidates_full.csv": "5b3c0f530d66056327e68e6a82bb23c15d5361ea0d736803e9dbe8e56aa541ea",
+   "data/safety_signal.csv": "5820a4864a4e34b04de4142de2aa79ab04e9283691b038b645f11b8e9646a6ae",
+   "data/vps_evaluation_report.json": "d951970ac14dd6412cb1671459764d1906fbddebdf9f1be97a804caf17e1e9dd",
+   "data/vps_scores_v2.csv": "718f2a7ccbd37647278d47f56cce68076a722bddda3a4479fd0b478c50c025e4"
+  }
+ },
+ "sources": [
+  {
+   "name": "ClinicalTrials.gov API v2",
+   "url": "https://clinicaltrials.gov/api/v2/studies",
+   "approved_query": "2026-10-05 (stage 03, D-010)",
+   "rebuild_queries": "2026-10-22 pass 1 and pass 2 (isolated)",
+   "single_records_fetched_2026_10_22": [
+    "NCT07284290",
+    "NCT04332276",
+    "NCT07214285",
+    "NCT04193527"
+   ]
+  },
+  {
+   "name": "Hetionet v1.0",
+   "version": "v1.0 (2017)",
+   "url": "https://zenodo.org (stage 01 ZENODO_ZIP_URL)"
+  },
+  {
+   "name": "Open Targets Platform",
+   "versions": {
+    "approved": "26.09",
+    "dated": "20.11"
+   },
+   "rebuild_requests_2026_10_22": "2 (Dopamine) + cache"
+  },
+  {
+   "name": "ChEMBL mechanisms",
+   "versions": {
+    "dated_targets": "2020-06"
+   }
+  },
+  {
+   "name": "PubMed / NCBI E-utilities + Semantic Scholar",
+   "used": "stage 04 / 04p for the rebuilt cohort's new compound (checkpointed)"
+  },
+  {
+   "name": "openFDA drug labels + DailyMed SPL history",
+   "used": "stage 05 / 05h for the new compound (checkpointed)"
+  },
+  {
+   "name": "OSV.dev",
+   "url": "https://api.osv.dev/v1/querybatch",
+   "retrieved": "2026-10-22",
+   "purpose": "dependency advisories"
+  }
+ ],
+ "candidates": {
+  "approved_cohort/approved_rules": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/approved_cohort/approved_rules/out/vps_scores_v2.csv",
+   "sha256": "cacd3d93cb56564bba0693c9c117438d6403f378afe6bca3b29fd360172ebe85"
+  },
+  "approved_cohort/corrected_all": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/approved_cohort/corrected_all/out/vps_scores_v2.csv",
+   "sha256": "abaee973f7c212448acdb990906fa96ec96d8e0bbcf07656ddb5738bd1498f56"
+  },
+  "approved_cohort/dated": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/approved_cohort/dated/out/vps_scores_v2.csv",
+   "sha256": "9854fdbe5de55cfe0cb74a25c4bf1a8ebd78410db007448e135ce12a774c9d2b"
+  },
+  "approved_cohort/dated_td042": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/approved_cohort/dated_td042/out/vps_scores_v2.csv",
+   "sha256": "d9ddef508d1ede573596dae171bf1ed7f572a20d3ccc6bf06fe4c386f6aad700"
+  },
+  "approved_cohort/dated_td042_p1": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/approved_cohort/dated_td042_p1/out/vps_scores_v2.csv",
+   "sha256": "1cd29b7c397ecd74e3d6ac881df7983485a8370e7afa33d786bebe80b6455bdf"
+  },
+  "approved_cohort/maxphase": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/approved_cohort/maxphase/out/vps_scores_v2.csv",
+   "sha256": "576db5646b948a1536ec6bc03538bc5be105441babd256918af0d8b30a3c4d1f"
+  },
+  "approved_cohort/p1": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/approved_cohort/p1/out/vps_scores_v2.csv",
+   "sha256": "953a077fb9491fb3f631c4c2500e03559a5fe9b21feaa79cd4f338123968c3e0"
+  },
+  "approved_cohort/td042": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/approved_cohort/td042/out/vps_scores_v2.csv",
+   "sha256": "870f24296f5d80cea02426e90a04f6a74ef12dfdd51690a79a41441d6e906c7e"
+  },
+  "approved_cohort/td042_p1": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/approved_cohort/td042_p1/out/vps_scores_v2.csv",
+   "sha256": "a24399aca22f389224caeb925b45afc990e7ca246868c3b428f904959dd71b14"
+  },
+  "rebuilt_cohort/approved_rules": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/rebuilt_cohort/approved_rules/out/vps_scores_v2.csv",
+   "sha256": "c153fc73c3e10a5eb78fd1bb2c19375d792a367e30025276fcc1a8c1fe16a1af"
+  },
+  "rebuilt_cohort/corrected_all": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/rebuilt_cohort/corrected_all/out/vps_scores_v2.csv",
+   "sha256": "ad9e621c5c8ce44c9f90ada4b7c9dcdf28c15e2639e241ed02a6f05653599fa3"
+  },
+  "rebuilt_cohort/dated": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/rebuilt_cohort/dated/out/vps_scores_v2.csv",
+   "sha256": "f6c1a702d60ccbbe08ae9f861fedd85bcfad3bfb6d6418552cc7b2c3bc03fe7c"
+  },
+  "rebuilt_cohort/dated_td042": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/rebuilt_cohort/dated_td042/out/vps_scores_v2.csv",
+   "sha256": "2385ad28c9dd0669dca2bd5cb7172ac2317c10e7fe16fcd7138fb2b4e559fbd2"
+  },
+  "rebuilt_cohort/dated_td042_p1": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/rebuilt_cohort/dated_td042_p1/out/vps_scores_v2.csv",
+   "sha256": "11d8c589f13d5ff7051c7e1faabcc3db81f389300b019a0097c540d5dfd11755"
+  },
+  "rebuilt_cohort/maxphase": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/rebuilt_cohort/maxphase/out/vps_scores_v2.csv",
+   "sha256": "5d89e76a2fcd6d366696b7f23bcf9251b671e99c691bc3621ce9107db2d005f6"
+  },
+  "rebuilt_cohort/p1": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/rebuilt_cohort/p1/out/vps_scores_v2.csv",
+   "sha256": "3d061afb9758b288b3f0b1689ebc7c795af6478459f2caa5418aedf89dea4369"
+  },
+  "rebuilt_cohort/td042": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/rebuilt_cohort/td042/out/vps_scores_v2.csv",
+   "sha256": "3ba2d20b11146b0395bd9aeece0e8d236b6553168ae7096383e743dcf944d428"
+  },
+  "rebuilt_cohort/td042_p1": {
+   "scores": "docs/final_audit_20261022/experiments/candidates/rebuilt_cohort/td042_p1/out/vps_scores_v2.csv",
+   "sha256": "b96b55695156f78e2a00f4bb0276823759ddbb2f5923caa323ea3d2163ddb815"
+  }
+ },
+ "evidence_files": {
+  "docs/final_audit_20261022/CHANGELOG.md": "a1883867c8369a7cda50ec8aa5da2d92905b4bbe60d55da19b5815e324f53b48",
+  "docs/final_audit_20261022/COHORT_REBUILD_COMPARISON.md": "21dbe384acb82ee546266c3cb1c46df6248e61619603459bc28da7d2fa07f9a2",
+  "docs/final_audit_20261022/COMMIT_READINESS_REPORT.md": "d54246908062a0fc24794646c3e59ab41e4f26b1f656ffc394b35f4ca5921fda",
+  "docs/final_audit_20261022/FINAL_RELEASE_DECISION.md": "24be9766aaf58a1776ba0223e584174254f3317be72317c2470d2a60a8fb7e4e",
+  "docs/final_audit_20261022/MASTER_ISSUE_REGISTER.md": "3d942b386aad9e2469bcb057f02badcd7e2bb188e0c7031c44da0277cb751a23",
+  "docs/final_audit_20261022/MODEL_COMPARISON.md": "bf77120ea71db5003dd52942b6c105ede99af6401ce143b689963383cf354bc2",
+  "docs/final_audit_20261022/MOLECULAR_CORRECTION_REPORT.md": "62bc52a482658c5e350529ac5bf13af94b8018acafe472bc0027aa08653dd822",
+  "docs/final_audit_20261022/SCIENTIFIC_DECISION_LOG.md": "677c7959fb32572f6c79496b35cead31c43d065340fdb76836ba435e4cb3049a",
+  "docs/final_audit_20261022/SECURITY_AUDIT.md": "33d4e0d9f35408dacd994c3f924f28cf5715be1b1cac76ab01f565e9c608ccb7",
+  "docs/final_audit_20261022/TEMPORAL_LEAKAGE_AUDIT.md": "ab5ccff99e9e308cfea0fde1610b58a4cbaf7be08a0d3ec4a5ed35fcda19458c",
+  "docs/final_audit_20261022/TEST_EVIDENCE.md": "ba332164bca462228d0120bfde5033feaaa5c14b665ebde6b58cdf6c6ae43f68",
+  "docs/final_audit_20261022/TRIAL_ROLE_ADJUDICATION.csv": "2164ae606f3667c05f39ffd20bd96dec6207a9e1779291f3ff00d6b659f204f4",
+  "docs/final_audit_20261022/candidate_feature_role_exclusions.csv": "0e6b21a354727fcdc379126b6899994bade783baaa0d3cc55456062d685230a0",
+  "docs/final_audit_20261022/experiments/build_adjudication.py": "3b100b113a291a3887867b9ea04c58453f38c721b9101f5c937c53ee7b6ca52f",
+  "docs/final_audit_20261022/experiments/build_candidates.py": "1b42c41bcc7493d4d87c6fe3066e8bd4bb419e80393d96d68f830b670d834b25",
+  "docs/final_audit_20261022/experiments/constants_sensitivity.json": "d9762539cf99470cb6cf8031006e620c28c51fa31291022ad2439b844763649d",
+  "docs/final_audit_20261022/experiments/constants_sensitivity.py": "31c60f0e26098507ab644ca057dc808f5f857926e074da3cbe397ac41b89ba94",
+  "docs/final_audit_20261022/experiments/evaluate_candidates.py": "f6ea3109e0f2ccd786f0636da4cb09e3566e637574bad78b674e3182e070bf2e",
+  "docs/final_audit_20261022/experiments/make_patch.py": "7b485d4462faca2a6042f03bfbe78d6ed8cc89e3859a2cba54dc0501c878251e",
+  "docs/final_audit_20261022/experiments/model_comparison_approved_cohort.json": "ac59a37f1465525866ffdfb44c929a218c4d449b5e5cd0f5344bd99f6839692b",
+  "docs/final_audit_20261022/experiments/model_comparison_rebuilt_cohort.json": "f60e397564880e52123afa6ec57c937ce38c6ded94fc77149203ae4461b407f5",
+  "docs/final_audit_20261022/experiments/proximity_seed_sensitivity.json": "1a52ff7b960af4fe84b809864760c356a560e054703d6e95ed371d451e7eb0d7",
+  "docs/final_audit_20261022/experiments/proximity_seed_sensitivity.py": "d07fa4ad42e52cc79d1628addf9b940ef0ee78ad056532e102f37da50bbe266d",
+  "docs/final_audit_20261022/final_audit_20261022.patch": "acd3825b597cbe5d57d346384323e69219da23a6abe133b9e3ce0cb2024bda88",
+  "docs/final_audit_20261022/logs/dependency_osv_scan.txt": "75274355f8eacf634975555241e9b2e53ed18b2e0fb28a7f9f312ce3bcade1f7",
+  "docs/final_audit_20261022/logs/security_probes_workcopy.txt": "42f07908fbdba4a7dcb0f932d841daa8f43227be1272baacec17dca8a94514b9",
+  "docs/final_audit_20261022/logs/tests_after_fixes.log": "180c50265d70d1dc970a23ef24a108436edccf6c2301f622c1f09f47188cd5a8",
+  "docs/final_audit_20261022/logs/tests_baseline_workcopy.log": "3019818ea2f426b71d114591d72b71bb501cfc6fb360bec1e235d63e825d03ae",
+  "docs/final_audit_20261022/logs/tests_final.log": "d14d1bf46240ae2cf6773ab5248d4c517a0cbd6b45d7bd1f102f85bd19ff08b0",
+  "docs/final_audit_20261022/records/browser/drive11.out": "c8d15a7a72d5e631c672e1e4056a37729d1bd564d4caa6046d09debfe149c17b",
+  "docs/final_audit_20261022/records/browser/drive12.out": "6e49ce7de04532baceb2b7447fb2309828dba598e2e1f3f6a3fa10b09ed75554",
+  "docs/final_audit_20261022/records/browser/drive13.out": "c3db7f090ded57d48ad5478dd62bf3f781d9eb6126f6030d2ff3adad666e375a",
+  "docs/final_audit_20261022/records/browser/drive14.out": "fae641a673e49d6f09a965030144c7e17ddc9cc8efa61b5c0176433fe4d8b27a",
+  "docs/final_audit_20261022/records/browser/drive15.out": "d030011ab96a89417bc5471b2a12d9b9e099a257caf554c68d05121f9885df7b",
+  "docs/final_audit_20261022/records/browser/drive16.out": "584847ca2b58f00bb17b4cd832a567d9977e483c693bd4489d516ba76db7c8ce",
+  "docs/final_audit_20261022/records/browser/drive19.out": "c4d2c6d712b91adf069db587c6405b79575b2245e79dc2687ce294d5da470103",
+  "docs/final_audit_20261022/records/browser/drive8.out": "48437d60ec565594f2da533161b8abfdef8a9194bdf70ccbe605d3341389bc9d",
+  "docs/final_audit_20261022/records/browser/drive9.out": "3687db566f9580ed85550fb9c006c7cdb1cfea258b081ac078895f85dafe6718",
+  "docs/final_audit_20261022/records/browser/suites_work.out": "33fac86da64911188d7d94794bebfc767206133a8d254cd1c7f3449f407cacf1",
+  "docs/final_audit_20261022/records/case_study_ranks.txt": "00c73c968e2ce56f7f70f88cb8769b41eb16809065291b60d537fcb29d8b0337",
+  "docs/final_audit_20261022/records/changed_files_vs_primary.txt": "8263319d7c73e156d35f3f4a9bc28ef2c66d6daccf45ffc0efd6cab1e6c5c087",
+  "docs/final_audit_20261022/records/cohort_rebuild_diff.txt": "86719337734b611bacf1e25494e843dd80c26674f3eacadf06ebcb6d954887d9",
+  "docs/final_audit_20261022/records/cohort_rebuild_diff_pass2.txt": "968ddd9120b42dd61eebc6848c4b44f53ba1c9bdb285a04dcb831e35caa6215e",
+  "docs/final_audit_20261022/records/new_links_phases.json": "51cf8dff6e6d289fe26b2a39e2f7204c7c2346ce565c026a5c13acdcc0769c1c",
+  "docs/final_audit_20261022/records/new_links_registry.txt": "5b61afbfdc47b8b1206387459913125203ba3538e1f99db4a37a7e9872a88e18",
+  "docs/final_audit_20261022/records/old_vs_new_verifier_absent_molecular.txt": "17db63d9b8d30358cb5cc8635824f41ab6fa7df00c9dbdb6a23fd174528a2557",
+  "docs/final_audit_20261022/records/review28_evidence.txt": "3a263e9059ae03a932b62aea0c0f3b2178de42c5736f2149bc673c9738eeb072",
+  "docs/final_audit_20261022/records/review30_unflagged_nontherapeutic_evidence.txt": "4858ce0779a570d61f8f26b3cb2085b8b42434f5423d5e2a1b7a41173aa36b2c",
+  "docs/final_audit_20261022/records/token_match_scan.txt": "7a4fae06c4d9f6dfd720333c1bdf294ed2541290a5328bf16e49dfeace068d69"
+ }
+}

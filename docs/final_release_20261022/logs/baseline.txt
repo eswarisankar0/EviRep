@@ -1,0 +1,11 @@
+baseline 2026-10-21T17:13:44Z
+HEAD 576bc7f57cbf08873ca9971da469dce3500defb8 branch main ahead/behind 0/0
+staged md5 d04e97371800f54cc28abbb6a383742b
+porcelain:      124 entries
+snapshot ~/EviRep_recovery_final_20261021T1713Z
+protected: 19/19
+ "ok": true,
+data/vps_scores_v2.csv: MATCH; 90 compounds; max |diff| 2.22e-16; median-im
+  12 ADOPTED   13 SUCCESS 
+live server code_changed False
+approved run adopted-20261015T015501Z-06

@@ -1,0 +1,145 @@
+{
+ "method": "sha256 of the 19 protected artefacts + evaluation report + run manifest, before (10:10Z) and after (10:28Z)",
+ "artifacts": [
+  {
+   "path": "data/cache/ctgov_precutoff_trials.json",
+   "sha256_before": "23b5fd74711bed267bf7fb948524efe60eee37f53653d28ce54310b123b58e89",
+   "sha256_after": "23b5fd74711bed267bf7fb948524efe60eee37f53653d28ce54310b123b58e89",
+   "unchanged": true
+  },
+  {
+   "path": "data/clinical_maturity_precutoff.csv",
+   "sha256_before": "dc749e4f7c90ab00990cd69dfad9c08dbc50a45994abf9afe4b029b2498267d4",
+   "sha256_after": "dc749e4f7c90ab00990cd69dfad9c08dbc50a45994abf9afe4b029b2498267d4",
+   "unchanged": true
+  },
+  {
+   "path": "data/clinical_maturity_precutoff_clean.csv",
+   "sha256_before": "f7519c3343a404bd3ee3649b3d8f9129481835be57d461becf1ca67330d66ecf",
+   "sha256_after": "f7519c3343a404bd3ee3649b3d8f9129481835be57d461becf1ca67330d66ecf",
+   "unchanged": true
+  },
+  {
+   "path": "data/clinicaltrials_match_audit.csv",
+   "sha256_before": "67e403c811d3bba9f037f07982a27ddec1444e5eee4926552facd0bebe146a26",
+   "sha256_after": "67e403c811d3bba9f037f07982a27ddec1444e5eee4926552facd0bebe146a26",
+   "unchanged": true
+  },
+  {
+   "path": "data/conflict_claims_curated.json",
+   "sha256_before": "519c1a179e886c2ab451cd68011729b3b3c30a19d5a6ff02a53e2e3ea008e3d5",
+   "sha256_after": "519c1a179e886c2ab451cd68011729b3b3c30a19d5a6ff02a53e2e3ea008e3d5",
+   "unchanged": true
+  },
+  {
+   "path": "data/feature_trial_roles_td038.csv",
+   "sha256_before": "cfdd85ab4c27cb3e18836837d5e8a59946d189b26fe9b4f881f16e34b80f9c0d",
+   "sha256_after": "cfdd85ab4c27cb3e18836837d5e8a59946d189b26fe9b4f881f16e34b80f9c0d",
+   "unchanged": true
+  },
+  {
+   "path": "data/ground_truth_postcutoff.csv",
+   "sha256_before": "5e229417bd0904b27ee49f6f0690794063490dddeaee384c43ace5f791bc6720",
+   "sha256_after": "5e229417bd0904b27ee49f6f0690794063490dddeaee384c43ace5f791bc6720",
+   "unchanged": true
+  },
+  {
+   "path": "data/ground_truth_postcutoff_clean.csv",
+   "sha256_before": "a3f8a5af2ab53e6b4dfb2d48aeaf7d0059e87033823650fa60c31b1b1c3c6647",
+   "sha256_after": "a3f8a5af2ab53e6b4dfb2d48aeaf7d0059e87033823650fa60c31b1b1c3c6647",
+   "unchanged": true
+  },
+  {
+   "path": "data/label_role_exclusions.csv",
+   "sha256_before": "8d97a169becc9cbe5324c59d1ed5f9d27b6739444aa27fbeab659c93f2df1d4b",
+   "sha256_after": "8d97a169becc9cbe5324c59d1ed5f9d27b6739444aa27fbeab659c93f2df1d4b",
+   "unchanged": true
+  },
+  {
+   "path": "data/literature_independence.csv",
+   "sha256_before": "392272cab942fb071d8b3a4cd85a3d13855904a321e6bd6c19f344e8136d672b",
+   "sha256_after": "392272cab942fb071d8b3a4cd85a3d13855904a321e6bd6c19f344e8136d672b",
+   "unchanged": true
+  },
+  {
+   "path": "data/molecular_pathway.csv",
+   "sha256_before": "8bc0ea5664ea345434dcfc8a7ec3555bf64ca813c110c196ebcb4bbbf947d90e",
+   "sha256_after": "8bc0ea5664ea345434dcfc8a7ec3555bf64ca813c110c196ebcb4bbbf947d90e",
+   "unchanged": true
+  },
+  {
+   "path": "data/molecular_pathway_evidence.jsonl",
+   "sha256_before": "68102cf8691c0ffcb047a3487e428dd38ea807b7e6711927e9db46b2362e7233",
+   "sha256_after": "68102cf8691c0ffcb047a3487e428dd38ea807b7e6711927e9db46b2362e7233",
+   "unchanged": true
+  },
+  {
+   "path": "data/network_proximity.csv",
+   "sha256_before": "bd08d4c164ff3e582f8b796531d12fd4b4bef9345512bb7b01ca5e6cc7732906",
+   "sha256_after": "bd08d4c164ff3e582f8b796531d12fd4b4bef9345512bb7b01ca5e6cc7732906",
+   "unchanged": true
+  },
+  {
+   "path": "data/pd_candidates.csv",
+   "sha256_before": "94b003bdb3e2dff154204e80cebbd1a9810387e425a7f1ab3e486ca041ec17f1",
+   "sha256_after": "94b003bdb3e2dff154204e80cebbd1a9810387e425a7f1ab3e486ca041ec17f1",
+   "unchanged": true
+  },
+  {
+   "path": "data/pd_candidates_filtered.csv",
+   "sha256_before": "e80c004bb7d285d65a68c967b922a6fcadd90a70f5b732b4a53e2fddfbe53e8e",
+   "sha256_after": "e80c004bb7d285d65a68c967b922a6fcadd90a70f5b732b4a53e2fddfbe53e8e",
+   "unchanged": true
+  },
+  {
+   "path": "data/pd_candidates_full.csv",
+   "sha256_before": "5b3c0f530d66056327e68e6a82bb23c15d5361ea0d736803e9dbe8e56aa541ea",
+   "sha256_after": "5b3c0f530d66056327e68e6a82bb23c15d5361ea0d736803e9dbe8e56aa541ea",
+   "unchanged": true
+  },
+  {
+   "path": "data/run_manifest.json",
+   "sha256_before": "43b0c404bdf2b9161d11ad78afbf23705141e78d058b666220944c51a69fcd41",
+   "sha256_after": "43b0c404bdf2b9161d11ad78afbf23705141e78d058b666220944c51a69fcd41",
+   "unchanged": true
+  },
+  {
+   "path": "data/safety_signal.csv",
+   "sha256_before": "5820a4864a4e34b04de4142de2aa79ab04e9283691b038b645f11b8e9646a6ae",
+   "sha256_after": "5820a4864a4e34b04de4142de2aa79ab04e9283691b038b645f11b8e9646a6ae",
+   "unchanged": true
+  },
+  {
+   "path": "data/vps_evaluation_report.json",
+   "sha256_before": "d951970ac14dd6412cb1671459764d1906fbddebdf9f1be97a804caf17e1e9dd",
+   "sha256_after": "d951970ac14dd6412cb1671459764d1906fbddebdf9f1be97a804caf17e1e9dd",
+   "unchanged": true
+  },
+  {
+   "path": "data/vps_scores_v2.csv",
+   "sha256_before": "718f2a7ccbd37647278d47f56cce68076a722bddda3a4479fd0b478c50c025e4",
+   "sha256_after": "718f2a7ccbd37647278d47f56cce68076a722bddda3a4479fd0b478c50c025e4",
+   "unchanged": true
+  }
+ ],
+ "all_unchanged": true,
+ "approved_score": {
+  "path": "data/vps_scores_v2.csv",
+  "column": "VPS_equal_5d",
+  "meaning": "ranking of evidence for continued clinical investigation, not a probability of efficacy",
+  "vps_verify": "MATCH (exit 0)"
+ },
+ "git": {
+  "head": "576bc7f57cbf08873ca9971da469dce3500defb8",
+  "history_unchanged": true,
+  "git_index_byte_identical": true,
+  "staged_diff_identical": true,
+  "unstaged_path_set_unchanged": true,
+  "previously_untracked_files_missing": 0,
+  "staged_committed_pushed_by_this_mission": false
+ },
+ "notes": [
+  "all runs, failures, kills and corruptions were performed on isolated copies; the live run manifest is byte-identical before/after",
+  "no protected artefact was regenerated; no formula, label, feature, protocol or frozen data changed"
+ ]
+}

@@ -1,0 +1,17 @@
+overview {'link': 10, 'button': 15} unnamed: [] charts: 2 bad charts: 0
+drugs {'link': 1330, 'button': 40, 'searchbox': 1, 'combobox': 3} unnamed: [] charts: 1 bad charts: 0
+drugs/Donepezil {'link': 27, 'button': 5} unnamed: [] charts: 2 bad charts: 0
+compare {'link': 5, 'button': 7, 'combobox': 1} unnamed: [] charts: 1 bad charts: 0
+evidence {'link': 205, 'button': 6, 'combobox': 3, 'searchbox': 2, 'checkbox': 1} unnamed: [] charts: 0 bad charts: 0
+mechanism {'link': 17, 'button': 5, 'combobox': 1} unnamed: [] charts: 1 bad charts: 0
+conflicts {'link': 44, 'button': 5} unnamed: [] charts: 0 bad charts: 0
+review {'link': 79, 'button': 5, 'searchbox': 1, 'combobox': 1} unnamed: [] charts: 1 bad charts: 0
+validation {'link': 8, 'button': 5} unnamed: [] charts: 9 bad charts: 0
+run {'link': 24, 'button': 6} unnamed: [] charts: 4 bad charts: 0
+live {'link': 4, 'button': 20} unnamed: [] charts: 2 bad charts: 0
+technical {'link': 15, 'button': 5} unnamed: [] charts: 0 bad charts: 0
+pipeline {'link': 4, 'button': 5} unnamed: [] charts: 0 bad charts: 0
+agents {'link': 4, 'button': 5, 'combobox': 1} unnamed: [] charts: 0 bad charts: 0
+cases {'link': 30, 'button': 5} unnamed: [] charts: 0 bad charts: 0
+agent/10b {'link': 5, 'button': 6} unnamed: [] charts: 0 bad charts: 0
+SUMMARY unnamed 0 charts 23 bad_charts 0 doc {'lang': 'en', 'main': True, 'skip': True, 'title': 'EviRep · Run Center · Pipeline health'}

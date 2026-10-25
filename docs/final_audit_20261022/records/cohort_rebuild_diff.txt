@@ -1,0 +1,17 @@
+raw files: pre links 195 -> 203 | post links 57 -> 61
+pool 90 -> 91 | added: ['Dopamine'] | removed: []
+positives (frozen window <=2026-10-05): 14 -> 15 | unfrozen: 14 -> 15
+  Dopamine: label None->1 (unfrozen None->1), max phase None->5
+pre links added: 8 removed: 0
+  + pre ('NCT00465452', 'Dopamine') [['PHASE3', '2007-04-25', 'token_name']]
+  + pre ('NCT02233023', 'Dopamine') [['PHASE4', '2014-09-08', 'token_name']]
+  + pre ('NCT02347059', 'Dopamine') [['PHASE2', '2015-01-27', 'token_name']]
+  + pre ('NCT03151460', 'Dopamine') [['PHASE4', '2017-05-12', 'token_name']]
+  + pre ('NCT03295786', 'Dopamine') [['PHASE1', '2017-09-28', 'token_name']]
+  + pre ('NCT03775538', 'Dopamine') [['PHASE1', '2018-12-14', 'token_name']]
+  + pre ('NCT04193527', 'Ioflupane I 123') [['PHASE3', '2019-12-10', 'synonym_exact_othername']]
+  + pre ('NCT04332276', 'Dopamine') [['PHASE1', '2020-04-02', 'synonym_exact_name']]
+  + post ('NCT05887466', 'Dopamine') [['PHASE1', '2023-06-02']]
+  + post ('NCT06422208', 'Dopamine') [['PHASE1', '2024-05-20']]
+  + post ('NCT06477744', 'Dopamine') [['', '2024-06-27']]
+  + post ('NCT07214285', 'Dopamine') [['PHASE1', '2025-10-09']]

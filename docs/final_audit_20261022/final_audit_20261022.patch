@@ -1,0 +1,756 @@
+--- a/TECHNICAL_DEBT.md
++++ b/TECHNICAL_DEBT.md
+@@ -174,15 +174,21 @@
+ output, so it never caused an actual error.
+ 
+ ## TD-011 · LOW · `N_RANDOM = 100` is the script's own "quick test" value — **OPEN**
++**Update 2026-10-22 (final audit): RESOLVED in code.** `N_RANDOM = 1000`. Measured: at 100 draws the approved-pool 5D AUROC moved 0.769–0.783 across seeds 1–3; at 1000 it is 0.775 (seed 42) / 0.776 (seed 7). Approved data unchanged until stage 02 is re-run (`docs/final_audit_20261022/experiments/proximity_seed_sensitivity.json`).
++
+ `scripts/02_network_proximity.py:45`. Its comment recommends "1000+ for final
+ experiments". Any `proximity_z` behind existing figures is the low-precision setting.
+ 
+ ## TD-012 · LOW · Missing `__main__` guards — **OPEN**
++**Update 2026-10-22: RESOLVED.** `filter_by_studytype.py` (now `main()`, run by `check_studytype.py` with `run_name="__main__"`, atomic writes; output byte-identical to the approved files), `test_openfda.py` and `check_groundtruth.py` are guarded. `debug_step2.py` is read-only and exercised by `tests/test_debug_step2.py` via `runpy`; left unguarded.
++
+ `check_groundtruth.py`, `debug_step2.py`, `filter_by_studytype.py` and `test_openfda.py`
+ execute on import. `filter_by_studytype.py` is the concerning one: it is a mandatory
+ pipeline stage that writes files as a side effect of being imported.
+ 
+ ## TD-013 · LOW · Missing `os.makedirs("data")` in several scripts — **OPEN**
++**Update 2026-10-22: RESOLVED.** 00, 01 and `check_studytype.py` create `data/` before writing (`tests/test_final_audit_fixes.py`).
++
+ Scripts 00, 01 and 02 write to `data/` without creating it (03/04/05/08 do). They work
+ only because `data/` happens to exist; on a fresh clone it does not, since `data/` is
+ gitignored, and script 01 crashes at its first write.
+@@ -662,6 +668,8 @@
+ cohort. This entry stays OPEN as a scope limitation, not a defect.
+ 
+ ### TD-036 · MEDIUM · Nested-CV estimate comes from a single 5-fold split — **OPEN (reporting)**
++**Update 2026-10-22: no change needed.** `vps_evaluation_report.json` reports `grid_search.repeated_nested_cv` (20 repeats, seeds 0–19).
++
+ `cv_grid_search_weights` reports the mean over one StratifiedKFold split (seed 42; about 3
+ positives per test fold). Selection happens on training folds only (verified;
+ `TestGridSearchSelectsOnTrainingFoldsOnly`). Percentile ranks and median imputation are computed
+@@ -676,11 +684,15 @@
+ models do not beat the unfitted equal-weight models (4d 0.700, 5d 0.775).
+ 
+ ### TD-037 · LOW · Stage 06 writes outputs non-atomically — **OPEN**
++**Update 2026-10-22: no change needed.** Every stage-06 file is written atomically (`_write_csv`), and the runner stages all 06 outputs and publishes them only after `validate_vps`.
++
+ `main()` writes `grid_search_5d_log.csv` before the remaining outputs. A crash after that
+ point leaves the files mutually inconsistent (seen in E-018). Fix: write to temporary files
+ and rename at the end. Not changed: the stage now completes, and old outputs are archived.
+ 
+ ### TD-038 · MEDIUM · One trial credited as clinical evidence to several compounds — **OPEN**
++**Update 2026-10-22:** all 195 feature links adjudicated (D-020's 35 + 50 by registry record + 110 automated agreement); P1 applied symmetrically excludes 32 links (`docs/final_audit_20261022/TRIAL_ROLE_ADJUDICATION.csv`). Candidate verified; adoption = create `data/feature_role_exclusions.csv`.
++
+ Found by agent 10e (`data/reproducibility.json`, `shared_trials_across_compounds`) and
+ quantified in `docs/VPS_EVALUATION.md`: **17 pre-cutoff trials** in
+ `clinical_maturity_precutoff_clean.csv` are linked to more than one pool compound, affecting
+@@ -743,6 +755,8 @@
+ (≈ 0.5) is numerically close to neutral. Unifying the rule is a missing-data policy change; not done.
+ 
+ ### TD-042 · HIGH · Molecular pathway credit counts a drug's own target as the shared PD gene — **OPEN (owner decision)**
++**Update 2026-10-22 (final audit): recommended for adoption.** Independent stage-08 re-run reproduces `td042_v1` exactly; corrected rule recommended as part of the primary candidate. See `docs/final_audit_20261022/MOLECULAR_CORRECTION_REPORT.md`.
++
+ `molecular_agent.py` marks a target pathway "in the disease module" when any module gene is in it,
+ including the drug's own target (e.g. Donepezil: ACHE shares Reactome pathways with "PD gene(s):
+ ACHE"). The direct component already credits that target–PD association. If the target is
+@@ -809,6 +823,8 @@
+ **TD-045 RESOLVED 2026-10-20:** test and production ResourceWarnings 126 -> 0 (C-110).
+ 
+ ### TD-046 · LOW · Code-drift detection unavailable for 12 ADOPTED stages and `eval` — **OPEN**
++**Update 2026-10-22:** `eval` re-run on the approved inputs is byte-identical and fingerprints all inputs (owner command after the presentation). Stage 00 reproduces byte-identically (attestable). Stages 02/06 differ only through proximity Monte Carlo draws (5D AUROC 0.776 vs 0.775); network stages need live services.
++
+ Their last success has no script fingerprint (adopted baselines / runs before C-78), so later code changes are not
+ detected (`code_fingerprint_recorded: false`, shown in the run table). All their outputs are protected; re-running
+ them is an owner decision. `eval` additionally reports `data/reproducibility.json` as not fingerprinted.
+--- a/development_log/CHANGES.md
++++ b/development_log/CHANGES.md
+@@ -892,3 +892,8 @@
+ | ID | Files | Trigger | Area | Verification | Status |
+ |---|---|---|---|---|---|
+ | C-124 | `ui/app.js` (agent badge: "checks a score input; does not change the score" replaces "feeds the score"), `ui/server.py` (`agent_vps_role`: unresolved review count read from the worklist, was hard-coded 28), `scripts/completeness_gap_agent.py` (independence denominator counts D1-D5, was 4), `scripts/clinical_role_review.py` (atomic CSV writes), tests `test_review_count.py` (new, 3), `test_ui_quality.py` (+1), `test_completeness_gap_agent.py` (+1 and 1 assertion); `TECHNICAL_DEBT.md` (dated notes on TD-009, TD-021, TD-031, TD-033), `docs/VPS_EVALUATION.md` (imputation-flag correction); stages `review` (byte-identical output) and `10h` re-run | final release audit E-061..E-063; fully dated 5D and weighting experiments | UI wording / agents / docs | 756 tests OK, 0 warnings; browser 159/159 + accessibility tree + live badge check; vps_verify MATCH; protected 19/19; index unchanged (`docs/final_release_20261022/`) | PASS |
++
++## 2026-10-22 (final research, defect elimination and commit-readiness audit)
++| ID | Files | Trigger | Area | Verification | Status |
++|---|---|---|---|---|---|
++| C-125 | `scripts/intervention_matcher.py` (class-phrase guard), `scripts/vps_verify.py` (feature exclusions; absent-molecular median per D-004), `scripts/03_clinicaltrials_groundtruth.py` (`highest_phase`), `scripts/02_network_proximity.py` (`N_RANDOM = 1000`), `scripts/filter_by_studytype.py` + `check_studytype.py` (main guard, atomic writes, makedirs), `scripts/00_exclusion_filter.py`, `scripts/01_get_pd_candidates.py` (makedirs), `scripts/test_openfda.py`, `scripts/check_groundtruth.py` (guards), agents 10d/10e/10h/10a-curated (exit 1 on FAILED), `ui/server.py` (timeouts for every stage); tests `test_final_audit_fixes.py` (new, 13), `test_intervention_matcher.py` (+3), `test_stage03_failure_handling.py` (invocation path); docs `TECHNICAL_DEBT.md`, `docs/final_audit_20261022/` | final audit: E-056 live rebuild, TD-042 re-derivation, 195-link adjudication, temporal candidates | Matching / verification / provenance / reliability | 771 tests OK, 0 warnings; 18 candidates verify (vps_verify MATCH); approved artefacts unchanged (sha256 19/19); browser suites on the changed code (`docs/final_audit_20261022/TEST_EVIDENCE.md`) | PASS (code); scientific adoption pending owner |
+--- a/development_log/ERRORS_AND_BLOCKERS.md
++++ b/development_log/ERRORS_AND_BLOCKERS.md
+@@ -697,3 +697,15 @@
+ 
+ ### E-063 · LOW · 10h reported "x/4 checks assessable" for five 10g checks — RESOLVED 2026-10-21
+ `independence_state` hard-coded the denominator 4 after 10g gained D5, so all-assessable compounds read "4/4" and one-missing read "3/4". It now uses the number of checks present. 10h re-run; only that text changed (run_status and coverage identical, verified in an isolated copy first). Test: `tests/test_completeness_gap_agent.py::test_independence_denominator_counts_all_five_checks`.
++
++### E-064 · HIGH · Whole-token matching credited class and entity phrases to a compound — RESOLVED 2026-10-22
++The E-056 rebuild showed 9 of 11 "Dopamine" links were "dopamine agonists", "Dopamine Agent", "Cerebral Dopamine Neurotrophic Factor", "dopamine progenitor cell" or "midbrain dopamine neurons". `docs/INTERVENTION_MATCHING.md` §2 already excludes class relationships; the token pass now rejects a hit followed by a class/entity word (`CLASS_FOLLOWERS`). The approved cohort's 74 token matches are unaffected. Tests: `tests/test_intervention_matcher.py::TestClassPhrasesAreNotTheCompound`.
++
++### E-065 · MEDIUM · `vps_verify` disagreed with stage 06 on two documented rules — RESOLVED 2026-10-22
++(a) It ignored `data/feature_role_exclusions.csv`, so adopting D-020 would have failed verification. (b) It gave a compound absent from `molecular_pathway.csv` the neutral 0.5, whereas stage 06 and DECISIONS D-004 median-impute it. Both latent for the approved data; both now follow stage 06. Tests in `tests/test_final_audit_fixes.py` (the absent-molecular test returns 0.5 on the old verifier).
++
++### E-066 · LOW · Stage 03 recorded the lowest phase of a combined-phase trial — RESOLVED 2026-10-22 (code)
++`phase = phase_list[0]` stored PHASE2 for a PHASE2/PHASE3 trial, contradicting the maximum-phase definition (18 pre-cutoff links, 6 compounds; −0.007 AUROC). `highest_phase()` + test. Approved data unchanged until stage 03 is re-run.
++
++### E-067 · LOW · Stages without timeouts; agents exiting 0 on FAILED — RESOLVED 2026-10-22
++Eight stages (01, 00, 02, 03, 03c, 04, 05, 04b) and 06/eval had no `timeout_s`; 10d/10e/10h/10a-curated returned 0 even when their envelope said FAILED. Generous timeouts added (03 measured ≈25 min → 14400 s); agents now exit 1 only on FAILED, like 10b/10c/10f/10g. Tests in `tests/test_final_audit_fixes.py`.
+--- a/scripts/00_exclusion_filter.py
++++ b/scripts/00_exclusion_filter.py
+@@ -6,6 +6,8 @@
+ targeted drug repurposing candidates. Documented explicitly for
+ methodological transparency in the paper.
+ """
++import os
++
+ import pandas as pd
+ 
+ EXCLUSION_LIST = [
+@@ -30,6 +32,7 @@
+     before = len(candidates)
+     filtered = candidates[~candidates["compound_name"].isin(EXCLUSION_LIST)]
+     after = len(filtered)
++    os.makedirs("data", exist_ok=True)                    # TD-013: data/ is gitignored, absent on a fresh clone
+     filtered.to_csv("data/pd_candidates_filtered.csv", index=False)
+     print(f"Candidates: {before} -> {after} (removed {before - after})")
+     print(f"Saved to data/pd_candidates_filtered.csv")
+--- a/scripts/01_get_pd_candidates.py
++++ b/scripts/01_get_pd_candidates.py
+@@ -2,7 +2,7 @@
+ STEP 1: Pull Hetionet, build PD candidate compound list.
+ Output: data/hetionet_nodes.csv, data/hetionet_edges.csv, data/pd_candidates.csv
+ """
+-import gzip, io, zipfile, requests, pandas as pd
++import gzip, io, os, zipfile, requests, pandas as pd
+ 
+ # raw.githubusercontent.com only serves a git-lfs POINTER for the edges file
+ # (a known, widely-reported issue). Use the permanent Zenodo mirror instead —
+@@ -30,6 +30,7 @@
+ def main():
+     nodes, edges = fetch_and_extract_hetionet()
+     #convert to csv
++    os.makedirs("data", exist_ok=True)                    # TD-013: data/ is gitignored, absent on a fresh clone
+     nodes.to_csv("data/hetionet_nodes.csv", index=False)
+     edges.to_csv("data/hetionet_edges.csv", index=False)
+     print(f"Saved: {len(nodes)} nodes, {len(edges)} edges")
+--- a/scripts/02_network_proximity.py
++++ b/scripts/02_network_proximity.py
+@@ -42,7 +42,7 @@
+ # Number of randomizations.
+ # 100 = quick test
+ # 1000+ = recommended for final experiments
+-N_RANDOM = 100
++N_RANDOM = 1000   # TD-011 resolved 2026-10-22: at 100 draws the 5D AUROC moved 0.769-0.783 across seeds; at 1000 it is stable (0.775-0.776)
+ 
+ # Make results reproducible
+ RANDOM_SEED = 42
+--- a/scripts/03_clinicaltrials_groundtruth.py
++++ b/scripts/03_clinicaltrials_groundtruth.py
+@@ -192,6 +192,17 @@
+                      "api_requests": client.stats["network"],
+                      "cache_hits": client.stats["cache_hits"]}
+ 
++PHASE_ORDER = ("NA", "EARLY_PHASE1", "PHASE1", "PHASE2", "PHASE3", "PHASE4")
++
++
++def highest_phase(phase_list):
++    """The trial's highest listed phase. A combined-phase trial is listed lowest first (["PHASE2", "PHASE3"]), so
++    the former phases[0] recorded PHASE2 for a Phase 2/3 trial, contradicting the feature's definition
++    (maximum phase reached; 06_vps_fusion.build_clinical_maturity). Unknown values rank as NA. Audit 2026-10-22."""
++    known = [p for p in (phase_list or []) if p in PHASE_ORDER]
++    return max(known, key=PHASE_ORDER.index) if known else "NA"
++
++
+ def is_actually_pd(study):
+     """Client-side safety net: verify Parkinson's actually appears in the
+     study's own conditions list, regardless of what the API returned."""
+@@ -305,8 +316,7 @@
+ 
+             # --- Accepted: classify by cutoff (methodology UNCHANGED) ---------
+             first_posted = status_mod.get("studyFirstPostDateStruct", {}).get("date", "")
+-            phase_list = design_mod.get("phases", [])
+-            phase = phase_list[0] if phase_list else "NA"
++            phase = highest_phase(design_mod.get("phases", []))
+             enrollment = design_mod.get("enrollmentInfo", {}).get("count", None)
+             overall_status = status_mod.get("overallStatus", "")
+ 
+--- a/scripts/check_groundtruth.py
++++ b/scripts/check_groundtruth.py
+@@ -1,11 +1,18 @@
++import pandas as pd
+ 
+-import pandas as pd
+-pre = pd.read_csv('data/clinical_maturity_precutoff.csv')
+-post = pd.read_csv('data/ground_truth_postcutoff.csv')
+-print('Unique compounds PRE-cutoff:', pre['compound_id'].nunique())
+-print('Unique compounds POST-cutoff (positives):', post['compound_id'].nunique())
+-print()
+-print(post['phase'].value_counts())
+-print()
+-print('--- Sample of 15 post-cutoff compounds ---')
+-print(post[['compound_name','nct_id','phase','status']].drop_duplicates('compound_name').head(15).to_string())
++
++def main():
++    """Legacy manual check; guarded 2026-10-22 (TD-012) so importing it does nothing."""
++    pre = pd.read_csv('data/clinical_maturity_precutoff.csv')
++    post = pd.read_csv('data/ground_truth_postcutoff.csv')
++    print('Unique compounds PRE-cutoff:', pre['compound_id'].nunique())
++    print('Unique compounds POST-cutoff (positives):', post['compound_id'].nunique())
++    print()
++    print(post['phase'].value_counts())
++    print()
++    print('--- Sample of 15 post-cutoff compounds ---')
++    print(post[['compound_name','nct_id','phase','status']].drop_duplicates('compound_name').head(15).to_string())
++
++
++if __name__ == "__main__":
++    main()
+--- a/scripts/check_studytype.py
++++ b/scripts/check_studytype.py
+@@ -46,6 +46,7 @@
+         # The filter would drop these trials as "not interventional": a lookup failure must not remove evidence.
+         raise SystemExit(f"{len(errors)} study-type lookup(s) failed (e.g. {errors[:5]}); nothing written. "
+                          "Re-run when ClinicalTrials.gov is reachable.")
++    os.makedirs("data", exist_ok=True)                        # TD-013
+     df.to_csv("data/nct_studytype_check.csv", index=False)
+ 
+     print("\n--- Study type breakdown ---")
+@@ -54,7 +55,8 @@
+     all_types = df["intervention_types"].str.split(";").explode()
+     print(all_types.value_counts())
+     # The stage's declared outputs include the *_clean.csv files: produce them from this check.
+-    runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)), "filter_by_studytype.py"))
++    runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)), "filter_by_studytype.py"),
++                   run_name="__main__")                       # the filter is __main__-guarded since TD-012
+ 
+ if __name__ == "__main__":
+     import argparse
+--- a/scripts/completeness_gap_agent.py
++++ b/scripts/completeness_gap_agent.py
+@@ -568,7 +568,7 @@
+           f"stage-06 agreement {out['stage06_agreement']}")
+     for dom in VPS_DIMS:
+         print(f"  {dom}: {out['state_counts_by_domain'][dom]}")
+-    return 0
++    return 1 if out["run_status"] == "FAILED" else 0     # exit 1 only on FAILED, like 10b/10c/10f/10g (audit 2026-10-22)
+ 
+ 
+ if __name__ == "__main__":
+--- a/scripts/conflict_context_agent.py
++++ b/scripts/conflict_context_agent.py
+@@ -473,7 +473,8 @@
+         json.dump(out, fh, indent=1, sort_keys=True, default=str)
+     os.replace(tmp, path)                                    # atomic: no partial output (TD-037 lesson)
+     print(f"Saved {args.out}: {len(out['records'])} compounds; status counts {out['status_counts']}")
++    return 1 if out["run_status"] == "FAILED" else 0     # exit 1 only on FAILED, like 10b/10c/10f/10g (audit 2026-10-22)
+ 
+ 
+ if __name__ == "__main__":
+-    main()
++    raise SystemExit(main())
+--- a/scripts/filter_by_studytype.py
++++ b/scripts/filter_by_studytype.py
+@@ -2,13 +2,10 @@
+ Filter ground truth using the study-type check results.
+ Keeps only INTERVENTIONAL trials with at least one DRUG/BIOLOGICAL arm.
+ """
++import os
++
+ import pandas as pd
+ 
+-checked = pd.read_csv("data/nct_studytype_check.csv")
+-_errors = checked.loc[checked["study_type"] == "ERROR", "nct_id"].tolist()
+-if _errors:
+-    raise SystemExit(f"{len(_errors)} trial(s) have a failed study-type lookup (e.g. {_errors[:5]}); refusing to "
+-                     "filter, because they would be dropped as non-interventional. Re-run scripts/check_studytype.py.")
+ 
+ def keep_trial(row):
+     if row["study_type"] != "INTERVENTIONAL":
+@@ -16,17 +13,31 @@
+     types = str(row["intervention_types"]).split(";")
+     return any(t in ("DRUG", "BIOLOGICAL") for t in types)
+ 
+-checked["keep"] = checked.apply(keep_trial, axis=1)
+-good_ncts = set(checked[checked["keep"]]["nct_id"])
+ 
+-print(f"Trials kept: {len(good_ncts)} / {len(checked)}")
++def main():
++    """Guarded since 2026-10-22 (TD-012): this stage used to run, and write data/, as a side effect of being imported."""
++    checked = pd.read_csv("data/nct_studytype_check.csv")
++    _errors = checked.loc[checked["study_type"] == "ERROR", "nct_id"].tolist()
++    if _errors:
++        raise SystemExit(f"{len(_errors)} trial(s) have a failed study-type lookup (e.g. {_errors[:5]}); refusing to "
++                         "filter, because they would be dropped as non-interventional. Re-run scripts/check_studytype.py.")
+ 
+-# Apply to both pre and post cutoff files
+-for fname in ["data/clinical_maturity_precutoff.csv", "data/ground_truth_postcutoff.csv"]:
+-    df = pd.read_csv(fname)
+-    before = df["compound_id"].nunique()
+-    filtered = df[df["nct_id"].isin(good_ncts)]
+-    after = filtered["compound_id"].nunique()
+-    out_name = fname.replace(".csv", "_clean.csv")
+-    filtered.to_csv(out_name, index=False)
+-    print(f"{fname}: {before} -> {after} unique compounds. Saved to {out_name}")
+\ No newline at end of file
++    checked["keep"] = checked.apply(keep_trial, axis=1)
++    good_ncts = set(checked[checked["keep"]]["nct_id"])
++
++    print(f"Trials kept: {len(good_ncts)} / {len(checked)}")
++
++    # Apply to both pre and post cutoff files
++    for fname in ["data/clinical_maturity_precutoff.csv", "data/ground_truth_postcutoff.csv"]:
++        df = pd.read_csv(fname)
++        before = df["compound_id"].nunique()
++        filtered = df[df["nct_id"].isin(good_ncts)]
++        after = filtered["compound_id"].nunique()
++        out_name = fname.replace(".csv", "_clean.csv")
++        filtered.to_csv(out_name + ".tmp", index=False)
++        os.replace(out_name + ".tmp", out_name)               # atomic: never a half-written *_clean.csv
++        print(f"{fname}: {before} -> {after} unique compounds. Saved to {out_name}")
++
++
++if __name__ == "__main__":
++    main()
+--- a/scripts/intervention_matcher.py
++++ b/scripts/intervention_matcher.py
+@@ -133,6 +133,30 @@
+     for i in range(n - m + 1):
+         if haystack[i : i + m] == list(needle):
+             return True
++    return False
++
++
++#: A whole-token hit followed by one of these words names a different entity -- a drug class ("dopamine agonists"),
++#: a protein ("cerebral dopamine neurotrophic factor") or a cell product ("dopamine progenitor cells") -- not the
++#: compound. §2 of docs/INTERVENTION_MATCHING.md already excludes class relationships; token matching enforced it
++#: only for prefixes ("Dopa" vs "Levodopa"). Found by the 2026-10-22 E-056 rebuild: 9 of 11 "Dopamine" links.
++CLASS_FOLLOWERS = frozenset({
++    "agonist", "agonists", "antagonist", "antagonists", "agent", "agents", "neurotrophic", "neuron", "neurons",
++    "progenitor", "progenitors", "cell", "cells", "receptor", "receptors", "transporter", "transporters", "precursor",
++    "precursors", "derived", "producing",
++})
++
++
++def _token_run_names_the_compound(haystack: Sequence[str], needle: Sequence[str]) -> bool:
++    """True when at least one occurrence of `needle` is NOT immediately followed by a class/entity word."""
++    n, m = len(haystack), len(needle)
++    if m == 0 or m > n:
++        return False
++    for i in range(n - m + 1):
++        if haystack[i : i + m] == list(needle):
++            nxt = haystack[i + m] if i + m < n else None
++            if nxt not in CLASS_FOLLOWERS:
++                return True
+     return False
+ 
+ 
+@@ -332,7 +356,7 @@
+         for alias in alias_list:
+             if alias["source"] != "compound_name":
+                 continue
+-            if _contains_token_run(text_tokens, alias["normalised"].split()):
++            if _token_run_names_the_compound(text_tokens, alias["normalised"].split()):
+                 base.update(
+                     outcome=MATCHED,
+                     match_type=f"token_{kind}" if alias["source"] == "compound_name"
+--- a/scripts/literature_credibility_agent.py
++++ b/scripts/literature_credibility_agent.py
+@@ -519,7 +519,9 @@
+               f"{cov['duplicates_removed']} duplicates removed; status {report['run_status']} -> {ALL_OUT}")
+         return 1 if report["run_status"] in ("FAILED", "PARTIAL") else 0
+     if args.curated:
++        failed = False
+         for compound, rep in curated_reports().items():
++            failed = failed or rep["run_status"] == "FAILED"
+             slug = re.sub(r"[^a-z0-9]+", "_", compound.lower()).strip("_")
+             path = f"data/literature_credibility_{slug}.json"
+             if os.path.exists(path) and json.load(open(path)).get("provenance", {}).get("graph"):
+@@ -530,7 +532,7 @@
+             os.replace(path + ".tmp", path)
+             print(f"{compound}: {rep['summary_all']['n_papers']} curated papers, tiers {rep['summary_all']['by_tier']}, "
+                   f"status {rep['run_status']} -> {path}")
+-        return None
++        return 1 if failed else 0            # exit 1 only on FAILED (audit 2026-10-22; was None -> always 0)
+     if not args.graph or not args.out:
+         ap.error("--graph and --out are required unless --curated")
+ 
+--- a/scripts/reproducibility_agent.py
++++ b/scripts/reproducibility_agent.py
+@@ -393,7 +393,8 @@
+     print(f"Saved {args.out}: {len(out['findings'])} findings {out['finding_status_counts']}; "
+           f"{len(out['publication_structures'])} paper structure(s); "
+           f"{out['shared_trials_across_compounds'].get('n_shared')} trials shared across compounds")
++    return 1 if out["run_status"] == "FAILED" else 0     # exit 1 only on FAILED, like 10b/10c/10f/10g (audit 2026-10-22)
+ 
+ 
+ if __name__ == "__main__":
+-    main()
++    raise SystemExit(main())
+--- a/scripts/test_openfda.py
++++ b/scripts/test_openfda.py
+@@ -1,4 +1,12 @@
+ import requests
+-r = requests.get("https://api.fda.gov/drug/label.json", params={"search": "openfda.generic_name:\"aspirin\"", "limit": 1}, timeout=15)
+-print(r.status_code)
+-print(r.text[:300])
++
++
++def main():
++    """Legacy manual check; guarded 2026-10-22 (TD-012) so importing it does nothing."""
++    r = requests.get("https://api.fda.gov/drug/label.json", params={"search": "openfda.generic_name:\"aspirin\"", "limit": 1}, timeout=15)
++    print(r.status_code)
++    print(r.text[:300])
++
++
++if __name__ == "__main__":
++    main()
+--- a/scripts/vps_verify.py
++++ b/scripts/vps_verify.py
+@@ -83,6 +83,15 @@
+     j = lambda p: os.path.join(root, p)
+     cand = {r["compound_name"] for r in _rows(j("data/pd_candidates_filtered.csv"))}
+     clin = [r for r in _rows(j("data/clinical_maturity_precutoff_clean.csv"))]
++    # Per-link feature exclusions (D-020 / TD-038), applied as stage 06 applies them, before the pool is formed: a
++    # compound left with no pre-cutoff link leaves the pool. Without this, adopting the file would make verification
++    # fail on the pool even though 06 is correct (final audit 2026-10-22).
++    if os.path.exists(j("data/feature_role_exclusions.csv")):
++        fx = {(e["nct_id"], e["compound_name"]) for e in _rows(j("data/feature_role_exclusions.csv"))}
++        unknown = fx - {(r["nct_id"], r["compound_name"]) for r in clin}
++        if unknown:
++            raise ValueError(f"feature exclusions not found in clinical table: {sorted(unknown)}")
++        clin = [r for r in clin if (r["nct_id"], r["compound_name"]) not in fx]
+     pool = sorted({r["compound_name"] for r in clin} & cand)
+     phase = {}
+     for r in clin:
+@@ -96,10 +105,20 @@
+         labelled[r["compound_name"]] = has
+         if has:
+             risk[r["compound_name"]] = _float(r["serious_term_count"]) + (5 if r["boxed_warning"] == "True" else 0)
+-    mol = {}
++    mol, mol_raw = {}, {}
+     for r in _rows(j("data/molecular_pathway.csv")):
+         nt = _float(r.get("n_targets"))
++        mol_raw[r["compound_name"]] = _float(r["molecular_plausibility_score"])
+         mol[r["compound_name"]] = None if nt == 0 else _float(r["molecular_plausibility_score"])
++    # A pool compound ABSENT from molecular_pathway.csv is median-imputed on the raw score and then ranked as measured,
++    # exactly as stage 06 impute_molecular() does and as DECISIONS D-004 documents ("would still be median-imputed").
++    # This verifier gave it the neutral 0.5 instead, so any cohort with such a compound failed verification although
++    # stage 06 followed the documented rule (found by the 2026-10-22 rebuilt-cohort candidates).
++    absent = [c for c in pool if c not in mol_raw]
++    if absent:
++        mol_med = _median([mol_raw[c] for c in pool if c in mol_raw and mol_raw[c] is not None])
++        for c in absent:
++            mol[c] = mol_med
+ 
+     def impute(d):
+         vals = {c: d.get(c) for c in pool}
+--- /dev/null
++++ b/tests/test_final_audit_fixes.py
+@@ -0,0 +1,173 @@
++"""Regression tests for defects fixed in the final audit (2026-10-22)."""
++import importlib.util
++import json
++import os
++import runpy
++import shutil
++import sys
++import tempfile
++import unittest
++from unittest import mock
++
++ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
++sys.path.insert(0, os.path.join(ROOT, "scripts"))
++
++
++def _load(name, rel):
++    spec = importlib.util.spec_from_file_location(name, os.path.join(ROOT, rel))
++    mod = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(mod)
++    return mod
++
++
++HAVE = os.path.exists(os.path.join(ROOT, "data", "vps_scores_v2.csv"))
++INPUTS = ["pd_candidates_filtered.csv", "network_proximity.csv", "clinical_maturity_precutoff_clean.csv",
++          "literature_independence.csv", "safety_signal.csv", "ground_truth_postcutoff_clean.csv",
++          "label_role_exclusions.csv", "molecular_pathway.csv"]
++
++
++@unittest.skipUnless(HAVE, "needs the approved artefacts")
++class TestVerifierAppliesFeatureExclusions(unittest.TestCase):
++    """vps_verify built the pool without data/feature_role_exclusions.csv, so adopting D-020 would have made the
++    independent check fail although stage 06 was right."""
++
++    def setUp(self):
++        self.tmp = tempfile.mkdtemp(prefix="evirep_fx_")
++        os.makedirs(os.path.join(self.tmp, "data"))
++        for f in INPUTS:
++            shutil.copy(os.path.join(ROOT, "data", f), os.path.join(self.tmp, "data", f))
++        self.v = _load("vv_fx", "scripts/vps_verify.py")
++
++    def tearDown(self):
++        shutil.rmtree(self.tmp, ignore_errors=True)
++
++    def _fx(self, rows):
++        with open(os.path.join(self.tmp, "data", "feature_role_exclusions.csv"), "w") as fh:
++            fh.write("nct_id,compound_name\n" + "".join(f"{n},{c}\n" for n, c in rows))
++
++    def test_a_compound_with_no_remaining_link_leaves_the_pool(self):
++        self._fx([("NCT02236260", "Lidocaine")])                       # Lidocaine's only pre-cutoff link
++        expected, _ = self.v.recompute(self.tmp)
++        self.assertNotIn("Lidocaine", expected)
++        self.assertEqual(len(expected), 89)
++
++    def test_unknown_exclusion_is_an_error(self):
++        self._fx([("NCT00000000", "Lidocaine")])
++        with self.assertRaises(ValueError):
++            self.v.recompute(self.tmp)
++
++    def test_no_file_means_the_approved_pool(self):
++        expected, _ = self.v.recompute(self.tmp)
++        self.assertEqual(len(expected), 90)
++
++
++class TestAgentExitCodes(unittest.TestCase):
++    """10d, 10e and 10h exited 0 even when they wrote run_status FAILED; now exit 1 only on FAILED."""
++
++    def _run(self, rel, status, extra):
++        mod = _load("agent_" + os.path.basename(rel)[:-3], rel)
++        tmp = tempfile.mkdtemp(prefix="evirep_exit_")
++        os.makedirs(os.path.join(tmp, "data"))
++        try:
++            out = {"run_status": status, **extra}
++            with mock.patch.object(mod, "run", return_value=out), mock.patch.object(mod, "validate_output"):
++                return mod.main(["--root", tmp])
++        finally:
++            shutil.rmtree(tmp, ignore_errors=True)
++
++    def test_conflict_context_10d(self):
++        e = {"records": [], "status_counts": {}}
++        self.assertEqual(self._run("scripts/conflict_context_agent.py", "FAILED", e), 1)
++        self.assertEqual(self._run("scripts/conflict_context_agent.py", "PARTIAL", e), 0)
++        self.assertEqual(self._run("scripts/conflict_context_agent.py", "SUCCESS", e), 0)
++
++    def test_reproducibility_10e(self):
++        e = {"findings": [], "finding_status_counts": {}, "publication_structures": [], "shared_trials_across_compounds": {}}
++        self.assertEqual(self._run("scripts/reproducibility_agent.py", "FAILED", e), 1)
++        self.assertEqual(self._run("scripts/reproducibility_agent.py", "SUCCESS", e), 0)
++
++    def test_completeness_10h(self):
++        mod = _load("cg_dims", "scripts/completeness_gap_agent.py")
++        e = {"records": [], "synthesis_inputs": [], "stage06_agreement": True,
++             "state_counts_by_domain": {d: {} for d in mod.VPS_DIMS}}
++        self.assertEqual(self._run("scripts/completeness_gap_agent.py", "FAILED", e), 1)
++        self.assertEqual(self._run("scripts/completeness_gap_agent.py", "SUCCESS", e), 0)
++
++    def test_main_guards_propagate_the_exit_code(self):
++        for rel in ("scripts/conflict_context_agent.py", "scripts/reproducibility_agent.py"):
++            with open(os.path.join(ROOT, rel), encoding="utf-8") as fh:
++                self.assertIn("raise SystemExit(main())", fh.read(), rel)
++
++
++class TestEveryStageHasATimeout(unittest.TestCase):
++    def test_registry(self):
++        ui = _load("ui_timeouts", "ui/server.py")
++        self.assertEqual([s["id"] for s in ui.STAGES if not s.get("timeout_s")], [])
++
++
++class TestScriptsSafeOnImportAndFreshClone(unittest.TestCase):
++    def test_filter_stage_writes_nothing_on_import(self):
++        tmp = tempfile.mkdtemp(prefix="evirep_imp_")
++        cwd = os.getcwd()
++        try:
++            os.chdir(tmp)
++            runpy.run_path(os.path.join(ROOT, "scripts", "filter_by_studytype.py"))   # would raise: no data/ here
++            self.assertEqual(os.listdir(tmp), [])
++        finally:
++            os.chdir(cwd)
++            shutil.rmtree(tmp, ignore_errors=True)
++
++    def test_check_studytype_runs_the_guarded_filter_as_main(self):
++        with open(os.path.join(ROOT, "scripts", "check_studytype.py"), encoding="utf-8") as fh:
++            self.assertIn('run_name="__main__"', fh.read())
++
++    def test_writers_create_data_dir(self):
++        for rel in ("scripts/00_exclusion_filter.py", "scripts/01_get_pd_candidates.py", "scripts/check_studytype.py"):
++            with open(os.path.join(ROOT, rel), encoding="utf-8") as fh:
++                self.assertIn('os.makedirs("data", exist_ok=True)', fh.read(), rel)
++
++
++if __name__ == "__main__":
++    unittest.main()
++
++
++class TestHighestPhase(unittest.TestCase):
++    """Stage 03 stored phases[0]: a PHASE2/PHASE3 trial was recorded as PHASE2 (18 pre-cutoff links, 6 compounds)."""
++
++    def test_highest_listed_phase(self):
++        m = _load("ct03", "scripts/03_clinicaltrials_groundtruth.py")
++        self.assertEqual(m.highest_phase(["PHASE2", "PHASE3"]), "PHASE3")
++        self.assertEqual(m.highest_phase(["EARLY_PHASE1"]), "EARLY_PHASE1")
++        self.assertEqual(m.highest_phase(["PHASE1", "PHASE2"]), "PHASE2")
++        self.assertEqual(m.highest_phase([]), "NA")
++        self.assertEqual(m.highest_phase(None), "NA")
++        self.assertEqual(m.highest_phase(["NA"]), "NA")
++        self.assertEqual(m.highest_phase(["UNKNOWN_VALUE", "PHASE1"]), "PHASE1")
++
++
++@unittest.skipUnless(HAVE, "needs the approved artefacts")
++class TestVerifierMatchesStage06ForAbsentMolecular(unittest.TestCase):
++    """A pool compound absent from molecular_pathway.csv is median-imputed by stage 06 (DECISIONS D-004); the verifier
++    gave it 0.5, so such a cohort failed verification although stage 06 was right (rebuilt cohort, 2026-10-22)."""
++
++    def test_absent_compound_gets_the_pool_median_raw_score(self):
++        v = _load("vv_absent", "scripts/vps_verify.py")
++        tmp = tempfile.mkdtemp(prefix="evirep_absent_")
++        try:
++            os.makedirs(os.path.join(tmp, "data"))
++            for f in INPUTS:
++                shutil.copy(os.path.join(ROOT, "data", f), os.path.join(tmp, "data", f))
++            import pandas as pd
++            m = pd.read_csv(os.path.join(tmp, "data", "molecular_pathway.csv"))
++            gone = m[m.n_targets > 0].compound_name.iloc[0]
++            m[m.compound_name != gone].to_csv(os.path.join(tmp, "data", "molecular_pathway.csv"), index=False)
++            expected, _ = v.recompute(tmp)
++            raw = m[m.compound_name != gone].molecular_plausibility_score
++            med = float(raw.median())
++            vals = sorted(raw.where(m[m.compound_name != gone].n_targets > 0).dropna().tolist() + [med])
++            # rank of the median among measured values (legacy: average rank / n)
++            le = [i + 1 for i, x in enumerate(vals) if x == med]
++            self.assertAlmostEqual(expected[gone]["r_molecular"], (sum(le) / len(le)) / len(vals), places=12)
++            self.assertNotEqual(expected[gone]["r_molecular"], 0.5)
++        finally:
++            shutil.rmtree(tmp, ignore_errors=True)
+--- a/tests/test_intervention_matcher.py
++++ b/tests/test_intervention_matcher.py
+@@ -436,3 +436,30 @@
+ 
+ if __name__ == "__main__":
+     unittest.main(verbosity=2)
++
++
++class TestClassPhrasesAreNotTheCompound(unittest.TestCase):
++    """E-056 rebuild (2026-10-22): with pagination fixed, 9 of 11 'Dopamine' links were class or entity phrases.
++    Intervention strings below are the registry's own (NCT ids in comments)."""
++
++    def test_class_and_entity_phrases_do_not_match(self):
++        for nct, name in (("NCT00465452", "Continuous Release Dopamine Agonists"),
++                          ("NCT03151460", "Dopamine Agent"),
++                          ("NCT02347059", "Dopamine Agonists (pramipexole, ropirinole)"),
++                          ("NCT02233023", "Bromocriptine and other dopamine agonists"),
++                          ("NCT03295786", "Cerebral Dopamine Neurotrophic Factor"),
++                          ("NCT05887466", "Allogenic embryonic stem cell-derived A9 dopamine progenitor cell (A9-DPC) Low Dose"),
++                          ("NCT06422208", "Autologous midbrain dopamine neurons")):
++            r = im.match_trial("Dopamine", [{"type": "DRUG", "name": name}])
++            self.assertFalse(r["qualifies"], f"{nct}: {name}")
++
++    def test_genuine_compound_mentions_still_match(self):
++        for comp, name in (("Dopamine", "Dopamine hydrochloride infusion"),
++                           ("Lisuride", "Lisuride Transdermal System"),
++                           ("Levodopa", "ND0612 (Levodopa/Carbidopa solution)"),
++                           ("Topiramate", "topiramate (drug)")):
++            self.assertTrue(im.match_trial(comp, [{"type": "DRUG", "name": name}])["qualifies"], name)
++
++    def test_one_genuine_occurrence_is_enough(self):
++        r = im.match_trial("Dopamine", [{"type": "DRUG", "name": "Dopamine infusion vs dopamine agonists"}])
++        self.assertTrue(r["qualifies"])
+--- a/tests/test_stage03_failure_handling.py
++++ b/tests/test_stage03_failure_handling.py
+@@ -115,5 +115,6 @@
+             "data/nct_studytype_check.csv", index=False)
+         import runpy
+         with self.assertRaises(SystemExit), mock.patch("builtins.print"):
+-            runpy.run_path(os.path.join(ROOT, "scripts", "filter_by_studytype.py"))
++            # invoked as check_studytype.py invokes it (the filter is __main__-guarded since TD-012, 2026-10-22)
++            runpy.run_path(os.path.join(ROOT, "scripts", "filter_by_studytype.py"), run_name="__main__")
+         self.assertFalse(os.path.exists("data/clinical_maturity_precutoff_clean.csv"))
+--- a/ui/server.py
++++ b/ui/server.py
+@@ -62,7 +62,7 @@
+         "inputs": [],
+         "outputs": ["data/hetionet_nodes.csv", "data/hetionet_edges.csv",
+                     "data/pd_candidates_full.csv", "data/pd_candidates.csv"],
+-        "checkpoint": None,
++        "timeout_s": 3600, "checkpoint": None,
+         "apis": [{"name": "Zenodo (Hetionet v1.0.0 archive)",
+                   "endpoint": "https://zenodo.org/records/268568/files/dhimmel/hetionet-v1.0.0.zip",
+                   "auth": "none", "query": "single 155 MB download"}],
+@@ -76,7 +76,7 @@
+         "depends_on": ["01"],
+         "inputs": ["data/pd_candidates.csv"],
+         "outputs": ["data/pd_candidates_filtered.csv"],
+-        "checkpoint": None, "apis": [], "env": [], "cost": "local",
++        "timeout_s": 600, "checkpoint": None, "apis": [], "env": [], "cost": "local",
+         "issues": ["TD-010"], "limitations": [],
+     },
+     {
+@@ -85,7 +85,7 @@
+         "depends_on": ["00"],
+         "inputs": ["data/hetionet_edges.csv", "data/pd_candidates_filtered.csv"],
+         "outputs": ["data/network_proximity.csv"],
+-        "checkpoint": None, "apis": [], "env": [], "cost": "CPU-bound",
++        "timeout_s": 14400, "checkpoint": None, "apis": [], "env": [], "cost": "CPU-bound",
+         "issues": ["TD-011"],
+         "limitations": ["N_RANDOM = 100 (the script's own quick-test value, TD-011)."],
+     },
+@@ -98,7 +98,7 @@
+         "inputs": ["data/pd_candidates_filtered.csv"],
+         "outputs": ["data/clinical_maturity_precutoff.csv", "data/ground_truth_postcutoff.csv",
+                     "data/clinicaltrials_match_audit.csv"],
+-        "checkpoint": None,
++        "timeout_s": 14400, "checkpoint": None,
+         "apis": [{"name": "ClinicalTrials.gov API v2", "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+                   "auth": "none", "query": "query.intr=<compound>, query.cond=<PD phrase>"},
+                  {"name": "Open Targets GraphQL (ChEMBL synonyms for Gate 2)", "endpoint": "OpenTargetsClient",
+@@ -117,7 +117,7 @@
+         "inputs": ["data/clinical_maturity_precutoff.csv", "data/ground_truth_postcutoff.csv"],
+         "outputs": ["data/nct_studytype_check.csv", "data/clinical_maturity_precutoff_clean.csv",
+                     "data/ground_truth_postcutoff_clean.csv"],
+-        "checkpoint": None,
++        "timeout_s": 3600, "checkpoint": None,
+         "apis": [{"name": "ClinicalTrials.gov API v2", "endpoint": "https://clinicaltrials.gov/api/v2/studies/",
+                   "auth": "none", "query": "one GET per unique NCT ID"}],
+         "env": [], "cost": "one request per unique NCT ID",
+@@ -131,7 +131,7 @@
+         "depends_on": ["03c"],
+         "inputs": ["data/clinical_maturity_precutoff_clean.csv"],
+         "outputs": ["data/literature_independence.csv"],
+-        "checkpoint": "data/_literature_checkpoint.jsonl",
++        "timeout_s": 28800, "checkpoint": "data/_literature_checkpoint.jsonl",
+         "apis": [{"name": "NCBI E-utilities (PubMed)", "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+                   "auth": "optional API key (rate limit only)",
+                   "query": '"<compound>"[Title/Abstract] AND "Parkinson Disease"[Title/Abstract], retmax 30 — no date bound'},
+@@ -147,7 +147,7 @@
+         "depends_on": ["03c"],
+         "inputs": ["data/clinical_maturity_precutoff_clean.csv"],
+         "outputs": ["data/safety_signal.csv"],
+-        "checkpoint": "data/_safety_checkpoint_v2.jsonl",
++        "timeout_s": 7200, "checkpoint": "data/_safety_checkpoint_v2.jsonl",
+         "apis": [{"name": "openFDA drug label", "endpoint": "https://api.fda.gov/drug/label.json",
+                   "auth": "none", "query": 'search=openfda.generic_name:"<compound>", limit=1'}],
+         "env": [], "cost": "~90 requests",
+@@ -187,7 +187,7 @@
+                     "data/baseline_results_v2.csv", "data/ablation_results_v2.csv",
+                     "data/ablation_results_5d.csv", "data/grid_search_4d_log.csv",
+                     "data/grid_search_3d_log.csv", "data/grid_search_5d_log.csv"],
+-        "checkpoint": None, "apis": [], "env": [], "cost": "local, seconds",
++        "timeout_s": 3600, "checkpoint": None, "apis": [], "env": [], "cost": "local, seconds",
+         "issues": ["TD-003", "TD-004", "TD-020", "TD-024", "TD-025", "TD-027"],
+         "limitations": ["14 positives / 90 compounds: AUROC CIs about +/-0.11 to 0.13 (TD-020)."],
+     },
+@@ -200,7 +200,7 @@
+         "inputs": ["data/_literature_checkpoint.jsonl"],
+         "outputs": ["data/literature_graph_droxidopa.json"],
+         "run_args": ["--compound", "Droxidopa"],      # required argument; the declared output is Droxidopa's graph
+-        "checkpoint": None,
++        "timeout_s": 3600, "checkpoint": None,
+         "apis": [{"name": "NCBI E-utilities + Semantic Scholar", "endpoint": "stage-04 functions",
+                   "auth": "as stage 04", "query": "one compound"}],
+         "env": [], "cost": "one compound's stage-04 queries",
+@@ -296,7 +296,7 @@
+                    "data/vps_variant_results.csv", "data/baseline_results_v2.csv", "data/ablation_results_5d.csv",
+                    "data/bootstrap_ci_equal5d_vs_4d.csv", "data/reproducibility.json"],
+         "outputs": ["data/vps_evaluation_report.json"],
+-        "checkpoint": None, "apis": [], "env": [], "cost": "offline, ~35 s", "issues": ["D-018"], "limitations": [],
++        "timeout_s": 3600, "checkpoint": None, "apis": [], "env": [], "cost": "offline, ~35 s", "issues": ["D-018"], "limitations": [],
+     },
+     {
+         "id": "10b", "name": "Molecular agent run record (offline re-validation)", "script": "scripts/molecular_run_record.py",

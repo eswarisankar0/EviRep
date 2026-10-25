@@ -1,0 +1,384 @@
+......................./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_clinical_evidence_agent.py:173: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpg1x3bolp/data/cache/ctgov_precutoff_trials.json' mode='r' encoding='UTF-8'>
+  before = open(os.path.join(self.root, ce.CACHE)).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_clinical_evidence_agent.py:178: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpg1x3bolp/data/cache/ctgov_precutoff_trials.json' mode='r' encoding='UTF-8'>
+  self.assertEqual(open(os.path.join(self.root, ce.CACHE)).read(), before)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+............./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_clinical_evidence_agent.py:213: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/clinical_evidence.json' mode='r' encoding='UTF-8'>
+  out = json.load(open(path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..../Users/thrisha/Drup_Rep_PF/EviRep/scripts/clinical_role_review.py:56: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/cache/ctgov_precutoff_trials.json' mode='r' encoding='utf-8'>
+  cache = json.load(open(j(CACHE), encoding="utf-8")) if os.path.exists(j(CACHE)) else {"studies": [], "batches": []}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..../Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:375: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpv058x9_1/data/conflict_context.json' mode='r' encoding='utf-8'>
+  conflict = json.load(open(j(F["conflict"]), encoding="utf-8")) if os.path.exists(j(F["conflict"])) else {}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:376: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpv058x9_1/data/reproducibility.json' mode='r' encoding='utf-8'>
+  repro = json.load(open(j(F["repro"]), encoding="utf-8")) if os.path.exists(j(F["repro"])) else {}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpv058x9_1/data/clinical_evidence.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpv058x9_1/data/evidence_independence.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpv058x9_1/data/literature_credibility_all.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:375: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpmpqem9n_/data/conflict_context.json' mode='r' encoding='utf-8'>
+  conflict = json.load(open(j(F["conflict"]), encoding="utf-8")) if os.path.exists(j(F["conflict"])) else {}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:376: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpmpqem9n_/data/reproducibility.json' mode='r' encoding='utf-8'>
+  repro = json.load(open(j(F["repro"]), encoding="utf-8")) if os.path.exists(j(F["repro"])) else {}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpmpqem9n_/data/clinical_evidence.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpmpqem9n_/data/safety_evidence.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpmpqem9n_/data/evidence_independence.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpmpqem9n_/data/literature_credibility_all.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+....../Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:375: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/conflict_context.json' mode='r' encoding='utf-8'>
+  conflict = json.load(open(j(F["conflict"]), encoding="utf-8")) if os.path.exists(j(F["conflict"])) else {}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:376: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/reproducibility.json' mode='r' encoding='utf-8'>
+  repro = json.load(open(j(F["repro"]), encoding="utf-8")) if os.path.exists(j(F["repro"])) else {}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/clinical_evidence.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/safety_evidence.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/evidence_independence.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/literature_credibility_all.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..................................../Users/thrisha/Drup_Rep_PF/EviRep/tests/test_conflict_context_agent.py:217: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpa4zv9k7u/data/conflict_context.json' mode='r' encoding='UTF-8'>
+  first = open(os.path.join(tmp, cca.OUT)).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_conflict_context_agent.py:219: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpa4zv9k7u/data/conflict_context.json' mode='r' encoding='UTF-8'>
+  self.assertEqual(first, open(os.path.join(tmp, cca.OUT)).read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.../Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:116: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/clinical_evidence.json' mode='r' encoding='utf-8'>
+  for c in json.load(open(j(CLINICAL), encoding="utf-8")).get("compounds", []):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:375: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/conflict_context.json' mode='r' encoding='utf-8'>
+  conflict = json.load(open(j(F["conflict"]), encoding="utf-8")) if os.path.exists(j(F["conflict"])) else {}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:376: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/reproducibility.json' mode='r' encoding='utf-8'>
+  repro = json.load(open(j(F["repro"]), encoding="utf-8")) if os.path.exists(j(F["repro"])) else {}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/clinical_evidence.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/safety_evidence.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/evidence_independence.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/completeness_gap_agent.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/literature_credibility_all.json' mode='r' encoding='utf-8'>
+  return json.load(open(j(F[key]), encoding="utf-8")) if os.path.exists(j(F[key])) else None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+......./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp3kzpur29/data/conflict_claims_curated.json' mode='w' encoding='UTF-8'>
+  json.dump({"claims": claims}, open(os.path.join(self.root, ei.CURATED), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:61: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp3kzpur29/data/cache/pubmed_efetch_case_claims.xml'>
+  open(os.path.join(self.root, "data/cache/pubmed_efetch_case_claims.xml"), "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp3kzpur29/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmptqi73ta0/data/conflict_claims_curated.json' mode='w' encoding='UTF-8'>
+  json.dump({"claims": claims}, open(os.path.join(self.root, ei.CURATED), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:61: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmptqi73ta0/data/cache/pubmed_efetch_case_claims.xml'>
+  open(os.path.join(self.root, "data/cache/pubmed_efetch_case_claims.xml"), "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmptqi73ta0/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmps68h69zx/data/conflict_claims_curated.json' mode='w' encoding='UTF-8'>
+  json.dump({"claims": claims}, open(os.path.join(self.root, ei.CURATED), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:61: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmps68h69zx/data/cache/pubmed_efetch_case_claims.xml'>
+  open(os.path.join(self.root, "data/cache/pubmed_efetch_case_claims.xml"), "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmps68h69zx/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmps68h69zx/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpn257z6ig/data/conflict_claims_curated.json' mode='w' encoding='UTF-8'>
+  json.dump({"claims": claims}, open(os.path.join(self.root, ei.CURATED), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:61: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpn257z6ig/data/cache/pubmed_efetch_case_claims.xml'>
+  open(os.path.join(self.root, "data/cache/pubmed_efetch_case_claims.xml"), "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpn257z6ig/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp1dsfzfa4/data/conflict_claims_curated.json' mode='w' encoding='UTF-8'>
+  json.dump({"claims": claims}, open(os.path.join(self.root, ei.CURATED), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:61: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp1dsfzfa4/data/cache/pubmed_efetch_case_claims.xml'>
+  open(os.path.join(self.root, "data/cache/pubmed_efetch_case_claims.xml"), "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp1dsfzfa4/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmprhpl325v/data/conflict_claims_curated.json' mode='w' encoding='UTF-8'>
+  json.dump({"claims": claims}, open(os.path.join(self.root, ei.CURATED), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:61: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmprhpl325v/data/cache/pubmed_efetch_case_claims.xml'>
+  open(os.path.join(self.root, "data/cache/pubmed_efetch_case_claims.xml"), "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmprhpl325v/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp05zawkzr/data/conflict_claims_curated.json' mode='w' encoding='UTF-8'>
+  json.dump({"claims": claims}, open(os.path.join(self.root, ei.CURATED), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:61: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp05zawkzr/data/cache/pubmed_efetch_case_claims.xml'>
+  open(os.path.join(self.root, "data/cache/pubmed_efetch_case_claims.xml"), "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp05zawkzr/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp4vcp7u9q/data/conflict_claims_curated.json' mode='w' encoding='UTF-8'>
+  json.dump({"claims": claims}, open(os.path.join(self.root, ei.CURATED), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:61: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp4vcp7u9q/data/cache/pubmed_efetch_case_claims.xml'>
+  open(os.path.join(self.root, "data/cache/pubmed_efetch_case_claims.xml"), "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp4vcp7u9q/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp_lkh58z9/data/conflict_claims_curated.json' mode='w' encoding='UTF-8'>
+  json.dump({"claims": claims}, open(os.path.join(self.root, ei.CURATED), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:61: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp_lkh58z9/data/cache/pubmed_efetch_case_claims.xml'>
+  open(os.path.join(self.root, "data/cache/pubmed_efetch_case_claims.xml"), "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp_lkh58z9/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp_lkh58z9/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:60: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpo2cvedlu/data/conflict_claims_curated.json' mode='w' encoding='UTF-8'>
+  json.dump({"claims": claims}, open(os.path.join(self.root, ei.CURATED), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:61: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpo2cvedlu/data/cache/pubmed_efetch_case_claims.xml'>
+  open(os.path.join(self.root, "data/cache/pubmed_efetch_case_claims.xml"), "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/evidence_independence_agent.py:113: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpo2cvedlu/data/conflict_claims_curated.json' mode='r' encoding='utf-8'>
+  claims = json.load(open(j(CURATED), encoding="utf-8")).get("claims", []) if os.path.exists(j(CURATED)) else []
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_evidence_independence_agent.py:143: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/evidence_independence.json' mode='r' encoding='UTF-8'>
+  out = json.load(open(path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+........................................................../Users/thrisha/Drup_Rep_PF/EviRep/tests/test_literature_credibility_agent.py:275: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp21j578mc/g.json' mode='w' encoding='UTF-8'>
+  json.dump(graph, open(gp, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_literature_credibility_agent.py:276: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp21j578mc/x.xml'>
+  open(xp, "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_literature_credibility_agent.py:279: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp21j578mc/o.json' mode='r' encoding='UTF-8'>
+  rep = json.load(open(op))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+../Users/thrisha/Drup_Rep_PF/EviRep/tests/test_literature_credibility_agent.py:213: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpq9qr1lui/g.json' mode='w' encoding='UTF-8'>
+  json.dump(graph, open(gp, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_literature_credibility_agent.py:214: ResourceWarning: unclosed file <_io.BufferedWriter name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpq9qr1lui/x.xml'>
+  open(xp, "wb").write(XML)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_literature_credibility_agent.py:220: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpq9qr1lui/o.json' mode='r' encoding='UTF-8'>
+  rep = json.load(open(op))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+............................/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_literature_date_bound.py:56: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/04_literature_independence.py' mode='r' encoding='utf-8'>
+  src = open(PATH, encoding="utf-8").read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.......FAILED: no compound retrieved ([{'compound_name': 'Alpha', 'error': 'esearch.fcgi: HTTP 500 after 4 attempt(s)'}, {'compound_name': 'Beta', 'error': 'esearch.fcgi: HTTP 500 after 4 attempt(s)'}, {'compound_name': 'Gamma', 'error': 'esearch.fcgi: HTTP 500 after 4 attempt(s)'}]); nothing written
+........................................................................................................................../Users/thrisha/Drup_Rep_PF/EviRep/tests/test_reproducibility_agent.py:247: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/06_vps_fusion.py' mode='r' encoding='UTF-8'>
+  self.assertNotIn("reproducibility", open(os.path.join(ROOT, "scripts", "06_vps_fusion.py")).read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+...../Users/thrisha/Drup_Rep_PF/EviRep/tests/test_reproducibility_agent.py:208: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp4j1u5dq8/data/reproducibility.json' mode='r' encoding='UTF-8'>
+  first = open(os.path.join(tmp, rep.OUT)).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_reproducibility_agent.py:210: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmp4j1u5dq8/data/reproducibility.json' mode='r' encoding='UTF-8'>
+  self.assertEqual(first, open(os.path.join(tmp, rep.OUT)).read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..stage A not started: conflicting run(s) in progress: A (live-A, pid 65903)
+.............................................../Users/thrisha/Drup_Rep_PF/EviRep/tests/test_safety_evidence_agent.py:290: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/data/safety_evidence.json' mode='r' encoding='UTF-8'>
+  out = json.load(open(path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_safety_evidence_agent.py:273: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/05_safety_signal.py' mode='r' encoding='UTF-8'>
+  src = open(os.path.join(ROOT, rel)).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_safety_evidence_agent.py:273: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/04_literature_independence.py' mode='r' encoding='UTF-8'>
+  src = open(os.path.join(ROOT, rel)).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_safety_evidence_agent.py:279: ResourceWarning: unclosed file <_io.TextIOWrapper name='/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/tmpq_kpaq2i/f.jsonl' mode='r' encoding='UTF-8'>
+  rec = json.loads(open(p).read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/scripts/05h_safety_label_history.py:56: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/05_safety_signal.py' mode='r' encoding='utf-8'>
+  src = open(_s05.origin, encoding="utf-8").read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.../Users/thrisha/Drup_Rep_PF/EviRep/scripts/05h_safety_label_history.py:56: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/05_safety_signal.py' mode='r' encoding='utf-8'>
+  src = open(_s05.origin, encoding="utf-8").read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/scripts/05h_safety_label_history.py:56: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/05_safety_signal.py' mode='r' encoding='utf-8'>
+  src = open(_s05.origin, encoding="utf-8").read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/scripts/05h_safety_label_history.py:56: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/05_safety_signal.py' mode='r' encoding='utf-8'>
+  src = open(_s05.origin, encoding="utf-8").read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..........WARNING: NCBI_API_KEY looks like a placeholder (your...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (YOUR...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (chan...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (plac...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (abc...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (your...); ignoring it and using the unauthenticated PubMed path.
+registry: every batch failed (1); previous cache kept, output not rebuilt
+
+========== BASIC INFO ==========
+Total edges: 5
+Total candidates: 1
+
+========== METAEDGE TYPES ==========
+metaedge
+DaG    1
+DuG    1
+DrD    1
+GaD    1
+CbG    1
+Name: count, dtype: int64
+
+========== CbG EDGES ==========
+CbG edges: 1
+         source   target metaedge
+4  Compound::C1  Gene::1      CbG
+
+========== CANDIDATE TARGET CHECK ==========
+Candidates: 1
+Candidates having CbG targets: 1
+Candidates WITHOUT CbG targets: 0
+
+========== DISEASE GENE CHECK ==========
+PD disease-gene edges: 2
+                source   target metaedge
+0  Disease::DOID:14330  Gene::1      DaG
+1  Disease::DOID:14330  Gene::2      DuG
+PD genes: 2
+
+========== SAMPLE CANDIDATE ==========
+Compound ID: Compound::C1
+Compound name: C1
+Targets found: 1
+Targets: ['Gene::1']
+04p: 2/3 compounds, 4 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 2/3 compounds, 4 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 2/3 compounds, 4 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 1/1 compounds, 3 paper records (cache 0, network 1); failures 0; status SUCCESS
+04p: 1/1 compounds, 3 paper records (cache 0, network 1); failures 0; status SUCCESS
+04p: 2/3 compounds, 3 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 1/1 compounds, 3 paper records (cache 0, network 1); failures 0; status SUCCESS
+04p: 1/3 compounds, 3 paper records (cache 1, network 0); failures 2; status PARTIAL
+04p: 3/3 compounds, 4 paper records (cache 0, network 3); failures 0; status SUCCESS
+04p: 3/3 compounds, 4 paper records (cache 3, network 0); failures 0; status SUCCESS
+04p: 3/3 compounds, 4 paper records (cache 0, network 3); failures 0; status SUCCESS
+05h: {'PRE_CUTOFF_VERSION_SCORED': 1, 'NO_PRE_CUTOFF_VERSION': 1, 'NO_CURRENT_LABEL': 1}; parser check {'agree': 2, 'checked': 2}; failures 0
+05h: {'PRE_CUTOFF_VERSION_SCORED': 1, 'NO_PRE_CUTOFF_VERSION': 1, 'NO_CURRENT_LABEL': 1}; parser check {'agree': 2, 'checked': 2}; failures 0
+05h: {'PRE_CUTOFF_VERSION_SCORED': 1, 'NO_PRE_CUTOFF_VERSION': 1, 'NO_CURRENT_LABEL': 1, 'RETRIEVAL_FAILED': 1}; parser check {'agree': 2, 'checked': 2}; failures 1
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 2920.82it/s]
+.........  0%|          | 0/5 [00:00<?, ?it/s]100%|██████████| 5/5 [00:00<00:00, 19915.97it/s]
+.  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 16513.01it/s]
+.  0%|          | 0/200 [00:00<?, ?it/s]  4%|▍         | 9/200 [00:00<00:00, 33554.43it/s]
+.  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 142987.64it/s]
+..  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 149796.57it/s]
+......................................................./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:912: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/style.css' mode='r' encoding='UTF-8'>
+  css = open(os.path.join(ROOT, "ui", "style.css")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..../Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:226: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/app.js' mode='r' encoding='UTF-8'>
+  js = open(os.path.join(ROOT, "ui", "app.js")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+......./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:284: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/app.js' mode='r' encoding='UTF-8'>
+  js = open(os.path.join(ROOT, "ui", "app.js")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+............./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:381: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/app.js' mode='r' encoding='UTF-8'>
+  js = open(os.path.join(ROOT, "ui", "app.js")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:386: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/index.html' mode='r' encoding='UTF-8'>
+  self.assertIn('href="#pipeline" role="status"', open(os.path.join(ROOT, "ui", "index.html")).read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+............../Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:600: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/index.html' mode='r' encoding='UTF-8'>
+  text = open(os.path.join(ROOT, "ui", fn)).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:600: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/app.js' mode='r' encoding='UTF-8'>
+  text = open(os.path.join(ROOT, "ui", fn)).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:600: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/style.css' mode='r' encoding='UTF-8'>
+  text = open(os.path.join(ROOT, "ui", fn)).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:595: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/server.py' mode='r' encoding='UTF-8'>
+  src = open(os.path.join(ROOT, "ui", "server.py")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+....../Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:673: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/index.html' mode='r' encoding='UTF-8'>
+  open(os.path.join(ROOT, "ui", fn)).read().lower() for fn in ("index.html", "app.js"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:673: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/app.js' mode='r' encoding='UTF-8'>
+  open(os.path.join(ROOT, "ui", fn)).read().lower() for fn in ("index.html", "app.js"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:666: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/06_vps_fusion.py' mode='r' encoding='UTF-8'>
+  src = open(os.path.join(ROOT, "scripts", "06_vps_fusion.py")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+........../Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:580: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/server.py' mode='r' encoding='UTF-8'>
+  src = open(os.path.join(ROOT, "ui", "server.py")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+............../Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:858: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/index.html' mode='r' encoding='UTF-8'>
+  html = open(os.path.join(ROOT, "ui", "index.html")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_ui.py:862: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/ui/app.js' mode='r' encoding='UTF-8'>
+  js = open(os.path.join(ROOT, "ui", "app.js")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+............/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_vps_correctness.py:152: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/02_network_proximity.py' mode='r' encoding='UTF-8'>
+  self.assertNotIn("ground_truth", open(os.path.join(ROOT, rel)).read(), rel)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_vps_correctness.py:152: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/04_literature_independence.py' mode='r' encoding='UTF-8'>
+  self.assertNotIn("ground_truth", open(os.path.join(ROOT, rel)).read(), rel)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_vps_correctness.py:152: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/05_safety_signal.py' mode='r' encoding='UTF-8'>
+  self.assertNotIn("ground_truth", open(os.path.join(ROOT, rel)).read(), rel)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_vps_correctness.py:152: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/08_molecular_pathway.py' mode='r' encoding='UTF-8'>
+  self.assertNotIn("ground_truth", open(os.path.join(ROOT, rel)).read(), rel)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/thrisha/Drup_Rep_PF/EviRep/tests/test_vps_correctness.py:152: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/molecular_agent.py' mode='r' encoding='UTF-8'>
+  self.assertNotIn("ground_truth", open(os.path.join(ROOT, rel)).read(), rel)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_vps_correctness.py:171: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/06_vps_fusion.py' mode='r' encoding='UTF-8'>
+  src = open(os.path.join(ROOT, "scripts/06_vps_fusion.py")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/thrisha/Drup_Rep_PF/EviRep/tests/test_vps_correctness.py:155: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/thrisha/Drup_Rep_PF/EviRep/scripts/06_vps_fusion.py' mode='r' encoding='UTF-8'>
+  src = open(os.path.join(ROOT, "scripts/06_vps_fusion.py")).read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.........................................../Users/thrisha/Drup_Rep_PF/EviRep/scripts/vps_validation_experiments.py:116: RuntimeWarning: invalid value encountered in divide
+  return (r[y == 1].sum(axis=0) - npos * (npos + 1) / 2) / (npos * nneg)
+........
+----------------------------------------------------------------------
+Ran 598 tests in 47.974s
+
+OK

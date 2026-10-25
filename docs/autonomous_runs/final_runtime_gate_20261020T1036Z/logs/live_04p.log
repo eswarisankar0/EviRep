@@ -1,0 +1,2 @@
+20261020T105423Z-04p-f89d: SUCCESS (exit 0); validation ok; log data/_runs/20261020T105423Z-04p-f89d/log.txt
+./venv/bin/python scripts/run_stage.py 04p --root "$N" -- --refresh --compoun  0.54s user 0.12s system 5% cpu 12.384 total

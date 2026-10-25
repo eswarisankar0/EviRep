@@ -1,0 +1,11 @@
+{
+ "run: 'does not change the score' shown": true,
+ "run: 'feeds the score' absent": true,
+ "agent/10c: badge says checks a score input": true,
+ "agent/10c: 'feeds the score' absent": true,
+ "agent/10c: computed '28 links awaiting human review'": true,
+ "agent/10b: badge says checks a score input": true,
+ "agent/10b: 'feeds the score' absent": true,
+ "no stage started": true,
+ "js exceptions": 0
+}

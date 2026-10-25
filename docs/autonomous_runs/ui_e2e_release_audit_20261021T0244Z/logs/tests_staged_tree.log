@@ -1,0 +1,11 @@
+................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 160 tests in 4.102s
+
+OK
+WARNING: NCBI_API_KEY looks like a placeholder (your...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (YOUR...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (chan...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (plac...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (abc...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (your...); ignoring it and using the unauthenticated PubMed path.

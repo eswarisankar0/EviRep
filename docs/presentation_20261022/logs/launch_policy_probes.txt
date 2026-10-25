@@ -1,0 +1,18 @@
+launch-policy probes 2026-10-22T02:18:33Z with the valid session nonce
+protected stage 06                   403  {"error": "stage 06 cannot be started from the dashboard: rewrites protected/approved artefacts (data/vps_scores_v2.csv)
+protected stage 03                   403  {"error": "stage 03 cannot be started from the dashboard: rewrites protected/approved artefacts (data/clinical_maturity_
+protected stage eval                 403  {"error": "stage eval cannot be started from the dashboard: rewrites protected/approved artefacts (data/vps_evaluation_r
+live-only stage 04b                  403  {"error": "stage 04b cannot be started from the dashboard: re-runs stage-04 PubMed/Semantic Scholar queries; its provena
+network stage 05h unconfirmed        428  {"error": "stage 05h may query DailyMed for labels without a cached version history; repeat with confirmation"}
+unknown stage                        400  {"error": "unknown stage or malformed request"}
+injection in stage                   400  {"error": "unknown stage or malformed request"}
+path as stage                        400  {"error": "unknown stage or malformed request"}
+extra field                          400  {"error": "body must be {\"stage\": id} or {\"pipeline\": true}, optional \"confirm\": true"}
+pipeline + stages list               400  {"error": "body must be {\"stage\": id} or {\"pipeline\": true}, optional \"confirm\": true"}
+malformed JSON                       400  {"error": "body is not valid JSON"}
+JSON array                           400  {"error": "body must be {\"stage\": id} or {\"pipeline\": true}, optional \"confirm\": true"}
+oversized body                       413  {"error": "body must be 1-1024 bytes"}
+wrong content-type                   415  {"error": "Content-Type must be application/json"}
+history unchanged: yes
+launch records unchanged: yes
+run_stage processes: 0

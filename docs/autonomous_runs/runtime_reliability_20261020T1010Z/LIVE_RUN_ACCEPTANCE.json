@@ -1,0 +1,321 @@
+{
+ "environment": "real Chrome (CDP) -> ui/server.py -> scripts/run_stage.py -> real stage processes, on isolated full copies of the repository (port 8799); general suite on the live server (8765, read-only)",
+ "mocks": "none in these browser suites (test_live_runs.TestConflicts uses a stand-in sleeper runner and is not part of this file)",
+ "suites": {
+  "acceptance_drive11": {
+   "passed": 16,
+   "total": 16,
+   "checks": [
+    {
+     "check": "1. the root URL opens the live Dashboard (hero state, counters, agents, flow)",
+     "result": "PASS"
+    },
+    {
+     "check": "2. all eight agent cards shown with states equal to the backend (/api/live = run_stage.py --status)",
+     "result": "PASS"
+    },
+    {
+     "check": "9. opening and navigating pages starts no work",
+     "result": "PASS"
+    },
+    {
+     "check": "5a. dependency staleness appears without a refresh (hero + agent card)",
+     "result": "PASS"
+    },
+    {
+     "check": "3/4/5b. Run all launched from the Dashboard; the runner re-ran the stale agents; Dashboard returns to current without refresh",
+     "result": "PASS"
+    },
+    {
+     "check": "5c. launched from an agent page; the Dashboard shows the real run RUNNING (hero, card, activity with elapsed time) without refresh",
+     "result": "PASS"
+    },
+    {
+     "check": "concurrency: while running, Run controls are disabled and a second launch is refused (409)",
+     "result": "PASS"
+    },
+    {
+     "check": "8. server restarted mid-run: connection loss shown, then reconnects and still shows the real run",
+     "result": "PASS"
+    },
+    {
+     "check": "5d. the resumed run finishes; the Dashboard shows it done and, truthfully, its dependant 10h now STALE (no refresh)",
+     "result": "PASS"
+    },
+    {
+     "check": "6. a real failure appears on the agent page with its error log (no refresh)",
+     "result": "PASS"
+    },
+    {
+     "check": "7. the failed run preserved the last validated output byte-identical",
+     "result": "PASS"
+    },
+    {
+     "check": "6b. the Dashboard reports the failure (hero + failed counter + card)",
+     "result": "PASS"
+    },
+    {
+     "check": "10. research and diagnostics views render",
+     "result": "PASS"
+    },
+    {
+     "check": "11. candidate evidence is traceable (rank, dimensions, PMIDs, NCT IDs, cutoff, links, not-efficacy)",
+     "result": "PASS"
+    },
+    {
+     "check": "12. desktop 1440 and mobile 390: no horizontal page overflow on 7 views; mobile header compact",
+     "result": "PASS"
+    },
+    {
+     "check": "13. no JS exceptions, console errors or failed required requests (only the intentional 409 probe)",
+     "result": "PASS"
+    }
+   ]
+  },
+  "reliability_drive12": {
+   "passed": 10,
+   "total": 10,
+   "checks": [
+    {
+     "check": "double/triple click on Run sends one request and creates one launch",
+     "result": "PASS"
+    },
+    {
+     "check": "two tabs launching at the same moment: one 202, one 409, one launch",
+     "result": "PASS"
+    },
+    {
+     "check": "browser back/forward re-render the right views",
+     "result": "PASS"
+    },
+    {
+     "check": "run all with a failed prerequisite: 10d FAILED, dependants BLOCKED (not run), shown on the Dashboard",
+     "result": "PASS"
+    },
+    {
+     "check": "runner killed mid-stage: the agent page shows the interrupted run and the orphaned stage process (never RUNNING forever)",
+     "result": "PASS"
+    },
+    {
+     "check": "--restore verifies the validated output (restored if damaged); the page updates without refresh: attempt FAILED, retained result shown",
+     "result": "PASS"
+    },
+    {
+     "check": "structurally malformed manifest: Dashboard shows 'Run records unreadable' with the reason; /api/live 200",
+     "result": "PASS"
+    },
+    {
+     "check": "HTML injected into a log renders as text (no element, no script)",
+     "result": "PASS"
+    },
+    {
+     "check": "390px: no horizontal overflow on dashboard, agent and stages views",
+     "result": "PASS"
+    },
+    {
+     "check": "no JS exceptions or console errors; the only non-2xx responses are the intentional 409",
+     "result": "PASS"
+    }
+   ]
+  },
+  "general_drive7": {
+   "passed": 21,
+   "total": 21,
+   "checks": [
+    {
+     "check": "agents panel shows tracked freshness column",
+     "result": "PASS"
+    },
+    {
+     "check": "all eight agents listed with a tracked status",
+     "result": "PASS"
+    },
+    {
+     "check": "agents show their VPS role",
+     "result": "PASS"
+    },
+    {
+     "check": "desktop #live renders",
+     "result": "PASS"
+    },
+    {
+     "check": "desktop #agents renders",
+     "result": "PASS"
+    },
+    {
+     "check": "desktop #overview renders",
+     "result": "PASS"
+    },
+    {
+     "check": "desktop #drugs renders",
+     "result": "PASS"
+    },
+    {
+     "check": "desktop #drugs/Droxidopa renders",
+     "result": "PASS"
+    },
+    {
+     "check": "desktop #pipeline renders",
+     "result": "PASS"
+    },
+    {
+     "check": "desktop #review renders",
+     "result": "PASS"
+    },
+    {
+     "check": "desktop #validation renders",
+     "result": "PASS"
+    },
+    {
+     "check": "desktop #technical renders",
+     "result": "PASS"
+    },
+    {
+     "check": "every table: header cells match row cells (all views)",
+     "result": "PASS"
+    },
+    {
+     "check": "compound page states ranking is not an efficacy claim",
+     "result": "PASS"
+    },
+    {
+     "check": "review queue: 28 awaiting adjudication, none auto-decided",
+     "result": "PASS"
+    },
+    {
+     "check": "keyboard Tab moves focus through links with a visible focus indicator",
+     "result": "PASS"
+    },
+    {
+     "check": "basic semantics: lang, main, nav, labelled inputs, img alt",
+     "result": "PASS"
+    },
+    {
+     "check": "390px: no horizontal page scroll",
+     "result": "PASS"
+    },
+    {
+     "check": "no failed HTTP requests during ordinary use",
+     "result": "PASS"
+    },
+    {
+     "check": "no JS exceptions or console errors",
+     "result": "PASS"
+    },
+    {
+     "check": "viewing pages started no stage",
+     "result": "PASS"
+    }
+   ]
+  },
+  "polling_manifest_drive8": {
+   "passed": 8,
+   "total": 8,
+   "checks": [
+    {
+     "check": "one poll in flight: 3 visibility events start no second request",
+     "result": "PASS"
+    },
+    {
+     "check": "coalesced follow-up poll issued promptly after the held one completes",
+     "result": "PASS"
+    },
+    {
+     "check": "corrupt manifest: pill says run records unreadable (never 'current')",
+     "result": "PASS"
+    },
+    {
+     "check": "corrupt manifest: VPS banner says UNKNOWN",
+     "result": "PASS"
+    },
+    {
+     "check": "corrupt manifest: run table shows UNKNOWN with the reason",
+     "result": "PASS"
+    },
+    {
+     "check": "restored manifest: page recovers without reload",
+     "result": "PASS"
+    },
+    {
+     "check": "live: eval's untracked-input warning is visible on the pipeline page",
+     "result": "PASS"
+    },
+    {
+     "check": "no JS exceptions",
+     "result": "PASS"
+    }
+   ]
+  },
+  "stages_control_drive9": {
+   "passed": 15,
+   "total": 15,
+   "checks": [
+    {
+     "check": "opening and reloading pages (incl. Live pipeline) starts nothing",
+     "result": "PASS"
+    },
+    {
+     "check": "Live pipeline view lists every stage with its dashboard policy",
+     "result": "PASS"
+    },
+    {
+     "check": "network stage needs an explicit second click; Back cancels without launching",
+     "result": "PASS"
+    },
+    {
+     "check": "upstream input change shows dependants STALE live (no reload)",
+     "result": "PASS"
+    },
+    {
+     "check": "Run all: launch accepted (HTTP 202) and command shown",
+     "result": "PASS"
+    },
+    {
+     "check": "pipeline finished: stale dependants re-run in dependency order and fresh, launch EXITED exit 0, shown without reload",
+     "result": "PASS"
+    },
+    {
+     "check": "a real stage (paused mid-run) is shown RUNNING with elapsed time and activity, no percentage",
+     "result": "PASS"
+    },
+    {
+     "check": "during a run: controls disabled and a second launch is refused (409)",
+     "result": "PASS"
+    },
+    {
+     "check": "server restarted while the stage runs: page shows connection lost, reconnects, and still shows the run RUNNING",
+     "result": "PASS"
+    },
+    {
+     "check": "resumed run completes and the page shows it without reload",
+     "result": "PASS"
+    },
+    {
+     "check": "first click after the server restart launches (stale nonce renewed); real failure propagates to the UI (10h FAILED)",
+     "result": "PASS"
+    },
+    {
+     "check": "failed run kept the previous validated output byte-identical (a FAILED attempt really ran)",
+     "result": "PASS"
+    },
+    {
+     "check": "corrupt manifest: launches disabled and the reason shown",
+     "result": "PASS"
+    },
+    {
+     "check": "390px: Live pipeline has no horizontal page scroll",
+     "result": "PASS"
+    },
+    {
+     "check": "no JS exceptions",
+     "result": "PASS"
+    }
+   ]
+  }
+ },
+ "drivers": "evidence/drive*.py, evidence/catch_stop.py (needs Chrome remote debugging on :9333)",
+ "totals": {
+  "passed": 70,
+  "total": 70
+ }
+}

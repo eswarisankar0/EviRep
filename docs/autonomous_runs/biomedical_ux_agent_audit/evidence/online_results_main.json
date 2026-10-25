@@ -1,0 +1,126 @@
+{
+ "generated_utc": "2026-10-20T15:53:54+00:00",
+ "python": "3.13.9",
+ "requests": "2.34.2",
+ "results": [
+  {
+   "source": "PubMed E-utilities",
+   "check": "API key configured",
+   "result": "INFO",
+   "utc": "2026-10-20T15:53:39+00:00",
+   "detail": "NCBI_API_KEY not set (anonymous rate limit, 3 req/s)"
+  },
+  {
+   "source": "PubMed E-utilities",
+   "check": "retrieve",
+   "result": "FAIL",
+   "utc": "2026-10-20T15:53:40+00:00",
+   "error": "TypeError: 'float' object is not callable"
+  },
+  {
+   "source": "ClinicalTrials.gov API v2",
+   "check": "get_study_info('NCT02005029') via scripts/check_studytype.py",
+   "result": "PASS",
+   "utc": "2026-10-20T15:53:41+00:00",
+   "study_type": "INTERVENTIONAL",
+   "intervention_types": [
+    "DRUG",
+    "DRUG"
+   ],
+   "endpoint": "https://clinicaltrials.gov/api/v2/studies/{nct}"
+  },
+  {
+   "source": "ClinicalTrials.gov API v2",
+   "check": "record matches the saved trial (id, first-posted date)",
+   "result": "PASS",
+   "utc": "2026-10-20T15:53:42+00:00",
+   "http_status": 200,
+   "title": "Erythromycin in Parkinson's Disease",
+   "first_posted_live": "2013-12-09",
+   "first_posted_saved": "2013-12-09",
+   "compound_saved": "Erythromycin"
+  },
+  {
+   "source": "ClinicalTrials.gov API v2",
+   "check": "unknown NCT id is reported as an error, not a study",
+   "result": "PASS",
+   "utc": "2026-10-20T15:53:42+00:00",
+   "returned": "ERROR",
+   "detail": "['400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies/NCT00000000']"
+  },
+  {
+   "source": "openFDA drug label",
+   "check": "query_label('Donepezil') via scripts/05_safety_signal.py",
+   "result": "PASS",
+   "utc": "2026-10-20T15:53:44+00:00",
+   "endpoint": "https://api.fda.gov/drug/label.json",
+   "set_id_live": "03e26183-3e07-45e8-a414-a8bad32483e2",
+   "effective_time_live": "20241129",
+   "set_id_saved": "03e26183-3e07-45e8-a414-a8bad32483e2",
+   "effective_time_saved": "20241129",
+   "same_label_as_saved": true
+  },
+  {
+   "source": "openFDA drug label",
+   "check": "no match (HTTP 404) is returned as 'no label', which stage 05 records as absent at source",
+   "result": "PASS",
+   "utc": "2026-10-20T15:53:45+00:00",
+   "returned": null
+  },
+  {
+   "source": "openFDA adverse events (FAERS)",
+   "check": "fetch_faers('Donepezil') via scripts/safety_evidence_agent.py",
+   "result": "PASS",
+   "utc": "2026-10-20T15:53:51+00:00",
+   "endpoint": "https://api.fda.gov/drug/event.json",
+   "http_status": {
+    "serious": 200,
+    "deaths": 200,
+    "pre_cutoff": 200,
+    "top_reactions": 200
+   },
+   "pre_cutoff_reports_live": 28152,
+   "pre_cutoff_reports_saved": 28152,
+   "saved_retrieved_utc": "2026-10-15T01:06:05+00:00",
+   "note": "report counts by 2020 should be stable; totals since then grow"
+  },
+  {
+   "source": "DailyMed SPL history",
+   "check": "history(setid of the saved Donepezil label) via scripts/05h_safety_label_history.py",
+   "result": "PASS",
+   "utc": "2026-10-20T15:53:53+00:00",
+   "endpoint": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/{setid}/history.json",
+   "versions_live": 3,
+   "versions_cached": 3,
+   "version_at_cutoff_live": "(6, '2019-01-16')",
+   "version_at_cutoff_cached": "(6, '2019-01-16')",
+   "note": "the project caches history forever; a newer live version count means the cache is older than the registry"
+  },
+  {
+   "source": "Open Targets Platform GraphQL",
+   "check": "query",
+   "result": "FAIL",
+   "utc": "2026-10-20T15:53:53+00:00",
+   "error": "AttributeError: 'NoneType' object has no attribute '__dict__'"
+  },
+  {
+   "source": "Semantic Scholar Graph API",
+   "check": "paper PMID:17557339 (anonymous)",
+   "result": "BLOCKED",
+   "utc": "2026-10-20T15:53:53+00:00",
+   "http_status": 429,
+   "title": "",
+   "year": null,
+   "note": "no Semantic Scholar key is configured; anonymous requests are rate-limited (HTTP 429 is common)"
+  },
+  {
+   "source": "Zenodo (Hetionet v1.0 archive)",
+   "check": "HEAD of the configured archive URL (no download)",
+   "result": "PASS",
+   "utc": "2026-10-20T15:53:54+00:00",
+   "http_status": 200,
+   "content_length": "154927387",
+   "note": "reachability only; the local Hetionet snapshot is used by the pipeline"
+  }
+ ]
+}

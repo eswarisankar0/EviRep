@@ -146,3 +146,22 @@ methods citation look like evidence for a candidate.
 
 Nothing has been removed, because nothing was there. Every entry in §1 was added in this
 session and verified at the time of writing.
+
+---
+
+## 6. Re-verification audit — 2026-10-12
+
+All 13 PMIDs cited in this file (M1–M7) and in `docs/CASE_STUDIES.md` §1–§2 (35860451,
+31675664, 35665915, 40588412, 40387966, 40288252) were re-checked with one batched NCBI
+esummary request: title, journal, year, first author and DOI all match. Abstract quotes used
+for the M1/M2 claim checks were re-confirmed verbatim. No placeholder, duplicate or
+unverifiable citation was found in this file.
+
+Issues found in the *case-study* citations (corrected in `docs/CASE_STUDIES.md`, not here):
+NCT00605683 was mis-cited as a lisuride trial (E-014); Badran 2025 was described as
+"corroborating" although it disagrees on ESS; Badran and Zrineh DOIs were added from PubMed.
+Cosmetic: PubMed's own title for 40588412 reads "Parkinson' Disease".
+
+Sources added for the 2026-10-12 candidate records are listed inline in
+`docs/CASE_STUDIES.md` §7–§8, following §4 above (case-study evidence is kept out of this
+methods list).

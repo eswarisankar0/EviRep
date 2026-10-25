@@ -1,0 +1,227 @@
+[
+ {
+  "stage": "01",
+  "policy": "REFUSED",
+  "timeout_s": null,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "unlimited (long live stage; refused from the dashboard)"
+ },
+ {
+  "stage": "00",
+  "policy": "REFUSED",
+  "timeout_s": null,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "unlimited (long live stage; refused from the dashboard)"
+ },
+ {
+  "stage": "02",
+  "policy": "REFUSED",
+  "timeout_s": null,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "unlimited (long live stage; refused from the dashboard)"
+ },
+ {
+  "stage": "03",
+  "policy": "REFUSED",
+  "timeout_s": null,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "unlimited (long live stage; refused from the dashboard)"
+ },
+ {
+  "stage": "03c",
+  "policy": "REFUSED",
+  "timeout_s": null,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "unlimited (long live stage; refused from the dashboard)"
+ },
+ {
+  "stage": "04",
+  "policy": "REFUSED",
+  "timeout_s": null,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "unlimited (long live stage; refused from the dashboard)"
+ },
+ {
+  "stage": "05",
+  "policy": "REFUSED",
+  "timeout_s": null,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "unlimited (long live stage; refused from the dashboard)"
+ },
+ {
+  "stage": "08",
+  "policy": "REFUSED",
+  "timeout_s": null,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "unlimited (long live stage; refused from the dashboard)"
+ },
+ {
+  "stage": "06",
+  "policy": "REFUSED",
+  "timeout_s": null,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "unlimited (long live stage; refused from the dashboard)"
+ },
+ {
+  "stage": "04b",
+  "policy": "REFUSED",
+  "timeout_s": null,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "unlimited (long live stage; refused from the dashboard)"
+ },
+ {
+  "stage": "05h",
+  "policy": "CONFIRM",
+  "timeout_s": 3600,
+  "observed_runs": 4,
+  "max_observed_s": 178.0,
+  "headroom_x": 20.2,
+  "verdict": "appropriate (>= 10x max observed)"
+ },
+ {
+  "stage": "04p",
+  "policy": "CONFIRM",
+  "timeout_s": 3600,
+  "observed_runs": 4,
+  "max_observed_s": 570.0,
+  "headroom_x": 6.3,
+  "verdict": "TIGHT"
+ },
+ {
+  "stage": "07",
+  "policy": "ALLOWED",
+  "timeout_s": 900,
+  "observed_runs": 3,
+  "max_observed_s": 5.0,
+  "headroom_x": 180.0,
+  "verdict": "appropriate (>= 10x max observed)"
+ },
+ {
+  "stage": "diag",
+  "policy": "CONFIRM",
+  "timeout_s": 3600,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "NOT OBSERVED (no recorded run)"
+ },
+ {
+  "stage": "10d",
+  "policy": "ALLOWED",
+  "timeout_s": 900,
+  "observed_runs": 4,
+  "max_observed_s": 1.0,
+  "headroom_x": 900.0,
+  "verdict": "appropriate (>= 10x max observed)"
+ },
+ {
+  "stage": "10e",
+  "policy": "ALLOWED",
+  "timeout_s": 900,
+  "observed_runs": 4,
+  "max_observed_s": 1.0,
+  "headroom_x": 900.0,
+  "verdict": "appropriate (>= 10x max observed)"
+ },
+ {
+  "stage": "eval",
+  "policy": "REFUSED",
+  "timeout_s": null,
+  "observed_runs": 0,
+  "max_observed_s": null,
+  "headroom_x": null,
+  "verdict": "unlimited (long live stage; refused from the dashboard)"
+ },
+ {
+  "stage": "10b",
+  "policy": "ALLOWED",
+  "timeout_s": 900,
+  "observed_runs": 5,
+  "max_observed_s": 1.0,
+  "headroom_x": 900.0,
+  "verdict": "appropriate (>= 10x max observed)"
+ },
+ {
+  "stage": "10c",
+  "policy": "ALLOWED",
+  "timeout_s": 900,
+  "observed_runs": 5,
+  "max_observed_s": 1.0,
+  "headroom_x": 900.0,
+  "verdict": "appropriate (>= 10x max observed)"
+ },
+ {
+  "stage": "10f",
+  "policy": "ALLOWED",
+  "timeout_s": 900,
+  "observed_runs": 4,
+  "max_observed_s": 0.0,
+  "headroom_x": null,
+  "verdict": "appropriate (>= 10x max observed)"
+ },
+ {
+  "stage": "10g",
+  "policy": "ALLOWED",
+  "timeout_s": 900,
+  "observed_runs": 8,
+  "max_observed_s": 2.0,
+  "headroom_x": 450.0,
+  "verdict": "appropriate (>= 10x max observed)"
+ },
+ {
+  "stage": "10a",
+  "policy": "ALLOWED",
+  "timeout_s": 900,
+  "observed_runs": 4,
+  "max_observed_s": 0.0,
+  "headroom_x": null,
+  "verdict": "appropriate (>= 10x max observed)"
+ },
+ {
+  "stage": "10a-all",
+  "policy": "ALLOWED",
+  "timeout_s": 900,
+  "observed_runs": 3,
+  "max_observed_s": 2.0,
+  "headroom_x": 450.0,
+  "verdict": "appropriate (>= 10x max observed)"
+ },
+ {
+  "stage": "review",
+  "policy": "ALLOWED",
+  "timeout_s": 900,
+  "observed_runs": 5,
+  "max_observed_s": 1.0,
+  "headroom_x": 900.0,
+  "verdict": "appropriate (>= 10x max observed)"
+ },
+ {
+  "stage": "10h",
+  "policy": "ALLOWED",
+  "timeout_s": 900,
+  "observed_runs": 12,
+  "max_observed_s": 1.0,
+  "headroom_x": 900.0,
+  "verdict": "appropriate (>= 10x max observed)"
+ }
+]

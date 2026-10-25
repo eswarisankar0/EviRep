@@ -1,0 +1,115 @@
+[
+ {
+  "scenario": "opening and reloading pages (incl. Live pipeline) starts nothing",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "Live pipeline view lists every stage with its dashboard policy",
+  "ok": true,
+  "detail": {
+   "06": "06 VPS fusion + evaluation Recorded baseline (before run tracking) Recorded baseline (before run tracking) adopted-20261"
+  }
+ },
+ {
+  "scenario": "network stage needs an explicit second click; Back cancels without launching",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "upstream input change shows dependants STALE live (no reload)",
+  "ok": true,
+  "detail": {
+   "stale": [
+    "10d",
+    "10e",
+    "10g",
+    "10h",
+    "10a"
+   ]
+  }
+ },
+ {
+  "scenario": "Run all: launch accepted (HTTP 202) and command shown",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "pipeline finished: stale dependants re-run in dependency order and fresh, launch EXITED exit 0, shown without reload",
+  "ok": true,
+  "detail": {
+   "status": {
+    "10a": "SUCCESS",
+    "10d": "SUCCESS",
+    "10e": "SUCCESS",
+    "10g": "SUCCESS",
+    "10h": "SUCCESS"
+   }
+  }
+ },
+ {
+  "scenario": "a real stage (paused mid-run) is shown RUNNING with elapsed time and activity, no percentage",
+  "ok": true,
+  "detail": {
+   "row": "10g Evidence Independence Agent (diagnostic layer) Running running 1 sno log output yet 20261021T033220Z-10g-2ef62026-10-21T03:32:22+00:00 10c Run completed 04 Recorded baseline (before run tracking) ",
+   "paused_pids": [
+    "23297"
+   ]
+  }
+ },
+ {
+  "scenario": "during a run: controls disabled and a second launch is refused (409)",
+  "ok": true,
+  "detail": {
+   "disabled": true,
+   "status": 409
+  }
+ },
+ {
+  "scenario": "server restarted while the stage runs: page shows connection lost, reconnects, and still shows the run RUNNING",
+  "ok": true,
+  "detail": {
+   "row": "10g Evidence Independence Agent (diagnostic layer) Running running 11 sno log output yet 20261021T033220Z-10g-2ef62026-1"
+  }
+ },
+ {
+  "scenario": "resumed run completes and the page shows it without reload",
+  "ok": true,
+  "detail": {
+   "10g": "SUCCESS"
+  }
+ },
+ {
+  "scenario": "first click after the server restart launches (stale nonce renewed); real failure propagates to the UI (10h FAILED)",
+  "ok": true,
+  "detail": {
+   "row": "10h Completeness & Gap Agent Inputs changed \u2014 rerun neededinput changed since last success: data/conflict_context.json, data/evidence_independence.json; latest attempt 20261021T033240Z-10h-83ac failed",
+   "attempt": "FAILED"
+  }
+ },
+ {
+  "scenario": "failed run kept the previous validated output byte-identical (a FAILED attempt really ran)",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "corrupt manifest: launches disabled and the reason shown",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "390px: Live pipeline has no horizontal page scroll",
+  "ok": true,
+  "detail": {
+   "overflow": 0
+  }
+ },
+ {
+  "scenario": "no JS exceptions",
+  "ok": true,
+  "detail": {
+   "n": 0,
+   "first": null
+  }
+ }
+]

@@ -1,0 +1,114 @@
+[
+ {
+  "stage": "10a",
+  "exit": 0,
+  "last_line": "20261020T080239Z-10a-2805: SUCCESS (exit 0); validation ok; log data/_runs/20261020T080239",
+  "changed": [
+   "data/literature_credibility_domperidone.json",
+   "data/literature_credibility_donepezil.json",
+   "data/literature_credibility_melatonin.json",
+   "data/literature_credibility_propranolol.json",
+   "data/run_manifest.json"
+  ],
+  "outside_declared_outputs": [],
+  "ok": true
+ },
+ {
+  "stage": "10a-all",
+  "exit": 0,
+  "last_line": "20261020T080240Z-10a-all-bea9: SUCCESS (exit 0); validation ok; log data/_runs/20261020T08",
+  "changed": [
+   "data/literature_credibility_all.json",
+   "data/run_manifest.json"
+  ],
+  "outside_declared_outputs": [],
+  "ok": true
+ },
+ {
+  "stage": "10b",
+  "exit": 0,
+  "last_line": "20261020T080244Z-10b-caa8: SUCCESS (exit 0); validation ok; log data/_runs/20261020T080244",
+  "changed": [
+   "data/molecular_agent_run.json",
+   "data/run_manifest.json"
+  ],
+  "outside_declared_outputs": [],
+  "ok": true
+ },
+ {
+  "stage": "10c",
+  "exit": 0,
+  "last_line": "20261020T080246Z-10c-2a9a: SUCCESS (exit 0); validation ok; log data/_runs/20261020T080246",
+  "changed": [
+   "data/clinical_evidence.json",
+   "data/run_manifest.json"
+  ],
+  "outside_declared_outputs": [],
+  "ok": true
+ },
+ {
+  "stage": "review",
+  "exit": 0,
+  "last_line": "20261020T080248Z-review-0791: SUCCESS (exit 0); validation ok; log data/_runs/20261020T080",
+  "changed": [
+   "data/run_manifest.json"
+  ],
+  "outside_declared_outputs": [],
+  "ok": true
+ },
+ {
+  "stage": "10d",
+  "exit": 0,
+  "last_line": "20261020T080250Z-10d-0447: SUCCESS (exit 0); validation ok; log data/_runs/20261020T080250",
+  "changed": [
+   "data/conflict_context.json",
+   "data/run_manifest.json"
+  ],
+  "outside_declared_outputs": [],
+  "ok": true
+ },
+ {
+  "stage": "10e",
+  "exit": 0,
+  "last_line": "20261020T080252Z-10e-d9fa: SUCCESS (exit 0); validation ok; log data/_runs/20261020T080252",
+  "changed": [
+   "data/reproducibility.json",
+   "data/run_manifest.json"
+  ],
+  "outside_declared_outputs": [],
+  "ok": true
+ },
+ {
+  "stage": "10f",
+  "exit": 0,
+  "last_line": "20261020T080254Z-10f-31c8: SUCCESS (exit 0); validation ok; log data/_runs/20261020T080254",
+  "changed": [
+   "data/run_manifest.json",
+   "data/safety_evidence.json"
+  ],
+  "outside_declared_outputs": [],
+  "ok": true
+ },
+ {
+  "stage": "10g",
+  "exit": 0,
+  "last_line": "20261020T080256Z-10g-d307: SUCCESS (exit 0); validation ok; log data/_runs/20261020T080256",
+  "changed": [
+   "data/evidence_independence.json",
+   "data/run_manifest.json"
+  ],
+  "outside_declared_outputs": [],
+  "ok": true
+ },
+ {
+  "stage": "10h",
+  "exit": 0,
+  "last_line": "20261020T080259Z-10h-0dd5: SUCCESS (exit 0); validation ok; log data/_runs/20261020T080259",
+  "changed": [
+   "data/completeness_gaps.json",
+   "data/run_manifest.json"
+  ],
+  "outside_declared_outputs": [],
+  "ok": true
+ }
+]

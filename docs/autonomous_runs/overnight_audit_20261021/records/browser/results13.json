@@ -1,0 +1,87 @@
+[
+ {
+  "check": "launch from the agent page -> RUNNING shown with elapsed time and the real log line, no refresh",
+  "result": "PASS",
+  "browser_action": "click 'Run 10h' on #agent/10h",
+  "detail": {
+   "run_id": "20261020T202709Z-10h-ac04",
+   "runner": 10328,
+   "child": 10329
+  },
+  "real_process": true
+ },
+ {
+  "check": "while running, the stage has really overwritten its output (partial write)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "partial": true
+  },
+  "real_process": true
+ },
+ {
+  "check": "timeout fires (~20 s): agent page shows FAILED and the TIMEOUT line from the real log, without refresh",
+  "result": "PASS",
+  "browser_action": "wait on #agent/10h",
+  "detail": {
+   "seconds_to_failed_in_ui": 21.7,
+   "exit_code": -9
+  },
+  "real_process": true
+ },
+ {
+  "check": "previous valid output restored byte-identical",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "md5": "5816f25f8af80dde0f8f35e99a45a36b"
+  },
+  "real_process": true
+ },
+ {
+  "check": "only the stage's own child was killed: child and runner gone; unrelated sentinel and the server still alive",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "child_state": "gone",
+   "runner_state": "gone (reaped)",
+   "sentinel_alive": true
+  },
+  "real_process": true
+ },
+ {
+  "check": "no orphaned stage process and no RUNNING record remain",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "status": "FAILED",
+   "orphans": []
+  },
+  "real_process": true
+ },
+ {
+  "check": "Dashboard reports the failure (hero, failed counter, 10h card) after timeout",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "hero": "Last run failed; previous results retained"
+  },
+  "real_process": true
+ },
+ {
+  "check": "recovery: next run (hang removed) succeeds and the page shows it",
+  "result": "PASS",
+  "browser_action": "click 'Run 10h' again",
+  "detail": {},
+  "real_process": true
+ },
+ {
+  "check": "no JS exceptions during the lifecycle",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "n": 0
+  },
+  "real_process": true
+ }
+]

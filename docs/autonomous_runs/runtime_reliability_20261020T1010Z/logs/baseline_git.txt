@@ -1,0 +1,4 @@
+branch: main  HEAD: 576bc7f57cbf08873ca9971da469dce3500defb8  commits: 6
+staged: 25  unstaged: 21  untracked: 188  stashes: 0
+index-diff md5: d04e97371800f54cc28abbb6a383742b  .git/index sha256: 0f381daa047d918c
+recovery: /Users/thrisha/EviRep_recovery_rr_20261020T1010Z (512 entries)

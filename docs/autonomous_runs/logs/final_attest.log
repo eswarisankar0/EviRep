@@ -1,0 +1,12 @@
+00: ATTESTED - attested by copy run 20261020T090514Z-00-d300
+01: NOT attested - the copy has no executed success for this stage
+02: NOT attested - output differs from the isolated reproduction: data/network_proximity.csv
+03: NOT attested - the copy has no executed success for this stage
+03c: NOT attested - the copy has no executed success for this stage
+04: ATTESTED - attested by copy run 20261020T090533Z-04-d0bf
+04b: NOT attested - the copy has no executed success for this stage
+05: ATTESTED - attested by copy run 20261020T090534Z-05-ecf7
+06: NOT attested - output differs from the isolated reproduction: data/vps_scores_v2.csv
+08: ATTESTED - attested by copy run 20261020T090534Z-08-9a80
+diag: NOT attested - the copy has no executed success for this stage
+eval: NOT attested - output differs from the isolated reproduction: data/vps_evaluation_report.json

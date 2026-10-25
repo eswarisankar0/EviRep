@@ -1,0 +1,62 @@
+{
+ "cohort": {
+  "n": 90,
+  "positives": 14,
+  "labels_identical": true,
+  "compounds_identical": true
+ },
+ "other_dimensions_max_abs_diff": {
+  "r_proximity": 0.0,
+  "r_clinical": 0.0,
+  "r_literature": 0.0,
+  "r_safety": 0.0
+ },
+ "molecular_score_changed_compounds": 21,
+ "molecular_changed_positives": 6,
+ "spearman_molecular_score": 0.9343,
+ "spearman_vps5": 0.971,
+ "approved": {
+  "auroc_5d": 0.7754,
+  "auroc_5d_ci95": [
+   0.6559,
+   0.8809
+  ],
+  "auprc_5d": 0.4243,
+  "auprc_ci95": [
+   0.2263,
+   0.6792
+  ]
+ },
+ "td042_v1": {
+  "auroc_5d": 0.6992,
+  "auroc_5d_ci95": [
+   0.557,
+   0.8299
+  ],
+  "auprc_5d": 0.3068,
+  "auprc_ci95": [
+   0.1602,
+   0.564
+  ]
+ },
+ "auroc_4d": 0.7002,
+ "paired_approved_minus_td042": {
+  "diff": 0.0761,
+  "ci95": [
+   0.0138,
+   0.1582
+  ],
+  "share_draws_above_0": 0.996
+ },
+ "paired_td042_minus_4d": {
+  "diff": -0.0009,
+  "ci95": [
+   -0.0747,
+   0.0799
+  ],
+  "share_draws_above_0": 0.452
+ },
+ "top10_overlap": 9,
+ "top20_overlap": 17,
+ "max_abs_rank_change": 33
+}

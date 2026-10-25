@@ -1,0 +1,46 @@
+[
+ {
+  "scenario": "review queue renders 28 unresolved + 9 adjudicated",
+  "ok": true,
+  "detail": {
+   "head": "Trial-role review queue\n    Read-only. Unresolved links keep their automated role in scoring and stay flagged until a human records a decision (D-020). Nothing "
+  }
+ },
+ {
+  "scenario": "review queue states it records no decision",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "pipeline view lists 04p / 10a-all / review stages",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "compound page shows D5 duplicate-publication check",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "390px: no horizontal page scroll",
+  "ok": true,
+  "detail": {
+   "review": 0,
+   "overview": 0,
+   "drugs/Droxidopa": 0,
+   "technical": 0
+  }
+ },
+ {
+  "scenario": "no JS exceptions",
+  "ok": true,
+  "detail": {
+   "n": 0
+  }
+ },
+ {
+  "scenario": "viewing pages started no stage",
+  "ok": true,
+  "detail": {}
+ }
+]

@@ -1,0 +1,48 @@
+PASS primary navigation has exactly five sections in order :: {"nav": [["overview", "Overview"], ["drugs", "Candidates"], ["evidence", "Evidence"], ["validation", "Validation"], ["run", "Run Center"]]}
+PASS root URL opens the researcher Overview :: {"title": "EviRep \u00b7 Overview", "load_s": 0.59}
+PASS nav 'Overview' opens its section and marks it current :: {"hash": "#overview", "title": "EviRep \u00b7 Overview"}
+PASS nav 'Candidates' opens its section and marks it current :: {"hash": "#drugs", "title": "EviRep \u00b7 Candidates \u00b7 Candidate table"}
+PASS nav 'Evidence' opens its section and marks it current :: {"hash": "#evidence", "title": "EviRep \u00b7 Evidence \u00b7 All evidence"}
+PASS nav 'Validation' opens its section and marks it current :: {"hash": "#validation", "title": "EviRep \u00b7 Validation"}
+PASS nav 'Run Center' opens its section and marks it current :: {"hash": "#run", "title": "EviRep \u00b7 Run Center \u00b7 Pipeline health"}
+PASS Evidence sub-pages (evidence, mechanism, conflicts, review) open inside the Evidence section :: {"tabs": ["#evidence", "#mechanism", "#conflicts", "#review"]}
+PASS every older address still opens, inside its new section :: {"dashboard": true, "live": true, "technical": true, "pipeline": true, "agents": true, "cases": true, "agent/10b": true, "compare": true, "mechanism": true, "overview": true}
+PASS deep link, back and refresh keep the candidate page :: {"deep": true, "back": true}
+PASS Overview answers what / how reliable / what needs attention / what next :: {"headings": ["What you are looking at", "How current and reliable is it?", "Strongest research signals", "Evidence coverage", "What needs attention", "What you can do next"]}
+PASS Overview results line equals the tracker state and is not shown as a tick unless fully current :: {"state": "VERIFIED_WITH_GAPS", "line": "! Results: Current against recorded inputs, with unverifiable inputs. The score evaluation report reads an input that was not fingerprinted when it la"}
+PASS source line names the sources without a recorded retrieval date :: {"not_recorded": ["openFDA drug labels", "Open Targets Platform", "Hetionet v1.0"]}
+PASS 28 trial links awaiting human review shown with the review link :: {"n": 28}
+PASS Overview signal chart = approved top 10 in rank order :: {"bars": ["Donepezil", "Zonisamide", "Quetiapine"]}
+PASS selecting a signal bar opens that candidate :: {"hash": "#drugs/Donepezil"}
+PASS candidate table has score, plain profile, coverage, safety, mechanism, clinical, conflicts, outcome and limitation columns :: {"cols": ["Rank", "Compound", "Score", "What drives the score", "Evidence coverage", "Clinical (rank)", "Safety (rank)", "Mechanism (rank)", "Conflicting evidence", "New trial after 2020", "Key limitation"]}
+PASS search, filter and 'Clear filters' work together :: {"search": ["Quetiapine", "Clozapine", "Isradipine"], "with_filter": 1}
+PASS sorting by score toggles direction and announces it (aria-sort) :: {"first": ["descending", "Donepezil"], "second": ["ascending", "Remifentanil"]}
+PASS imputed and not-measured values are marked in the table :: {"row": "38\tDeferiprone\t0.510\tStrong: literature independence.\t4 of 5 measured\t0.44\t0.33\tno known target\tInsufficient evidence\tno\tno known drug target, so mechanism is not measured; network proximity value imp"}
+PASS candidate page: why it ranked, evidence for and against, mechanism chain, safety, trials, gaps, provenance :: {}
+PASS 'Compare with other candidates' opens Compare with this candidate :: {"hash": "#compare/Melatonin"}
+PASS compare: add and remove a candidate :: {"added": ["Melatonin", "Donepezil"]}
+PASS unknown compound gives one clear message :: {}
+PASS evidence filters by basis and stance agree with the API (awaiting review, null or opposing) :: {"awaiting": "28 items", "null_or_opposing": "13 items"}
+PASS the stance/basis legend explains missing ≠ negative and that the app never adjudicates :: {}
+PASS candidate-scoped evidence link pre-filters the compound :: {}
+PASS review queue: search narrows, counts equal the artefact, no decision control exists :: {"count": "3 of 28 shown"}
+PASS Validation has a summary, the six sections in order, and the alternative-scoring section last :: {"sections": ["1. Performance", "2. Evaluation design", "3. Baselines and ablations", "4. Missing and imputed data", "5. Reproducibility", "6. Methods and limitations", "7. Alternative scoring variant (not approved)"]}
+PASS section links move focus to the section heading :: {}
+PASS evaluation types are labelled (unfitted, in-sample, held-out, exploratory) :: {}
+PASS ROC and PR curves drawn only from data that reproduces the report :: {}
+PASS alternative scoring section is marked NOT APPROVED and shows the backend's comparison numbers :: {"alt_auroc": 0.6992481203007519}
+PASS approved headline result unchanged by the alternative (summary still reports the approved AUROC) :: {}
+PASS dependency graph: no state label overflows its box :: {"overflowing": []}
+PASS refusals are distinguished: owner approval (protected data) vs command line only (live services) :: {"06": "06 VPS fusion + evaluation\tRecorded baseline (before run tracking)\tRecorded baseline (before run tracking)\tadopted-20261", "04b": "04b Literature graph export (Figure 3 data)\tRecorded baseline (before run tracking)\tRecorded baseline (before run tr
+PASS a network stage needs a second, explicit confirmation; Back launches nothing :: {}
+PASS opening every page and polling started no run :: {"history": [49, 49]}
+PASS rapid repeated clicks start exactly one run :: {"launches": 1, "runs": 1}
+PASS Run Center shows the completed run without reload :: {}
+PASS losing the server is shown, and the page recovers by itself :: {"lost": true, "recovered": true}
+PASS no raw status codes, agent ids, file paths or the pending result-set id in researcher-facing text :: {}
+PASS keyboard: Tab reaches the skip link and the sections in order; Enter opens the focused section :: {"focus": ["Skip to content", "Overview", "Candidates", "Evidence"], "hash": "#evidence"}
+PASS 390 px: no horizontal page scroll on the five sections and a candidate page :: {"overview": 0, "drugs": 0, "drugs/Donepezil": 0, "evidence": 0, "validation": 0, "run": 0}
+PASS idle polling: one small status request every ~4 s, nothing else :: {"requests_in_20s": 5, "urls": ["/api/status"]}
+PASS each section renders within 2 s on this machine :: {"overview": 0.78, "drugs": 0.81, "evidence": 0.89, "validation": 0.8, "run": 0.8, "drugs/Donepezil": 1.03}
+PASS no JavaScript exceptions or console errors (connection-refused during the deliberate restart excluded) :: {"n": 0, "first": "[]"}
+SUMMARY 47 / 47

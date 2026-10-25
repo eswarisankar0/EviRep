@@ -1,0 +1,8 @@
+start 2026-10-20T08:08:22Z
+status exit 0
+check-manifest exit 0
+vps_verify exit 0
+vps_verify candidate exit 0
+td042 verifier exit 0
+diff-check exit 0
+end 2026-10-20T08:08:23Z

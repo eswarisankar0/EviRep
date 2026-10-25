@@ -1,0 +1,49 @@
+{
+ "generated_utc": "2026-10-20T15:54:15+00:00",
+ "results": [
+  {
+   "source": "PubMed E-utilities",
+   "check": "API key configured",
+   "result": "INFO",
+   "utc": "2026-10-20T15:54:07+00:00",
+   "detail": "NCBI_API_KEY not set (anonymous rate limit, 3 req/s)"
+  },
+  {
+   "source": "PubMed E-utilities",
+   "check": "retrieve('Donepezil') via scripts/04p_literature_provenance.py",
+   "result": "PASS",
+   "utc": "2026-10-20T15:54:12+00:00",
+   "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+   "seconds": 5.0,
+   "sample_pmids": 30,
+   "bounded_count": 140,
+   "bounded_pmids": 140,
+   "parsed_records": 170,
+   "efetch_missing": 0,
+   "relevance": 83,
+   "cached_bounded_pmids": 140,
+   "bounded_identical_to_cache": true,
+   "note": "cutoff-bounded (<=2020-12-31) PMIDs are expected to match the cache; the 30-paper recency sample may drift"
+  },
+  {
+   "source": "PubMed E-utilities",
+   "check": "empty result is reported as zero records, not as evidence",
+   "result": "PASS",
+   "utc": "2026-10-20T15:54:14+00:00",
+   "count": 0
+  },
+  {
+   "source": "Open Targets Platform GraphQL",
+   "check": "target(ENSG00000087085) via scripts/molecular_agent.py OpenTargetsClient",
+   "result": "PASS",
+   "utc": "2026-10-20T15:54:15+00:00",
+   "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+   "symbol": "ACHE",
+   "data_version_live": {
+    "year": "26",
+    "month": "09"
+   },
+   "note": "ACHE is Donepezil's target in the saved evidence; the dashboard records data version 26.09 for the saved run"
+  }
+ ]
+}

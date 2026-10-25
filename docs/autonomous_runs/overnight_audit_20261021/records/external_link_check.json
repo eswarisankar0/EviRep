@@ -1,0 +1,111 @@
+{
+ "checked_utc": "2026-10-20T19:38:15Z",
+ "note": "public API equivalent of each UI link (read-only); the UI link targets the same identifier",
+ "results": [
+  {
+   "kind": "nct",
+   "id": "NCT02005029",
+   "compound": "Erythromycin",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "nct",
+   "id": "NCT02162979",
+   "compound": "Sildenafil",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "nct",
+   "id": "NCT01941732",
+   "compound": "Sildenafil",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "pmid",
+   "id": "17557339",
+   "compound": "Domperidone",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "pmid",
+   "id": "27062307",
+   "compound": "Domperidone",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "pmid",
+   "id": "29103053",
+   "compound": "Domperidone",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "setid",
+   "id": "00c4f27e-59e2-4173-99b1-59dd295e83de",
+   "compound": "Erythromycin",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "setid",
+   "id": "00ee09dd-2de0-4dc4-85f6-b51ed6eabd5b",
+   "compound": "Sildenafil",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "setid",
+   "id": "03b54024-2a26-4abe-bd8b-b66bb6781fa7",
+   "compound": "Midodrine",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "ensembl",
+   "id": "ENSG00000011677",
+   "compound": "Acamprosate",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "chembl",
+   "id": "CHEMBL1201293",
+   "compound": "Acamprosate",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "ensembl",
+   "id": "ENSG00000022355",
+   "compound": "Acamprosate",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "ensembl",
+   "id": "ENSG00000094755",
+   "compound": "Acamprosate",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "chembl",
+   "id": "CHEMBL112",
+   "compound": "Acetaminophen",
+   "http": 200,
+   "identifier_in_response": true
+  },
+  {
+   "kind": "chembl",
+   "id": "CHEMBL10878",
+   "compound": "Agomelatine",
+   "http": 200,
+   "identifier_in_response": true
+  }
+ ]
+}

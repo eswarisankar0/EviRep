@@ -1,0 +1,22 @@
+check,severity,file,key,detail
+pool_coverage,MEDIUM,data/network_proximity.csv,Deferiprone,pool compound absent from the proximity source
+pool_coverage,MEDIUM,data/network_proximity.csv,Trimethobenzamide,pool compound absent from the proximity source
+proximity_imputed,INFO,data/network_proximity.csv,Deferiprone,raw proximity_z missing (n_targets_in_network=None); score file holds the imputed value -0.8376291511258103
+proximity_imputed,INFO,data/network_proximity.csv,Trimethobenzamide,raw proximity_z missing (n_targets_in_network=None); score file holds the imputed value -0.8376291511258103
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT00062738,"credited to Nortriptyline, Paroxetine"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT00086190,"credited to Paroxetine, Venlafaxine"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT00615472,"credited to Isoflurane, Propofol, Remifentanil"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT00664209,"credited to Amoxicillin, Omeprazole"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT00892450,"credited to Darifenacin, Oxybutynin"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT01439100,"credited to Naloxone, Oxycodone"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT01489982,"credited to Doxepin, Zopiclone"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT01767129,"credited to Dextromethorphan, Quinidine"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT02256319,"credited to Dexmedetomidine, Propofol"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT02857244,"credited to Donepezil, Duloxetine"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT02879136,"credited to Atomoxetine, Methylphenidate"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT02897063,"credited to Droxidopa, Midodrine"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT03440112,"credited to Clarithromycin, Flumazenil"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT03652870,"credited to Escitalopram, Nortriptyline"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT03970798,"credited to Midazolam, Rosuvastatin"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT04070495,"credited to Clarithromycin, Rifampicin"
+shared_feature_trial,INFO,data/clinical_maturity_precutoff_clean.csv,NCT04127578,"credited to Methylprednisolone, Sirolimus"

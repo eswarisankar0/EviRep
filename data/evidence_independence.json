@@ -1,0 +1,5025 @@
+{
+ "agent": "Evidence Independence",
+ "agent_id": "10g",
+ "agent_version": "10g-1.1",
+ "check_state_meaning": {
+  "DEPENDENCE_FOUND": "the same underlying study is counted more than once (details listed)",
+  "NONE_FOUND": "checked; no dependence of this kind found (not proof of independence)",
+  "NOT_ASSESSABLE": "required identifiers are not persisted for this candidate"
+ },
+ "coverage": {
+  "checks": {
+   "D1_shared_trial_across_compounds": {
+    "DEPENDENCE_FOUND": 31,
+    "NONE_FOUND": 59,
+    "NOT_ASSESSABLE": 0
+   },
+   "D2_same_study_in_two_dimensions": {
+    "DEPENDENCE_FOUND": 20,
+    "NONE_FOUND": 69,
+    "NOT_ASSESSABLE": 1
+   },
+   "D3_duplicated_or_pooled_claims": {
+    "DEPENDENCE_FOUND": 2,
+    "NONE_FOUND": 1,
+    "NOT_ASSESSABLE": 87
+   },
+   "D4_molecular_datatype_reuse": {
+    "DEPENDENCE_FOUND": 0,
+    "NONE_FOUND": 90,
+    "NOT_ASSESSABLE": 0
+   },
+   "D5_duplicate_publication_in_sample": {
+    "DEPENDENCE_FOUND": 9,
+    "NONE_FOUND": 80,
+    "NOT_ASSESSABLE": 1
+   }
+  },
+  "compounds": 90,
+  "trials_shared_across_compounds": 17
+ },
+ "diagnostics": [],
+ "generated_utc": "2026-10-20T17:45:25+00:00",
+ "inputs": {
+  "data/cache/pubmed_efetch_case_claims.xml": "1e39f307bf85c04d6ce11209cd5895b2",
+  "data/cache/pubmed_efetch_droxidopa.xml": "f75afc0b96c05b1105205598e132cdea",
+  "data/cache/pubmed_lit/acamprosate.json": "597c8a7499fb2f5256b9dc3afa07ea20",
+  "data/cache/pubmed_lit/acetaminophen.json": "875b8a0fb3008c7332a78238676968e4",
+  "data/cache/pubmed_lit/acetylcysteine.json": "65e759b7ecdfc7317662337bf3c8a2f0",
+  "data/cache/pubmed_lit/agomelatine.json": "bdfe6d947546984a37a886b73f093936",
+  "data/cache/pubmed_lit/amoxicillin.json": "5625f1bf8e4e7eae1be9ba8c6f825b7f",
+  "data/cache/pubmed_lit/aripiprazole.json": "1b02df4f93a22c47a9716452389bff2f",
+  "data/cache/pubmed_lit/atomoxetine.json": "e5869f525cd29634176e6851ff17c6ab",
+  "data/cache/pubmed_lit/bumetanide.json": "8817d8a58f73f40aefa350d38af2b991",
+  "data/cache/pubmed_lit/buspirone.json": "2dcd7c758693e0ccdcdf31dcd2643544",
+  "data/cache/pubmed_lit/carvedilol.json": "afa5bdb82ff7e5eb1cf365b792488246",
+  "data/cache/pubmed_lit/ceftriaxone.json": "22184f31432966cd0d801bd90088afbd",
+  "data/cache/pubmed_lit/citalopram.json": "72c5751d09b6a896a863aee730bb279f",
+  "data/cache/pubmed_lit/clarithromycin.json": "0530710bdfe5640b66554fe6116958cc",
+  "data/cache/pubmed_lit/clonidine.json": "96fb59f839567997b7e107b300e040f4",
+  "data/cache/pubmed_lit/clozapine.json": "1da506979d356b8bfd2fc2bd6746743a",
+  "data/cache/pubmed_lit/conjugated_estrogens.json": "14a4030d6be9fb6ff193ab30d28e8051",
+  "data/cache/pubmed_lit/darifenacin.json": "e219ebc8fd62dc0ab93821a6bc025f95",
+  "data/cache/pubmed_lit/deferiprone.json": "9c7902790bb8f94ae795e718d38f4245",
+  "data/cache/pubmed_lit/dexmedetomidine.json": "1c9c12c38dfcdd28009fc4da60f8b83b",
+  "data/cache/pubmed_lit/dextromethorphan.json": "e14703768ffefb5c8a7fa5b45cb01a00",
+  "data/cache/pubmed_lit/domperidone.json": "b34efb1e06ce7d7cb919acd2cd07933b",
+  "data/cache/pubmed_lit/donepezil.json": "3d2aaa018f1ed410ee03b13195e5e5a1",
+  "data/cache/pubmed_lit/doxepin.json": "9c8a5c8a19a733bed61adcab7efaa1a1",
+  "data/cache/pubmed_lit/droxidopa.json": "f09ee15b09229f0f6962fc22d2db827a",
+  "data/cache/pubmed_lit/duloxetine.json": "fbd58aab7765881354602734423b70ba",
+  "data/cache/pubmed_lit/erythromycin.json": "455f63112c92cada6c42774196180d49",
+  "data/cache/pubmed_lit/escitalopram.json": "16e4fed17966d240e8a67cb3b3a7f30b",
+  "data/cache/pubmed_lit/eszopiclone.json": "e15760781285d5e1e37ef2d2e0d8151d",
+  "data/cache/pubmed_lit/fesoterodine.json": "db07d6a3807832d37dae413fa13adc88",
+  "data/cache/pubmed_lit/flumazenil.json": "70ae41929de0632d31913d488e87f624",
+  "data/cache/pubmed_lit/galantamine.json": "ae0196ee1dccecf18bcb877552fd7da5",
+  "data/cache/pubmed_lit/glycopyrrolate.json": "313b6efc30949052ca5d3eda3a400420",
+  "data/cache/pubmed_lit/hydrocortisone.json": "801cdfe63208fde36be26bec7f5d8d8f",
+  "data/cache/pubmed_lit/ioflupane_i_123.json": "4f6d679015e416684d661873b000530d",
+  "data/cache/pubmed_lit/ipratropium_bromide.json": "6f378ca116ba51c033872f574dacc659",
+  "data/cache/pubmed_lit/isoflurane.json": "e301e6216d8eba6e7474a715f034def0",
+  "data/cache/pubmed_lit/isradipine.json": "b7d5c23a6c401b947a3839c950a78302",
+  "data/cache/pubmed_lit/levetiracetam.json": "1a9bd8691e4be554a90e98bfef0f69e5",
+  "data/cache/pubmed_lit/lidocaine.json": "41b542ef362ce111d9d3c0920c5422cb",
+  "data/cache/pubmed_lit/lisuride.json": "f9da1ad98d463dd07964807b40d23815",
+  "data/cache/pubmed_lit/lithium.json": "17eb641c9c7c72e0bff2907cd8dea63a",
+  "data/cache/pubmed_lit/lovastatin.json": "985d78b4ffedb36bb31c4cb987fc8d14",
+  "data/cache/pubmed_lit/lubiprostone.json": "e72dab8983f20c48b74e0a3c8311952d",
+  "data/cache/pubmed_lit/melatonin.json": "9f2a05d742ce130cf13637129a88b7ad",
+  "data/cache/pubmed_lit/methylphenidate.json": "dd581e85402373ec951c913e83274c3a",
+  "data/cache/pubmed_lit/methylprednisolone.json": "8f090b7aee7c7b6d8b365803428bcc12",
+  "data/cache/pubmed_lit/midazolam.json": "18260efd6d53bd36328cf826b2d9d718",
+  "data/cache/pubmed_lit/midodrine.json": "998aacab8e78bbebeb652294fb4721ad",
+  "data/cache/pubmed_lit/minocycline.json": "d602278bb8a0acf47054ae719498f611",
+  "data/cache/pubmed_lit/mirabegron.json": "a6438ce73acc6b21aa4fc2cb07821522",
+  "data/cache/pubmed_lit/moxifloxacin.json": "3942c918e706aaadfc7a207bb21ff150",
+  "data/cache/pubmed_lit/nabilone.json": "52402ebee7d29404bce46ff74766ae5e",
+  "data/cache/pubmed_lit/naloxone.json": "8563e7cfdc8be951acfae3a1df8d772f",
+  "data/cache/pubmed_lit/naltrexone.json": "b6ee82fba3851528ff7e95eafcacbe34",
+  "data/cache/pubmed_lit/nilotinib.json": "849424e856bc5f6099a7cfaa85032ea6",
+  "data/cache/pubmed_lit/nortriptyline.json": "bfe804cd2c1ab522272d35ba97dcfb9d",
+  "data/cache/pubmed_lit/omeprazole.json": "f8f0569d2deccaf80a19e79f4f556a98",
+  "data/cache/pubmed_lit/ondansetron.json": "f9a7fee5332ef437b9e04d566046c115",
+  "data/cache/pubmed_lit/oxybutynin.json": "f69a22ee5fd1db222cdc449b7c568b07",
+  "data/cache/pubmed_lit/oxycodone.json": "bd8d857656a42b7fbee3eea0f7a730b9",
+  "data/cache/pubmed_lit/paroxetine.json": "0b47617beff0b7e698a62a70b122fac5",
+  "data/cache/pubmed_lit/pioglitazone.json": "57bbd531f94e8261bcb19d9c18728208",
+  "data/cache/pubmed_lit/propofol.json": "34e7bd4ca35335993a938a4dc772140f",
+  "data/cache/pubmed_lit/pyridostigmine.json": "08a35a9fdd1b0fc8721294ca1bb85c3f",
+  "data/cache/pubmed_lit/quetiapine.json": "e97bd2a3aa4b97684d019c6d1216e6e9",
+  "data/cache/pubmed_lit/quinidine.json": "0bfa69feecec00df1b2e207a3e1040a0",
+  "data/cache/pubmed_lit/remifentanil.json": "ad90d2f2ae646c045622ad1532282903",
+  "data/cache/pubmed_lit/repaglinide.json": "08e9be03b528742b98f6c18a8f2e2960",
+  "data/cache/pubmed_lit/rifampicin.json": "4da18dfe37cc03c94838752c4691a07e",
+  "data/cache/pubmed_lit/rifaximin.json": "143f150fc50ba003b9eed73980f9fc50",
+  "data/cache/pubmed_lit/rosuvastatin.json": "f4d55b0604dc9a889b12c903a606ac37",
+  "data/cache/pubmed_lit/sertraline.json": "937f9b060836f552fb22919783cc8898",
+  "data/cache/pubmed_lit/sildenafil.json": "39c2d5ef14bdb6be60201129db9d5065",
+  "data/cache/pubmed_lit/simvastatin.json": "f8b3a9300c3e6e856a12a05a3ebe4a0d",
+  "data/cache/pubmed_lit/sirolimus.json": "2d03073853030efdaf2ac91147e49a2a",
+  "data/cache/pubmed_lit/solifenacin.json": "75f5084fba4aef55bedb7e7ae7af7347",
+  "data/cache/pubmed_lit/tadalafil.json": "d406a79f9fe071987e0e00679504489b",
+  "data/cache/pubmed_lit/terazosin.json": "11c17e838a41fa3691f1b9df228d2c47",
+  "data/cache/pubmed_lit/topiramate.json": "201e52a863657775bc792c1b4bd67bee",
+  "data/cache/pubmed_lit/trimethobenzamide.json": "1d26a413605c5d6141be9479de37f521",
+  "data/cache/pubmed_lit/tropicamide.json": "a692f2e78d444c124f7cf5d077fd7ae0",
+  "data/cache/pubmed_lit/ursodeoxycholic_acid.json": "16a414169f03caa1efc1cd330b146b1f",
+  "data/cache/pubmed_lit/varenicline.json": "1dc035f686ca4bde7cd98258c4e885ce",
+  "data/cache/pubmed_lit/venlafaxine.json": "a9438d563fa8ac5c54244b0fd18eedf6",
+  "data/cache/pubmed_lit/warfarin.json": "13f0b7909dbcd9f21f8836e0075cddc6",
+  "data/cache/pubmed_lit/yohimbine.json": "1567b5841ef5ad34a452414cd7d6e087",
+  "data/cache/pubmed_lit/zolpidem.json": "53058752ef19fa1b8d80b248806d8372",
+  "data/cache/pubmed_lit/zonisamide.json": "10546f47e1d0af71e7e31f7258dab60b",
+  "data/cache/pubmed_lit/zopiclone.json": "6826171547b00be5f36baeb5883b50bd",
+  "data/clinical_evidence.json": "22fd8a6baa4edca60dc418681f85eee3",
+  "data/clinical_maturity_precutoff_clean.csv": "54a99dce1e173ef5c693031bac71cd1d",
+  "data/conflict_claims_curated.json": "367265503617b1cafdb34c0ea3d6ac1a",
+  "data/literature_independence.csv": "89ae5cff8542bd15734d4b7afd1f9004",
+  "data/literature_papers.jsonl": "98be2bbf8c33968d0938d3b8716ad1f2",
+  "data/molecular_pathway_evidence.jsonl": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+  "data/vps_scores_v2.csv": "8f414c59800c24627d4dec88ae56c2bd"
+ },
+ "limitations": [
+  "D2/D5 use the stage-04 sample as re-queried by stage 04p (PubMed today; it can differ from the sample stage 04 scored). D3 needs curated claims. Unassessable checks are NOT_ASSESSABLE, never 'independent'.",
+  "Trial-paper links rely on NCT IDs in PubMed DataBank or abstracts; older trials and papers that do not cite the registry ID are missed (false negatives possible).",
+  "Patient-level overlap between different trials (shared cohorts) cannot be detected from registry or bibliographic metadata.",
+  "Stage 04's within-literature dependence (shared authors / citations) is consumed, not recomputed.",
+  "Diagnostic only: nothing is de-duplicated in VPS (D-020 policy pending)."
+ ],
+ "records": [
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (3) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 3,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 3 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 3,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Acamprosate",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 2,
+    "literature_papers": 3
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Acetaminophen",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 20,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 5 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 5 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 5,
+   "compound": "Acetylcysteine",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 5,
+    "curated_claims": 0,
+    "literature_components_stage04": 20,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (17) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 17,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 17 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 17,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Agomelatine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 5,
+    "literature_papers": 16
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Omeprazole"
+       ],
+       "nct_id": "NCT00664209",
+       "role_here": "FIXED_COMBINATION"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (6) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 6,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 6 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 6,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Amoxicillin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 5,
+    "literature_papers": 5
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Aripiprazole",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 19,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 5 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Methylphenidate"
+       ],
+       "nct_id": "NCT02879136",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 5 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "1 of 30 sample record(s) duplicate another record in the sample (sample re-queried by stage 04p)",
+     "duplicates": [
+      {
+       "duplicate_of": "26837463",
+       "pmid": "27282105"
+      }
+     ],
+     "papers_checked": 30,
+     "state": "DEPENDENCE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 5,
+   "compound": "Atomoxetine",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 5,
+    "curated_claims": 0,
+    "literature_components_stage04": 8,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (9) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 9,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 9 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 9,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Bumetanide",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 3,
+    "literature_papers": 9
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 3 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 3 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 3,
+   "compound": "Buspirone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 3,
+    "curated_claims": 0,
+    "literature_components_stage04": 8,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (11) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 11,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "1 of 11 sample record(s) duplicate another record in the sample (sample re-queried by stage 04p)",
+     "duplicates": [
+      {
+       "duplicate_of": "35964655",
+       "pmid": "36870913"
+      }
+     ],
+     "papers_checked": 11,
+     "state": "DEPENDENCE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Carvedilol",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 4,
+    "literature_papers": 11
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "1 of 30 sample record(s) duplicate another record in the sample (sample re-queried by stage 04p)",
+     "duplicates": [
+      {
+       "duplicate_of": "34938384",
+       "pmid": "41717345"
+      }
+     ],
+     "papers_checked": 30,
+     "state": "DEPENDENCE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Ceftriaxone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 8,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Citalopram",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 19,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "2 of 2 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Flumazenil"
+       ],
+       "nct_id": "NCT03440112",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      },
+      {
+       "also_credited_to": [
+        "Rifampicin"
+       ],
+       "nct_id": "NCT04070495",
+       "role_here": "AUXILIARY_AGENT"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (5) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 5,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 5 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 5,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Clarithromycin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 4,
+    "literature_papers": 5
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 30,
+     "papers_without_record": [
+      "22741181",
+      "22741184"
+     ],
+     "same_study": [
+      {
+       "pmid": "37338615",
+       "trial": "NCT03552068"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 0,
+   "compound": "Clonidine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 18,
+    "literature_papers": 28
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [
+      "41570169"
+     ],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Clozapine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 22,
+    "literature_papers": 29
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (3) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 3,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 3 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 3,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Conjugated Estrogens",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 3,
+    "literature_papers": 3
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Oxybutynin"
+       ],
+       "nct_id": "NCT00892450",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (5) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 5,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 5 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 5,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Darifenacin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 3,
+    "literature_papers": 5
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 5 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "2 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "36449420",
+       "trial": "NCT02655315"
+      },
+      {
+       "pmid": "39973479",
+       "trial": "NCT02728843"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 3,
+   "compound": "Deferiprone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 5,
+    "curated_claims": 0,
+    "literature_components_stage04": 17,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 5 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Propofol"
+       ],
+       "nct_id": "NCT02256319",
+       "role_here": "PROCEDURAL"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 5 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 5,
+   "compound": "Dexmedetomidine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 5,
+    "curated_claims": 0,
+    "literature_components_stage04": 9,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 2 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Quinidine"
+       ],
+       "nct_id": "NCT01767129",
+       "role_here": "FIXED_COMBINATION"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "28370447",
+       "trial": "NCT01767129"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Dextromethorphan",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 8,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 4 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "2 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 32,
+     "papers_without_record": [
+      "30457784"
+     ],
+     "same_study": [
+      {
+       "pmid": "29705555",
+       "trial": "NCT03022201"
+      },
+      {
+       "pmid": "34000076",
+       "trial": "NCT00103597"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "claims": 4,
+     "clusters": [
+      [
+       "Domperidone:PMID17557339:OH"
+      ],
+      [
+       "Domperidone:PMID27062307:cardiac"
+      ],
+      [
+       "Domperidone:PMID29103053:OH"
+      ],
+      [
+       "Domperidone:PMID9399220:GI"
+      ]
+     ],
+     "detail": "4 curated claims from 4 independent source cluster(s)",
+     "independent_source_clusters": 4,
+     "links": [],
+     "state": "NONE_FOUND"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Domperidone",
+   "label": 0,
+   "n_checks_assessable": 5,
+   "raw_units": {
+    "clinical_trials": 4,
+    "curated_claims": 4,
+    "literature_components_stage04": 15,
+    "literature_papers": 29
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 11 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Duloxetine"
+       ],
+       "nct_id": "NCT02857244",
+       "role_here": "UNVERIFIABLE"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (34) reports one of its 11 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 34,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "claims": 6,
+     "clusters": [
+      [
+       "Donepezil:PMID22915447:cognition"
+      ],
+      [
+       "Donepezil:PMID25224676:cognition",
+       "Donepezil:PMID25224676:falls",
+       "Donepezil:PMID25224676:tolerability"
+      ],
+      [
+       "Donepezil:PMID31675664:gait"
+      ],
+      [
+       "Donepezil:PMID35860451:incident_PDD"
+      ]
+     ],
+     "detail": "6 curated claims from 4 independent source cluster(s)",
+     "independent_source_clusters": 4,
+     "links": [
+      {
+       "a": "Donepezil:PMID25224676:cognition",
+       "b": "Donepezil:PMID25224676:falls",
+       "reason": "same PMID"
+      },
+      {
+       "a": "Donepezil:PMID25224676:cognition",
+       "b": "Donepezil:PMID25224676:tolerability",
+       "reason": "same PMID"
+      },
+      {
+       "a": "Donepezil:PMID25224676:falls",
+       "b": "Donepezil:PMID25224676:tolerability",
+       "reason": "same PMID"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 11,
+   "compound": "Donepezil",
+   "label": 1,
+   "n_checks_assessable": 5,
+   "raw_units": {
+    "clinical_trials": 11,
+    "curated_claims": 6,
+    "literature_components_stage04": 25,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Zopiclone"
+       ],
+       "nct_id": "NCT01489982",
+       "role_here": "ALTERNATIVES_IN_ONE_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (9) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 9,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 9 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 9,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Doxepin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 6,
+    "literature_papers": 9
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 13 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Midodrine"
+       ],
+       "nct_id": "NCT02897063",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (31) reports one of its 13 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 31,
+     "papers_without_record": [
+      "20301792",
+      "28796472",
+      "31644162",
+      "41570169"
+     ],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 13,
+   "compound": "Droxidopa",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 13,
+    "curated_claims": 0,
+    "literature_components_stage04": 16,
+    "literature_papers": 26
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 3 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Donepezil"
+       ],
+       "nct_id": "NCT02857244",
+       "role_here": "UNVERIFIABLE"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 3 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 3,
+   "compound": "Duloxetine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 3,
+    "curated_claims": 0,
+    "literature_components_stage04": 11,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (6) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 6,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 6 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 6,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Erythromycin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 6,
+    "literature_papers": 6
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 2 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Nortriptyline"
+       ],
+       "nct_id": "NCT03652870",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "3 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "36510237",
+       "trial": "NCT03652870"
+      },
+      {
+       "pmid": "41217862",
+       "trial": "NCT03652870"
+      },
+      {
+       "pmid": "42101650",
+       "trial": "NCT03652870"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Escitalopram",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 22,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 6,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "20589875",
+       "trial": "NCT00324896"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 6 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 6,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 0,
+   "compound": "Eszopiclone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 1,
+    "literature_papers": 6
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (4) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 4,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 4 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 4,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Fesoterodine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 2,
+    "literature_papers": 4
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 2 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Clarithromycin"
+       ],
+       "nct_id": "NCT03440112",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (19) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 19,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 19 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 19,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Flumazenil",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 12,
+    "literature_papers": 19
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Galantamine",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 24,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no persisted PMIDs for this candidate (TD-021)",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no stage-04p literature record for this candidate",
+     "state": "NOT_ASSESSABLE"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": null,
+   "compound": "Glycerol Phenylbutyrate",
+   "label": 0,
+   "n_checks_assessable": 2,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 0,
+    "literature_papers": 0
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (15) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 15,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "1 of 15 sample record(s) duplicate another record in the sample (sample re-queried by stage 04p)",
+     "duplicates": [
+      {
+       "duplicate_of": "24347087",
+       "pmid": "24420006"
+      }
+     ],
+     "papers_checked": 15,
+     "state": "DEPENDENCE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Glycopyrrolate",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 7,
+    "literature_papers": 15
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (11) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 11,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 11 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 11,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Hydrocortisone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 8,
+    "literature_papers": 11
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (6) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 6,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 6 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 6,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Ioflupane I 123",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 4,
+    "literature_papers": 6
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (4) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 4,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 4 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 4,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Ipratropium bromide",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 1,
+    "literature_papers": 4
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Propofol",
+        "Remifentanil"
+       ],
+       "nct_id": "NCT00615472",
+       "role_here": "PROCEDURAL"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (26) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 26,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model",
+      "genetic_association",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 26 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 26,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Isoflurane",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 19,
+    "literature_papers": 26
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 3 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "3 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "32227247",
+       "trial": "NCT02168842"
+      },
+      {
+       "pmid": "33460320",
+       "trial": "NCT02168842"
+      },
+      {
+       "pmid": "36865634",
+       "trial": "NCT02168842"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Isradipine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 3,
+    "curated_claims": 0,
+    "literature_components_stage04": 8,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 4 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 30,
+     "papers_without_record": [
+      "33983693"
+     ],
+     "same_study": [
+      {
+       "pmid": "37993889",
+       "trial": "NCT04643327"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 3,
+   "compound": "Levetiracetam",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 4,
+    "curated_claims": 0,
+    "literature_components_stage04": 14,
+    "literature_papers": 29
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (26) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 26,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 26 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 26,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Lidocaine",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 15,
+    "literature_papers": 26
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 3 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 3 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [
+      "41570169"
+     ],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 3,
+   "compound": "Lisuride",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 3,
+    "curated_claims": 0,
+    "literature_components_stage04": 22,
+    "literature_papers": 29
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [
+      "28796472",
+      "41570169"
+     ],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Lithium",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 20,
+    "literature_papers": 28
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (20) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 20,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "1 of 20 sample record(s) duplicate another record in the sample (sample re-queried by stage 04p)",
+     "duplicates": [
+      {
+       "duplicate_of": "39651168",
+       "pmid": "39761720"
+      }
+     ],
+     "papers_checked": 20,
+     "state": "DEPENDENCE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Lovastatin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 7,
+    "literature_papers": 20
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (11) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 11,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 11 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 11,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Lubiprostone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 3,
+    "literature_papers": 11
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 5 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (32) reports one of its 5 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 32,
+     "papers_without_record": [
+      "41570169"
+     ],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "claims": 6,
+     "clusters": [
+      [
+       "Melatonin:PMID40588412:PSQI",
+       "Melatonin:PMID40588412:ESS",
+       "Melatonin:PMID40588412:RBD",
+       "Melatonin:PMID40387966:PSQI",
+       "Melatonin:PMID40387966:ESS",
+       "Melatonin:PMID40387966:UPDRS3"
+      ]
+     ],
+     "detail": "6 curated claims from 1 independent source cluster(s)",
+     "independent_source_clusters": 1,
+     "links": [
+      {
+       "a": "Melatonin:PMID40588412:PSQI",
+       "b": "Melatonin:PMID40588412:ESS",
+       "reason": "same PMID"
+      },
+      {
+       "a": "Melatonin:PMID40588412:PSQI",
+       "b": "Melatonin:PMID40588412:RBD",
+       "reason": "same PMID"
+      },
+      {
+       "a": "Melatonin:PMID40588412:PSQI",
+       "b": "Melatonin:PMID40387966:PSQI",
+       "reason": "documented shared data (melatonin-PD-RCT-pool)"
+      },
+      {
+       "a": "Melatonin:PMID40588412:PSQI",
+       "b": "Melatonin:PMID40387966:ESS",
+       "reason": "documented shared data (melatonin-PD-RCT-pool)"
+      },
+      {
+       "a": "Melatonin:PMID40588412:PSQI",
+       "b": "Melatonin:PMID40387966:UPDRS3",
+       "reason": "documented shared data (melatonin-PD-RCT-pool)"
+      },
+      {
+       "a": "Melatonin:PMID40588412:ESS",
+       "b": "Melatonin:PMID40588412:RBD",
+       "reason": "same PMID"
+      },
+      {
+       "a": "Melatonin:PMID40588412:ESS",
+       "b": "Melatonin:PMID40387966:PSQI",
+       "reason": "documented shared data (melatonin-PD-RCT-pool)"
+      },
+      {
+       "a": "Melatonin:PMID40588412:ESS",
+       "b": "Melatonin:PMID40387966:ESS",
+       "reason": "documented shared data (melatonin-PD-RCT-pool)"
+      },
+      {
+       "a": "Melatonin:PMID40588412:ESS",
+       "b": "Melatonin:PMID40387966:UPDRS3",
+       "reason": "documented shared data (melatonin-PD-RCT-pool)"
+      },
+      {
+       "a": "Melatonin:PMID40588412:RBD",
+       "b": "Melatonin:PMID40387966:PSQI",
+       "reason": "documented shared data (melatonin-PD-RCT-pool)"
+      },
+      {
+       "a": "Melatonin:PMID40588412:RBD",
+       "b": "Melatonin:PMID40387966:ESS",
+       "reason": "documented shared data (melatonin-PD-RCT-pool)"
+      },
+      {
+       "a": "Melatonin:PMID40588412:RBD",
+       "b": "Melatonin:PMID40387966:UPDRS3",
+       "reason": "documented shared data (melatonin-PD-RCT-pool)"
+      },
+      {
+       "a": "Melatonin:PMID40387966:PSQI",
+       "b": "Melatonin:PMID40387966:ESS",
+       "reason": "same PMID"
+      },
+      {
+       "a": "Melatonin:PMID40387966:PSQI",
+       "b": "Melatonin:PMID40387966:UPDRS3",
+       "reason": "same PMID"
+      },
+      {
+       "a": "Melatonin:PMID40387966:ESS",
+       "b": "Melatonin:PMID40387966:UPDRS3",
+       "reason": "same PMID"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 5,
+   "compound": "Melatonin",
+   "label": 1,
+   "n_checks_assessable": 5,
+   "raw_units": {
+    "clinical_trials": 5,
+    "curated_claims": 6,
+    "literature_components_stage04": 20,
+    "literature_papers": 29
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 6 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Atomoxetine"
+       ],
+       "nct_id": "NCT02879136",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 6 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 6,
+   "compound": "Methylphenidate",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 6,
+    "curated_claims": 0,
+    "literature_components_stage04": 21,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Sirolimus"
+       ],
+       "nct_id": "NCT04127578",
+       "role_here": "AUXILIARY_AGENT"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (10) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 10,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 10 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 10,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Methylprednisolone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 9,
+    "literature_papers": 10
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Rosuvastatin"
+       ],
+       "nct_id": "NCT03970798",
+       "role_here": "AUXILIARY_AGENT"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (9) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 9,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 9 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 9,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Midazolam",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 9,
+    "literature_papers": 9
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 3 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Droxidopa"
+       ],
+       "nct_id": "NCT02897063",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 3 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [
+      "20301792",
+      "41570169"
+     ],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 3,
+   "compound": "Midodrine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 3,
+    "curated_claims": 0,
+    "literature_components_stage04": 16,
+    "literature_papers": 28
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Minocycline",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 16,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 3 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (19) reports one of its 3 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 19,
+     "papers_without_record": [
+      "41570169"
+     ],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 19 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 19,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 3,
+   "compound": "Mirabegron",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 3,
+    "curated_claims": 0,
+    "literature_components_stage04": 2,
+    "literature_papers": 18
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 4 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 6,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "35899977",
+       "trial": "NCT03187301"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 6 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 6,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 3,
+   "compound": "Moxifloxacin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 4,
+    "curated_claims": 0,
+    "literature_components_stage04": 5,
+    "literature_papers": 6
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "2 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 16,
+     "papers_without_record": [
+      "31873990"
+     ],
+     "same_study": [
+      {
+       "pmid": "32757413",
+       "trial": "NCT03769896"
+      },
+      {
+       "pmid": "35937495",
+       "trial": "NCT03769896"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 16 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 16,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Nabilone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 5,
+    "literature_papers": 15
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Oxycodone"
+       ],
+       "nct_id": "NCT01439100",
+       "role_here": "FIXED_COMBINATION"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "26494524",
+       "trial": "NCT01439100"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 0,
+   "compound": "Naloxone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 18,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (18) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 18,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "3 of 18 sample record(s) duplicate another record in the sample (sample re-queried by stage 04p)",
+     "duplicates": [
+      {
+       "duplicate_of": "25037206",
+       "pmid": "25825466"
+      },
+      {
+       "duplicate_of": "25037206",
+       "pmid": "25992401"
+      },
+      {
+       "duplicate_of": "25037206",
+       "pmid": "25992402"
+      }
+     ],
+     "papers_checked": 18,
+     "state": "DEPENDENCE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Naltrexone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 7,
+    "literature_papers": 18
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 3 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 3 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "1 of 30 sample record(s) duplicate another record in the sample (sample re-queried by stage 04p)",
+     "duplicates": [
+      {
+       "duplicate_of": "23666528",
+       "pmid": "36370466"
+      }
+     ],
+     "papers_checked": 30,
+     "state": "DEPENDENCE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 3,
+   "compound": "Nilotinib",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 3,
+    "curated_claims": 0,
+    "literature_components_stage04": 14,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "2 of 2 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Paroxetine"
+       ],
+       "nct_id": "NCT00062738",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      },
+      {
+       "also_credited_to": [
+        "Escitalopram"
+       ],
+       "nct_id": "NCT03652870",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "5 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "20463113",
+       "trial": "NCT00062738"
+      },
+      {
+       "pmid": "20808132",
+       "trial": "NCT00062738"
+      },
+      {
+       "pmid": "36510237",
+       "trial": "NCT03652870"
+      },
+      {
+       "pmid": "41217862",
+       "trial": "NCT03652870"
+      },
+      {
+       "pmid": "42101650",
+       "trial": "NCT03652870"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 0,
+   "compound": "Nortriptyline",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 10,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Amoxicillin"
+       ],
+       "nct_id": "NCT00664209",
+       "role_here": "FIXED_COMBINATION"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (6) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 6,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 6 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 6,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Omeprazole",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 6,
+    "literature_papers": 6
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 26,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "40125723",
+       "trial": "NCT04167813"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 26 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 26,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 0,
+   "compound": "Ondansetron",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 10,
+    "literature_papers": 26
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Darifenacin"
+       ],
+       "nct_id": "NCT00892450",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (8) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 8,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 8 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 8,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Oxybutynin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 4,
+    "literature_papers": 8
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 2 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Naloxone"
+       ],
+       "nct_id": "NCT01439100",
+       "role_here": "FIXED_COMBINATION"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 14,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "26494524",
+       "trial": "NCT01439100"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 14 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 14,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Oxycodone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 5,
+    "literature_papers": 14
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "2 of 2 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Nortriptyline"
+       ],
+       "nct_id": "NCT00062738",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      },
+      {
+       "also_credited_to": [
+        "Venlafaxine"
+       ],
+       "nct_id": "NCT00086190",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Paroxetine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 17,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "genetic_association"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Pioglitazone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 11,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "2 of 2 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Isoflurane",
+        "Remifentanil"
+       ],
+       "nct_id": "NCT00615472",
+       "role_here": "PROCEDURAL"
+      },
+      {
+       "also_credited_to": [
+        "Dexmedetomidine"
+       ],
+       "nct_id": "NCT02256319",
+       "role_here": "PROCEDURAL"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Propofol",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 10,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 23,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "28224720",
+       "trial": "NCT01993680"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 23 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 23,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 0,
+   "compound": "Pyridostigmine",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 11,
+    "literature_papers": 23
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 3 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 3 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [
+      "41570169"
+     ],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 3,
+   "compound": "Quetiapine",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 3,
+    "curated_claims": 0,
+    "literature_components_stage04": 20,
+    "literature_papers": 29
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Dextromethorphan"
+       ],
+       "nct_id": "NCT01767129",
+       "role_here": "FIXED_COMBINATION"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 18,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "28370447",
+       "trial": "NCT01767129"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 18 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 18,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 0,
+   "compound": "Quinidine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 13,
+    "literature_papers": 18
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Isoflurane",
+        "Propofol"
+       ],
+       "nct_id": "NCT00615472",
+       "role_here": "PROCEDURAL"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (19) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 19,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 19 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 19,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Remifentanil",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 8,
+    "literature_papers": 19
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (1) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 1,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 1 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 1,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Repaglinide",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 1,
+    "literature_papers": 1
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 2 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Clarithromycin"
+       ],
+       "nct_id": "NCT04070495",
+       "role_here": "AUXILIARY_AGENT"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (22) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 22,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 22 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 22,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Rifampicin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 10,
+    "literature_papers": 22
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 4 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (9) reports one of its 4 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 9,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 9 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 9,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 4,
+   "compound": "Rifaximin",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 4,
+    "curated_claims": 0,
+    "literature_components_stage04": 5,
+    "literature_papers": 9
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Midazolam"
+       ],
+       "nct_id": "NCT03970798",
+       "role_here": "AUXILIARY_AGENT"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (7) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 7,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 7 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 7,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Rosuvastatin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 7,
+    "literature_papers": 7
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Sertraline",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 23,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "genetic_association"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Sildenafil",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 10,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "31594876",
+       "trial": "NCT02787590"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "1 of 30 sample record(s) duplicate another record in the sample (sample re-queried by stage 04p)",
+     "duplicates": [
+      {
+       "duplicate_of": "39483867",
+       "pmid": "39837893"
+      }
+     ],
+     "papers_checked": 30,
+     "state": "DEPENDENCE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 0,
+   "compound": "Simvastatin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 10,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Methylprednisolone"
+       ],
+       "nct_id": "NCT04127578",
+       "role_here": "AUXILIARY_AGENT"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (7) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 7,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 7 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 7,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Sirolimus",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 6,
+    "literature_papers": 7
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 3 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 16,
+     "papers_without_record": [
+      "41570169"
+     ],
+     "same_study": [
+      {
+       "pmid": "40658410",
+       "trial": "NCT03149809"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 16 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 16,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Solifenacin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 3,
+    "curated_claims": 0,
+    "literature_components_stage04": 5,
+    "literature_papers": 15
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (4) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 4,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "genetic_association"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 4 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 4,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Tadalafil",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 4,
+    "literature_papers": 4
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (24) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 24,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 24 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 24,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Terazosin",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 4,
+    "literature_papers": 24
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 3 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (21) reports one of its 3 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 21,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model",
+      "genetic_association",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 21 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 21,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 3,
+   "compound": "Topiramate",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 3,
+    "curated_claims": 0,
+    "literature_components_stage04": 15,
+    "literature_papers": 21
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (12) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 12,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 12 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 12,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Trimethobenzamide",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 4,
+    "literature_papers": 12
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (8) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 8,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 8 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 8,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Tropicamide",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 5,
+    "literature_papers": 8
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "32759251",
+       "trial": "NCT03840005"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Ursodeoxycholic acid",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 3,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 4 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (12) reports one of its 4 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 12,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 12 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 12,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 4,
+   "compound": "Varenicline",
+   "label": 1,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 4,
+    "curated_claims": 0,
+    "literature_components_stage04": 5,
+    "literature_papers": 12
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Paroxetine"
+       ],
+       "nct_id": "NCT00086190",
+       "role_here": "DRUG_SPECIFIC_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Venlafaxine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 22,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (14) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 14,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "literature"
+     ],
+     "datatypes_used": [
+      "genetic_association"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 14 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 14,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Warfarin",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 14,
+    "literature_papers": 14
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 1 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [],
+     "datatypes_used": [],
+     "detail": "no target-disease datatype used (no target or no association)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Yohimbine",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 16,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 2 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (30) reports one of its 2 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "1 of 30 sample record(s) duplicate another record in the sample (sample re-queried by stage 04p)",
+     "duplicates": [
+      {
+       "duplicate_of": "29412983",
+       "pmid": "35659081"
+      }
+     ],
+     "papers_checked": 30,
+     "state": "DEPENDENCE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Zolpidem",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 2,
+    "curated_claims": 0,
+    "literature_components_stage04": 8,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "none of 3 trial(s) is credited to another candidate",
+     "shared_trials": [],
+     "state": "NONE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "1 paper(s) report one of this candidate's clinical-feature trials",
+     "papers_checked": 30,
+     "papers_without_record": [],
+     "same_study": [
+      {
+       "pmid": "38376645",
+       "trial": "NCT04182399"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 30 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 30,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 2,
+   "compound": "Zonisamide",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 3,
+    "curated_claims": 0,
+    "literature_components_stage04": 22,
+    "literature_papers": 30
+   }
+  },
+  {
+   "checks": {
+    "D1_shared_trial_across_compounds": {
+     "detail": "1 of 1 clinical trial(s) also credited to other candidates",
+     "shared_trials": [
+      {
+       "also_credited_to": [
+        "Doxepin"
+       ],
+       "nct_id": "NCT01489982",
+       "role_here": "ALTERNATIVES_IN_ONE_ARM"
+      }
+     ],
+     "state": "DEPENDENCE_FOUND"
+    },
+    "D2_same_study_in_two_dimensions": {
+     "detail": "no checked paper (5) reports one of its 1 trial(s) by NCT ID (pre-2005 trials rarely carry registry IDs)",
+     "papers_checked": 5,
+     "papers_without_record": [],
+     "same_study": [],
+     "state": "NONE_FOUND"
+    },
+    "D3_duplicated_or_pooled_claims": {
+     "detail": "no curated outcome claims for this candidate",
+     "state": "NOT_ASSESSABLE"
+    },
+    "D4_molecular_datatype_reuse": {
+     "datatypes_excluded": [
+      "clinical",
+      "literature"
+     ],
+     "datatypes_used": [
+      "affected_pathway",
+      "animal_model",
+      "rna_expression"
+     ],
+     "detail": "molecular score uses no clinical or literature datatype (clinical, literature excluded)",
+     "reused": [],
+     "state": "NONE_FOUND"
+    },
+    "D5_duplicate_publication_in_sample": {
+     "detail": "no duplicate publication among 5 sample record(s) (sample re-queried by stage 04p)",
+     "duplicates": [],
+     "papers_checked": 5,
+     "state": "NONE_FOUND"
+    }
+   },
+   "clinical_trials_not_also_counted_as_literature": 1,
+   "compound": "Zopiclone",
+   "label": 0,
+   "n_checks_assessable": 4,
+   "raw_units": {
+    "clinical_trials": 1,
+    "curated_claims": 0,
+    "literature_components_stage04": 5,
+    "literature_papers": 5
+   }
+  }
+ ],
+ "run_status": "SUCCESS",
+ "schema_version": "1.0"
+}

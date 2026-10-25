@@ -1,0 +1,25 @@
+probes 2026-10-21T03:00:06Z against http://127.0.0.1:8765 (POST bodies use stage 'zz-nonexistent'; nothing can launch)
+GET / (baseline)                                           200
+GET /api/status (baseline)                                 200
+traversal /../server.py                                    404
+traversal /%2e%2e/ui/server.py                             404
+traversal /static/..%2f..%2f.env                           404
+GET /.env                                                  404
+GET /.git/config                                           404
+foreign Host header                                        403
+DNS-rebind Host 127.0.0.1.nip.io                           403
+POST /api/run no nonce, no Origin                          403
+POST /api/run cross-origin                                 403
+POST /api/run same-origin, bad nonce                       403
+PUT /api/run                                               405
+DELETE /api/run                                            405
+GET /api/doc?path=../../.env                               404
+GET /api/log?run=../../.env                                404
+--- response headers of /
+Cache-Control: no-store
+Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Referrer-Policy: no-referrer
+--- listening sockets
+python3.1 16836 127.0.0.1:8765

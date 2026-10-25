@@ -1,0 +1,113 @@
+{
+ "note": "exploratory; approved labels unchanged",
+ "results": [
+  {
+   "scenario": "approved (reference)",
+   "n": 90,
+   "positives": 14,
+   "auroc_5d": 0.7754,
+   "auroc_5d_ci95": [
+    0.6559,
+    0.8809
+   ],
+   "auroc_4d": 0.7002,
+   "diff_5d_4d": 0.0752
+  },
+  {
+   "scenario": "Lithium = 1 (dietary-supplement-typed trials count)",
+   "n": 90,
+   "positives": 15,
+   "auroc_5d": 0.7573,
+   "auroc_5d_ci95": [
+    0.6375,
+    0.8691
+   ],
+   "auroc_4d": 0.6836,
+   "diff_5d_4d": 0.0738
+  },
+  {
+   "scenario": "Galantamine = 0 (D-011 unresolved)",
+   "n": 90,
+   "positives": 13,
+   "auroc_5d": 0.7812,
+   "auroc_5d_ci95": [
+    0.6533,
+    0.8934
+   ],
+   "auroc_4d": 0.7283,
+   "diff_5d_4d": 0.0529
+  },
+  {
+   "scenario": "Galantamine excluded",
+   "n": 89,
+   "positives": 13,
+   "auroc_5d": 0.7824,
+   "auroc_5d_ci95": [
+    0.648,
+    0.8899
+   ],
+   "auroc_4d": 0.7247,
+   "diff_5d_4d": 0.0577
+  },
+  {
+   "scenario": "Lidocaine = 0 (stellate block as procedure)",
+   "n": 90,
+   "positives": 13,
+   "auroc_5d": 0.7562,
+   "auroc_5d_ci95": [
+    0.6275,
+    0.8702
+   ],
+   "auroc_4d": 0.6923,
+   "diff_5d_4d": 0.0639
+  },
+  {
+   "scenario": "Rifaximin = 0 (regimen component)",
+   "n": 90,
+   "positives": 13,
+   "auroc_5d": 0.8002,
+   "auroc_5d_ci95": [
+    0.6842,
+    0.9059
+   ],
+   "auroc_4d": 0.7213,
+   "diff_5d_4d": 0.0789
+  },
+  {
+   "scenario": "all disputed resolved against (Lithium 0; Galantamine, Lidocaine, Rifaximin 0)",
+   "n": 90,
+   "positives": 11,
+   "auroc_5d": 0.7906,
+   "auroc_5d_ci95": [
+    0.6523,
+    0.9057
+   ],
+   "auroc_4d": 0.7491,
+   "diff_5d_4d": 0.0414
+  },
+  {
+   "scenario": "all disputed resolved for (Lithium 1; others 1)",
+   "n": 90,
+   "positives": 15,
+   "auroc_5d": 0.7573,
+   "auroc_5d_ci95": [
+    0.6375,
+    0.8691
+   ],
+   "auroc_4d": 0.6836,
+   "diff_5d_4d": 0.0738
+  },
+  {
+   "scenario": "all disputed excluded (Lithium, Galantamine, Lidocaine, Rifaximin)",
+   "n": 86,
+   "positives": 11,
+   "auroc_5d": 0.7915,
+   "auroc_5d_ci95": [
+    0.6594,
+    0.9083
+   ],
+   "auroc_4d": 0.7467,
+   "diff_5d_4d": 0.0448
+  }
+ ]
+}

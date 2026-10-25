@@ -1,0 +1,15 @@
+{
+ "ranking_rows": 90,
+ "max_abs_diff_ranking_vs_file": 0.0,
+ "ranking_issues": [],
+ "detail_pages_checked": 90,
+ "max_abs_diff_detail_vs_file": 0.0,
+ "detail_mismatches": [],
+ "metric_abs_diffs": {
+  "live_primary_auroc": 0.0,
+  "validation_charts_auroc": 0.0,
+  "validation_charts_auprc": 5.551115123125783e-17,
+  "alternative_approved_auroc": 0.0,
+  "result_set_cohort_equal": true
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "Acetylcysteine": {
+  "rank shown": true,
+  "each dimension named": true,
+  "PMID identifiers": true,
+  "NCT identifiers": true,
+  "dates shown": true,
+  "cutoff validity stated": true,
+  "missing / neutral state stated": true,
+  "conflicts section": true,
+  "human review / adjudication": true,
+  "formula / score version": true,
+  "not efficacy / not probability": true,
+  "confidence interval": true,
+  "links to sources": true
+ },
+ "Agomelatine": {
+  "rank shown": true,
+  "each dimension named": true,
+  "PMID identifiers": true,
+  "NCT identifiers": true,
+  "dates shown": true,
+  "cutoff validity stated": true,
+  "missing / neutral state stated": true,
+  "conflicts section": true,
+  "human review / adjudication": true,
+  "formula / score version": true,
+  "not efficacy / not probability": true,
+  "confidence interval": true,
+  "links to sources": true
+ }
+}

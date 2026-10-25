@@ -1,0 +1,3086 @@
+{
+ "history": [
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T07:54:40+00:00",
+   "run_id": "20261019T075439Z-10c-f704",
+   "stage": "10c",
+   "started_utc": "2026-10-19T07:54:39+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T07:54:40+00:00",
+   "run_id": "20261019T075440Z-10f-6fbd",
+   "stage": "10f",
+   "started_utc": "2026-10-19T07:54:40+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T07:54:41+00:00",
+   "run_id": "20261019T075440Z-10d-707a",
+   "stage": "10d",
+   "started_utc": "2026-10-19T07:54:40+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T07:54:41+00:00",
+   "run_id": "20261019T075441Z-10e-c8c4",
+   "stage": "10e",
+   "started_utc": "2026-10-19T07:54:41+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T07:54:41+00:00",
+   "run_id": "20261019T075441Z-10g-2810",
+   "stage": "10g",
+   "started_utc": "2026-10-19T07:54:41+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T07:54:42+00:00",
+   "run_id": "20261019T075441Z-10b-9e7a",
+   "stage": "10b",
+   "started_utc": "2026-10-19T07:54:41+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T07:54:42+00:00",
+   "run_id": "20261019T075442Z-10a-c46e",
+   "stage": "10a",
+   "started_utc": "2026-10-19T07:54:42+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T07:54:42+00:00",
+   "run_id": "20261019T075442Z-10h-20e3",
+   "stage": "10h",
+   "started_utc": "2026-10-19T07:54:42+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T09:57:29+00:00",
+   "run_id": "20261019T095729Z-10c-a607",
+   "stage": "10c",
+   "started_utc": "2026-10-19T09:57:29+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T09:57:30+00:00",
+   "run_id": "20261019T095729Z-10g-267d",
+   "stage": "10g",
+   "started_utc": "2026-10-19T09:57:29+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T09:57:30+00:00",
+   "run_id": "20261019T095730Z-10h-3cd3",
+   "stage": "10h",
+   "started_utc": "2026-10-19T09:57:30+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 1,
+   "finished_utc": "2026-10-19T12:40:24+00:00",
+   "run_id": "20261019T123054Z-04p-11b9",
+   "stage": "04p",
+   "started_utc": "2026-10-19T12:30:54+00:00",
+   "status": "FAILED"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T12:40:59+00:00",
+   "run_id": "20261019T124053Z-04p-67c4",
+   "stage": "04p",
+   "started_utc": "2026-10-19T12:40:53+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T12:43:00+00:00",
+   "run_id": "20261019T124258Z-10a-all-72df",
+   "stage": "10a-all",
+   "started_utc": "2026-10-19T12:42:58+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T12:44:35+00:00",
+   "run_id": "20261019T124433Z-10g-d0f6",
+   "stage": "10g",
+   "started_utc": "2026-10-19T12:44:33+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T12:44:36+00:00",
+   "run_id": "20261019T124435Z-10h-7da2",
+   "stage": "10h",
+   "started_utc": "2026-10-19T12:44:35+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T12:45:36+00:00",
+   "run_id": "20261019T124535Z-10h-30e7",
+   "stage": "10h",
+   "started_utc": "2026-10-19T12:45:35+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T16:15:50+00:00",
+   "run_id": "20261019T161549Z-review-dda8",
+   "stage": "review",
+   "started_utc": "2026-10-19T16:15:49+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T16:20:24+00:00",
+   "run_id": "20261019T162023Z-review-8a0f",
+   "stage": "review",
+   "started_utc": "2026-10-19T16:20:23+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T17:01:34+00:00",
+   "run_id": "20261019T165836Z-05h-272f",
+   "stage": "05h",
+   "started_utc": "2026-10-19T16:58:36+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T17:02:30+00:00",
+   "run_id": "20261019T170230Z-10f-ad2e",
+   "stage": "10f",
+   "started_utc": "2026-10-19T17:02:30+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T17:04:18+00:00",
+   "run_id": "20261019T170417Z-10h-4752",
+   "stage": "10h",
+   "started_utc": "2026-10-19T17:04:17+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-19T17:07:58+00:00",
+   "run_id": "20261019T170757Z-10h-bf87",
+   "stage": "10h",
+   "started_utc": "2026-10-19T17:07:57+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T07:31:43+00:00",
+   "run_id": "20261020T073142Z-10g-d806",
+   "stage": "10g",
+   "started_utc": "2026-10-20T07:31:42+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T07:31:44+00:00",
+   "run_id": "20261020T073143Z-10h-0bd5",
+   "stage": "10h",
+   "started_utc": "2026-10-20T07:31:43+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T07:31:54+00:00",
+   "run_id": "20261020T073153Z-05h-1fbd",
+   "stage": "05h",
+   "started_utc": "2026-10-20T07:31:53+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T07:48:39+00:00",
+   "run_id": "20261020T074837Z-10g-1cb0",
+   "stage": "10g",
+   "started_utc": "2026-10-20T07:48:37+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T07:48:40+00:00",
+   "run_id": "20261020T074839Z-10h-6a30",
+   "stage": "10h",
+   "started_utc": "2026-10-20T07:48:39+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T07:48:45+00:00",
+   "run_id": "20261020T074840Z-07-f35d",
+   "stage": "07",
+   "started_utc": "2026-10-20T07:48:40+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T07:52:55+00:00",
+   "run_id": "20261020T075254Z-review-9af8",
+   "stage": "review",
+   "started_utc": "2026-10-20T07:52:54+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T08:01:08+00:00",
+   "run_id": "20261020T080108Z-10a-f3ce",
+   "stage": "10a",
+   "started_utc": "2026-10-20T08:01:08+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T08:01:09+00:00",
+   "run_id": "20261020T080108Z-10h-e8df",
+   "stage": "10h",
+   "started_utc": "2026-10-20T08:01:08+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T08:01:53+00:00",
+   "run_id": "20261020T080153Z-10b-16c5",
+   "stage": "10b",
+   "started_utc": "2026-10-20T08:01:53+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T08:01:54+00:00",
+   "run_id": "20261020T080153Z-10c-1c4c",
+   "stage": "10c",
+   "started_utc": "2026-10-20T08:01:53+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T08:01:54+00:00",
+   "run_id": "20261020T080154Z-10d-544d",
+   "stage": "10d",
+   "started_utc": "2026-10-20T08:01:54+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T08:01:55+00:00",
+   "run_id": "20261020T080154Z-10e-df54",
+   "stage": "10e",
+   "started_utc": "2026-10-20T08:01:54+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T08:02:03+00:00",
+   "run_id": "20261020T080202Z-10g-f87d",
+   "stage": "10g",
+   "started_utc": "2026-10-20T08:02:02+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T08:02:04+00:00",
+   "run_id": "20261020T080203Z-10h-099b",
+   "stage": "10h",
+   "started_utc": "2026-10-20T08:02:03+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T09:18:14+00:00",
+   "run_id": "20261020T091813Z-10b-7806",
+   "stage": "10b",
+   "started_utc": "2026-10-20T09:18:13+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T14:55:49+00:00",
+   "run_id": "20261020T145548Z-10h-4c74",
+   "stage": "10h",
+   "started_utc": "2026-10-20T14:55:48+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T17:45:22+00:00",
+   "run_id": "20261020T174522Z-10d-c38c",
+   "stage": "10d",
+   "started_utc": "2026-10-20T17:45:22+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T17:45:23+00:00",
+   "run_id": "20261020T174522Z-10b-a814",
+   "stage": "10b",
+   "started_utc": "2026-10-20T17:45:22+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T17:45:23+00:00",
+   "run_id": "20261020T174523Z-10f-0531",
+   "stage": "10f",
+   "started_utc": "2026-10-20T17:45:23+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T17:45:25+00:00",
+   "run_id": "20261020T174523Z-10g-4521",
+   "stage": "10g",
+   "started_utc": "2026-10-20T17:45:23+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T17:45:25+00:00",
+   "run_id": "20261020T174525Z-10a-9753",
+   "stage": "10a",
+   "started_utc": "2026-10-20T17:45:25+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T17:45:26+00:00",
+   "run_id": "20261020T174525Z-10a-all-366e",
+   "stage": "10a-all",
+   "started_utc": "2026-10-20T17:45:25+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T17:45:27+00:00",
+   "run_id": "20261020T174526Z-10h-a404",
+   "stage": "10h",
+   "started_utc": "2026-10-20T17:45:26+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T18:44:37+00:00",
+   "run_id": "20261020T184436Z-10d-2878",
+   "stage": "10d",
+   "started_utc": "2026-10-20T18:44:36+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-20T18:44:42+00:00",
+   "run_id": "20261020T184441Z-10h-f8fb",
+   "stage": "10h",
+   "started_utc": "2026-10-20T18:44:41+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-21T09:29:24+00:00",
+   "run_id": "20261021T092924Z-10e-2883",
+   "stage": "10e",
+   "started_utc": "2026-10-21T09:29:24+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-21T09:38:31+00:00",
+   "run_id": "20261021T093831Z-10b-b8de",
+   "stage": "10b",
+   "started_utc": "2026-10-21T09:38:31+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-21T09:38:47+00:00",
+   "run_id": "20261021T093847Z-10b-efa4",
+   "stage": "10b",
+   "started_utc": "2026-10-21T09:38:47+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-21T09:39:24+00:00",
+   "run_id": "20261021T093923Z-05h-016d",
+   "stage": "05h",
+   "started_utc": "2026-10-21T09:39:23+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-21T09:39:45+00:00",
+   "run_id": "20261021T093944Z-05h-8b97",
+   "stage": "05h",
+   "started_utc": "2026-10-21T09:39:44+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-21T09:39:53+00:00",
+   "run_id": "20261021T093950Z-04p-a2e8",
+   "stage": "04p",
+   "started_utc": "2026-10-21T09:39:50+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-21T09:42:44+00:00",
+   "run_id": "20261021T094243Z-05h-9768",
+   "stage": "05h",
+   "started_utc": "2026-10-21T09:42:43+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-21T09:46:59+00:00",
+   "run_id": "20261021T094658Z-10h-a2a0",
+   "stage": "10h",
+   "started_utc": "2026-10-21T09:46:58+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-21T17:19:42+00:00",
+   "run_id": "20261021T171941Z-review-1d91",
+   "stage": "review",
+   "started_utc": "2026-10-21T17:19:41+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-21T17:19:43+00:00",
+   "run_id": "20261021T171942Z-10h-e2f9",
+   "stage": "10h",
+   "started_utc": "2026-10-21T17:19:42+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-23T06:00:09+00:00",
+   "run_id": "20261023T060008Z-10b-7453",
+   "stage": "10b",
+   "started_utc": "2026-10-23T06:00:08+00:00",
+   "status": "SUCCESS"
+  },
+  {
+   "exit_code": 0,
+   "finished_utc": "2026-10-23T06:11:12+00:00",
+   "run_id": "20261023T061111Z-10h-83c8",
+   "stage": "10h",
+   "started_utc": "2026-10-23T06:11:11+00:00",
+   "status": "SUCCESS"
+  }
+ ],
+ "schema": 1,
+ "stages": {
+  "00": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/pd_candidates.csv": {
+      "md5": "237326ca915432ef0d37f957c1233f5b",
+      "mtime_ns": 1791142992855486797,
+      "size": 130313
+     }
+    },
+    "outputs": {
+     "data/pd_candidates_filtered.csv": {
+      "md5": "98771cb4ff598b157209318e9ed1d20c",
+      "mtime_ns": 1791143097502197383,
+      "size": 126866
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-00",
+    "script": "scripts/00_exclusion_filter.py",
+    "stage": "00",
+    "started_utc": null,
+    "status": "ADOPTED"
+   },
+   "last_success": {
+    "code_fingerprint_attested": {
+     "attested_utc": "2026-10-20T09:06:37+00:00",
+     "copy_run_id": "20261020T090514Z-00-d300",
+     "method": "byte-identical isolated reproduction by the current script"
+    },
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/pd_candidates.csv": {
+      "md5": "237326ca915432ef0d37f957c1233f5b",
+      "mtime_ns": 1791142992855486797,
+      "size": 130313
+     }
+    },
+    "outputs": {
+     "data/pd_candidates_filtered.csv": {
+      "md5": "98771cb4ff598b157209318e9ed1d20c",
+      "mtime_ns": 1791143097502197383,
+      "size": 126866
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-00",
+    "script": "scripts/00_exclusion_filter.py",
+    "script_md5": "d9ad2a77f9a855a44bbffe86abc9d790",
+    "stage": "00",
+    "started_utc": null,
+    "status": "ADOPTED"
+   }
+  },
+  "01": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {},
+    "outputs": {
+     "data/hetionet_edges.csv": {
+      "md5": "5c70f86c2aa0f0f17fff6518138b1f21",
+      "mtime_ns": 1791142992713758142,
+      "size": 88978057
+     },
+     "data/hetionet_nodes.csv": {
+      "md5": "6bc483d109a150b4c7421a279813d1c5",
+      "mtime_ns": 1791142991367459254,
+      "size": 2464300
+     },
+     "data/pd_candidates.csv": {
+      "md5": "237326ca915432ef0d37f957c1233f5b",
+      "mtime_ns": 1791142992855486797,
+      "size": 130313
+     },
+     "data/pd_candidates_full.csv": {
+      "md5": "0903b6a249b44691439ea66d6ae53f67",
+      "mtime_ns": 1791142992852691613,
+      "size": 132372
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-01",
+    "script": "scripts/01_get_pd_candidates.py",
+    "stage": "01",
+    "started_utc": null,
+    "status": "ADOPTED"
+   },
+   "last_success": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {},
+    "outputs": {
+     "data/hetionet_edges.csv": {
+      "md5": "5c70f86c2aa0f0f17fff6518138b1f21",
+      "mtime_ns": 1791142992713758142,
+      "size": 88978057
+     },
+     "data/hetionet_nodes.csv": {
+      "md5": "6bc483d109a150b4c7421a279813d1c5",
+      "mtime_ns": 1791142991367459254,
+      "size": 2464300
+     },
+     "data/pd_candidates.csv": {
+      "md5": "237326ca915432ef0d37f957c1233f5b",
+      "mtime_ns": 1791142992855486797,
+      "size": 130313
+     },
+     "data/pd_candidates_full.csv": {
+      "md5": "0903b6a249b44691439ea66d6ae53f67",
+      "mtime_ns": 1791142992852691613,
+      "size": 132372
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-01",
+    "script": "scripts/01_get_pd_candidates.py",
+    "stage": "01",
+    "started_utc": null,
+    "status": "ADOPTED"
+   }
+  },
+  "02": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/hetionet_edges.csv": {
+      "md5": "5c70f86c2aa0f0f17fff6518138b1f21",
+      "mtime_ns": 1791142992713758142,
+      "size": 88978057
+     },
+     "data/pd_candidates_filtered.csv": {
+      "md5": "98771cb4ff598b157209318e9ed1d20c",
+      "mtime_ns": 1791143097502197383,
+      "size": 126866
+     }
+    },
+    "outputs": {
+     "data/network_proximity.csv": {
+      "md5": "600d467465c212c5a73c13adfda8ab67",
+      "mtime_ns": 1791143516739173585,
+      "size": 131469
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-02",
+    "script": "scripts/02_network_proximity.py",
+    "stage": "02",
+    "started_utc": null,
+    "status": "ADOPTED"
+   },
+   "last_success": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/hetionet_edges.csv": {
+      "md5": "5c70f86c2aa0f0f17fff6518138b1f21",
+      "mtime_ns": 1791142992713758142,
+      "size": 88978057
+     },
+     "data/pd_candidates_filtered.csv": {
+      "md5": "98771cb4ff598b157209318e9ed1d20c",
+      "mtime_ns": 1791143097502197383,
+      "size": 126866
+     }
+    },
+    "outputs": {
+     "data/network_proximity.csv": {
+      "md5": "600d467465c212c5a73c13adfda8ab67",
+      "mtime_ns": 1791143516739173585,
+      "size": 131469
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-02",
+    "script": "scripts/02_network_proximity.py",
+    "stage": "02",
+    "started_utc": null,
+    "status": "ADOPTED"
+   }
+  },
+  "03": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/pd_candidates_filtered.csv": {
+      "md5": "98771cb4ff598b157209318e9ed1d20c",
+      "mtime_ns": 1791143097502197383,
+      "size": 126866
+     }
+    },
+    "outputs": {
+     "data/clinical_maturity_precutoff.csv": {
+      "md5": "4a41db571d69002529f2bc3eedf3761e",
+      "mtime_ns": 1791195025420269497,
+      "size": 26379
+     },
+     "data/clinicaltrials_match_audit.csv": {
+      "md5": "b6d092da1a743ae2eca43f1f818c4bd6",
+      "mtime_ns": 1791195025426520721,
+      "size": 300125
+     },
+     "data/ground_truth_postcutoff.csv": {
+      "md5": "1fb681696eea78f7dffd0b18e6039c5a",
+      "mtime_ns": 1791195025421054249,
+      "size": 9082
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-03",
+    "script": "scripts/03_clinicaltrials_groundtruth.py",
+    "stage": "03",
+    "started_utc": null,
+    "status": "ADOPTED"
+   },
+   "last_success": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/pd_candidates_filtered.csv": {
+      "md5": "98771cb4ff598b157209318e9ed1d20c",
+      "mtime_ns": 1791143097502197383,
+      "size": 126866
+     }
+    },
+    "outputs": {
+     "data/clinical_maturity_precutoff.csv": {
+      "md5": "4a41db571d69002529f2bc3eedf3761e",
+      "mtime_ns": 1791195025420269497,
+      "size": 26379
+     },
+     "data/clinicaltrials_match_audit.csv": {
+      "md5": "b6d092da1a743ae2eca43f1f818c4bd6",
+      "mtime_ns": 1791195025426520721,
+      "size": 300125
+     },
+     "data/ground_truth_postcutoff.csv": {
+      "md5": "1fb681696eea78f7dffd0b18e6039c5a",
+      "mtime_ns": 1791195025421054249,
+      "size": 9082
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-03",
+    "script": "scripts/03_clinicaltrials_groundtruth.py",
+    "stage": "03",
+    "started_utc": null,
+    "status": "ADOPTED"
+   }
+  },
+  "03c": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff.csv": {
+      "md5": "4a41db571d69002529f2bc3eedf3761e",
+      "mtime_ns": 1791195025420269497,
+      "size": 26379
+     },
+     "data/ground_truth_postcutoff.csv": {
+      "md5": "1fb681696eea78f7dffd0b18e6039c5a",
+      "mtime_ns": 1791195025421054249,
+      "size": 9082
+     }
+    },
+    "outputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/ground_truth_postcutoff_clean.csv": {
+      "md5": "c83e30bbb44f37e5aeb51a6010d7af5e",
+      "mtime_ns": 1791195244290353931,
+      "size": 7708
+     },
+     "data/nct_studytype_check.csv": {
+      "md5": "b9eec99e9768e7dcca3c7646673a2216",
+      "mtime_ns": 1791195231960791130,
+      "size": 9743
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-03c",
+    "script": "scripts/check_studytype.py",
+    "stage": "03c",
+    "started_utc": null,
+    "status": "ADOPTED"
+   },
+   "last_success": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff.csv": {
+      "md5": "4a41db571d69002529f2bc3eedf3761e",
+      "mtime_ns": 1791195025420269497,
+      "size": 26379
+     },
+     "data/ground_truth_postcutoff.csv": {
+      "md5": "1fb681696eea78f7dffd0b18e6039c5a",
+      "mtime_ns": 1791195025421054249,
+      "size": 9082
+     }
+    },
+    "outputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/ground_truth_postcutoff_clean.csv": {
+      "md5": "c83e30bbb44f37e5aeb51a6010d7af5e",
+      "mtime_ns": 1791195244290353931,
+      "size": 7708
+     },
+     "data/nct_studytype_check.csv": {
+      "md5": "b9eec99e9768e7dcca3c7646673a2216",
+      "mtime_ns": 1791195231960791130,
+      "size": 9743
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-03c",
+    "script": "scripts/check_studytype.py",
+    "stage": "03c",
+    "started_utc": null,
+    "status": "ADOPTED"
+   }
+  },
+  "04": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     }
+    },
+    "outputs": {
+     "data/literature_independence.csv": {
+      "md5": "89ae5cff8542bd15734d4b7afd1f9004",
+      "mtime_ns": 1791195254513860370,
+      "size": 4970
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-04",
+    "script": "scripts/04_literature_independence.py",
+    "stage": "04",
+    "started_utc": null,
+    "status": "ADOPTED"
+   },
+   "last_success": {
+    "code_fingerprint_attested": {
+     "attested_utc": "2026-10-20T09:06:37+00:00",
+     "copy_run_id": "20261020T090533Z-04-d0bf",
+     "method": "byte-identical isolated reproduction by the current script"
+    },
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     }
+    },
+    "outputs": {
+     "data/literature_independence.csv": {
+      "md5": "89ae5cff8542bd15734d4b7afd1f9004",
+      "mtime_ns": 1791195254513860370,
+      "size": 4970
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-04",
+    "script": "scripts/04_literature_independence.py",
+    "script_md5": "8503340bedac1df6f778cf7c769659f2",
+    "stage": "04",
+    "started_utc": null,
+    "status": "ADOPTED"
+   }
+  },
+  "04b": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:02+00:00",
+    "inputs": {
+     "data/_literature_checkpoint.jsonl": {
+      "md5": "dd625ae20cf1c4f060d367e4dfbef5a4",
+      "mtime_ns": 1791159242232528781,
+      "size": 32865
+     }
+    },
+    "outputs": {
+     "data/literature_graph_droxidopa.json": {
+      "md5": "f4d702ac87ba68be9e72de70d3fd6b10",
+      "mtime_ns": 1791213358034323966,
+      "size": 7027
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015502Z-04b",
+    "script": "scripts/04b_export_literature_graph.py",
+    "stage": "04b",
+    "started_utc": null,
+    "status": "ADOPTED"
+   },
+   "last_success": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:02+00:00",
+    "inputs": {
+     "data/_literature_checkpoint.jsonl": {
+      "md5": "dd625ae20cf1c4f060d367e4dfbef5a4",
+      "mtime_ns": 1791159242232528781,
+      "size": 32865
+     }
+    },
+    "outputs": {
+     "data/literature_graph_droxidopa.json": {
+      "md5": "f4d702ac87ba68be9e72de70d3fd6b10",
+      "mtime_ns": 1791213358034323966,
+      "size": 7027
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015502Z-04b",
+    "script": "scripts/04b_export_literature_graph.py",
+    "stage": "04b",
+    "started_utc": null,
+    "status": "ADOPTED"
+   }
+  },
+  "04p": {
+   "last_attempt": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-21T09:39:53+00:00",
+    "inputs": {
+     "data/_literature_checkpoint.jsonl": {
+      "md5": "dd625ae20cf1c4f060d367e4dfbef5a4",
+      "mtime_ns": 1791159242232528781,
+      "size": 32865
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     }
+    },
+    "outputs": {
+     "data/literature_papers.jsonl": {
+      "md5": "98be2bbf8c33968d0938d3b8716ad1f2",
+      "mtime_ns": 1792575592953660479,
+      "size": 4816934
+     },
+     "data/literature_provenance.csv": {
+      "md5": "cce8fd77752e7bf1d51500cc24851a8c",
+      "mtime_ns": 1792575592913965856,
+      "size": 8872
+     },
+     "data/literature_provenance_run.json": {
+      "md5": "7c014e4c35f218b3b2da8f97133be05a",
+      "mtime_ns": 1792575592957171076,
+      "size": 780
+     }
+    },
+    "previous_dir": "data/_runs/20261021T093950Z-04p-a2e8/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261021T093950Z-04p-a2e8",
+    "run_id": "20261021T093950Z-04p-a2e8",
+    "script": "scripts/04p_literature_provenance.py",
+    "script_md5": "ae86df7c6f3104157bdb544d55c37d0a",
+    "stage": "04p",
+    "started_utc": "2026-10-21T09:39:50+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-21T09:39:53+00:00",
+    "inputs": {
+     "data/_literature_checkpoint.jsonl": {
+      "md5": "dd625ae20cf1c4f060d367e4dfbef5a4",
+      "mtime_ns": 1791159242232528781,
+      "size": 32865
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     }
+    },
+    "outputs": {
+     "data/literature_papers.jsonl": {
+      "md5": "98be2bbf8c33968d0938d3b8716ad1f2",
+      "mtime_ns": 1792575592953660479,
+      "size": 4816934
+     },
+     "data/literature_provenance.csv": {
+      "md5": "cce8fd77752e7bf1d51500cc24851a8c",
+      "mtime_ns": 1792575592913965856,
+      "size": 8872
+     },
+     "data/literature_provenance_run.json": {
+      "md5": "7c014e4c35f218b3b2da8f97133be05a",
+      "mtime_ns": 1792575592957171076,
+      "size": 780
+     }
+    },
+    "previous_dir": "data/_runs/20261021T093950Z-04p-a2e8/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261021T093950Z-04p-a2e8",
+    "run_id": "20261021T093950Z-04p-a2e8",
+    "script": "scripts/04p_literature_provenance.py",
+    "script_md5": "ae86df7c6f3104157bdb544d55c37d0a",
+    "stage": "04p",
+    "started_utc": "2026-10-21T09:39:50+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "05": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     }
+    },
+    "outputs": {
+     "data/safety_signal.csv": {
+      "md5": "a7ed3dc46bbf745bf59cf98aad065575",
+      "mtime_ns": 1791944266917132793,
+      "size": 8219
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-05",
+    "script": "scripts/05_safety_signal.py",
+    "stage": "05",
+    "started_utc": null,
+    "status": "ADOPTED"
+   },
+   "last_success": {
+    "code_fingerprint_attested": {
+     "attested_utc": "2026-10-20T09:06:37+00:00",
+     "copy_run_id": "20261020T090534Z-05-ecf7",
+     "method": "byte-identical isolated reproduction by the current script"
+    },
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     }
+    },
+    "outputs": {
+     "data/safety_signal.csv": {
+      "md5": "a7ed3dc46bbf745bf59cf98aad065575",
+      "mtime_ns": 1791944266917132793,
+      "size": 8219
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-05",
+    "script": "scripts/05_safety_signal.py",
+    "script_md5": "da3296005eebaae5f92e751381bb291a",
+    "stage": "05",
+    "started_utc": null,
+    "status": "ADOPTED"
+   }
+  },
+  "05h": {
+   "last_attempt": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-21T09:42:44+00:00",
+    "inputs": {
+     "data/safety_signal.csv": {
+      "md5": "a7ed3dc46bbf745bf59cf98aad065575",
+      "mtime_ns": 1791944266917132793,
+      "size": 8219
+     }
+    },
+    "outputs": {
+     "data/safety_label_history.csv": {
+      "md5": "fb37eddf7a8b2e6d1dd263515d3a92a8",
+      "mtime_ns": 1792575764263470135,
+      "size": 18103
+     },
+     "data/safety_label_history_run.json": {
+      "md5": "3dcb2aedb25447e674f9c71c201e2c1d",
+      "mtime_ns": 1792575764264982808,
+      "size": 712
+     }
+    },
+    "previous_dir": "data/_runs/20261021T094243Z-05h-9768/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261021T094243Z-05h-9768",
+    "run_id": "20261021T094243Z-05h-9768",
+    "script": "scripts/05h_safety_label_history.py",
+    "script_md5": "7051d70901721099d60fa52c03e61396",
+    "stage": "05h",
+    "started_utc": "2026-10-21T09:42:43+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-21T09:42:44+00:00",
+    "inputs": {
+     "data/safety_signal.csv": {
+      "md5": "a7ed3dc46bbf745bf59cf98aad065575",
+      "mtime_ns": 1791944266917132793,
+      "size": 8219
+     }
+    },
+    "outputs": {
+     "data/safety_label_history.csv": {
+      "md5": "fb37eddf7a8b2e6d1dd263515d3a92a8",
+      "mtime_ns": 1792575764263470135,
+      "size": 18103
+     },
+     "data/safety_label_history_run.json": {
+      "md5": "3dcb2aedb25447e674f9c71c201e2c1d",
+      "mtime_ns": 1792575764264982808,
+      "size": 712
+     }
+    },
+    "previous_dir": "data/_runs/20261021T094243Z-05h-9768/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261021T094243Z-05h-9768",
+    "run_id": "20261021T094243Z-05h-9768",
+    "script": "scripts/05h_safety_label_history.py",
+    "script_md5": "7051d70901721099d60fa52c03e61396",
+    "stage": "05h",
+    "started_utc": "2026-10-21T09:42:43+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "06": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/ground_truth_postcutoff_clean.csv": {
+      "md5": "c83e30bbb44f37e5aeb51a6010d7af5e",
+      "mtime_ns": 1791195244290353931,
+      "size": 7708
+     },
+     "data/label_role_exclusions.csv": {
+      "md5": "e9ba11aa99309f82cd0cfc301839d10e",
+      "mtime_ns": 1791941735020256092,
+      "size": 494
+     },
+     "data/literature_independence.csv": {
+      "md5": "89ae5cff8542bd15734d4b7afd1f9004",
+      "mtime_ns": 1791195254513860370,
+      "size": 4970
+     },
+     "data/molecular_pathway.csv": {
+      "md5": "37d53391d5c98862085d9df7eb59248d",
+      "mtime_ns": 1791195255183360745,
+      "size": 6822
+     },
+     "data/network_proximity.csv": {
+      "md5": "600d467465c212c5a73c13adfda8ab67",
+      "mtime_ns": 1791143516739173585,
+      "size": 131469
+     },
+     "data/pd_candidates_filtered.csv": {
+      "md5": "98771cb4ff598b157209318e9ed1d20c",
+      "mtime_ns": 1791143097502197383,
+      "size": 126866
+     },
+     "data/safety_signal.csv": {
+      "md5": "a7ed3dc46bbf745bf59cf98aad065575",
+      "mtime_ns": 1791944266917132793,
+      "size": 8219
+     }
+    },
+    "outputs": {
+     "data/ablation_results_5d.csv": {
+      "md5": "d59f0cb44c195fa8a77e174f3c44b2ad",
+      "mtime_ns": 1791944456896443807,
+      "size": 248
+     },
+     "data/ablation_results_v2.csv": {
+      "md5": "d69e64376e45c99bff79ee39c7f3470f",
+      "mtime_ns": 1791944456877635309,
+      "size": 218
+     },
+     "data/baseline_results_v2.csv": {
+      "md5": "99c0b8f83cff2d70c1ea8a746044dace",
+      "mtime_ns": 1791944456876879271,
+      "size": 150
+     },
+     "data/grid_search_3d_log.csv": {
+      "md5": "ccd1c0c58773a18da08d256e4d683a15",
+      "mtime_ns": 1791944456847983903,
+      "size": 5599
+     },
+     "data/grid_search_4d_log.csv": {
+      "md5": "4584d948258b9659d9ef3a1fbc5aee65",
+      "mtime_ns": 1791944456847344947,
+      "size": 2784
+     },
+     "data/grid_search_5d_log.csv": {
+      "md5": "6f6a51826215d4dbd153667648c2296e",
+      "mtime_ns": 1791944456844681126,
+      "size": 5797
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     },
+     "data/vps_variant_results.csv": {
+      "md5": "3045cc2cdc702017e8332cf0f2459daa",
+      "mtime_ns": 1791944456886291353,
+      "size": 372
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-06",
+    "scoring": {
+     "baseline_lineage": "published baseline 2026-10-14 07:50:56",
+     "model": "equal-weight 4d/5d percentile-rank fusion (D-002, D-004)",
+     "rank_convention": "legacy"
+    },
+    "script": "scripts/06_vps_fusion.py",
+    "stage": "06",
+    "started_utc": null,
+    "status": "ADOPTED",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/ground_truth_postcutoff_clean.csv": {
+      "md5": "c83e30bbb44f37e5aeb51a6010d7af5e",
+      "mtime_ns": 1791195244290353931,
+      "size": 7708
+     },
+     "data/label_role_exclusions.csv": {
+      "md5": "e9ba11aa99309f82cd0cfc301839d10e",
+      "mtime_ns": 1791941735020256092,
+      "size": 494
+     },
+     "data/literature_independence.csv": {
+      "md5": "89ae5cff8542bd15734d4b7afd1f9004",
+      "mtime_ns": 1791195254513860370,
+      "size": 4970
+     },
+     "data/molecular_pathway.csv": {
+      "md5": "37d53391d5c98862085d9df7eb59248d",
+      "mtime_ns": 1791195255183360745,
+      "size": 6822
+     },
+     "data/network_proximity.csv": {
+      "md5": "600d467465c212c5a73c13adfda8ab67",
+      "mtime_ns": 1791143516739173585,
+      "size": 131469
+     },
+     "data/pd_candidates_filtered.csv": {
+      "md5": "98771cb4ff598b157209318e9ed1d20c",
+      "mtime_ns": 1791143097502197383,
+      "size": 126866
+     },
+     "data/safety_signal.csv": {
+      "md5": "a7ed3dc46bbf745bf59cf98aad065575",
+      "mtime_ns": 1791944266917132793,
+      "size": 8219
+     }
+    },
+    "outputs": {
+     "data/ablation_results_5d.csv": {
+      "md5": "d59f0cb44c195fa8a77e174f3c44b2ad",
+      "mtime_ns": 1791944456896443807,
+      "size": 248
+     },
+     "data/ablation_results_v2.csv": {
+      "md5": "d69e64376e45c99bff79ee39c7f3470f",
+      "mtime_ns": 1791944456877635309,
+      "size": 218
+     },
+     "data/baseline_results_v2.csv": {
+      "md5": "99c0b8f83cff2d70c1ea8a746044dace",
+      "mtime_ns": 1791944456876879271,
+      "size": 150
+     },
+     "data/grid_search_3d_log.csv": {
+      "md5": "ccd1c0c58773a18da08d256e4d683a15",
+      "mtime_ns": 1791944456847983903,
+      "size": 5599
+     },
+     "data/grid_search_4d_log.csv": {
+      "md5": "4584d948258b9659d9ef3a1fbc5aee65",
+      "mtime_ns": 1791944456847344947,
+      "size": 2784
+     },
+     "data/grid_search_5d_log.csv": {
+      "md5": "6f6a51826215d4dbd153667648c2296e",
+      "mtime_ns": 1791944456844681126,
+      "size": 5797
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     },
+     "data/vps_variant_results.csv": {
+      "md5": "3045cc2cdc702017e8332cf0f2459daa",
+      "mtime_ns": 1791944456886291353,
+      "size": 372
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-06",
+    "scoring": {
+     "baseline_lineage": "published baseline 2026-10-14 07:50:56",
+     "model": "equal-weight 4d/5d percentile-rank fusion (D-002, D-004)",
+     "rank_convention": "legacy"
+    },
+    "script": "scripts/06_vps_fusion.py",
+    "stage": "06",
+    "started_utc": null,
+    "status": "ADOPTED",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "07": {
+   "last_attempt": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T07:48:45+00:00",
+    "inputs": {
+     "data/ablation_results_5d.csv": {
+      "md5": "d59f0cb44c195fa8a77e174f3c44b2ad",
+      "mtime_ns": 1791944456896443807,
+      "size": 248
+     },
+     "data/ablation_results_v2.csv": {
+      "md5": "d69e64376e45c99bff79ee39c7f3470f",
+      "mtime_ns": 1791944456877635309,
+      "size": 218
+     },
+     "data/baseline_results_v2.csv": {
+      "md5": "99c0b8f83cff2d70c1ea8a746044dace",
+      "mtime_ns": 1791944456876879271,
+      "size": 150
+     },
+     "data/literature_graph_droxidopa.json": {
+      "md5": "f4d702ac87ba68be9e72de70d3fd6b10",
+      "mtime_ns": 1791213358034323966,
+      "size": 7027
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     },
+     "data/vps_variant_results.csv": {
+      "md5": "3045cc2cdc702017e8332cf0f2459daa",
+      "mtime_ns": 1791944456886291353,
+      "size": 372
+     }
+    },
+    "outputs": {
+     "data/figure1_auroc_comparison.png": {
+      "md5": "53076f20f7eee1e14f631bfbd287125b",
+      "mtime_ns": 1792482524580408657,
+      "size": 178263
+     },
+     "data/figure2_ablation.png": {
+      "md5": "449365246854429e3fe05270c2fd3467",
+      "mtime_ns": 1792482524720245624,
+      "size": 99170
+     },
+     "data/figure2_ablation_5d.png": {
+      "md5": "71fb8ecd70f1703e4c947ce01356c196",
+      "mtime_ns": 1792482524869535296,
+      "size": 104537
+     },
+     "data/figure3_droxidopa_literature_graph.png": {
+      "md5": "2aec23334f2e046196a3d38f275fee45",
+      "mtime_ns": 1792482524967908940,
+      "size": 118763
+     }
+    },
+    "previous_dir": "data/_runs/20261020T074840Z-07-f35d/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T074840Z-07-f35d",
+    "run_id": "20261020T074840Z-07-f35d",
+    "script": "scripts/07_generate_figures.py",
+    "script_md5": "006f1072c82e05604966c8a93f4efd0f",
+    "stage": "07",
+    "started_utc": "2026-10-20T07:48:40+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T07:48:45+00:00",
+    "inputs": {
+     "data/ablation_results_5d.csv": {
+      "md5": "d59f0cb44c195fa8a77e174f3c44b2ad",
+      "mtime_ns": 1791944456896443807,
+      "size": 248
+     },
+     "data/ablation_results_v2.csv": {
+      "md5": "d69e64376e45c99bff79ee39c7f3470f",
+      "mtime_ns": 1791944456877635309,
+      "size": 218
+     },
+     "data/baseline_results_v2.csv": {
+      "md5": "99c0b8f83cff2d70c1ea8a746044dace",
+      "mtime_ns": 1791944456876879271,
+      "size": 150
+     },
+     "data/literature_graph_droxidopa.json": {
+      "md5": "f4d702ac87ba68be9e72de70d3fd6b10",
+      "mtime_ns": 1791213358034323966,
+      "size": 7027
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     },
+     "data/vps_variant_results.csv": {
+      "md5": "3045cc2cdc702017e8332cf0f2459daa",
+      "mtime_ns": 1791944456886291353,
+      "size": 372
+     }
+    },
+    "outputs": {
+     "data/figure1_auroc_comparison.png": {
+      "md5": "53076f20f7eee1e14f631bfbd287125b",
+      "mtime_ns": 1792482524580408657,
+      "size": 178263
+     },
+     "data/figure2_ablation.png": {
+      "md5": "449365246854429e3fe05270c2fd3467",
+      "mtime_ns": 1792482524720245624,
+      "size": 99170
+     },
+     "data/figure2_ablation_5d.png": {
+      "md5": "71fb8ecd70f1703e4c947ce01356c196",
+      "mtime_ns": 1792482524869535296,
+      "size": 104537
+     },
+     "data/figure3_droxidopa_literature_graph.png": {
+      "md5": "2aec23334f2e046196a3d38f275fee45",
+      "mtime_ns": 1792482524967908940,
+      "size": 118763
+     }
+    },
+    "previous_dir": "data/_runs/20261020T074840Z-07-f35d/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T074840Z-07-f35d",
+    "run_id": "20261020T074840Z-07-f35d",
+    "script": "scripts/07_generate_figures.py",
+    "script_md5": "006f1072c82e05604966c8a93f4efd0f",
+    "stage": "07",
+    "started_utc": "2026-10-20T07:48:40+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "08": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     }
+    },
+    "outputs": {
+     "data/molecular_pathway.csv": {
+      "md5": "37d53391d5c98862085d9df7eb59248d",
+      "mtime_ns": 1791195255183360745,
+      "size": 6822
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-08",
+    "script": "scripts/08_molecular_pathway.py",
+    "stage": "08",
+    "started_utc": null,
+    "status": "ADOPTED"
+   },
+   "last_success": {
+    "code_fingerprint_attested": {
+     "attested_utc": "2026-10-20T09:06:37+00:00",
+     "copy_run_id": "20261020T090534Z-08-9a80",
+     "method": "byte-identical isolated reproduction by the current script"
+    },
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:01+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     }
+    },
+    "outputs": {
+     "data/molecular_pathway.csv": {
+      "md5": "37d53391d5c98862085d9df7eb59248d",
+      "mtime_ns": 1791195255183360745,
+      "size": 6822
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015501Z-08",
+    "script": "scripts/08_molecular_pathway.py",
+    "script_md5": "4fd42eb30ecda97e8008c74de152d552",
+    "stage": "08",
+    "started_utc": null,
+    "status": "ADOPTED"
+   }
+  },
+  "10a": {
+   "last_attempt": {
+    "args": [
+     "--curated"
+    ],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T17:45:25+00:00",
+    "inputs": {
+     "data/cache/pubmed_efetch_case_claims.xml": {
+      "md5": "1e39f307bf85c04d6ce11209cd5895b2",
+      "mtime_ns": 1791985668756185872,
+      "size": 209877
+     },
+     "data/conflict_claims_curated.json": {
+      "md5": "367265503617b1cafdb34c0ea3d6ac1a",
+      "mtime_ns": 1791985722281258582,
+      "size": 13601
+     }
+    },
+    "outputs": {
+     "data/literature_credibility_domperidone.json": {
+      "md5": "01203a975d428228ed097a662b3ffd9a",
+      "mtime_ns": 1792518325177065837,
+      "size": 7998
+     },
+     "data/literature_credibility_donepezil.json": {
+      "md5": "7a8dede48193fe66622740a3accaafb1",
+      "mtime_ns": 1792518325178034465,
+      "size": 7782
+     },
+     "data/literature_credibility_melatonin.json": {
+      "md5": "1b2e2fdea588386e0aa6434cde9eebd5",
+      "mtime_ns": 1792518325178841134,
+      "size": 5972
+     },
+     "data/literature_credibility_propranolol.json": {
+      "md5": "29965bc9d7ff7aca527c95edcc03c0a4",
+      "mtime_ns": 1792518325179368469,
+      "size": 8065
+     }
+    },
+    "previous_dir": "data/_runs/20261020T174525Z-10a-9753/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T174525Z-10a-9753",
+    "run_id": "20261020T174525Z-10a-9753",
+    "script": "scripts/literature_credibility_agent.py",
+    "script_md5": "0b0daf695bffbd1cb6792acc45c35221",
+    "stage": "10a",
+    "started_utc": "2026-10-20T17:45:25+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [
+     "--curated"
+    ],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T17:45:25+00:00",
+    "inputs": {
+     "data/cache/pubmed_efetch_case_claims.xml": {
+      "md5": "1e39f307bf85c04d6ce11209cd5895b2",
+      "mtime_ns": 1791985668756185872,
+      "size": 209877
+     },
+     "data/conflict_claims_curated.json": {
+      "md5": "367265503617b1cafdb34c0ea3d6ac1a",
+      "mtime_ns": 1791985722281258582,
+      "size": 13601
+     }
+    },
+    "outputs": {
+     "data/literature_credibility_domperidone.json": {
+      "md5": "01203a975d428228ed097a662b3ffd9a",
+      "mtime_ns": 1792518325177065837,
+      "size": 7998
+     },
+     "data/literature_credibility_donepezil.json": {
+      "md5": "7a8dede48193fe66622740a3accaafb1",
+      "mtime_ns": 1792518325178034465,
+      "size": 7782
+     },
+     "data/literature_credibility_melatonin.json": {
+      "md5": "1b2e2fdea588386e0aa6434cde9eebd5",
+      "mtime_ns": 1792518325178841134,
+      "size": 5972
+     },
+     "data/literature_credibility_propranolol.json": {
+      "md5": "29965bc9d7ff7aca527c95edcc03c0a4",
+      "mtime_ns": 1792518325179368469,
+      "size": 8065
+     }
+    },
+    "previous_dir": "data/_runs/20261020T174525Z-10a-9753/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T174525Z-10a-9753",
+    "run_id": "20261020T174525Z-10a-9753",
+    "script": "scripts/literature_credibility_agent.py",
+    "script_md5": "0b0daf695bffbd1cb6792acc45c35221",
+    "stage": "10a",
+    "started_utc": "2026-10-20T17:45:25+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "10a-all": {
+   "last_attempt": {
+    "args": [
+     "--all"
+    ],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T17:45:26+00:00",
+    "inputs": {
+     "data/literature_papers.jsonl": {
+      "md5": "98be2bbf8c33968d0938d3b8716ad1f2",
+      "mtime_ns": 1792413659401522846,
+      "size": 4816934
+     },
+     "data/literature_provenance.csv": {
+      "md5": "cce8fd77752e7bf1d51500cc24851a8c",
+      "mtime_ns": 1792413659362954939,
+      "size": 8872
+     }
+    },
+    "outputs": {
+     "data/literature_credibility_all.json": {
+      "md5": "c45f84afa012215972c542333e6479cb",
+      "mtime_ns": 1792518326581687018,
+      "size": 1311527
+     }
+    },
+    "previous_dir": "data/_runs/20261020T174525Z-10a-all-366e/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T174525Z-10a-all-366e",
+    "run_id": "20261020T174525Z-10a-all-366e",
+    "script": "scripts/literature_credibility_agent.py",
+    "script_md5": "0b0daf695bffbd1cb6792acc45c35221",
+    "stage": "10a-all",
+    "started_utc": "2026-10-20T17:45:25+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [
+     "--all"
+    ],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T17:45:26+00:00",
+    "inputs": {
+     "data/literature_papers.jsonl": {
+      "md5": "98be2bbf8c33968d0938d3b8716ad1f2",
+      "mtime_ns": 1792413659401522846,
+      "size": 4816934
+     },
+     "data/literature_provenance.csv": {
+      "md5": "cce8fd77752e7bf1d51500cc24851a8c",
+      "mtime_ns": 1792413659362954939,
+      "size": 8872
+     }
+    },
+    "outputs": {
+     "data/literature_credibility_all.json": {
+      "md5": "c45f84afa012215972c542333e6479cb",
+      "mtime_ns": 1792518326581687018,
+      "size": 1311527
+     }
+    },
+    "previous_dir": "data/_runs/20261020T174525Z-10a-all-366e/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T174525Z-10a-all-366e",
+    "run_id": "20261020T174525Z-10a-all-366e",
+    "script": "scripts/literature_credibility_agent.py",
+    "script_md5": "0b0daf695bffbd1cb6792acc45c35221",
+    "stage": "10a-all",
+    "started_utc": "2026-10-20T17:45:25+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "10b": {
+   "last_attempt": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-23T06:00:09+00:00",
+    "inputs": {
+     "data/molecular_pathway.csv": {
+      "md5": "37d53391d5c98862085d9df7eb59248d",
+      "mtime_ns": 1791195255183360745,
+      "size": 6822
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/molecular_agent_run.json": {
+      "md5": "fe43331c8991eac50110da3feee70a92",
+      "mtime_ns": 1792735209376700330,
+      "size": 885
+     }
+    },
+    "previous_dir": "data/_runs/20261023T060008Z-10b-7453/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261023T060008Z-10b-7453",
+    "run_id": "20261023T060008Z-10b-7453",
+    "script": "scripts/molecular_run_record.py",
+    "script_md5": "6f2cbdfee8bdb4ea95ca1b4f3a60eb4d",
+    "stage": "10b",
+    "started_utc": "2026-10-23T06:00:08+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-23T06:00:09+00:00",
+    "inputs": {
+     "data/molecular_pathway.csv": {
+      "md5": "37d53391d5c98862085d9df7eb59248d",
+      "mtime_ns": 1791195255183360745,
+      "size": 6822
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/molecular_agent_run.json": {
+      "md5": "fe43331c8991eac50110da3feee70a92",
+      "mtime_ns": 1792735209376700330,
+      "size": 885
+     }
+    },
+    "previous_dir": "data/_runs/20261023T060008Z-10b-7453/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261023T060008Z-10b-7453",
+    "run_id": "20261023T060008Z-10b-7453",
+    "script": "scripts/molecular_run_record.py",
+    "script_md5": "6f2cbdfee8bdb4ea95ca1b4f3a60eb4d",
+    "stage": "10b",
+    "started_utc": "2026-10-23T06:00:08+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "10c": {
+   "last_attempt": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T08:01:54+00:00",
+    "inputs": {
+     "data/cache/ctgov_precutoff_trials.json": {
+      "md5": "370d491ce1eca6a0f8c596092c2b8fc5",
+      "mtime_ns": 1792026924047213824,
+      "size": 2955288
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/clinicaltrials_match_audit.csv": {
+      "md5": "b6d092da1a743ae2eca43f1f818c4bd6",
+      "mtime_ns": 1791195025426520721,
+      "size": 300125
+     },
+     "data/feature_trial_roles_td038.csv": {
+      "md5": "7a2081fff93c3fe1b7c0c4b883c32cdb",
+      "mtime_ns": 1792000774391584415,
+      "size": 6264
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/clinical_evidence.json": {
+      "md5": "22fd8a6baa4edca60dc418681f85eee3",
+      "mtime_ns": 1792483314068990768,
+      "size": 313920
+     }
+    },
+    "previous_dir": "data/_runs/20261020T080153Z-10c-1c4c/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T080153Z-10c-1c4c",
+    "run_id": "20261020T080153Z-10c-1c4c",
+    "script": "scripts/clinical_evidence_agent.py",
+    "script_md5": "c6bf7d12e1995f395c1aecaa82ac1c32",
+    "stage": "10c",
+    "started_utc": "2026-10-20T08:01:53+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T08:01:54+00:00",
+    "inputs": {
+     "data/cache/ctgov_precutoff_trials.json": {
+      "md5": "370d491ce1eca6a0f8c596092c2b8fc5",
+      "mtime_ns": 1792026924047213824,
+      "size": 2955288
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/clinicaltrials_match_audit.csv": {
+      "md5": "b6d092da1a743ae2eca43f1f818c4bd6",
+      "mtime_ns": 1791195025426520721,
+      "size": 300125
+     },
+     "data/feature_trial_roles_td038.csv": {
+      "md5": "7a2081fff93c3fe1b7c0c4b883c32cdb",
+      "mtime_ns": 1792000774391584415,
+      "size": 6264
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/clinical_evidence.json": {
+      "md5": "22fd8a6baa4edca60dc418681f85eee3",
+      "mtime_ns": 1792483314068990768,
+      "size": 313920
+     }
+    },
+    "previous_dir": "data/_runs/20261020T080153Z-10c-1c4c/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T080153Z-10c-1c4c",
+    "run_id": "20261020T080153Z-10c-1c4c",
+    "script": "scripts/clinical_evidence_agent.py",
+    "script_md5": "c6bf7d12e1995f395c1aecaa82ac1c32",
+    "stage": "10c",
+    "started_utc": "2026-10-20T08:01:53+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "10d": {
+   "last_attempt": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T18:44:37+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/conflict_claims_curated.json": {
+      "md5": "367265503617b1cafdb34c0ea3d6ac1a",
+      "mtime_ns": 1791985722281258582,
+      "size": 13601
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/conflict_context.json": {
+      "md5": "a1ba1d656fc86663a0e99c63bae5af84",
+      "mtime_ns": 1792521877002051224,
+      "size": 411624
+     }
+    },
+    "previous_dir": "data/_runs/20261020T184436Z-10d-2878/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T184436Z-10d-2878",
+    "run_id": "20261020T184436Z-10d-2878",
+    "script": "scripts/conflict_context_agent.py",
+    "script_md5": "ff12f5cd566a86188e234ed380225d13",
+    "stage": "10d",
+    "started_utc": "2026-10-20T18:44:36+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T18:44:37+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/conflict_claims_curated.json": {
+      "md5": "367265503617b1cafdb34c0ea3d6ac1a",
+      "mtime_ns": 1791985722281258582,
+      "size": 13601
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/conflict_context.json": {
+      "md5": "a1ba1d656fc86663a0e99c63bae5af84",
+      "mtime_ns": 1792521877002051224,
+      "size": 411624
+     }
+    },
+    "previous_dir": "data/_runs/20261020T184436Z-10d-2878/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T184436Z-10d-2878",
+    "run_id": "20261020T184436Z-10d-2878",
+    "script": "scripts/conflict_context_agent.py",
+    "script_md5": "ff12f5cd566a86188e234ed380225d13",
+    "stage": "10d",
+    "started_utc": "2026-10-20T18:44:36+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "10e": {
+   "last_attempt": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-21T09:29:24+00:00",
+    "inputs": {
+     "data/cache/pubmed_efetch_case_claims.xml": {
+      "md5": "1e39f307bf85c04d6ce11209cd5895b2",
+      "mtime_ns": 1791985668756185872,
+      "size": 209877
+     },
+     "data/cache/pubmed_efetch_droxidopa.xml": {
+      "md5": "f75afc0b96c05b1105205598e132cdea",
+      "mtime_ns": 1791915649528779245,
+      "size": 763646
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/conflict_claims_curated.json": {
+      "md5": "367265503617b1cafdb34c0ea3d6ac1a",
+      "mtime_ns": 1791985722281258582,
+      "size": 13601
+     },
+     "data/ground_truth_postcutoff_clean.csv": {
+      "md5": "c83e30bbb44f37e5aeb51a6010d7af5e",
+      "mtime_ns": 1791195244290353931,
+      "size": 7708
+     }
+    },
+    "outputs": {
+     "data/reproducibility.json": {
+      "md5": "a228ab87d730bae88430fc7d38aa6a2a",
+      "mtime_ns": 1792574964826785103,
+      "size": 24118
+     }
+    },
+    "previous_dir": "data/_runs/20261021T092924Z-10e-2883/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261021T092924Z-10e-2883",
+    "run_id": "20261021T092924Z-10e-2883",
+    "script": "scripts/reproducibility_agent.py",
+    "script_md5": "af2663e58a9101634ccfed98fe91d973",
+    "stage": "10e",
+    "started_utc": "2026-10-21T09:29:24+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-21T09:29:24+00:00",
+    "inputs": {
+     "data/cache/pubmed_efetch_case_claims.xml": {
+      "md5": "1e39f307bf85c04d6ce11209cd5895b2",
+      "mtime_ns": 1791985668756185872,
+      "size": 209877
+     },
+     "data/cache/pubmed_efetch_droxidopa.xml": {
+      "md5": "f75afc0b96c05b1105205598e132cdea",
+      "mtime_ns": 1791915649528779245,
+      "size": 763646
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/conflict_claims_curated.json": {
+      "md5": "367265503617b1cafdb34c0ea3d6ac1a",
+      "mtime_ns": 1791985722281258582,
+      "size": 13601
+     },
+     "data/ground_truth_postcutoff_clean.csv": {
+      "md5": "c83e30bbb44f37e5aeb51a6010d7af5e",
+      "mtime_ns": 1791195244290353931,
+      "size": 7708
+     }
+    },
+    "outputs": {
+     "data/reproducibility.json": {
+      "md5": "a228ab87d730bae88430fc7d38aa6a2a",
+      "mtime_ns": 1792574964826785103,
+      "size": 24118
+     }
+    },
+    "previous_dir": "data/_runs/20261021T092924Z-10e-2883/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261021T092924Z-10e-2883",
+    "run_id": "20261021T092924Z-10e-2883",
+    "script": "scripts/reproducibility_agent.py",
+    "script_md5": "af2663e58a9101634ccfed98fe91d973",
+    "stage": "10e",
+    "started_utc": "2026-10-21T09:29:24+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "10f": {
+   "last_attempt": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T17:45:23+00:00",
+    "inputs": {
+     "data/_safety_failures.jsonl": null,
+     "data/safety_label_history.csv": {
+      "md5": "fb37eddf7a8b2e6d1dd263515d3a92a8",
+      "mtime_ns": 1792481513942413863,
+      "size": 18103
+     },
+     "data/safety_signal.csv": {
+      "md5": "a7ed3dc46bbf745bf59cf98aad065575",
+      "mtime_ns": 1791944266917132793,
+      "size": 8219
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/safety_evidence.json": {
+      "md5": "8198305d263a5bc70ef44cb64f0d9ba7",
+      "mtime_ns": 1792518323465674292,
+      "size": 194133
+     }
+    },
+    "previous_dir": "data/_runs/20261020T174523Z-10f-0531/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T174523Z-10f-0531",
+    "run_id": "20261020T174523Z-10f-0531",
+    "script": "scripts/safety_evidence_agent.py",
+    "script_md5": "6fbb5649b87eedb0646a0ce20f7b67c1",
+    "stage": "10f",
+    "started_utc": "2026-10-20T17:45:23+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T17:45:23+00:00",
+    "inputs": {
+     "data/_safety_failures.jsonl": null,
+     "data/safety_label_history.csv": {
+      "md5": "fb37eddf7a8b2e6d1dd263515d3a92a8",
+      "mtime_ns": 1792481513942413863,
+      "size": 18103
+     },
+     "data/safety_signal.csv": {
+      "md5": "a7ed3dc46bbf745bf59cf98aad065575",
+      "mtime_ns": 1791944266917132793,
+      "size": 8219
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/safety_evidence.json": {
+      "md5": "8198305d263a5bc70ef44cb64f0d9ba7",
+      "mtime_ns": 1792518323465674292,
+      "size": 194133
+     }
+    },
+    "previous_dir": "data/_runs/20261020T174523Z-10f-0531/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T174523Z-10f-0531",
+    "run_id": "20261020T174523Z-10f-0531",
+    "script": "scripts/safety_evidence_agent.py",
+    "script_md5": "6fbb5649b87eedb0646a0ce20f7b67c1",
+    "stage": "10f",
+    "started_utc": "2026-10-20T17:45:23+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "10g": {
+   "last_attempt": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T17:45:25+00:00",
+    "inputs": {
+     "data/cache/pubmed_efetch_case_claims.xml": {
+      "md5": "1e39f307bf85c04d6ce11209cd5895b2",
+      "mtime_ns": 1791985668756185872,
+      "size": 209877
+     },
+     "data/cache/pubmed_efetch_droxidopa.xml": {
+      "md5": "f75afc0b96c05b1105205598e132cdea",
+      "mtime_ns": 1791915649528779245,
+      "size": 763646
+     },
+     "data/clinical_evidence.json": {
+      "md5": "22fd8a6baa4edca60dc418681f85eee3",
+      "mtime_ns": 1792483314068990768,
+      "size": 313920
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/conflict_claims_curated.json": {
+      "md5": "367265503617b1cafdb34c0ea3d6ac1a",
+      "mtime_ns": 1791985722281258582,
+      "size": 13601
+     },
+     "data/literature_independence.csv": {
+      "md5": "89ae5cff8542bd15734d4b7afd1f9004",
+      "mtime_ns": 1791195254513860370,
+      "size": 4970
+     },
+     "data/literature_papers.jsonl": {
+      "md5": "98be2bbf8c33968d0938d3b8716ad1f2",
+      "mtime_ns": 1792413659401522846,
+      "size": 4816934
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/evidence_independence.json": {
+      "md5": "3498f646a817705a3b678dca736eeb82",
+      "mtime_ns": 1792518325041148145,
+      "size": 151075
+     }
+    },
+    "previous_dir": "data/_runs/20261020T174523Z-10g-4521/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T174523Z-10g-4521",
+    "run_id": "20261020T174523Z-10g-4521",
+    "script": "scripts/evidence_independence_agent.py",
+    "script_md5": "b893e42adadf318f2f68bd9b4837ce8f",
+    "stage": "10g",
+    "started_utc": "2026-10-20T17:45:23+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-20T17:45:25+00:00",
+    "inputs": {
+     "data/cache/pubmed_efetch_case_claims.xml": {
+      "md5": "1e39f307bf85c04d6ce11209cd5895b2",
+      "mtime_ns": 1791985668756185872,
+      "size": 209877
+     },
+     "data/cache/pubmed_efetch_droxidopa.xml": {
+      "md5": "f75afc0b96c05b1105205598e132cdea",
+      "mtime_ns": 1791915649528779245,
+      "size": 763646
+     },
+     "data/clinical_evidence.json": {
+      "md5": "22fd8a6baa4edca60dc418681f85eee3",
+      "mtime_ns": 1792483314068990768,
+      "size": 313920
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/conflict_claims_curated.json": {
+      "md5": "367265503617b1cafdb34c0ea3d6ac1a",
+      "mtime_ns": 1791985722281258582,
+      "size": 13601
+     },
+     "data/literature_independence.csv": {
+      "md5": "89ae5cff8542bd15734d4b7afd1f9004",
+      "mtime_ns": 1791195254513860370,
+      "size": 4970
+     },
+     "data/literature_papers.jsonl": {
+      "md5": "98be2bbf8c33968d0938d3b8716ad1f2",
+      "mtime_ns": 1792413659401522846,
+      "size": 4816934
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/evidence_independence.json": {
+      "md5": "3498f646a817705a3b678dca736eeb82",
+      "mtime_ns": 1792518325041148145,
+      "size": 151075
+     }
+    },
+    "previous_dir": "data/_runs/20261020T174523Z-10g-4521/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261020T174523Z-10g-4521",
+    "run_id": "20261020T174523Z-10g-4521",
+    "script": "scripts/evidence_independence_agent.py",
+    "script_md5": "b893e42adadf318f2f68bd9b4837ce8f",
+    "stage": "10g",
+    "started_utc": "2026-10-20T17:45:23+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "10h": {
+   "last_attempt": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-23T06:11:12+00:00",
+    "inputs": {
+     "data/_literature_failures.jsonl": null,
+     "data/_safety_failures.jsonl": null,
+     "data/clinical_evidence.json": {
+      "md5": "22fd8a6baa4edca60dc418681f85eee3",
+      "mtime_ns": 1792483314068990768,
+      "size": 313920
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/conflict_context.json": {
+      "md5": "a1ba1d656fc86663a0e99c63bae5af84",
+      "mtime_ns": 1792521877002051224,
+      "size": 411624
+     },
+     "data/evidence_independence.json": {
+      "md5": "3498f646a817705a3b678dca736eeb82",
+      "mtime_ns": 1792518325041148145,
+      "size": 151075
+     },
+     "data/feature_trial_roles_td038.csv": {
+      "md5": "7a2081fff93c3fe1b7c0c4b883c32cdb",
+      "mtime_ns": 1792000774391584415,
+      "size": 6264
+     },
+     "data/literature_credibility_all.json": {
+      "md5": "c45f84afa012215972c542333e6479cb",
+      "mtime_ns": 1792518326581687018,
+      "size": 1311527
+     },
+     "data/literature_credibility_domperidone.json": {
+      "md5": "01203a975d428228ed097a662b3ffd9a",
+      "mtime_ns": 1792518325177065837,
+      "size": 7998
+     },
+     "data/literature_credibility_donepezil.json": {
+      "md5": "7a8dede48193fe66622740a3accaafb1",
+      "mtime_ns": 1792518325178034465,
+      "size": 7782
+     },
+     "data/literature_credibility_droxidopa.json": {
+      "md5": "ad0fbd1fae075fbc71c224b449c421b7",
+      "mtime_ns": 1792027123065001385,
+      "size": 25394
+     },
+     "data/literature_credibility_melatonin.json": {
+      "md5": "1b2e2fdea588386e0aa6434cde9eebd5",
+      "mtime_ns": 1792518325178841134,
+      "size": 5972
+     },
+     "data/literature_credibility_propranolol.json": {
+      "md5": "29965bc9d7ff7aca527c95edcc03c0a4",
+      "mtime_ns": 1792518325179368469,
+      "size": 8065
+     },
+     "data/literature_independence.csv": {
+      "md5": "89ae5cff8542bd15734d4b7afd1f9004",
+      "mtime_ns": 1791195254513860370,
+      "size": 4970
+     },
+     "data/molecular_agent_run.json": {
+      "md5": "fe43331c8991eac50110da3feee70a92",
+      "mtime_ns": 1792735209376700330,
+      "size": 885
+     },
+     "data/molecular_pathway.csv": {
+      "md5": "37d53391d5c98862085d9df7eb59248d",
+      "mtime_ns": 1791195255183360745,
+      "size": 6822
+     },
+     "data/network_proximity.csv": {
+      "md5": "600d467465c212c5a73c13adfda8ab67",
+      "mtime_ns": 1791143516739173585,
+      "size": 131469
+     },
+     "data/reproducibility.json": {
+      "md5": "a228ab87d730bae88430fc7d38aa6a2a",
+      "mtime_ns": 1792574964826785103,
+      "size": 24118
+     },
+     "data/safety_evidence.json": {
+      "md5": "8198305d263a5bc70ef44cb64f0d9ba7",
+      "mtime_ns": 1792518323465674292,
+      "size": 194133
+     },
+     "data/safety_signal.csv": {
+      "md5": "a7ed3dc46bbf745bf59cf98aad065575",
+      "mtime_ns": 1791944266917132793,
+      "size": 8219
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/completeness_gaps.json": {
+      "md5": "7762e336c04e3ed337ccfe61200ea97a",
+      "mtime_ns": 1792735872861317142,
+      "size": 512762
+     }
+    },
+    "previous_dir": "data/_runs/20261023T061111Z-10h-83c8/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261023T061111Z-10h-83c8",
+    "run_id": "20261023T061111Z-10h-83c8",
+    "script": "scripts/completeness_gap_agent.py",
+    "script_md5": "ba40f362459ac34274568b6a64809608",
+    "stage": "10h",
+    "started_utc": "2026-10-23T06:11:11+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-23T06:11:12+00:00",
+    "inputs": {
+     "data/_literature_failures.jsonl": null,
+     "data/_safety_failures.jsonl": null,
+     "data/clinical_evidence.json": {
+      "md5": "22fd8a6baa4edca60dc418681f85eee3",
+      "mtime_ns": 1792483314068990768,
+      "size": 313920
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/conflict_context.json": {
+      "md5": "a1ba1d656fc86663a0e99c63bae5af84",
+      "mtime_ns": 1792521877002051224,
+      "size": 411624
+     },
+     "data/evidence_independence.json": {
+      "md5": "3498f646a817705a3b678dca736eeb82",
+      "mtime_ns": 1792518325041148145,
+      "size": 151075
+     },
+     "data/feature_trial_roles_td038.csv": {
+      "md5": "7a2081fff93c3fe1b7c0c4b883c32cdb",
+      "mtime_ns": 1792000774391584415,
+      "size": 6264
+     },
+     "data/literature_credibility_all.json": {
+      "md5": "c45f84afa012215972c542333e6479cb",
+      "mtime_ns": 1792518326581687018,
+      "size": 1311527
+     },
+     "data/literature_credibility_domperidone.json": {
+      "md5": "01203a975d428228ed097a662b3ffd9a",
+      "mtime_ns": 1792518325177065837,
+      "size": 7998
+     },
+     "data/literature_credibility_donepezil.json": {
+      "md5": "7a8dede48193fe66622740a3accaafb1",
+      "mtime_ns": 1792518325178034465,
+      "size": 7782
+     },
+     "data/literature_credibility_droxidopa.json": {
+      "md5": "ad0fbd1fae075fbc71c224b449c421b7",
+      "mtime_ns": 1792027123065001385,
+      "size": 25394
+     },
+     "data/literature_credibility_melatonin.json": {
+      "md5": "1b2e2fdea588386e0aa6434cde9eebd5",
+      "mtime_ns": 1792518325178841134,
+      "size": 5972
+     },
+     "data/literature_credibility_propranolol.json": {
+      "md5": "29965bc9d7ff7aca527c95edcc03c0a4",
+      "mtime_ns": 1792518325179368469,
+      "size": 8065
+     },
+     "data/literature_independence.csv": {
+      "md5": "89ae5cff8542bd15734d4b7afd1f9004",
+      "mtime_ns": 1791195254513860370,
+      "size": 4970
+     },
+     "data/molecular_agent_run.json": {
+      "md5": "fe43331c8991eac50110da3feee70a92",
+      "mtime_ns": 1792735209376700330,
+      "size": 885
+     },
+     "data/molecular_pathway.csv": {
+      "md5": "37d53391d5c98862085d9df7eb59248d",
+      "mtime_ns": 1791195255183360745,
+      "size": 6822
+     },
+     "data/network_proximity.csv": {
+      "md5": "600d467465c212c5a73c13adfda8ab67",
+      "mtime_ns": 1791143516739173585,
+      "size": 131469
+     },
+     "data/reproducibility.json": {
+      "md5": "a228ab87d730bae88430fc7d38aa6a2a",
+      "mtime_ns": 1792574964826785103,
+      "size": 24118
+     },
+     "data/safety_evidence.json": {
+      "md5": "8198305d263a5bc70ef44cb64f0d9ba7",
+      "mtime_ns": 1792518323465674292,
+      "size": 194133
+     },
+     "data/safety_signal.csv": {
+      "md5": "a7ed3dc46bbf745bf59cf98aad065575",
+      "mtime_ns": 1791944266917132793,
+      "size": 8219
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     }
+    },
+    "outputs": {
+     "data/completeness_gaps.json": {
+      "md5": "7762e336c04e3ed337ccfe61200ea97a",
+      "mtime_ns": 1792735872861317142,
+      "size": 512762
+     }
+    },
+    "previous_dir": "data/_runs/20261023T061111Z-10h-83c8/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261023T061111Z-10h-83c8",
+    "run_id": "20261023T061111Z-10h-83c8",
+    "script": "scripts/completeness_gap_agent.py",
+    "script_md5": "ba40f362459ac34274568b6a64809608",
+    "stage": "10h",
+    "started_utc": "2026-10-23T06:11:11+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  },
+  "diag": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:02+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/ground_truth_postcutoff_clean.csv": {
+      "md5": "c83e30bbb44f37e5aeb51a6010d7af5e",
+      "mtime_ns": 1791195244290353931,
+      "size": 7708
+     }
+    },
+    "outputs": {
+     "data/intervention_match_check.csv": {
+      "md5": "2e2b19bcdacb5e06e8c99db10f8f32b2",
+      "mtime_ns": 1791426277009225188,
+      "size": 41279
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015502Z-diag",
+    "script": "scripts/check_intervention_match.py",
+    "stage": "diag",
+    "started_utc": null,
+    "status": "ADOPTED"
+   },
+   "last_success": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:02+00:00",
+    "inputs": {
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/ground_truth_postcutoff_clean.csv": {
+      "md5": "c83e30bbb44f37e5aeb51a6010d7af5e",
+      "mtime_ns": 1791195244290353931,
+      "size": 7708
+     }
+    },
+    "outputs": {
+     "data/intervention_match_check.csv": {
+      "md5": "2e2b19bcdacb5e06e8c99db10f8f32b2",
+      "mtime_ns": 1791426277009225188,
+      "size": 41279
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015502Z-diag",
+    "script": "scripts/check_intervention_match.py",
+    "stage": "diag",
+    "started_utc": null,
+    "status": "ADOPTED"
+   }
+  },
+  "eval": {
+   "last_attempt": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:02+00:00",
+    "inputs": {
+     "data/ablation_results_5d.csv": {
+      "md5": "d59f0cb44c195fa8a77e174f3c44b2ad",
+      "mtime_ns": 1791944456896443807,
+      "size": 248
+     },
+     "data/baseline_results_v2.csv": {
+      "md5": "99c0b8f83cff2d70c1ea8a746044dace",
+      "mtime_ns": 1791944456876879271,
+      "size": 150
+     },
+     "data/bootstrap_ci_equal5d_vs_4d.csv": {
+      "md5": "dbf5308edea225b813a34d55daaf0905",
+      "mtime_ns": 1791975388675587579,
+      "size": 456
+     },
+     "data/ground_truth_postcutoff_clean.csv": {
+      "md5": "c83e30bbb44f37e5aeb51a6010d7af5e",
+      "mtime_ns": 1791195244290353931,
+      "size": 7708
+     },
+     "data/label_role_exclusions.csv": {
+      "md5": "e9ba11aa99309f82cd0cfc301839d10e",
+      "mtime_ns": 1791941735020256092,
+      "size": 494
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     },
+     "data/vps_variant_results.csv": {
+      "md5": "3045cc2cdc702017e8332cf0f2459daa",
+      "mtime_ns": 1791944456886291353,
+      "size": 372
+     }
+    },
+    "outputs": {
+     "data/vps_evaluation_report.json": {
+      "md5": "fdb5d24a5ad6d12a762abeb348c76353",
+      "mtime_ns": 1792029301749350537,
+      "size": 8384
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015502Z-eval",
+    "script": "scripts/vps_evaluation_report.py",
+    "stage": "eval",
+    "started_utc": null,
+    "status": "ADOPTED"
+   },
+   "last_success": {
+    "diagnostics": [
+     {
+      "code": "ADOPTED",
+      "level": "info",
+      "message": "outputs existed before run tracking; fingerprinted, not re-run"
+     }
+    ],
+    "exit_code": null,
+    "finished_utc": "2026-10-15T01:55:02+00:00",
+    "inputs": {
+     "data/ablation_results_5d.csv": {
+      "md5": "d59f0cb44c195fa8a77e174f3c44b2ad",
+      "mtime_ns": 1791944456896443807,
+      "size": 248
+     },
+     "data/baseline_results_v2.csv": {
+      "md5": "99c0b8f83cff2d70c1ea8a746044dace",
+      "mtime_ns": 1791944456876879271,
+      "size": 150
+     },
+     "data/bootstrap_ci_equal5d_vs_4d.csv": {
+      "md5": "dbf5308edea225b813a34d55daaf0905",
+      "mtime_ns": 1791975388675587579,
+      "size": 456
+     },
+     "data/ground_truth_postcutoff_clean.csv": {
+      "md5": "c83e30bbb44f37e5aeb51a6010d7af5e",
+      "mtime_ns": 1791195244290353931,
+      "size": 7708
+     },
+     "data/label_role_exclusions.csv": {
+      "md5": "e9ba11aa99309f82cd0cfc301839d10e",
+      "mtime_ns": 1791941735020256092,
+      "size": 494
+     },
+     "data/vps_scores_v2.csv": {
+      "md5": "8f414c59800c24627d4dec88ae56c2bd",
+      "mtime_ns": 1791944456846904699,
+      "size": 28270
+     },
+     "data/vps_variant_results.csv": {
+      "md5": "3045cc2cdc702017e8332cf0f2459daa",
+      "mtime_ns": 1791944456886291353,
+      "size": 372
+     }
+    },
+    "outputs": {
+     "data/vps_evaluation_report.json": {
+      "md5": "fdb5d24a5ad6d12a762abeb348c76353",
+      "mtime_ns": 1792029301749350537,
+      "size": 8384
+     }
+    },
+    "published": true,
+    "run_id": "adopted-20261015T015502Z-eval",
+    "script": "scripts/vps_evaluation_report.py",
+    "stage": "eval",
+    "started_utc": null,
+    "status": "ADOPTED"
+   }
+  },
+  "review": {
+   "last_attempt": {
+    "args": [
+     "--out",
+     "data/clinical_role_review.csv",
+     "--worklist",
+     "data/clinical_review_worklist.csv"
+    ],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-21T17:19:42+00:00",
+    "inputs": {
+     "data/cache/ctgov_precutoff_trials.json": {
+      "md5": "370d491ce1eca6a0f8c596092c2b8fc5",
+      "mtime_ns": 1792026924047213824,
+      "size": 2955288
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/feature_trial_roles_td038.csv": {
+      "md5": "7a2081fff93c3fe1b7c0c4b883c32cdb",
+      "mtime_ns": 1792000774391584415,
+      "size": 6264
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     }
+    },
+    "outputs": {
+     "data/clinical_review_worklist.csv": {
+      "md5": "d5e40df3e4ecedaec18a980d50688f30",
+      "mtime_ns": 1792603182041917940,
+      "size": 24533
+     },
+     "data/clinical_role_review.csv": {
+      "md5": "805a8fec4b3bdaf7632ff13d86809882",
+      "mtime_ns": 1792603182037599236,
+      "size": 120150
+     }
+    },
+    "previous_dir": "data/_runs/20261021T171941Z-review-1d91/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261021T171941Z-review-1d91",
+    "run_id": "20261021T171941Z-review-1d91",
+    "script": "scripts/clinical_role_review.py",
+    "script_md5": "7eb26e47cbf14e27c610a4d037d0704d",
+    "stage": "review",
+    "started_utc": "2026-10-21T17:19:41+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   },
+   "last_success": {
+    "args": [
+     "--out",
+     "data/clinical_role_review.csv",
+     "--worklist",
+     "data/clinical_review_worklist.csv"
+    ],
+    "diagnostics": [],
+    "exit_code": 0,
+    "finished_utc": "2026-10-21T17:19:42+00:00",
+    "inputs": {
+     "data/cache/ctgov_precutoff_trials.json": {
+      "md5": "370d491ce1eca6a0f8c596092c2b8fc5",
+      "mtime_ns": 1792026924047213824,
+      "size": 2955288
+     },
+     "data/clinical_maturity_precutoff_clean.csv": {
+      "md5": "54a99dce1e173ef5c693031bac71cd1d",
+      "mtime_ns": 1791195244288809552,
+      "size": 24894
+     },
+     "data/feature_trial_roles_td038.csv": {
+      "md5": "7a2081fff93c3fe1b7c0c4b883c32cdb",
+      "mtime_ns": 1792000774391584415,
+      "size": 6264
+     },
+     "data/molecular_pathway_evidence.jsonl": {
+      "md5": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+      "mtime_ns": 1791195255180817697,
+      "size": 2012065
+     }
+    },
+    "outputs": {
+     "data/clinical_review_worklist.csv": {
+      "md5": "d5e40df3e4ecedaec18a980d50688f30",
+      "mtime_ns": 1792603182041917940,
+      "size": 24533
+     },
+     "data/clinical_role_review.csv": {
+      "md5": "805a8fec4b3bdaf7632ff13d86809882",
+      "mtime_ns": 1792603182037599236,
+      "size": 120150
+     }
+    },
+    "previous_dir": "data/_runs/20261021T171941Z-review-1d91/previous",
+    "published": true,
+    "run_dir": "data/_runs/20261021T171941Z-review-1d91",
+    "run_id": "20261021T171941Z-review-1d91",
+    "script": "scripts/clinical_role_review.py",
+    "script_md5": "7eb26e47cbf14e27c610a4d037d0704d",
+    "stage": "review",
+    "started_utc": "2026-10-21T17:19:41+00:00",
+    "status": "SUCCESS",
+    "validation_ok": true,
+    "validation_problems": []
+   }
+  }
+ },
+ "updated_utc": "2026-10-23T06:11:12+00:00"
+}

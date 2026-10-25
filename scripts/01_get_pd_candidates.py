@@ -58,4 +58,8 @@ def main():
     print(f"Candidates (no existing edge): {len(candidates)} / {len(out)}")
 
 if __name__ == "__main__":
+    import argparse
+    # No options yet: parse anyway so --help or a stray argument exits before any
+    # work is done (TD-034; incident E-017 ran stages 05/06 via --help).
+    argparse.ArgumentParser(description=__doc__.strip().splitlines()[0] if __doc__ else None).parse_args()
     main()

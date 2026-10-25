@@ -1,0 +1,17 @@
+PASS 1. the root URL opens the live Dashboard (hero state, counters, agents, flow) :: {"hero": "Current against tracked inputs"}
+PASS 2. all eight agent cards shown with states equal to the backend (/api/live = run_stage.py --status) :: {"10a": "       Literature CredibilityRun completed       1", "10b": "       Molecular PlausibilityBaseline (recorded)  ", "10c": "       Clinical EvidenceBaseline (recorded)       ", "10d": "       Conflict & ContextRun completed       10d \u00b7", "10e": "  
+PASS 9. opening and navigating pages starts no work :: {}
+PASS 5a. dependency staleness appears without a refresh (hero + agent card) :: {"hero": "Inputs changed \u2014 rerun required", "10d": "       Conflict & ContextInputs changed       10d \u00b7 diagnost"}
+PASS 3/4/5b. Run all launched from the Dashboard; the runner re-ran the stale agents; Dashboard returns to current without refresh :: {"hero": "Current against tracked inputs", "status": {"10a": "SUCCESS", "10d": "SUCCESS", "10e": "SUCCESS", "10g": "SUCCESS", "10h": "SUCCESS"}}
+PASS 5c. launched from an agent page; the Dashboard shows the real run RUNNING (hero, card, activity with elapsed time) without refresh :: {"activity": "Evidence Independence Agent (diagnostic layer) 10g         running for 2 s \u00b7 run 20261020T124658Z-10g-b11a         No log output yet.", "paused": ["87247"]}
+PASS concurrency: while running, Run controls are disabled and a second launch is refused (409) :: {"status": 409}
+PASS 8. server restarted mid-run: connection loss shown, then reconnects and still shows the real run :: {}
+PASS 5d. the resumed run finishes; the Dashboard shows it done and, truthfully, its dependant 10h now STALE (no refresh) :: {"hero": "Inputs changed \u2014 rerun required", "10g": "SUCCESS", "10h": "STALE"}
+PASS 6. a real failure appears on the agent page with its error log (no refresh) :: {"attempt": "FAILED", "log_excerpt": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) SU"}
+PASS 7. the failed run preserved the last validated output byte-identical :: {}
+PASS 6b. the Dashboard reports the failure (hero + failed counter + card) :: {"hero": "A run failed", "10h": "       Completeness & GapInputs changedRun failed       10h "}
+PASS 10. research and diagnostics views render :: {}
+PASS 11. candidate evidence is traceable (rank, dimensions, PMIDs, NCT IDs, cutoff, links, not-efficacy) :: {"rank": true, "dims": true, "PMID": true, "NCT": true, "cutoff": true, "not efficacy": true, "source links": true}
+PASS 12. desktop 1440 and mobile 390: no horizontal page overflow on 7 views; mobile header compact :: {"max_overflow": 0, "mobile_header_px": 116.078125}
+PASS 13. no JS exceptions, console errors or failed required requests (only the intentional 409 probe) :: {"exceptions": 0, "console_errors": 0, "failed": []}
+SUMMARY 16 / 16

@@ -1,0 +1,23 @@
+PASS 1 overview: cohort 90 / 14 and AUROC shown :: {"len": 3553}
+PASS 1 overview: leakage caveat present :: {}
+PASS 2 candidates: 90 rows, '90 of 90 shown' :: {}
+PASS 3 search 'donep' -> Donepezil only :: {"rows": ["1 Donepezil 0.773 Strong: literature independence, molecular"]}
+PASS 4 sort: header click changes aria-sort :: {"column": "Rank", "before": "ascending", "after": "descending"}
+PASS 5 filter 'new trial after 2020 = yes' -> 14 rows (the positives) :: {"rows": 14}
+PASS 6 clear filters -> 90 rows :: {}
+PASS 7 Donepezil page: score 0.773 and the five ranks :: {"missing": []}
+PASS 7 Donepezil page: rank 1 of 90 and not-efficacy statement :: {}
+PASS 8 evidence loads :: {"len": 22531}
+PASS 8 mechanism loads :: {"len": 4871}
+PASS 8 conflicts loads :: {"len": 24319}
+PASS 8 review loads :: {"len": 18897}
+PASS 9 validation: 0.775, 0.424 and CI 0.656 shown :: {}
+PASS 9 validation: TD-042 candidate marked not approved (0.699) :: {}
+PASS 10 Run Center: agents described as not changing the score :: {}
+PASS 11 protected stage 06 has no Run button :: {}
+PASS 10 live run of 10h recorded SUCCESS in the manifest :: {"run_id": "20261022T023521Z-10h-7b74", "status": "SUCCESS"}
+PASS 10 stage row shows Run completed + the new run id without reload :: {"row": "10h Completeness & Gap Agent Run completed Run completed \u00b7 1 s \u00b7 log 20261022T023521Z-10h-7b74 2026-10-22T02:35:22+00:00 06 Recorded baseline (before run tracki", "saw_running": false}
+PASS 10 run log served by the UI API with content :: {"tail_lines": 6, "last_line": ["  molecular: {'MEASURED': 64, 'ABSENT_AT_SOURCE': 16, 'MEASURED_ZERO': 10}"]}
+PASS 12 no JS exceptions, console errors or failed requests :: {"exceptions": 0, "console": 0, "failed": []}
+PASS 13 projector width 1280: no horizontal page scroll :: {"overview": 0, "drugs": 0, "drugs/Donepezil": 0, "validation": 0, "live": 0}
+SUMMARY 22 / 22

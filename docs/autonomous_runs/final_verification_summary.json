@@ -1,0 +1,167 @@
+{
+ "mission": "final submission-readiness",
+ "window_utc": [
+  "2026-10-20T08:40:46Z",
+  "2026-10-20T09:15Z"
+ ],
+ "recovery_snapshot": "~/EviRep_recovery_final_20261020T0840Z",
+ "tests": {
+  "command": "./venv/bin/python -m unittest discover -s tests",
+  "baseline": {
+   "ran": 628,
+   "result": "OK",
+   "exit": 0
+  },
+  "final": {
+   "ran": 654,
+   "result": "OK",
+   "exit": 0,
+   "skipped": 0,
+   "resource_warnings": 0,
+   "log": "docs/autonomous_runs/logs/final_tests.log"
+  }
+ },
+ "gates": {
+  "run_stage --status": 0,
+  "run_stage --check-manifest": 0,
+  "vps_verify (approved)": 0,
+  "vps_verify (TD-042 candidate, not published)": 0,
+  "verify_td042_candidate": 0,
+  "ground_truth_contract": 0,
+  "git diff --check": 0
+ },
+ "offline_end_to_end": {
+  "log": "data/_runs/e2e_final_20261020/",
+  "exit": 0,
+  "success": 20,
+  "blocked_live_only": [
+   "01",
+   "03",
+   "03c",
+   "04b",
+   "diag"
+  ],
+  "not_fresh": 0,
+  "vps_verify": "MATCH"
+ },
+ "browser": {
+  "general": {
+   "passed": 21,
+   "total": 21
+  },
+  "polling_and_corrupt_manifest": {
+   "passed": 8,
+   "total": 8
+  },
+  "live_pipeline_end_to_end_real_runner": {
+   "passed": 15,
+   "total": 15
+  },
+  "candidate_traceability": {
+   "Acetylcysteine": true,
+   "Agomelatine": true
+  }
+ },
+ "science": {
+  "population": 90,
+  "positives": 14,
+  "negatives": 76,
+  "cutoff_rule": "feature first_posted < 2021-01-01; label >= 2021-01-01",
+  "approved_formula": "VPS_equal_5d = mean(r_proximity, r_clinical, r_literature, r_safety, r_molecular)",
+  "auroc_5d": 0.775376,
+  "auroc_5d_ci95": [
+   0.656,
+   0.881
+  ],
+  "auprc_5d": 0.424315,
+  "auroc_4d": 0.700188,
+  "dated_molecular_5d": 0.704,
+  "from_source_rerun_5d": 0.7763,
+  "from_source_rerun_4d": 0.7049,
+  "independent_recomputation_matches": true,
+  "conflicts_found_in_contract": 0
+ },
+ "agents": {
+  "10a": {
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "role": "diagnostic (evidence-quality annotation; not in VPS)"
+  },
+  "10b": {
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "role": "score-contributing (stage 08 = VPS molecular dimension)"
+  },
+  "10c": {
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "role": "score-contributing via stage 03 (clinical dimension); agent layer diagnostic; 28 links await human review"
+  },
+  "10d": {
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "role": "diagnostic (categorical, curated claims; not in VPS)"
+  },
+  "10e": {
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "role": "diagnostic (categorical, 4 compounds; not in VPS)"
+  },
+  "10f": {
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "role": "score-contributing via stage 05 (safety dimension); agent layer diagnostic"
+  },
+  "10g": {
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "role": "score-contributing via stage 04 (literature dimension); agent layer diagnostic (overlap checks)"
+  },
+  "10h": {
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "role": "completeness annotation (never added to VPS)"
+  }
+ },
+ "agent_write_containment": {
+  "passed": 10,
+  "total": 10
+ },
+ "integrity": {
+  "head_unchanged": true,
+  "history_unchanged": true,
+  "git_index_byte_identical": true,
+  "staged_diff_byte_identical": true,
+  "unstaged_path_set_unchanged": true,
+  "nothing_committed_or_pushed": true,
+  "protected_sha256_ok": "19/19",
+  "approved_vps_sha256_unchanged": true,
+  "tracked_files_edited": "append-only: development_log/CHANGES.md, development_log/ERRORS_AND_BLOCKERS.md, TECHNICAL_DEBT.md"
+ },
+ "defects_fixed_this_mission": [
+  "E-042 stale nonce after server restart",
+  "E-043 live refresh could swallow clicks",
+  "TD-046 partial: 4 ADOPTED stages attested"
+ ],
+ "open_blockers": [
+  "owner: molecular dimension policy (TD-042/TD-033)",
+  "owner: bounded literature/safety adoption",
+  "owner: label re-freeze; re-publish 02/06/eval (B-003)",
+  "human: 28 clinical-link adjudications",
+  "owner: CASE_STUDIES.md superseded metrics (TD-048)",
+  "approval: pip-audit installation",
+  "external: Semantic Scholar API key",
+  "deployment: auth, HTTPS, monitoring, scheduled backups (TD-044)"
+ ],
+ "not_tested": [
+  "live stages 01/03/03c/04/05/04b/diag in full",
+  "clean-environment install (needs dependency download approval)",
+  "dependency vulnerability scan",
+  "screen-reader / contrast tooling",
+  "manuscript (none in repository)"
+ ],
+ "readiness": {
+  "research_submission": "NOT READY until owner decisions + TD-048 doc fixes; code/evaluation reproducible with documented limitations",
+  "application": "DEVELOPMENT READY (local, single user); not for shared deployment"
+ }
+}

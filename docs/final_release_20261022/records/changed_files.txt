@@ -1,0 +1,20 @@
+Files TECHNICAL_DEBT.md and ./TECHNICAL_DEBT.md differ
+Files data/completeness_gaps.json and ./data/completeness_gaps.json differ
+Files data/run_manifest.json and ./data/run_manifest.json differ
+Files docs/VPS_EVALUATION.md and ./docs/VPS_EVALUATION.md differ
+Only in ./docs: final_release_20261022
+Files scripts/clinical_role_review.py and ./scripts/clinical_role_review.py differ
+Files scripts/completeness_gap_agent.py and ./scripts/completeness_gap_agent.py differ
+Files tests/test_completeness_gap_agent.py and ./tests/test_completeness_gap_agent.py differ
+Only in ./tests: test_review_count.py
+Files tests/test_ui_quality.py and ./tests/test_ui_quality.py differ
+Files ui/app.js and ./ui/app.js differ
+Files ui/server.py and ./ui/server.py differ
+ui/app.js                                +2 -2
+ui/server.py                             +21 -4
+scripts/completeness_gap_agent.py        +2 -1
+scripts/clinical_role_review.py          +10 -2
+tests/test_ui_quality.py                 +6 -0
+tests/test_completeness_gap_agent.py     +8 -0
+TECHNICAL_DEBT.md                        +23 -0
+docs/VPS_EVALUATION.md                   +4 -1

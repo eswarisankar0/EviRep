@@ -1,0 +1,11 @@
+UTC 2026-10-20T10:36:06Z
+branch main HEAD 576bc7f commits 6
+staged 25 unstaged 21 untracked 218 stashes 0
+index-diff md5 d04e97371800f54cc28abbb6a383742b
+protected 19/19
+recovery /Users/thrisha/EviRep_recovery_gate_20261020T1036Z (545 entries)
+servers:
+78845 Tue Oct 20 15:48:35 2026     ./venv/bin/python ui/server.py
+orphan stage processes: 0
+app.js served==disk: yes
+style.css served==disk: yes

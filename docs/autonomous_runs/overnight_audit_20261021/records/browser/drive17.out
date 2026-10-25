@@ -1,0 +1,18 @@
+overview 28 {'BUTTON': 5, 'A': 10, 'g': 10, 'SUMMARY': 3} dead: [] ext_bad: 0 disabled: 0
+drugs 1377 {'BUTTON': 15, 'A': 1330, 'g': 25, 'SUMMARY': 3, 'INPUT': 1, 'SELECT': 3} dead: [] ext_bad: 0 disabled: 0
+drugs/Donepezil 52 {'BUTTON': 5, 'A': 27, 'SUMMARY': 20} dead: [] ext_bad: 0 disabled: 0
+compare 15 {'BUTTON': 7, 'A': 5, 'SUMMARY': 2, 'SELECT': 1} dead: [] ext_bad: 0 disabled: 0
+evidence 218 {'BUTTON': 6, 'A': 205, 'SUMMARY': 1, 'SELECT': 3, 'INPUT': 3} dead: [] ext_bad: 0 disabled: 0
+mechanism 26 {'BUTTON': 5, 'A': 17, 'SUMMARY': 3, 'SELECT': 1} dead: [] ext_bad: 0 disabled: 0
+conflicts 88 {'BUTTON': 5, 'A': 44, 'SUMMARY': 39} dead: [] ext_bad: 0 disabled: 0
+review 90 {'BUTTON': 5, 'A': 79, 'SUMMARY': 4, 'INPUT': 1, 'SELECT': 1} dead: [] ext_bad: 0 disabled: 0
+validation 34 {'BUTTON': 5, 'A': 8, 'SUMMARY': 21} dead: [] ext_bad: 0 disabled: 0
+run 27 {'BUTTON': 6, 'A': 18, 'SUMMARY': 3} dead: [] ext_bad: 0 disabled: 0
+live 50 {'BUTTON': 20, 'A': 4, 'SUMMARY': 26} dead: [] ext_bad: 0 disabled: 0
+technical 20 {'BUTTON': 5, 'A': 15} dead: [] ext_bad: 0 disabled: 0
+pipeline 25 {'BUTTON': 5, 'A': 4, 'SUMMARY': 16} dead: [] ext_bad: 0 disabled: 0
+agents 21 {'BUTTON': 5, 'A': 4, 'SUMMARY': 11, 'SELECT': 1} dead: [] ext_bad: 0 disabled: 0
+cases 35 {'BUTTON': 5, 'A': 30} dead: [] ext_bad: 0 disabled: 0
+agent/10b 12 {'BUTTON': 6, 'A': 5, 'SUMMARY': 1} dead: [] ext_bad: 0 disabled: 0
+internal links checked: 1378 failing: {}
+SUMMARY controls 2118 dead 0 external_bad 0 internal_failing 0 js_exceptions 0

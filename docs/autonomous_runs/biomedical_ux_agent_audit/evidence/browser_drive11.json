@@ -1,0 +1,137 @@
+[
+ {
+  "scenario": "1. Run Center opens the live pipeline health page (hero state, counters, agents, flow)",
+  "ok": true,
+  "detail": {
+   "hero": "Current against recorded inputs, with unverifiable inputs"
+  }
+ },
+ {
+  "scenario": "2. all eight agent cards shown with states equal to the backend (/api/live = run_stage.py --status)",
+  "ok": true,
+  "detail": {
+   "10a": "       Literature CredibilityRun completed       D",
+   "10b": "       Molecular PlausibilityRecorded baseline (be",
+   "10c": "       Clinical EvidenceRecorded baseline (before ",
+   "10d": "       Conflict & ContextRun completed       Diagn",
+   "10e": "       ReproducibilityRun completed       Diagnost",
+   "10f": "       Safety EvidenceRecorded baseline (before ru",
+   "10g": "       Evidence IndependenceRecorded baseline (bef",
+   "10h": "       Completeness & GapRun completed       Annot"
+  }
+ },
+ {
+  "scenario": "9. opening and navigating pages starts no work",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "5a. dependency staleness appears without a refresh (hero + agent card)",
+  "ok": true,
+  "detail": {
+   "hero": "Inputs changed \u2014 rerun needed",
+   "10d": "       Conflict & ContextInputs changed \u2014 rerun needed      "
+  }
+ },
+ {
+  "scenario": "3/4/5b. Run all launched from the Dashboard; the runner re-ran the stale agents; Dashboard returns to current without refresh",
+  "ok": true,
+  "detail": {
+   "hero": "Current against recorded inputs, with unverifiable inputs",
+   "status": {
+    "10a": "SUCCESS",
+    "10d": "SUCCESS",
+    "10e": "SUCCESS",
+    "10g": "SUCCESS",
+    "10h": "SUCCESS"
+   }
+  }
+ },
+ {
+  "scenario": "5c. launched from an agent page; the Dashboard shows the real run RUNNING (hero, card, activity with elapsed time) without refresh",
+  "ok": true,
+  "detail": {
+   "activity": "Evidence Independence Agent (diagnostic layer) 10g         running for 2 s \u00b7 run 20261020T162405Z-10g-4ffc         No log output yet.",
+   "paused": [
+    "95249"
+   ]
+  }
+ },
+ {
+  "scenario": "concurrency: while running, Run controls are disabled and a second launch is refused (409)",
+  "ok": true,
+  "detail": {
+   "status": 409
+  }
+ },
+ {
+  "scenario": "8. server restarted mid-run: connection loss shown, then reconnects and still shows the real run",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "5d. the resumed run finishes; the Dashboard shows it done and, truthfully, its dependant 10h now STALE (no refresh)",
+  "ok": true,
+  "detail": {
+   "hero": "Inputs changed \u2014 rerun needed",
+   "10g": "SUCCESS",
+   "10h": "STALE"
+  }
+ },
+ {
+  "scenario": "6. a real failure appears on the agent page with its error log (no refresh)",
+  "ok": true,
+  "detail": {
+   "attempt": "FAILED",
+   "log_excerpt": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) SU"
+  }
+ },
+ {
+  "scenario": "7. the failed run preserved the last validated output byte-identical",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "6b. the Dashboard reports the failure (hero + failed counter + card)",
+  "ok": true,
+  "detail": {
+   "hero": "Last run failed; previous results retained",
+   "10h": "       Completeness & GapInputs changed \u2014 rerun neededRun fa"
+  }
+ },
+ {
+  "scenario": "10. research and diagnostics views render",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "11. candidate evidence is traceable (rank, dimensions, PMIDs, NCT IDs, cutoff, links, not-efficacy)",
+  "ok": true,
+  "detail": {
+   "rank": true,
+   "dims": true,
+   "PMID": true,
+   "NCT": true,
+   "cutoff": true,
+   "not efficacy": true,
+   "source links": true
+  }
+ },
+ {
+  "scenario": "12. desktop 1440 and mobile 390: no horizontal page overflow on 7 views; mobile header compact",
+  "ok": true,
+  "detail": {
+   "max_overflow": 0,
+   "mobile_header_px": 116.078125
+  }
+ },
+ {
+  "scenario": "13. no JS exceptions, console errors or failed required requests (only the intentional 409 probe)",
+  "ok": true,
+  "detail": {
+   "exceptions": 0,
+   "console_errors": 0,
+   "failed": []
+  }
+ }
+]

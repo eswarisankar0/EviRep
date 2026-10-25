@@ -1,0 +1,172 @@
+{
+ "E1_fully_dated_5d": {
+  "n": 90,
+  "positives": 14,
+  "safety_labels_scored_at_cutoff": 31,
+  "molecular_dated_no_target": 20,
+  "models": {
+   "approved 5D (reference)": {
+    "auroc": 0.7754,
+    "auroc_ci95": [
+     0.6559,
+     0.8809
+    ],
+    "auprc": 0.4243,
+    "auprc_ci95": [
+     0.2263,
+     0.6792
+    ]
+   },
+   "fully dated 5D (safety strict)": {
+    "auroc": 0.6847,
+    "auroc_ci95": [
+     0.5278,
+     0.8319
+    ],
+    "auprc": 0.3417,
+    "auprc_ci95": [
+     0.163,
+     0.5882
+    ],
+    "paired_vs_approved": {
+     "diff": -0.0907,
+     "ci95": [
+      -0.2454,
+      0.062
+     ],
+     "p_diff_gt_0": 0.118
+    }
+   },
+   "fully dated 5D (safety mixed)": {
+    "auroc": 0.6889,
+    "auroc_ci95": [
+     0.5477,
+     0.8187
+    ],
+    "auprc": 0.3337,
+    "auprc_ci95": [
+     0.155,
+     0.5608
+    ],
+    "paired_vs_approved": {
+     "diff": -0.0865,
+     "ci95": [
+      -0.2062,
+      0.0301
+     ],
+     "p_diff_gt_0": 0.07
+    }
+   },
+   "fully dated 4D (no molecular, safety mixed)": {
+    "auroc": 0.6786,
+    "auroc_ci95": [
+     0.5397,
+     0.8182
+    ],
+    "auprc": 0.3161,
+    "auprc_ci95": [
+     0.1493,
+     0.549
+    ],
+    "paired_vs_approved": {
+     "diff": -0.0968,
+     "ci95": [
+      -0.2105,
+      0.016
+     ],
+     "p_diff_gt_0": 0.043
+    }
+   },
+   "dated pair (proximity + clinical)": {
+    "auroc": 0.6532,
+    "auroc_ci95": [
+     0.4737,
+     0.8158
+    ],
+    "auprc": 0.314,
+    "auprc_ci95": [
+     0.1605,
+     0.5906
+    ],
+    "paired_vs_approved": {
+     "diff": -0.1222,
+     "ci95": [
+      -0.3058,
+      0.0686
+     ],
+     "p_diff_gt_0": 0.093
+    }
+   }
+  },
+  "prevalence": 0.1556
+ },
+ "E2_weighting_cv": {
+  "design": "repeated stratified 5-fold CV x20 (seeds 0-19); identical folds for both models; logistic C in {0.01,0.1,1,10} chosen by inner 4-fold CV within each training fold; pooled out-of-fold AUROC per repeat",
+  "equal_weights_oof_auroc": {
+   "mean": 0.7754,
+   "min": 0.7754,
+   "max": 0.7754
+  },
+  "logreg_oof_auroc": {
+   "mean": 0.596,
+   "min": 0.5047,
+   "max": 0.6588
+  },
+  "diff_logreg_minus_equal": {
+   "mean": -0.1794,
+   "min": -0.2707,
+   "max": -0.1165,
+   "repeats_logreg_better": 0,
+   "repeats": 20
+  },
+  "coefficients_across_100_fits": {
+   "r_proximity": {
+    "mean": 0.154,
+    "sd": 0.394,
+    "share_negative": 0.18
+   },
+   "r_clinical": {
+    "mean": 1.093,
+    "sd": 0.978,
+    "share_negative": 0.0
+   },
+   "r_literature": {
+    "mean": 0.902,
+    "sd": 0.893,
+    "share_negative": 0.0
+   },
+   "r_safety": {
+    "mean": 0.439,
+    "sd": 0.562,
+    "share_negative": 0.18
+   },
+   "r_molecular": {
+    "mean": 0.997,
+    "sd": 0.936,
+    "share_negative": 0.0
+   }
+  },
+  "chosen_C_counts": {
+   "1.0": 36,
+   "10.0": 31,
+   "0.01": 22,
+   "0.1": 11
+  },
+  "note_equal_weights": "equal weights are not fitted, so their pooled OOF AUROC equals the in-sample 0.775 (ranks are label-free)"
+ },
+ "E3_weight_sensitivity": {
+  "n_weight_vectors": 2000,
+  "distribution": "Dirichlet(1,1,1,1,1) over the 5 approved ranks; no selection",
+  "auroc_percentiles": {
+   "2.5": 0.6071,
+   "10": 0.6428,
+   "25": 0.6748,
+   "50": 0.7049,
+   "75": 0.734,
+   "90": 0.7603,
+   "97.5": 0.7839
+  },
+  "equal_weights_auroc": 0.7754,
+  "share_of_vectors_beating_equal": 0.047
+ }
+}

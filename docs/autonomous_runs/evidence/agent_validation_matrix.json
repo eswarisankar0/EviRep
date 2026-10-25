@@ -1,0 +1,677 @@
+{
+ "generated_utc": "2026-10-20T08:43:00+00:00",
+ "generated_from": [
+  "ui/server.py STAGES/AGENTS/AGENT_STAGES/AGENT_VPS_ROLE",
+  "scripts/run_stage.py status()",
+  "agent output envelopes",
+  "write-containment evidence"
+ ],
+ "agents": [
+  {
+   "agent_id": "10a",
+   "name": "Literature Credibility",
+   "implementation": "scripts/literature_credibility_agent.py",
+   "test_file": "tests/test_literature_credibility_agent.py",
+   "n_test_functions": 28,
+   "tracked_stages": [
+    {
+     "stage": "10a",
+     "script": "scripts/literature_credibility_agent.py",
+     "depends_on": [],
+     "inputs": [
+      "data/cache/pubmed_efetch_case_claims.xml",
+      "data/conflict_claims_curated.json"
+     ],
+     "outputs": [
+      "data/literature_credibility_donepezil.json",
+      "data/literature_credibility_domperidone.json",
+      "data/literature_credibility_melatonin.json",
+      "data/literature_credibility_propranolol.json"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261020T080108Z-10a-f3ce",
+     "code_fingerprint_recorded": true,
+     "write_containment": {
+      "ok": true,
+      "outside_declared_outputs": []
+     }
+    },
+    {
+     "stage": "10a-all",
+     "script": "scripts/literature_credibility_agent.py",
+     "depends_on": [
+      "04p"
+     ],
+     "inputs": [
+      "data/literature_provenance.csv",
+      "data/literature_papers.jsonl"
+     ],
+     "outputs": [
+      "data/literature_credibility_all.json"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261019T124258Z-10a-all-72df",
+     "code_fingerprint_recorded": true,
+     "write_containment": {
+      "ok": true,
+      "outside_declared_outputs": []
+     }
+    }
+   ],
+   "agent_output": "data/literature_credibility_all.json",
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "stale_inputs": [],
+   "coverage": {
+    "assessed": 89,
+    "compounds": 90,
+    "duplicates_removed": 29,
+    "no_results": 1,
+    "papers_rated": 4191,
+    "retrieval_failed": 0
+   },
+   "execution_evidence": [
+    "tests/test_eight_agents_integration.py (reproduces the persisted output from its inputs)",
+    "docs/autonomous_runs/evidence/agent_write_containment_4h.json (runner execution in an isolated copy)"
+   ],
+   "scientific_role": "diagnostic (evidence-quality annotation; not in VPS)",
+   "known_limitations": "categorical; NO_RESULTS for 1 compound; not a VPS input"
+  },
+  {
+   "agent_id": "10b",
+   "name": "Molecular Plausibility",
+   "implementation": "scripts/molecular_agent.py",
+   "test_file": "tests/test_molecular_agent.py",
+   "n_test_functions": 69,
+   "tracked_stages": [
+    {
+     "stage": "08",
+     "script": "scripts/08_molecular_pathway.py",
+     "depends_on": [
+      "03c"
+     ],
+     "inputs": [
+      "data/clinical_maturity_precutoff_clean.csv"
+     ],
+     "outputs": [
+      "data/molecular_pathway.csv",
+      "data/molecular_pathway_evidence.jsonl"
+     ],
+     "status": "ADOPTED",
+     "fresh": true,
+     "last_success_run_id": "adopted-20261015T015501Z-08",
+     "code_fingerprint_recorded": false,
+     "write_containment": null
+    },
+    {
+     "stage": "10b",
+     "script": "scripts/molecular_run_record.py",
+     "depends_on": [
+      "08",
+      "06"
+     ],
+     "inputs": [
+      "data/molecular_pathway.csv",
+      "data/molecular_pathway_evidence.jsonl",
+      "data/vps_scores_v2.csv"
+     ],
+     "outputs": [
+      "data/molecular_agent_run.json"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261020T080153Z-10b-16c5",
+     "code_fingerprint_recorded": true,
+     "write_containment": {
+      "ok": true,
+      "outside_declared_outputs": []
+     }
+    }
+   ],
+   "agent_output": "data/molecular_agent_run.json",
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "stale_inputs": [],
+   "coverage": {
+    "evidence_records_valid": 90,
+    "invalid_records": 0,
+    "pool_compounds": 90,
+    "resolved": 90,
+    "with_targets": 74,
+    "with_unretrievable_evidence_items": 16,
+    "without_targets": 16
+   },
+   "execution_evidence": [
+    "tests/test_eight_agents_integration.py (reproduces the persisted output from its inputs)",
+    "docs/autonomous_runs/evidence/agent_write_containment_4h.json (runner execution in an isolated copy)"
+   ],
+   "scientific_role": "score-contributing (stage 08 = VPS molecular dimension)",
+   "known_limitations": "Open Targets 26.09 is not cutoff-bounded; own-target double counting (TD-042, unapproved fix); version unrecorded in protected stage-08 evidence"
+  },
+  {
+   "agent_id": "10c",
+   "name": "Clinical Evidence",
+   "implementation": "scripts/clinical_evidence_agent.py",
+   "test_file": "tests/test_clinical_evidence_agent.py",
+   "n_test_functions": 16,
+   "tracked_stages": [
+    {
+     "stage": "03",
+     "script": "scripts/03_clinicaltrials_groundtruth.py",
+     "depends_on": [
+      "00"
+     ],
+     "inputs": [
+      "data/pd_candidates_filtered.csv"
+     ],
+     "outputs": [
+      "data/clinical_maturity_precutoff.csv",
+      "data/ground_truth_postcutoff.csv",
+      "data/clinicaltrials_match_audit.csv"
+     ],
+     "status": "ADOPTED",
+     "fresh": true,
+     "last_success_run_id": "adopted-20261015T015501Z-03",
+     "code_fingerprint_recorded": false,
+     "write_containment": null
+    },
+    {
+     "stage": "03c",
+     "script": "scripts/check_studytype.py",
+     "depends_on": [
+      "03"
+     ],
+     "inputs": [
+      "data/clinical_maturity_precutoff.csv",
+      "data/ground_truth_postcutoff.csv"
+     ],
+     "outputs": [
+      "data/nct_studytype_check.csv",
+      "data/clinical_maturity_precutoff_clean.csv",
+      "data/ground_truth_postcutoff_clean.csv"
+     ],
+     "status": "ADOPTED",
+     "fresh": true,
+     "last_success_run_id": "adopted-20261015T015501Z-03c",
+     "code_fingerprint_recorded": false,
+     "write_containment": null
+    },
+    {
+     "stage": "10c",
+     "script": "scripts/clinical_evidence_agent.py",
+     "depends_on": [
+      "03c",
+      "08",
+      "06"
+     ],
+     "inputs": [
+      "data/clinical_maturity_precutoff_clean.csv",
+      "data/clinicaltrials_match_audit.csv",
+      "data/feature_trial_roles_td038.csv",
+      "data/vps_scores_v2.csv",
+      "data/cache/ctgov_precutoff_trials.json",
+      "data/molecular_pathway_evidence.jsonl"
+     ],
+     "outputs": [
+      "data/clinical_evidence.json"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261020T080153Z-10c-1c4c",
+     "code_fingerprint_recorded": true,
+     "write_containment": {
+      "ok": true,
+      "outside_declared_outputs": []
+     }
+    },
+    {
+     "stage": "review",
+     "script": "scripts/clinical_role_review.py",
+     "depends_on": [
+      "10c"
+     ],
+     "inputs": [
+      "data/clinical_maturity_precutoff_clean.csv",
+      "data/cache/ctgov_precutoff_trials.json",
+      "data/feature_trial_roles_td038.csv",
+      "data/molecular_pathway_evidence.jsonl"
+     ],
+     "outputs": [
+      "data/clinical_role_review.csv",
+      "data/clinical_review_worklist.csv"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261020T075254Z-review-9af8",
+     "code_fingerprint_recorded": true,
+     "write_containment": {
+      "ok": true,
+      "outside_declared_outputs": []
+     }
+    }
+   ],
+   "agent_output": "data/clinical_evidence.json",
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "stale_inputs": [],
+   "coverage": {
+    "compounds": 90,
+    "links": 195,
+    "registry_retrieved_utc": "2026-10-15T01:15:16+00:00",
+    "results": {
+     "NOT_IN_REGISTRY": 0,
+     "NOT_RETRIEVED": 0,
+     "NO_RESULTS_POSTED": 110,
+     "RESULTS_POSTED": 67,
+     "RETRIEVAL_FAILED": 0
+    },
+    "trials": 177
+   },
+   "execution_evidence": [
+    "tests/test_eight_agents_integration.py (reproduces the persisted output from its inputs)",
+    "docs/autonomous_runs/evidence/agent_write_containment_4h.json (runner execution in an isolated copy)"
+   ],
+   "scientific_role": "score-contributing via stage 03 (clinical dimension); agent layer diagnostic; 28 links await human review",
+   "known_limitations": "28 trial-role links await human adjudication; registry phase from current record"
+  },
+  {
+   "agent_id": "10d",
+   "name": "Conflict & Context",
+   "implementation": "scripts/conflict_context_agent.py",
+   "test_file": "tests/test_conflict_context_agent.py",
+   "n_test_functions": 25,
+   "tracked_stages": [
+    {
+     "stage": "10d",
+     "script": "scripts/conflict_context_agent.py",
+     "depends_on": [
+      "05",
+      "08",
+      "06"
+     ],
+     "inputs": [
+      "data/conflict_claims_curated.json",
+      "data/molecular_pathway_evidence.jsonl",
+      "data/clinical_maturity_precutoff_clean.csv",
+      "data/vps_scores_v2.csv"
+     ],
+     "outputs": [
+      "data/conflict_context.json"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261020T080154Z-10d-544d",
+     "code_fingerprint_recorded": true,
+     "write_containment": {
+      "ok": true,
+      "outside_declared_outputs": []
+     }
+    }
+   ],
+   "agent_output": "data/conflict_context.json",
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "stale_inputs": [],
+   "coverage": {
+    "assessed": 19,
+    "compounds": 91,
+    "insufficient": 72
+   },
+   "execution_evidence": [
+    "tests/test_eight_agents_integration.py (reproduces the persisted output from its inputs)",
+    "docs/autonomous_runs/evidence/agent_write_containment_4h.json (runner execution in an isolated copy)"
+   ],
+   "scientific_role": "diagnostic (categorical, curated claims; not in VPS)",
+   "known_limitations": "19/91 assessed; registry results lack arm/direction labels, so not expanded"
+  },
+  {
+   "agent_id": "10e",
+   "name": "Reproducibility",
+   "implementation": "scripts/reproducibility_agent.py",
+   "test_file": "tests/test_reproducibility_agent.py",
+   "n_test_functions": 21,
+   "tracked_stages": [
+    {
+     "stage": "10e",
+     "script": "scripts/reproducibility_agent.py",
+     "depends_on": [
+      "10d"
+     ],
+     "inputs": [
+      "data/cache/pubmed_efetch_case_claims.xml",
+      "data/cache/pubmed_efetch_droxidopa.xml",
+      "data/conflict_claims_curated.json",
+      "data/clinical_maturity_precutoff_clean.csv",
+      "data/ground_truth_postcutoff_clean.csv"
+     ],
+     "outputs": [
+      "data/reproducibility.json"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261020T080154Z-10e-df54",
+     "code_fingerprint_recorded": true,
+     "write_containment": {
+      "ok": true,
+      "outside_declared_outputs": []
+     }
+    }
+   ],
+   "agent_output": "data/reproducibility.json",
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "stale_inputs": [],
+   "coverage": {
+    "findings": 14,
+    "paper_structures": 1,
+    "publication_records": 40
+   },
+   "execution_evidence": [
+    "tests/test_eight_agents_integration.py (reproduces the persisted output from its inputs)",
+    "docs/autonomous_runs/evidence/agent_write_containment_4h.json (runner execution in an isolated copy)"
+   ],
+   "scientific_role": "diagnostic (categorical, 4 compounds; not in VPS)",
+   "known_limitations": "4 compounds with outcome-level claims"
+  },
+  {
+   "agent_id": "10f",
+   "name": "Safety Evidence",
+   "implementation": "scripts/safety_evidence_agent.py",
+   "test_file": "tests/test_safety_evidence_agent.py",
+   "n_test_functions": 20,
+   "tracked_stages": [
+    {
+     "stage": "05",
+     "script": "scripts/05_safety_signal.py",
+     "depends_on": [
+      "03c"
+     ],
+     "inputs": [
+      "data/clinical_maturity_precutoff_clean.csv"
+     ],
+     "outputs": [
+      "data/safety_signal.csv"
+     ],
+     "status": "ADOPTED",
+     "fresh": true,
+     "last_success_run_id": "adopted-20261015T015501Z-05",
+     "code_fingerprint_recorded": false,
+     "write_containment": null
+    },
+    {
+     "stage": "05h",
+     "script": "scripts/05h_safety_label_history.py",
+     "depends_on": [
+      "05"
+     ],
+     "inputs": [
+      "data/safety_signal.csv"
+     ],
+     "outputs": [
+      "data/safety_label_history.csv",
+      "data/safety_label_history_run.json"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261020T073153Z-05h-1fbd",
+     "code_fingerprint_recorded": true,
+     "write_containment": null
+    },
+    {
+     "stage": "10f",
+     "script": "scripts/safety_evidence_agent.py",
+     "depends_on": [
+      "05",
+      "05h",
+      "06"
+     ],
+     "inputs": [
+      "data/vps_scores_v2.csv",
+      "data/safety_signal.csv",
+      "data/safety_label_history.csv",
+      "data/_safety_failures.jsonl"
+     ],
+     "outputs": [
+      "data/safety_evidence.json"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261019T170230Z-10f-ad2e",
+     "code_fingerprint_recorded": true,
+     "write_containment": {
+      "ok": true,
+      "outside_declared_outputs": []
+     }
+    }
+   ],
+   "agent_output": "data/safety_evidence.json",
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "stale_inputs": [],
+   "coverage": {
+    "compounds": 90,
+    "faers": {
+     "FAILED": 0,
+     "NOT_RETRIEVED": 0,
+     "NO_RECORD": 0,
+     "RETRIEVED": 90
+    },
+    "label": {
+     "FAILED": 0,
+     "NOT_RETRIEVED": 0,
+     "NO_RECORD": 7,
+     "RETRIEVED": 83
+    },
+    "label_at_cutoff": {
+     "FAILED": 0,
+     "NOT_RETRIEVED": 0,
+     "NO_RECORD": 7,
+     "SCORED": 31,
+     "UNKNOWN": 52
+    }
+   },
+   "execution_evidence": [
+    "tests/test_eight_agents_integration.py (reproduces the persisted output from its inputs)",
+    "docs/autonomous_runs/evidence/agent_write_containment_4h.json (runner execution in an isolated copy)"
+   ],
+   "scientific_role": "score-contributing via stage 05 (safety dimension); agent layer diagnostic",
+   "known_limitations": "VPS uses the current label; label at cutoff known for 31/83; FAERS counts are not incidence"
+  },
+  {
+   "agent_id": "10g",
+   "name": "Evidence Independence",
+   "implementation": "scripts/evidence_independence_agent.py",
+   "test_file": "tests/test_evidence_independence_agent.py",
+   "n_test_functions": 7,
+   "tracked_stages": [
+    {
+     "stage": "04",
+     "script": "scripts/04_literature_independence.py",
+     "depends_on": [
+      "03c"
+     ],
+     "inputs": [
+      "data/clinical_maturity_precutoff_clean.csv"
+     ],
+     "outputs": [
+      "data/literature_independence.csv"
+     ],
+     "status": "ADOPTED",
+     "fresh": true,
+     "last_success_run_id": "adopted-20261015T015501Z-04",
+     "code_fingerprint_recorded": false,
+     "write_containment": null
+    },
+    {
+     "stage": "04p",
+     "script": "scripts/04p_literature_provenance.py",
+     "depends_on": [
+      "03c",
+      "04"
+     ],
+     "inputs": [
+      "data/clinical_maturity_precutoff_clean.csv",
+      "data/_literature_checkpoint.jsonl"
+     ],
+     "outputs": [
+      "data/literature_papers.jsonl",
+      "data/literature_provenance.csv",
+      "data/literature_provenance_run.json"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261019T124053Z-04p-67c4",
+     "code_fingerprint_recorded": true,
+     "write_containment": null
+    },
+    {
+     "stage": "10g",
+     "script": "scripts/evidence_independence_agent.py",
+     "depends_on": [
+      "10c",
+      "04",
+      "08",
+      "04p",
+      "06"
+     ],
+     "inputs": [
+      "data/vps_scores_v2.csv",
+      "data/clinical_maturity_precutoff_clean.csv",
+      "data/literature_independence.csv",
+      "data/conflict_claims_curated.json",
+      "data/clinical_evidence.json",
+      "data/molecular_pathway_evidence.jsonl",
+      "data/literature_papers.jsonl",
+      "data/cache/pubmed_efetch_droxidopa.xml",
+      "data/cache/pubmed_efetch_case_claims.xml"
+     ],
+     "outputs": [
+      "data/evidence_independence.json"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261020T080202Z-10g-f87d",
+     "code_fingerprint_recorded": true,
+     "write_containment": {
+      "ok": true,
+      "outside_declared_outputs": []
+     }
+    }
+   ],
+   "agent_output": "data/evidence_independence.json",
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "stale_inputs": [],
+   "coverage": {
+    "checks": {
+     "D1_shared_trial_across_compounds": {
+      "DEPENDENCE_FOUND": 31,
+      "NONE_FOUND": 59,
+      "NOT_ASSESSABLE": 0
+     },
+     "D2_same_study_in_two_dimensions": {
+      "DEPENDENCE_FOUND": 20,
+      "NONE_FOUND": 69,
+      "NOT_ASSESSABLE": 1
+     },
+     "D3_duplicated_or_pooled_claims": {
+      "DEPENDENCE_FOUND": 2,
+      "NONE_FOUND": 1,
+      "NOT_ASSESSABLE": 87
+     },
+     "D4_molecular_datatype_reuse": {
+      "DEPENDENCE_FOUND": 0,
+      "NONE_FOUND": 90,
+      "NOT_ASSESSABLE": 0
+     },
+     "D5_duplicate_publication_in_sample": {
+      "DEPENDENCE_FOUND": 9,
+      "NONE_FOUND": 80,
+      "NOT_ASSESSABLE": 1
+     }
+    },
+    "compounds": 90,
+    "trials_shared_across_compounds": 17
+   },
+   "execution_evidence": [
+    "tests/test_eight_agents_integration.py (reproduces the persisted output from its inputs)",
+    "docs/autonomous_runs/evidence/agent_write_containment_4h.json (runner execution in an isolated copy)"
+   ],
+   "scientific_role": "score-contributing via stage 04 (literature dimension); agent layer diagnostic (overlap checks)",
+   "known_limitations": "D3 needs curated claims (87 NOT_ASSESSABLE)"
+  },
+  {
+   "agent_id": "10h",
+   "name": "Completeness & Gap",
+   "implementation": "scripts/completeness_gap_agent.py",
+   "test_file": "tests/test_completeness_gap_agent.py",
+   "n_test_functions": 20,
+   "tracked_stages": [
+    {
+     "stage": "10h",
+     "script": "scripts/completeness_gap_agent.py",
+     "depends_on": [
+      "06",
+      "10c",
+      "10d",
+      "10e",
+      "10f",
+      "10g",
+      "10a-all",
+      "10a"
+     ],
+     "inputs": [
+      "data/vps_scores_v2.csv",
+      "data/network_proximity.csv",
+      "data/literature_independence.csv",
+      "data/safety_signal.csv",
+      "data/molecular_pathway.csv",
+      "data/conflict_context.json",
+      "data/reproducibility.json",
+      "data/clinical_evidence.json",
+      "data/safety_evidence.json",
+      "data/evidence_independence.json",
+      "data/literature_credibility_all.json",
+      "data/clinical_maturity_precutoff_clean.csv",
+      "data/feature_trial_roles_td038.csv",
+      "data/_safety_failures.jsonl",
+      "data/_literature_failures.jsonl",
+      "data/literature_credibility_donepezil.json",
+      "data/literature_credibility_domperidone.json",
+      "data/literature_credibility_melatonin.json",
+      "data/literature_credibility_propranolol.json",
+      "data/literature_credibility_droxidopa.json"
+     ],
+     "outputs": [
+      "data/completeness_gaps.json"
+     ],
+     "status": "SUCCESS",
+     "fresh": true,
+     "last_success_run_id": "20261020T080203Z-10h-099b",
+     "code_fingerprint_recorded": true,
+     "write_containment": {
+      "ok": true,
+      "outside_declared_outputs": []
+     }
+    }
+   ],
+   "agent_output": "data/completeness_gaps.json",
+   "envelope_valid": true,
+   "run_status": "SUCCESS",
+   "stale_inputs": [],
+   "coverage": {
+    "compounds": 90,
+    "domains": 12,
+    "gaps": 361
+   },
+   "execution_evidence": [
+    "tests/test_eight_agents_integration.py (reproduces the persisted output from its inputs)",
+    "docs/autonomous_runs/evidence/agent_write_containment_4h.json (runner execution in an isolated copy)"
+   ],
+   "scientific_role": "completeness annotation (never added to VPS)",
+   "known_limitations": "annotation only; completeness is not plausibility"
+  }
+ ]
+}

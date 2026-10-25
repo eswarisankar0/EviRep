@@ -1,0 +1,92 @@
+.........................................................................................................................................................................................................................FAILED: no compound retrieved ([{'compound_name': 'Alpha', 'error': 'esearch.fcgi: HTTP 500 after 4 attempt(s)'}, {'compound_name': 'Beta', 'error': 'esearch.fcgi: HTTP 500 after 4 attempt(s)'}, {'compound_name': 'Gamma', 'error': 'esearch.fcgi: HTTP 500 after 4 attempt(s)'}]); nothing written
+...............[evirep-ui] launch 20261020T115403Z-ui-5f2817: scripts/run_stage.py 10h
+.[evirep-ui] launch 20261020T115406Z-ui-60195d: scripts/run_stage.py 10h
+......[evirep-ui] launch 20261020T115409Z-ui-ef786d: scripts/run_stage.py 10h
+.....[evirep-ui] launch 20261020T115412Z-ui-ffb8c7: scripts/run_stage.py 10h
+................................................................................................................................stage A not started: conflicting run(s) in progress: A (live-A, pid 83461)
+.......data/run_manifest.json unreadable (JSONDecodeError); nothing was run or written. Diagnose with --check-manifest; restore the file from a recovery snapshot or data/_runs history (it is never overwritten automatically).
+..............................................................................{
+ "n_files": 4,
+ "bytes": 16,
+ "dest": "/var/folders/cl/3f9yx2_j4ng3myq6s08r6tv40000gn/T/evirep_bk_dest_fntxc87y",
+ "excluded": [
+  "data/cache/opentargets_20.11"
+ ]
+}
+WARNING: NCBI_API_KEY looks like a placeholder (your...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (YOUR...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (chan...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (plac...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (abc...); ignoring it and using the unauthenticated PubMed path.
+WARNING: NCBI_API_KEY looks like a placeholder (your...); ignoring it and using the unauthenticated PubMed path.
+registry: every batch failed (1); previous cache kept, output not rebuilt
+
+========== BASIC INFO ==========
+Total edges: 5
+Total candidates: 1
+
+========== METAEDGE TYPES ==========
+metaedge
+DaG    1
+DuG    1
+DrD    1
+GaD    1
+CbG    1
+Name: count, dtype: int64
+
+========== CbG EDGES ==========
+CbG edges: 1
+         source   target metaedge
+4  Compound::C1  Gene::1      CbG
+
+========== CANDIDATE TARGET CHECK ==========
+Candidates: 1
+Candidates having CbG targets: 1
+Candidates WITHOUT CbG targets: 0
+
+========== DISEASE GENE CHECK ==========
+PD disease-gene edges: 2
+                source   target metaedge
+0  Disease::DOID:14330  Gene::1      DaG
+1  Disease::DOID:14330  Gene::2      DuG
+PD genes: 2
+
+========== SAMPLE CANDIDATE ==========
+Compound ID: Compound::C1
+Compound name: C1
+Targets found: 1
+Targets: ['Gene::1']
+04p: 2/3 compounds, 4 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 2/3 compounds, 4 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 2/3 compounds, 4 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 1/1 compounds, 3 paper records (cache 0, network 1); failures 0; status SUCCESS
+04p: 1/1 compounds, 3 paper records (cache 0, network 1); failures 0; status SUCCESS
+04p: 2/3 compounds, 3 paper records (cache 0, network 2); failures 1; status PARTIAL
+04p: 1/1 compounds, 3 paper records (cache 0, network 1); failures 0; status SUCCESS
+04p: 1/3 compounds, 3 paper records (cache 1, network 0); failures 2; status PARTIAL
+04p: 3/3 compounds, 4 paper records (cache 0, network 3); failures 0; status SUCCESS
+04p: 3/3 compounds, 4 paper records (cache 3, network 0); failures 0; status SUCCESS
+04p: 3/3 compounds, 4 paper records (cache 0, network 3); failures 0; status SUCCESS
+{
+ "ok": false,
+ "problems": [
+  "data/run_manifest.json unreadable (JSONDecodeError)"
+ ],
+ "summary": {}
+}
+05h: {'PRE_CUTOFF_VERSION_SCORED': 1, 'NO_PRE_CUTOFF_VERSION': 1, 'NO_CURRENT_LABEL': 1}; parser check {'agree': 2, 'checked': 2}; failures 0
+05h: {'PRE_CUTOFF_VERSION_SCORED': 1, 'NO_PRE_CUTOFF_VERSION': 1, 'NO_CURRENT_LABEL': 1}; parser check {'agree': 2, 'checked': 2}; failures 0
+05h: {'PRE_CUTOFF_VERSION_SCORED': 1, 'NO_PRE_CUTOFF_VERSION': 1, 'NO_CURRENT_LABEL': 1, 'RETRIEVAL_FAILED': 1}; parser check {'agree': 2, 'checked': 2}; failures 1
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 2803.05it/s]
+.........  0%|          | 0/5 [00:00<?, ?it/s]100%|██████████| 5/5 [00:00<00:00, 21013.55it/s]
+.  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 16946.68it/s]
+.  0%|          | 0/200 [00:00<?, ?it/s]  4%|▍         | 9/200 [00:00<00:00, 32853.56it/s]
+.  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 136770.78it/s]
+..  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 131072.00it/s]
+................................................................................................................................................................................................../Users/thrisha/Drup_Rep_PF/EviRep/scripts/vps_validation_experiments.py:116: RuntimeWarning: invalid value encountered in divide
+  return (r[y == 1].sum(axis=0) - npos * (npos + 1) / 2) / (npos * nneg)
+........
+----------------------------------------------------------------------
+Ran 673 tests in 67.470s
+
+OK

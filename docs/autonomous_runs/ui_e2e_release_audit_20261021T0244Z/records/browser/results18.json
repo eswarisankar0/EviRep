@@ -1,0 +1,2585 @@
+{
+ "rows": [
+  {
+   "route": "overview",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "overview",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 5,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "1. Donepezil: 0.773",
+   "data": {
+    "key": "Donepezil"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Donepezil",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 6,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "2. Zonisamide: 0.761",
+   "data": {
+    "key": "Zonisamide"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Zonisamide",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 7,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "3. Quetiapine: 0.724",
+   "data": {
+    "key": "Quetiapine"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Quetiapine",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 8,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "4. Dexmedetomidine: 0.723",
+   "data": {
+    "key": "Dexmedetomidine"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Dexmedetomidine",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 9,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "5. Lisuride: 0.718",
+   "data": {
+    "key": "Lisuride"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Lisuride",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 10,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "6. Melatonin: 0.717",
+   "data": {
+    "key": "Melatonin"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Melatonin",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 11,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "7. Droxidopa: 0.703",
+   "data": {
+    "key": "Droxidopa"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Droxidopa",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 12,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "8. Methylphenidate: 0.669",
+   "data": {
+    "key": "Methylphenidate"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Methylphenidate",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 13,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "9. Lidocaine: 0.667",
+   "data": {
+    "key": "Lidocaine"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Lidocaine",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "overview",
+   "index": 14,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "10. Domperidone: 0.663",
+   "data": {
+    "key": "Domperidone"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Domperidone",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "drugs",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Candidate table",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "drugs",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Compare",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#compare",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 7,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "1. Donepezil: 0.773",
+   "data": {
+    "key": "Donepezil"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Donepezil",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 8,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "2. Zonisamide: 0.761",
+   "data": {
+    "key": "Zonisamide"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Zonisamide",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 9,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "3. Quetiapine: 0.724",
+   "data": {
+    "key": "Quetiapine"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Quetiapine",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 10,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "4. Dexmedetomidine: 0.723",
+   "data": {
+    "key": "Dexmedetomidine"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Dexmedetomidine",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 11,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "5. Lisuride: 0.718",
+   "data": {
+    "key": "Lisuride"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Lisuride",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 12,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "6. Melatonin: 0.717",
+   "data": {
+    "key": "Melatonin"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Melatonin",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 13,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "7. Droxidopa: 0.703",
+   "data": {
+    "key": "Droxidopa"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Droxidopa",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 14,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "8. Methylphenidate: 0.669",
+   "data": {
+    "key": "Methylphenidate"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Methylphenidate",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 15,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "9. Lidocaine: 0.667",
+   "data": {
+    "key": "Lidocaine"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Lidocaine",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 16,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "10. Domperidone: 0.663",
+   "data": {
+    "key": "Domperidone"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Domperidone",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 17,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "11. Aripiprazole: 0.658",
+   "data": {
+    "key": "Aripiprazole"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Aripiprazole",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 18,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "12. Clonidine: 0.643",
+   "data": {
+    "key": "Clonidine"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Clonidine",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 19,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "13. Sildenafil: 0.637",
+   "data": {
+    "key": "Sildenafil"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Sildenafil",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 20,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "14. Buspirone: 0.633",
+   "data": {
+    "key": "Buspirone"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Buspirone",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 21,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "15. Acetylcysteine: 0.628",
+   "data": {
+    "key": "Acetylcysteine"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Acetylcysteine",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 22,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "16. Quinidine: 0.617",
+   "data": {
+    "key": "Quinidine"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Quinidine",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 23,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "17. Terazosin: 0.614",
+   "data": {
+    "key": "Terazosin"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Terazosin",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 24,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "18. Carvedilol: 0.614",
+   "data": {
+    "key": "Carvedilol"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Carvedilol",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 25,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "19. Minocycline: 0.613",
+   "data": {
+    "key": "Minocycline"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Minocycline",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 26,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "20. Dextromethorphan: 0.612",
+   "data": {
+    "key": "Dextromethorphan"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Dextromethorphan",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 27,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "21. Omeprazole: 0.609",
+   "data": {
+    "key": "Omeprazole"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Omeprazole",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 28,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "22. Fesoterodine: 0.608",
+   "data": {
+    "key": "Fesoterodine"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Fesoterodine",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 29,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "23. Ioflupane I 123: 0.605",
+   "data": {
+    "key": "Ioflupane I 123"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Ioflupane%20I%20123",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 30,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "24. Solifenacin: 0.603",
+   "data": {
+    "key": "Solifenacin"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Solifenacin",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 31,
+   "tag": "g",
+   "id": "",
+   "type": "",
+   "label": "25. Glycopyrrolate: 0.601",
+   "data": {
+    "key": "Glycopyrrolate"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs/Glycopyrrolate",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 32,
+   "tag": "INPUT",
+   "id": "q",
+   "type": "search",
+   "label": "",
+   "data": {},
+   "empty_state": true,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 33,
+   "tag": "SELECT",
+   "id": "flabel",
+   "type": "select-one",
+   "label": "anyyesno",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 34,
+   "tag": "SELECT",
+   "id": "fmiss",
+   "type": "select-one",
+   "label": "anyall 5 dimensions measuredsome dimension not mea",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 35,
+   "tag": "SELECT",
+   "id": "fconf",
+   "type": "select-one",
+   "label": "anycompared (two or more directional sources)",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 36,
+   "tag": "BUTTON",
+   "id": "freset",
+   "type": "button",
+   "label": "Clear filters",
+   "data": {},
+   "empty_state": null,
+   "result": "NO_EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 37,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Rank",
+   "data": {
+    "sort": "rank"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 38,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Compound",
+   "data": {
+    "sort": "compound"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 39,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Score",
+   "data": {
+    "sort": "VPS_equal_5d"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 40,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence coverage",
+   "data": {
+    "sort": "n_dimensions_measured"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 41,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Clinical (rank)",
+   "data": {
+    "sort": "clinical"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 42,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Safety (rank)",
+   "data": {
+    "sort": "safety"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 43,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Mechanism (rank)",
+   "data": {
+    "sort": "molecular"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 44,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Conflicting evidence",
+   "data": {
+    "sort": "conflict_status"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs",
+   "index": 45,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "New trial after 2020",
+   "data": {
+    "sort": "label"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs/Donepezil",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs/Donepezil",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "drugs/Donepezil",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs/Donepezil",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs/Donepezil",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "drugs/Donepezil",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Candidate table",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "drugs/Donepezil",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Compare",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#compare",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "compare",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "compare",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "compare",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "compare",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "compare",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "compare",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Candidate table",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "compare",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Compare",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "compare",
+   "index": 7,
+   "tag": "SELECT",
+   "id": "cmpadd",
+   "type": "select-one",
+   "label": "choose a candidate\u2026QuetiapineDexmedetomidineLisuri",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#compare/Donepezil,Zonisamide,Quetiapine",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "compare",
+   "index": 8,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Remove Donepezil",
+   "data": {
+    "rm": "Donepezil"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#compare/Zonisamide",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "compare",
+   "index": 9,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Remove Zonisamide",
+   "data": {
+    "rm": "Zonisamide"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#compare/Donepezil",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "evidence",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "All evidence",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "evidence",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Mechanism",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#mechanism",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 7,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Conflicting evidence",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#conflicts",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 8,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Trial-role review",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#review",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 9,
+   "tag": "SELECT",
+   "id": "etype",
+   "type": "select-one",
+   "label": "all (698)Clinical trial (252)Publication (46)FDA l",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 10,
+   "tag": "SELECT",
+   "id": "estance",
+   "type": "select-one",
+   "label": "anySupports (7)Null or opposing (13)Context, not a",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 11,
+   "tag": "SELECT",
+   "id": "ebasis",
+   "type": "select-one",
+   "label": "anyAutomatically extracted (331)Curated from a pub",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 12,
+   "tag": "INPUT",
+   "id": "ecomp",
+   "type": "search",
+   "label": "",
+   "data": {},
+   "empty_state": true,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 13,
+   "tag": "INPUT",
+   "id": "etext",
+   "type": "search",
+   "label": "",
+   "data": {},
+   "empty_state": true,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 14,
+   "tag": "BUTTON",
+   "id": "emore",
+   "type": "button",
+   "label": "Show 100 more",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "evidence",
+   "index": 15,
+   "tag": "INPUT",
+   "id": "esrc",
+   "type": "checkbox",
+   "label": "on",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "mechanism",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "mechanism",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "mechanism",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "mechanism",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "mechanism",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "mechanism",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "All evidence",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "mechanism",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Mechanism",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "mechanism",
+   "index": 7,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Conflicting evidence",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#conflicts",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "mechanism",
+   "index": 8,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Trial-role review",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#review",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "mechanism",
+   "index": 9,
+   "tag": "SELECT",
+   "id": "mechpick",
+   "type": "select-one",
+   "label": "Zonisamide \u2014 0.99Lidocaine \u2014 0.99Quinidine \u2014 0.99A",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#mechanism/Zonisamide",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "conflicts",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "conflicts",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "conflicts",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "conflicts",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "conflicts",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "conflicts",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "All evidence",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "conflicts",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Mechanism",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#mechanism",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "conflicts",
+   "index": 7,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Conflicting evidence",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "conflicts",
+   "index": 8,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Trial-role review",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#review",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "review",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "review",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "review",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "review",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "review",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "review",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "All evidence",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "review",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Mechanism",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#mechanism",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "review",
+   "index": 7,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Conflicting evidence",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#conflicts",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "review",
+   "index": 8,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Trial-role review",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "review",
+   "index": 9,
+   "tag": "INPUT",
+   "id": "rq",
+   "type": "search",
+   "label": "",
+   "data": {},
+   "empty_state": true,
+   "result": "EFFECT",
+   "hash_after": "#review",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "review",
+   "index": 10,
+   "tag": "SELECT",
+   "id": "rflag",
+   "type": "select-one",
+   "label": "anyMatched via another nameMatched via ChEMBL name",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#review",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "validation",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "validation",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "validation",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "validation",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "validation",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "run",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "run",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "run",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "run",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "run",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "run",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Pipeline health",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "run",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Stages and runs",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#live",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "run",
+   "index": 7,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Advanced diagnostics",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#technical",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "live",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "live",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "live",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "live",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "live",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "live",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Pipeline health",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "live",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Stages and runs",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "live",
+   "index": 7,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Advanced diagnostics",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#technical",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "technical",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "technical",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "technical",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "technical",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "technical",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "technical",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Pipeline health",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "technical",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Stages and runs",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#live",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "technical",
+   "index": 7,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Advanced diagnostics",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "pipeline",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "pipeline",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "pipeline",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "pipeline",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "pipeline",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "pipeline",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Pipeline health",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "pipeline",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Stages and runs",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#live",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "pipeline",
+   "index": 7,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Advanced diagnostics",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "agents",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "agents",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "agents",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "agents",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "agents",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "agents",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Pipeline health",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "agents",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Stages and runs",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#live",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "agents",
+   "index": 7,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Advanced diagnostics",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "agents",
+   "index": 8,
+   "tag": "SELECT",
+   "id": "agentpick",
+   "type": "select-one",
+   "label": "AcamprosateAcetaminophenAcetylcysteineAgomelatineA",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#agents/Acamprosate",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "cases",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "cases",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "cases",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "cases",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "cases",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "cases",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Pipeline health",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#run",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "cases",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Stages and runs",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#live",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "cases",
+   "index": 7,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Advanced diagnostics",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "agent/10b",
+   "index": 0,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Overview",
+   "data": {
+    "view": "overview"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#overview",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "agent/10b",
+   "index": 1,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Candidates",
+   "data": {
+    "view": "drugs"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#drugs",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "agent/10b",
+   "index": 2,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Evidence",
+   "data": {
+    "view": "evidence"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#evidence",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "agent/10b",
+   "index": 3,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Validation",
+   "data": {
+    "view": "validation"
+   },
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#validation",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "agent/10b",
+   "index": 4,
+   "tag": "BUTTON",
+   "id": "",
+   "type": "button",
+   "label": "Run Center",
+   "data": {
+    "view": "run"
+   },
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "agent/10b",
+   "index": 5,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Pipeline health",
+   "data": {},
+   "result": "ALREADY_ACTIVE"
+  },
+  {
+   "route": "agent/10b",
+   "index": 6,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Stages and runs",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#live",
+   "js_exceptions_so_far": 0
+  },
+  {
+   "route": "agent/10b",
+   "index": 7,
+   "tag": "A",
+   "id": "",
+   "type": "",
+   "label": "Advanced diagnostics",
+   "data": {},
+   "empty_state": null,
+   "result": "EFFECT",
+   "hash_after": "#technical",
+   "js_exceptions_so_far": 0
+  }
+ ],
+ "js_exceptions": 0
+}

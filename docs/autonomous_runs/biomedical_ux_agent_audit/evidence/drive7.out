@@ -1,0 +1,22 @@
+PASS agents panel shows tracked freshness column :: {}
+PASS all eight agents listed with a tracked status :: {"rows": ["10a|SUCCESS", "10b|ADOPTED", "10c|ADOPTED", "10d|SUCCESS", "10e|SUCCESS", "10f|ADOPTED", "10g|ADOPTED", "10h|SUCCESS"]}
+PASS agents show their VPS role :: {}
+PASS desktop #live renders :: {"len": 19435}
+PASS desktop #agents renders :: {"len": 35637}
+PASS desktop #overview renders :: {"len": 6861}
+PASS desktop #drugs renders :: {"len": 37702}
+PASS desktop #drugs/Droxidopa renders :: {"len": 37154}
+PASS desktop #pipeline renders :: {"len": 43456}
+PASS desktop #review renders :: {"len": 28143}
+PASS desktop #validation renders :: {"len": 16977}
+PASS desktop #technical renders :: {"len": 2915}
+PASS every table: header cells match row cells (all views) :: {}
+PASS compound page states ranking is not an efficacy claim :: {}
+PASS review queue: 28 awaiting adjudication, none auto-decided :: {}
+PASS keyboard Tab moves focus through links with a visible focus indicator :: {"focus": [["A", "All evidence", true], ["A", "Mechanism", true], ["A", "Conflicting evidence", true], ["A", "Trial-role review", true]]}
+PASS basic semantics: lang, main, nav, labelled inputs, img alt :: {"imgs_no_alt": 0, "unlabeled_inputs": 0, "th_no_scope": 0, "lang": "en", "main": true, "nav": true}
+PASS 390px: no horizontal page scroll :: {"live": 0, "agents": 0, "pipeline": 0, "overview": 0, "drugs/Droxidopa": 0, "review": 0, "validation": 0}
+PASS no failed HTTP requests during ordinary use :: {"failed": []}
+PASS no JS exceptions or console errors :: {"exceptions": 0, "console": []}
+PASS viewing pages started no stage :: {}
+SUMMARY 21 / 21

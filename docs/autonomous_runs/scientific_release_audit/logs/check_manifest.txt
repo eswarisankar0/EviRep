@@ -1,0 +1,10 @@
+{
+ "ok": true,
+ "problems": [],
+ "summary": {
+  "stages_recorded": 25,
+  "history_entries": 47,
+  "updated_utc": "2026-10-20T17:45:27+00:00",
+  "registry_stages_never_recorded": []
+ }
+}

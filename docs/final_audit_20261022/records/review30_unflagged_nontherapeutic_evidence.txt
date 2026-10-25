@@ -1,0 +1,180 @@
+
+=== U1. NCT03187301 | Moxifloxacin | phase PHASE2 | auto=COMPARATOR_ONLY | adjud=nan | purpose=TREATMENT
+title: A Cardiac Safety Study of an Investigational Drug to See How if Affects the Heart in People With Parkinson's Disease Complicated by Motor Fluctuations "OFF" Episodes
+interventions: APL-130277 [DRUG]; Placebo [DRUG]; Moxifloxacin [DRUG]
+arms: APL-130277: EXPERIMENTAL; Placebo: PLACEBO_COMPARATOR; moxifloxacin: ACTIVE_COMPARATOR
+auto evidence: intervention name names compound: 'Moxifloxacin' | arm 'moxifloxacin' type ACTIVE_COMPARATOR with other drugs [] | different agent in EXPERIMENTAL arm(s) ['APL-130277']
+
+=== U2. NCT01532115 | Moxifloxacin | phase PHASE1 | auto=COMPARATOR_ONLY | adjud=nan | purpose=TREATMENT
+title: Effect of BIA 9-1067 on Cardiac Repolarization in Healthy Adult Men and Women
+interventions: BIA 9-1067 [DRUG]; Placebo [DRUG]; moxifloxacin [DRUG]
+arms: BIA 9-1067: EXPERIMENTAL; Placebo: PLACEBO_COMPARATOR; moxifloxacin: ACTIVE_COMPARATOR
+auto evidence: intervention name names compound: 'moxifloxacin' | arm 'moxifloxacin' type ACTIVE_COMPARATOR with other drugs [] | different agent in EXPERIMENTAL arm(s) ['BIA 9-1067']
+
+=== U3. NCT00292227 | Moxifloxacin | phase PHASE1 | auto=COMPARATOR_ONLY | adjud=nan | purpose=TREATMENT
+title: Cardiac Effects of Rotigotine Transdermal System in Subjects With Advanced-stage Idiopathic Parkinson's Disease
+interventions: Rotigotine [DRUG] (other names: Neupro); Placebo [OTHER]; Moxifloxacin infusion [DRUG]; Placebo infusion [OTHER]; Placebo infusion [OTHER]
+arms: Rotigotine: EXPERIMENTAL; Placebo: PLACEBO_COMPARATOR
+auto evidence: intervention name names compound: 'Moxifloxacin infusion' | arm 'Placebo' type PLACEBO_COMPARATOR with other drugs [] | different agent in EXPERIMENTAL arm(s) ['Rotigotine']
+
+=== U4. NCT04342273 | Moxifloxacin | phase PHASE1 | auto=COMPARATOR_ONLY | adjud=nan | purpose=TREATMENT
+title: A Through QT/QTc Study of KW-6356
+interventions: KW-6356 [DRUG]; KW-6356 [DRUG]; Placebo [DRUG]; Moxifloxacin [DRUG]
+arms: KW-6356 therapeutic dose: EXPERIMENTAL; KW-6356 supratherapeutic dose: EXPERIMENTAL; Placebo: PLACEBO_COMPARATOR; Moxifloxacin: ACTIVE_COMPARATOR
+auto evidence: intervention name names compound: 'Moxifloxacin' | arm 'Moxifloxacin' type ACTIVE_COMPARATOR with other drugs [] | different agent in EXPERIMENTAL arm(s) ['KW-6356 therapeutic dose', 'KW-6356 supratherapeutic dose']
+
+=== U5. NCT01789047 | Topiramate | phase PHASE2 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Topiramate as an Adjunct to Amantadine in the Treatment of Dyskinesia in Parkinson's Disease
+interventions: Topiramate [DRUG] (other names: Topamax); Placebo [DRUG] (other names: sugar pill); Amantadine [DRUG] (other names: Symmetrel)
+arms: Topiramate: ACTIVE_COMPARATOR; Placebo (sugar pill): PLACEBO_COMPARATOR
+auto evidence: intervention name names compound: 'Topiramate' | arm 'Topiramate' type ACTIVE_COMPARATOR with other drugs ['amantadine'] | comparator-typed arm(s) but no different experimental agent
+
+=== U6. NCT00794313 | Topiramate | phase nan | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Quantification of the Antidyskinetic Effect of Amantadine and Topiramate in Parkinson's Disease
+interventions: Amantadine 300 mg [DRUG]; Topiramate [DRUG] (other names: Topamax); Sugar Pill [DRUG]
+arms: Amantadine: EXPERIMENTAL; Amantadine plus Topiramate: EXPERIMENTAL; Sugar Pill: PLACEBO_COMPARATOR
+auto evidence: intervention name names compound: 'Topiramate' | arm 'Amantadine plus Topiramate' type EXPERIMENTAL with other drugs ['amantadine 300 mg']
+
+=== U7. NCT02305017 | Acetaminophen | phase PHASE1 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Effect of Paracetamol on Opicapone Pharmacokinetics in Healthy Volunteers
+interventions: BIA 9-1067 [DRUG] (other names: OPC, Opicapone); Paracetamol [DRUG] (other names: acetaminophen)
+arms: Period 1 OPC + Paracetamol; Period 2 OPC: EXPERIMENTAL; Period 1 OPC; Period 2 OPC+ Paracetamol: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Paracetamol' | arm 'Period 1 OPC + Paracetamol; Period 2 OPC' type EXPERIMENTAL with other drugs ['bia 9 1067'] | arm 'Period 1 OPC; Period 2 OPC+ Paracetamol' type EXPERIMENTAL with other drugs ['bia 9 1067']
+
+=== U8. NCT01504178 | Duloxetine | phase PHASE3 | auto=CO_ADMINISTERED | adjud=nan | purpose=BASIC_SCIENCE
+title: Evaluation of the Role of the Noradrenergic System in Pain Perception in Parkinson's Disease
+interventions: duloxetine [DRUG]; placebo of duloxetine [DRUG]; injection of apomorphine [DRUG]; injection of placebo of apomorphine [DRUG]; L-Dopa [DRUG] (other names: injection of L-dopa); injection of placebo of L-Dopa [DRUG]
+arms: duloxetine: EXPERIMENTAL; positive control (L-Dopa): PLACEBO_COMPARATOR; negative control: PLACEBO_COMPARATOR
+auto evidence: intervention name names compound: 'duloxetine' | intervention name names compound: 'placebo of duloxetine' | arm 'duloxetine' type EXPERIMENTAL with other drugs ['injection of apomorphine', 'injection of placebo of l dopa'] | arm 'positive control (L
+
+=== U9. NCT02857244 | Duloxetine | phase PHASE2 | auto=CO_ADMINISTERED | adjud=UNVERIFIABLE | purpose=TREATMENT
+title: A Multidisciplinary Approach to Manage Gait Difficulty in Parkinson Patients
+interventions: Duloxetine [DRUG]; Donepezil [DRUG] (other names: Aricept); Modafinil [DRUG]
+arms: Open-Label Treatment Arm: OTHER
+auto evidence: intervention name names compound: 'Duloxetine' | arm 'Open-Label Treatment Arm' type OTHER with other drugs ['donepezil', 'modafinil']
+
+=== U10. NCT02601586 | Oxycodone | phase PHASE2 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Effects of PR Oxycodone and of Levodopa, vs Placebo, on Central Neuropathic Pain in Parkinson's Disease
+interventions: PR Oxycodone [DRUG] (other names: PR Oxycontin); Levodopa [DRUG] (other names: Modopar); Oxycodone Placebo [DRUG]; Levodopa placebo [DRUG]
+arms: PR oxycodone: EXPERIMENTAL; levodopa: ACTIVE_COMPARATOR; Placebo: PLACEBO_COMPARATOR
+auto evidence: intervention name names compound: 'PR Oxycodone' | intervention name names compound: 'Oxycodone Placebo' | arm 'PR oxycodone' type EXPERIMENTAL with other drugs ['levodopa placebo'] | arm 'levodopa' type ACTIVE_COMPARATOR with other drugs ['levodopa'
+
+=== U11. NCT01770145 | Trimethobenzamide | phase PHASE4 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Apokyn for Motor IMProvement of Morning AKinesia Trial (AM IMPAKT)
+interventions: APOKYN [DRUG] (other names: apomorphine hydrochloride injection); L-dopa [DRUG] (other names: Levodopa, Levodopa/Carbidopa, Sinemet, Sinemet CR, Parcopa); Trimethobenzamide [DRUG] (other names: Tigan)
+arms: APOKYN: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Trimethobenzamide' | arm 'APOKYN' type EXPERIMENTAL with other drugs ['apokyn', 'l dopa']
+
+=== U12. NCT02373072 | Trimethobenzamide | phase PHASE1 | auto=CO_ADMINISTERED | adjud=nan | purpose=BASIC_SCIENCE
+title: A Study to Investigate the Safety, Tolerability, and Pharmacokinetics of PF-06649751 in Subjects With Idiopathic Parkinson's Disease
+interventions: PF-06649751 [DRUG]; Trimethobenzamide Hydrochloride [DRUG]; Placebo [DRUG]
+arms: Cohort 1: EXPERIMENTAL; Cohort 2: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Trimethobenzamide Hydrochloride' | arm 'Cohort 1' type EXPERIMENTAL with other drugs ['pf 06649751'] | arm 'Cohort 2' type EXPERIMENTAL with other drugs ['pf 06649751']
+
+=== U13. NCT02305030 | Warfarin | phase PHASE1 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Effect of Opicapone at Steady State on Warfarin Pharmacokinetics
+interventions: BIA 9-1067 [DRUG] (other names: OPC, Opicapone); Warfarin [DRUG] (other names: Uniwarfin)
+arms: BIA 9-1067 / Warfarin: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Warfarin' | arm 'BIA 9-1067 / Warfarin' type EXPERIMENTAL with other drugs ['bia 9 1067']
+
+=== U14. NCT02169440 | Warfarin | phase PHASE1 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Effect of BIA 9-1067 on the Pharmacokinetics and Pharmacodynamics of Warfarin
+interventions: BIA 9-1067 [DRUG] (other names: OPC, Opicapone); Warfarin [DRUG] (other names: Varfine®)
+arms: Group 1: EXPERIMENTAL; Group 2: ACTIVE_COMPARATOR
+auto evidence: intervention name names compound: 'Warfarin' | arm 'Group 1' type EXPERIMENTAL with other drugs ['bia 9 1067'] | arm 'Group 2' type ACTIVE_COMPARATOR with other drugs ['bia 9 1067']
+
+=== U15. NCT03970798 | Midazolam | phase PHASE1 | auto=CO_ADMINISTERED | adjud=AUXILIARY_AGENT | purpose=TREATMENT
+title: A Drug Interaction Study of KW-6356 With Midazolam, Caffeine, or Rosuvastatin
+interventions: Midazolam [DRUG]; Caffeine [DRUG]; Rosuvastatin [DRUG]; KW-6356 [DRUG]
+arms: KW-6356/Healthy Japanese adult male subjects: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Midazolam' | arm 'KW-6356/Healthy Japanese adult male subjects' type EXPERIMENTAL with other drugs ['caffeine', 'rosuvastatin', 'kw 6356']
+
+=== U16. NCT02225548 | Tadalafil | phase PHASE4 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Sagene 2014 - Parkinson's Disease and Erectile Dysfunction
+interventions: Selegiline [DRUG] (other names: Eldepryl, Zelapar); Tadalafil [DRUG] (other names: Cialis, Adcirca)
+arms: Selegiline and Tadalafil: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Tadalafil' | arm 'Selegiline and Tadalafil' type EXPERIMENTAL with other drugs ['selegiline']
+
+=== U17. NCT02857244 | Donepezil | phase PHASE2 | auto=CO_ADMINISTERED | adjud=UNVERIFIABLE | purpose=TREATMENT
+title: A Multidisciplinary Approach to Manage Gait Difficulty in Parkinson Patients
+interventions: Duloxetine [DRUG]; Donepezil [DRUG] (other names: Aricept); Modafinil [DRUG]
+arms: Open-Label Treatment Arm: OTHER
+auto evidence: intervention name names compound: 'Donepezil' | arm 'Open-Label Treatment Arm' type OTHER with other drugs ['duloxetine', 'modafinil']
+
+=== U18. NCT04127578 | Sirolimus | phase PHASE1 | auto=CO_ADMINISTERED | adjud=AUXILIARY_AGENT | purpose=TREATMENT
+title: Phase 1/2a Clinical Trial of PR001 (LY3884961) in Patients With Parkinson's Disease With at Least One GBA1 Mutation (PROPEL)
+interventions: LY3884961 [BIOLOGICAL]; Methylprednisolone [DRUG]; Sirolimus [DRUG]
+arms: Dose Level 1: EXPERIMENTAL; Dose Level 2: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Sirolimus' | arm 'Dose Level 1' type EXPERIMENTAL with other drugs ['ly3884961', 'methylprednisolone'] | arm 'Dose Level 2' type EXPERIMENTAL with other drugs ['ly3884961', 'methylprednisolone']
+
+=== U19. NCT01536366 | Repaglinide | phase PHASE1 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Effect of BIA 9-1067 on the Pharmacokinetics of Repaglinide
+interventions: BIA 9-1067 [DRUG] (other names: OPC, Opicapone); Repaglinide [DRUG] (other names: Novonorm®)
+arms: Group 1: EXPERIMENTAL; Group 2: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Repaglinide' | arm 'Group 1' type EXPERIMENTAL with other drugs ['bia 9 1067'] | arm 'Group 2' type EXPERIMENTAL with other drugs ['bia 9 1067']
+
+=== U20. NCT04070495 | Rifampicin | phase PHASE1 | auto=CO_ADMINISTERED | adjud=AUXILIARY_AGENT | purpose=TREATMENT
+title: A Drug Interaction Study of KW-6356 and Clarithromycin or Rifampicin
+interventions: KW-6356 [DRUG]; Clarithromycin [DRUG]; Rifampicin [DRUG]
+arms: Clarithromycin: EXPERIMENTAL; Rifampicin: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Rifampicin' | arm 'Rifampicin' type EXPERIMENTAL with other drugs ['kw 6356']
+
+=== U21. NCT02789592 | Melatonin | phase PHASE2 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Efficacy and Safety of Melatonin PR and Clonazepam in Patients With REM Sleep Behavior Disorder in Parkinson Disease
+interventions: Melatonin PR [DRUG] (other names: Circadin); Clonazepam [DRUG] (other names: Rivotril); Melatonin PR placebo [DRUG] (other names: Placebo tablet of Melatonin PR); Clonazepam placebo [DRUG] (other names: Placebo tablet of clonazepam)
+arms: Group 1: EXPERIMENTAL; Group 2: EXPERIMENTAL; Group 3: EXPERIMENTAL; Group 4: EXPERIMENTAL; Group 5: EXPERIMENTAL; Group 6: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Melatonin PR' | intervention name names compound: 'Melatonin PR placebo' | arm 'Group 1' type EXPERIMENTAL with other drugs ['clonazepam', 'clonazepam placebo'] | arm 'Group 2' type EXPERIMENTAL with other drugs ['c
+
+=== U22. NCT03970798 | Rosuvastatin | phase PHASE1 | auto=CO_ADMINISTERED | adjud=AUXILIARY_AGENT | purpose=TREATMENT
+title: A Drug Interaction Study of KW-6356 With Midazolam, Caffeine, or Rosuvastatin
+interventions: Midazolam [DRUG]; Caffeine [DRUG]; Rosuvastatin [DRUG]; KW-6356 [DRUG]
+arms: KW-6356/Healthy Japanese adult male subjects: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Rosuvastatin' | arm 'KW-6356/Healthy Japanese adult male subjects' type EXPERIMENTAL with other drugs ['midazolam', 'caffeine', 'kw 6356']
+
+=== U23. NCT00070941 | Escitalopram | phase PHASE2 | auto=COMPARATOR_ONLY | adjud=nan | purpose=TREATMENT
+title: SAM-e for the Treatment of Depression in Patients With Parkinson's Disease
+interventions: SAM-e [DRUG] (other names: 1 Experimental); oral escitalopram [DRUG]; placebo [DRUG]
+arms: SAM-e: EXPERIMENTAL; Escitalopram: ACTIVE_COMPARATOR; Placebo Comparator: PLACEBO_COMPARATOR
+auto evidence: intervention name names compound: 'oral escitalopram' | arm 'Escitalopram' type ACTIVE_COMPARATOR with other drugs [] | different agent in EXPERIMENTAL arm(s) ['SAM-e']
+
+=== U24. NCT03022201 | Domperidone | phase PHASE4 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Comparing the Therapeutic Efficacy and Safety of DA-9701 With Domperidone in Patients With Parkinson's Disease
+interventions: DA-9701 [DRUG] (other names: Motilitone); Domperidone [DRUG] (other names: Motilium-M); Placebo domperidone [DRUG]; Placebo DA-9701 [DRUG]
+arms: DA-9701: EXPERIMENTAL; Domperidone: ACTIVE_COMPARATOR
+auto evidence: intervention name names compound: 'Domperidone' | intervention name names compound: 'Placebo domperidone' | arm 'DA-9701' type EXPERIMENTAL with other drugs ['da 9701'] | arm 'Domperidone' type ACTIVE_COMPARATOR with other drugs ['placebo da 9701']
+
+=== U25. NCT04070495 | Clarithromycin | phase PHASE1 | auto=CO_ADMINISTERED | adjud=AUXILIARY_AGENT | purpose=TREATMENT
+title: A Drug Interaction Study of KW-6356 and Clarithromycin or Rifampicin
+interventions: KW-6356 [DRUG]; Clarithromycin [DRUG]; Rifampicin [DRUG]
+arms: Clarithromycin: EXPERIMENTAL; Rifampicin: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Clarithromycin' | arm 'Clarithromycin' type EXPERIMENTAL with other drugs ['kw 6356']
+
+=== U26. NCT04459052 | Acetylcysteine | phase PHASE2 | auto=CO_ADMINISTERED | adjud=nan | purpose=DIAGNOSTIC
+title: FDOPA PET and Nutritional Support in Parkinson's Disease
+interventions: N acetyl cysteine [DIETARY_SUPPLEMENT] (other names: NAC); [F-18] Fluorodopa Positron Emission Tomography [DRUG] (other names: FDOPA PET/MRI)
+arms: Oral and IV N acetyl Cysteine Cohort: OTHER; Waitlist Control Cohort: OTHER
+auto evidence: intervention name names compound: 'N acetyl cysteine' | arm 'Oral and IV N acetyl Cysteine Cohort' type OTHER with other drugs ['f 18 fluorodopa positron emission tomography']
+
+=== U27. NCT03115827 | Droxidopa | phase PHASE4 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Norepinephrine-targeted Therapy for Action Control in Parkinson Disease
+interventions: Droxidopa [DRUG]; Carbidopa [DRUG]
+arms: Arm 1: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Droxidopa' | arm 'Arm 1' type EXPERIMENTAL with other drugs ['carbidopa']
+
+=== U28. NCT00547911 | Droxidopa | phase PHASE1 | auto=CO_ADMINISTERED | adjud=nan | purpose=TREATMENT
+title: Augmenting Effects of L-DOPS With Carbidopa and Entacapone
+interventions: Droxidopa [DRUG] (other names: L-DOPS, Northera, L-threo-dihydroxyphenylserine, SM-5688); Carbidopa [DRUG] (other names: Lodosyn); Entacapone [DRUG] (other names: Comtan)
+arms: LDOPS + Placebo; LDOPS + CAR; LDOPS + ENT: EXPERIMENTAL; LDOPS + Placebo; LDOPS + ENT; LDOPS + CAR: EXPERIMENTAL; LDOPS + CAR; LDOPS + Placebo; LDOPS + ENT: EXPERIMENTAL; LDOPS + CAR; LDOPS + ENT; LDOPS + Placebo: EXPERIMENTAL; LDOPS + ENT; LDOPS + Placebo; LDOPS + CAR: EXPERIMENTAL; LDOPS + ENT; LDOPS + CAR; LDOPS + Placebo: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Droxidopa' | arm 'LDOPS + Placebo; LDOPS + CAR; LDOPS + ENT' type EXPERIMENTAL with other drugs ['carbidopa', 'entacapone'] | arm 'LDOPS + Placebo; LDOPS + ENT; LDOPS + CAR' type EXPERIMENTAL with other drugs ['carb
+
+=== U29. NCT01950468 | Ioflupane I 123 | phase PHASE3 | auto=COMPARATOR_ONLY | adjud=nan | purpose=DIAGNOSTIC
+title: A Cross-Over, Multi-Center Trial to Evaluate the Diagnostic Efficacy and Safety of [123I]NAV5001 as an Imaging Agent to Aid in the Diagnosis of Parkinsonian Syndromes
+interventions: NAV5001 [DRUG]; DaTscan [DRUG]
+arms: NAV5001: EXPERIMENTAL; DaTscan: ACTIVE_COMPARATOR
+auto evidence: intervention name names compound: 'DaTscan' | arm 'DaTscan' type ACTIVE_COMPARATOR with other drugs [] | different agent in EXPERIMENTAL arm(s) ['NAV5001']
+
+=== U30. NCT04127578 | Methylprednisolone | phase PHASE1 | auto=CO_ADMINISTERED | adjud=AUXILIARY_AGENT | purpose=TREATMENT
+title: Phase 1/2a Clinical Trial of PR001 (LY3884961) in Patients With Parkinson's Disease With at Least One GBA1 Mutation (PROPEL)
+interventions: LY3884961 [BIOLOGICAL]; Methylprednisolone [DRUG]; Sirolimus [DRUG]
+arms: Dose Level 1: EXPERIMENTAL; Dose Level 2: EXPERIMENTAL
+auto evidence: intervention name names compound: 'Methylprednisolone' | arm 'Dose Level 1' type EXPERIMENTAL with other drugs ['ly3884961', 'sirolimus'] | arm 'Dose Level 2' type EXPERIMENTAL with other drugs ['ly3884961', 'sirolimus']

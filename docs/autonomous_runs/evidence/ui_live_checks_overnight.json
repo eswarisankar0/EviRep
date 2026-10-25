@@ -1,0 +1,109 @@
+[
+ {
+  "scenario": "desktop: run table has upstream column, durations and log links",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "opening a log fetches its redacted tail",
+  "ok": true,
+  "detail": {
+   "head": "Saved data/completeness_gaps.json: 90 compounds, 361 gaps; stage-06 agreement True\n  proximity: {'MEASURED': 88, 'NOT_CO"
+  }
+ },
+ {
+  "scenario": "desktop view #overview renders without an error box",
+  "ok": true,
+  "detail": {
+   "len": 5254
+  }
+ },
+ {
+  "scenario": "desktop view #drugs renders without an error box",
+  "ok": true,
+  "detail": {
+   "len": 49860
+  }
+ },
+ {
+  "scenario": "desktop view #drugs/Methylphenidate renders without an error box",
+  "ok": true,
+  "detail": {
+   "len": 38481
+  }
+ },
+ {
+  "scenario": "desktop view #agents renders without an error box",
+  "ok": true,
+  "detail": {
+   "len": 33409
+  }
+ },
+ {
+  "scenario": "desktop view #review renders without an error box",
+  "ok": true,
+  "detail": {
+   "len": 25514
+  }
+ },
+ {
+  "scenario": "desktop view #validation renders without an error box",
+  "ok": true,
+  "detail": {
+   "len": 8390
+  }
+ },
+ {
+  "scenario": "390px: no horizontal page scroll",
+  "ok": true,
+  "detail": {
+   "pipeline": 0,
+   "overview": 0,
+   "drugs/Methylphenidate": 0,
+   "agents": 0,
+   "review": 0
+  }
+ },
+ {
+  "scenario": "viewing pages started no stage (live root)",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "copy: running stage shows RUNNING with elapsed time (no percentage)",
+  "ok": true,
+  "detail": {
+   "row": "10h Completeness & Gap AgentRUNNINGrunning for 3 s (no progress measure)\n      20261019T170757Z-10h-bf872026-10-19T17:07:58+00:00 \u00b7 took 1 s\n      RUNNING 20261020T064908Z-10h-91cb \u00b7 started 2026-10-2"
+  }
+ },
+ {
+  "scenario": "copy: second launch of the running stage refused (exit 3)",
+  "ok": true,
+  "detail": {
+   "err": "stage 10h not started: conflicting run(s) in progress: 10h (20261020T064908Z-10h-91cb, pid 64766)\n"
+  }
+ },
+ {
+  "scenario": "copy: launch of an upstream stage refused while downstream runs (exit 3)",
+  "ok": true,
+  "detail": {
+   "err": "stage 10g not started: conflicting run(s) in progress: 10h (20261020T064908Z-10h-91cb, pid 64766)\n"
+  }
+ },
+ {
+  "scenario": "copy: finished run appears via polling without reload",
+  "ok": true,
+  "detail": {
+   "run": "20261020T064908Z-10h-91cb PARTIAL 0",
+   "row": "10h Completeness & Gap AgentSTALE\n      20261020T064908Z-10h-91cb2026-10-20T06:49:24+00:00 \u00b7 took 16 s\n      PARTIAL 20261020T064908Z-10h-91cb \u00b7 started 2026-10-20T06:49:08+00:00 \u00b7 16 s \u00b7 exit 0 \u00b7 log"
+  }
+ },
+ {
+  "scenario": "no JS exceptions",
+  "ok": true,
+  "detail": {
+   "n": 0,
+   "first": null
+  }
+ }
+]

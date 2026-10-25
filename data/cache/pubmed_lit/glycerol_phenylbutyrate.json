@@ -1,0 +1,34 @@
+{
+ "bounded": {
+  "count": 0,
+  "idlist": [],
+  "querytranslation": "\"Glycerol Phenylbutyrate\"[Title/Abstract] AND \"Parkinson Disease\"[Title/Abstract] AND 1800/01/01:2020/12/31[Date - Publication]",
+  "warnings": {
+   "outputmessages": [
+    "No items found."
+   ],
+   "phrasesignored": [],
+   "quotedphrasesnotfound": []
+  }
+ },
+ "cache_version": 1,
+ "compound": "Glycerol Phenylbutyrate",
+ "cutoff": "2020-12-31",
+ "efetch_missing": [],
+ "efetch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "efetch_xml": [],
+ "query": "\"Glycerol Phenylbutyrate\"[Title/Abstract] AND \"Parkinson Disease\"[Title/Abstract]",
+ "retrieved_utc": "2026-10-19T12:33:26+00:00",
+ "sample": {
+  "count": 0,
+  "idlist": [],
+  "querytranslation": "\"Glycerol Phenylbutyrate\"[Title/Abstract] AND \"Parkinson Disease\"[Title/Abstract]",
+  "warnings": {
+   "outputmessages": [
+    "No items found."
+   ],
+   "phrasesignored": [],
+   "quotedphrasesnotfound": []
+  }
+ }
+}

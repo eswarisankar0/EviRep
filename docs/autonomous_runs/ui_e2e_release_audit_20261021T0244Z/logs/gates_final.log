@@ -1,0 +1,11 @@
+final gates 2026-10-21T08:25:31Z
+ "ok": true,
+data/vps_scores_v2.csv: MATCH; 90 compounds; max |diff| 2.22e-16; medi
+protected OK: 19/19
+diff --check clean
+node ok
+git index byte-identical
+staged md5 d04e97371800f54cc28abbb6a383742b
+live code_changed False
+16836 ./venv/bin/python ui/server.py
+runners        0

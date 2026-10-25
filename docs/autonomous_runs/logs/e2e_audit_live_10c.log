@@ -1,0 +1,3 @@
+registry: 177/177 returned; failed batches 0
+Saved data/clinical_evidence.json: run_status SUCCESS; results {'RESULTS_POSTED': 67, 'NO_RESULTS_POSTED': 110, 'NOT_IN_REGISTRY': 0, 'RETRIEVAL_FAILED': 0, 'NOT_RETRIEVED': 0}
+exit 0

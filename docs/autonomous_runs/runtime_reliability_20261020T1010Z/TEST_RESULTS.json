@@ -1,0 +1,82 @@
+{
+ "python_suite": [
+  {
+   "command": "./venv/bin/python -m unittest discover -s tests",
+   "when": "baseline 10:10:24-10:11:27Z",
+   "exit": 0,
+   "ran": 660,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "log": "logs/baseline_tests.log",
+   "process": "real runner in temp roots + unit tests"
+  },
+  {
+   "command": "./venv/bin/python -m unittest discover -s tests",
+   "when": "final 10:27:36-10:28:45Z",
+   "exit": 0,
+   "ran": 670,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "resource_warnings": 0,
+   "log": "logs/final_tests.log",
+   "process": "real runner in temp roots + unit tests"
+  }
+ ],
+ "new_regression_tests": [
+  {
+   "test": "test_run_tracking.TestMalformedManifestStructure",
+   "defect": "D1",
+   "fails_on_pre_mission_code": true,
+   "process": "real (runner status in temp root)"
+  },
+  {
+   "test": "test_live_runs.TestPathConfinement (2)",
+   "defect": "D2, D3",
+   "fails_on_pre_mission_code": true,
+   "process": "real HTTP server"
+  },
+  {
+   "test": "test_run_tracking.TestStageTimeout (2)",
+   "defect": "D4",
+   "fails_on_pre_mission_code": true,
+   "process": "real hung process killed by the runner"
+  },
+  {
+   "test": "test_live_runs.TestLaunchEnvironmentErrors.test_unwritable_launch_dir_is_actionable_and_starts_nothing",
+   "defect": "D5",
+   "fails_on_pre_mission_code": true,
+   "process": "real HTTP server, real filesystem permissions"
+  },
+  {
+   "test": "test_live_runs.TestLaunchEnvironmentErrors.test_missing_runner_is_reported_as_a_failed_launch_not_success",
+   "defect": "characterization (already correct)",
+   "fails_on_pre_mission_code": false,
+   "process": "real subprocess"
+  },
+  {
+   "test": "test_run_tracking.TestRunnerKilledMidStage (2)",
+   "defect": "D6",
+   "fails_on_pre_mission_code": true,
+   "process": "real runner SIGKILLed mid-stage, real orphan process"
+  },
+  {
+   "test": "test_live_runs.TestSequenceOutcome",
+   "defect": "D7 (representation)",
+   "fails_on_pre_mission_code": "not run on old code (new function)",
+   "process": "unit"
+  }
+ ],
+ "pre_mission_check": {
+  "command": "new test classes run against the snapshot code (~/EviRep_recovery_rr_20261020T1010Z)",
+  "result": "8 of 9 fail; the 9th is a characterization test of already-correct behaviour"
+ },
+ "gates": {
+  "run_stage --status": 0,
+  "run_stage --check-manifest": 0,
+  "vps_verify": 0,
+  "ground_truth_contract": 0,
+  "git diff --check": 0
+ }
+}

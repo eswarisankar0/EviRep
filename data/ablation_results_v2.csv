@@ -1,0 +1,6 @@
+,precision@10,precision@50,AUROC
+"Full VPS (grid-searched weights, 4 dims)",0.3,0.24,0.725
+Without proximity,0.3,0.24,0.722
+Without clinical,0.3,0.2,0.654
+Without literature,0.1,0.24,0.679
+Without safety,0.3,0.2,0.677

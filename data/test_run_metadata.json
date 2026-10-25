@@ -1,0 +1,160 @@
+{
+ "command": "./venv/bin/python scripts/record_test_run.py (unittest discover -s tests)",
+ "started_utc": "2026-10-15T02:06:15+00:00",
+ "finished_utc": "2026-10-15T02:06:41+00:00",
+ "python": "3.13.9",
+ "git_head": "576bc7f",
+ "working_tree_note": "uncommitted changes are not identified by git_head",
+ "total": 461,
+ "failures": 0,
+ "errors": 0,
+ "skipped": 0,
+ "ok": true,
+ "modules": {
+  "test_bootstrap_ci": {
+   "tests": 7,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_candidate_flow": {
+   "tests": 14,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_clinical_evidence_agent": {
+   "tests": 8,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_completeness_gap_agent": {
+   "tests": 16,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_conflict_context_agent": {
+   "tests": 21,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_evidence_independence_agent": {
+   "tests": 3,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_intervention_matcher": {
+   "tests": 47,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_label_role_exclusions": {
+   "tests": 5,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_literature_credibility_agent": {
+   "tests": 23,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_literature_date_bound": {
+   "tests": 4,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_molecular_agent": {
+   "tests": 69,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_molecular_vps_audit": {
+   "tests": 12,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_pipeline_safety_contracts": {
+   "tests": 8,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_reproducibility_agent": {
+   "tests": 18,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_run_tracking": {
+   "tests": 14,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_safety_evidence_agent": {
+   "tests": 12,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_safety_missingness": {
+   "tests": 18,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_td038_feature_roles": {
+   "tests": 11,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_temporal_and_ranking": {
+   "tests": 16,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_trial_role": {
+   "tests": 19,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_ui": {
+   "tests": 68,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_vps_correctness": {
+   "tests": 13,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_vps_evaluation_report": {
+   "tests": 5,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  },
+  "test_vps_integration": {
+   "tests": 30,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0
+  }
+ },
+ "failed_tests": []
+}

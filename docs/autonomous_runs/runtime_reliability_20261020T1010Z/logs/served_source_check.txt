@@ -1,0 +1,4 @@
+app.js served=9c637a81614ce6fe disk=9c637a81614ce6fe MATCH
+style.css served=b1f59d2e36a8fd48 disk=b1f59d2e36a8fd48 MATCH
+index.html served=7207ce58d820620a disk=7207ce58d820620a MATCH
+77116 Tue Oct 20 15:18:19 2026     ./venv/bin/python ui/server.py

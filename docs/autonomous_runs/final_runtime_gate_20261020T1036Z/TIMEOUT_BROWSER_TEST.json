@@ -1,0 +1,334 @@
+{
+ "configuration": {
+  "isolated_copy": "scratchpad gatecopy4 (code + data copy)",
+  "copy_only_changes": [
+   "10h timeout_s 900 -> 20 in the copy's ui/server.py",
+   "controlled hang in the copy's scripts/completeness_gap_agent.py when HANG_FOR_TIMEOUT_TEST exists (writes a partial output, sleeps 600 s)"
+  ],
+  "production_timeout_10h_s": 900,
+  "production_registry_changed_for_test": false
+ },
+ "browser": "real Chrome (CDP) -> copy server :8799 -> copy scripts/run_stage.py -> real stage process",
+ "checks": [
+  {
+   "check": "launch from the agent page -> RUNNING shown with elapsed time and the real log line, no refresh",
+   "result": "PASS",
+   "browser_action": "click 'Run 10h' on #agent/10h",
+   "detail": {
+    "run_id": "20261020T105251Z-10h-1538",
+    "runner": 81155,
+    "child": 81156
+   },
+   "real_process": true
+  },
+  {
+   "check": "while running, the stage has really overwritten its output (partial write)",
+   "result": "PASS",
+   "browser_action": "",
+   "detail": {
+    "partial": true
+   },
+   "real_process": true
+  },
+  {
+   "check": "timeout fires (~20 s): agent page shows FAILED and the TIMEOUT line from the real log, without refresh",
+   "result": "PASS",
+   "browser_action": "wait on #agent/10h",
+   "detail": {
+    "seconds_to_failed_in_ui": 21.4,
+    "exit_code": -9
+   },
+   "real_process": true
+  },
+  {
+   "check": "previous valid output restored byte-identical",
+   "result": "PASS",
+   "browser_action": "",
+   "detail": {
+    "md5": "3997eacf0d8adc907da4e819fe65f97f"
+   },
+   "real_process": true
+  },
+  {
+   "check": "only the stage's own child was killed: child and runner gone; unrelated sentinel and the server still alive",
+   "result": "PASS",
+   "browser_action": "",
+   "detail": {
+    "child_state": "gone",
+    "runner_state": "gone (reaped)",
+    "sentinel_alive": true
+   },
+   "real_process": true
+  },
+  {
+   "check": "no orphaned stage process and no RUNNING record remain",
+   "result": "PASS",
+   "browser_action": "",
+   "detail": {
+    "status": "FAILED",
+    "orphans": []
+   },
+   "real_process": true
+  },
+  {
+   "check": "Dashboard reports the failure (hero, failed counter, 10h card) after timeout",
+   "result": "PASS",
+   "browser_action": "",
+   "detail": {
+    "hero": "Attention: a run failed"
+   },
+   "real_process": true
+  },
+  {
+   "check": "recovery: next run (hang removed) succeeds and the page shows it",
+   "result": "PASS",
+   "browser_action": "click 'Run 10h' again",
+   "detail": {},
+   "real_process": true
+  },
+  {
+   "check": "no JS exceptions during the lifecycle",
+   "result": "PASS",
+   "browser_action": "",
+   "detail": {
+    "n": 0
+   },
+   "real_process": true
+  }
+ ],
+ "passed": 9,
+ "total": 9,
+ "history": [
+  "attempt 1-2: harness errors (sentinel inherited the output pipe; variable collision in the driver) - not product results",
+  "attempt 3: restore check FAILED because a still-running runner from attempt 2 wrote into the same recreated path; re-verified via CLI and API (restore correct) and on fresh paths",
+  "attempt 4: D8 found (finished runner left as an unreaped zombie) -> fixed",
+  "attempt 5 (fresh path, final code): 9/9 PASS"
+ ],
+ "timeout_appropriateness": [
+  {
+   "stage": "01",
+   "policy": "REFUSED",
+   "timeout_s": null,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "unlimited (long live stage; refused from the dashboard)"
+  },
+  {
+   "stage": "00",
+   "policy": "REFUSED",
+   "timeout_s": null,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "unlimited (long live stage; refused from the dashboard)"
+  },
+  {
+   "stage": "02",
+   "policy": "REFUSED",
+   "timeout_s": null,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "unlimited (long live stage; refused from the dashboard)"
+  },
+  {
+   "stage": "03",
+   "policy": "REFUSED",
+   "timeout_s": null,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "unlimited (long live stage; refused from the dashboard)"
+  },
+  {
+   "stage": "03c",
+   "policy": "REFUSED",
+   "timeout_s": null,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "unlimited (long live stage; refused from the dashboard)"
+  },
+  {
+   "stage": "04",
+   "policy": "REFUSED",
+   "timeout_s": null,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "unlimited (long live stage; refused from the dashboard)"
+  },
+  {
+   "stage": "05",
+   "policy": "REFUSED",
+   "timeout_s": null,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "unlimited (long live stage; refused from the dashboard)"
+  },
+  {
+   "stage": "08",
+   "policy": "REFUSED",
+   "timeout_s": null,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "unlimited (long live stage; refused from the dashboard)"
+  },
+  {
+   "stage": "06",
+   "policy": "REFUSED",
+   "timeout_s": null,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "unlimited (long live stage; refused from the dashboard)"
+  },
+  {
+   "stage": "04b",
+   "policy": "REFUSED",
+   "timeout_s": null,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "unlimited (long live stage; refused from the dashboard)"
+  },
+  {
+   "stage": "05h",
+   "policy": "CONFIRM",
+   "timeout_s": 3600,
+   "observed_runs": 4,
+   "max_observed_s": 178.0,
+   "headroom_x": 20.2,
+   "verdict": "appropriate (>= 10x max observed)"
+  },
+  {
+   "stage": "04p",
+   "policy": "CONFIRM",
+   "timeout_s": 3600,
+   "observed_runs": 4,
+   "max_observed_s": 570.0,
+   "headroom_x": 6.3,
+   "verdict": "TIGHT"
+  },
+  {
+   "stage": "07",
+   "policy": "ALLOWED",
+   "timeout_s": 900,
+   "observed_runs": 3,
+   "max_observed_s": 5.0,
+   "headroom_x": 180.0,
+   "verdict": "appropriate (>= 10x max observed)"
+  },
+  {
+   "stage": "diag",
+   "policy": "CONFIRM",
+   "timeout_s": 3600,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "NOT OBSERVED (no recorded run)"
+  },
+  {
+   "stage": "10d",
+   "policy": "ALLOWED",
+   "timeout_s": 900,
+   "observed_runs": 4,
+   "max_observed_s": 1.0,
+   "headroom_x": 900.0,
+   "verdict": "appropriate (>= 10x max observed)"
+  },
+  {
+   "stage": "10e",
+   "policy": "ALLOWED",
+   "timeout_s": 900,
+   "observed_runs": 4,
+   "max_observed_s": 1.0,
+   "headroom_x": 900.0,
+   "verdict": "appropriate (>= 10x max observed)"
+  },
+  {
+   "stage": "eval",
+   "policy": "REFUSED",
+   "timeout_s": null,
+   "observed_runs": 0,
+   "max_observed_s": null,
+   "headroom_x": null,
+   "verdict": "unlimited (long live stage; refused from the dashboard)"
+  },
+  {
+   "stage": "10b",
+   "policy": "ALLOWED",
+   "timeout_s": 900,
+   "observed_runs": 5,
+   "max_observed_s": 1.0,
+   "headroom_x": 900.0,
+   "verdict": "appropriate (>= 10x max observed)"
+  },
+  {
+   "stage": "10c",
+   "policy": "ALLOWED",
+   "timeout_s": 900,
+   "observed_runs": 5,
+   "max_observed_s": 1.0,
+   "headroom_x": 900.0,
+   "verdict": "appropriate (>= 10x max observed)"
+  },
+  {
+   "stage": "10f",
+   "policy": "ALLOWED",
+   "timeout_s": 900,
+   "observed_runs": 4,
+   "max_observed_s": 0.0,
+   "headroom_x": null,
+   "verdict": "appropriate (>= 10x max observed)"
+  },
+  {
+   "stage": "10g",
+   "policy": "ALLOWED",
+   "timeout_s": 900,
+   "observed_runs": 8,
+   "max_observed_s": 2.0,
+   "headroom_x": 450.0,
+   "verdict": "appropriate (>= 10x max observed)"
+  },
+  {
+   "stage": "10a",
+   "policy": "ALLOWED",
+   "timeout_s": 900,
+   "observed_runs": 4,
+   "max_observed_s": 0.0,
+   "headroom_x": null,
+   "verdict": "appropriate (>= 10x max observed)"
+  },
+  {
+   "stage": "10a-all",
+   "policy": "ALLOWED",
+   "timeout_s": 900,
+   "observed_runs": 3,
+   "max_observed_s": 2.0,
+   "headroom_x": 450.0,
+   "verdict": "appropriate (>= 10x max observed)"
+  },
+  {
+   "stage": "review",
+   "policy": "ALLOWED",
+   "timeout_s": 900,
+   "observed_runs": 5,
+   "max_observed_s": 1.0,
+   "headroom_x": 900.0,
+   "verdict": "appropriate (>= 10x max observed)"
+  },
+  {
+   "stage": "10h",
+   "policy": "ALLOWED",
+   "timeout_s": 900,
+   "observed_runs": 12,
+   "max_observed_s": 1.0,
+   "headroom_x": 900.0,
+   "verdict": "appropriate (>= 10x max observed)"
+  }
+ ]
+}

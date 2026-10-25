@@ -1,0 +1,432 @@
+{
+ "browser": "Chrome/155.0.8059.84",
+ "results": [
+  {
+   "check": "primary navigation has exactly five sections in order",
+   "result": "PASS",
+   "detail": {
+    "nav": [
+     [
+      "overview",
+      "Overview"
+     ],
+     [
+      "drugs",
+      "Candidates"
+     ],
+     [
+      "evidence",
+      "Evidence"
+     ],
+     [
+      "validation",
+      "Validation"
+     ],
+     [
+      "run",
+      "Run Center"
+     ]
+    ]
+   }
+  },
+  {
+   "check": "root URL opens the researcher Overview",
+   "result": "PASS",
+   "detail": {
+    "title": "EviRep \u00b7 Overview",
+    "load_s": 0.62
+   }
+  },
+  {
+   "check": "nav 'Overview' opens its section and marks it current",
+   "result": "PASS",
+   "detail": {
+    "hash": "#overview",
+    "title": "EviRep \u00b7 Overview"
+   }
+  },
+  {
+   "check": "nav 'Candidates' opens its section and marks it current",
+   "result": "PASS",
+   "detail": {
+    "hash": "#drugs",
+    "title": "EviRep \u00b7 Candidates \u00b7 Candidate table"
+   }
+  },
+  {
+   "check": "nav 'Evidence' opens its section and marks it current",
+   "result": "PASS",
+   "detail": {
+    "hash": "#evidence",
+    "title": "EviRep \u00b7 Evidence \u00b7 All evidence"
+   }
+  },
+  {
+   "check": "nav 'Validation' opens its section and marks it current",
+   "result": "PASS",
+   "detail": {
+    "hash": "#validation",
+    "title": "EviRep \u00b7 Validation"
+   }
+  },
+  {
+   "check": "nav 'Run Center' opens its section and marks it current",
+   "result": "PASS",
+   "detail": {
+    "hash": "#run",
+    "title": "EviRep \u00b7 Run Center \u00b7 Pipeline health"
+   }
+  },
+  {
+   "check": "Evidence sub-pages (evidence, mechanism, conflicts, review) open inside the Evidence section",
+   "result": "PASS",
+   "detail": {
+    "tabs": [
+     "#evidence",
+     "#mechanism",
+     "#conflicts",
+     "#review"
+    ]
+   }
+  },
+  {
+   "check": "every older address still opens, inside its new section",
+   "result": "PASS",
+   "detail": {
+    "dashboard": true,
+    "live": true,
+    "technical": true,
+    "pipeline": true,
+    "agents": true,
+    "cases": true,
+    "agent/10b": true,
+    "compare": true,
+    "mechanism": true,
+    "overview": true
+   }
+  },
+  {
+   "check": "deep link, back and refresh keep the candidate page",
+   "result": "PASS",
+   "detail": {
+    "deep": true,
+    "back": true
+   }
+  },
+  {
+   "check": "Overview answers what / how reliable / what needs attention / what next",
+   "result": "PASS",
+   "detail": {
+    "headings": [
+     "What you are looking at",
+     "How current and reliable is it?",
+     "Strongest research signals",
+     "Evidence coverage",
+     "What needs attention",
+     "What you can do next"
+    ]
+   }
+  },
+  {
+   "check": "Overview results line equals the tracker state and is not shown as a tick unless fully current",
+   "result": "PASS",
+   "detail": {
+    "state": "VERIFIED_WITH_GAPS",
+    "line": "! Results: Current against recorded inputs, with unverifiable inputs. The score evaluation report reads an input that was not fingerprinted when it la"
+   }
+  },
+  {
+   "check": "source line names the sources without a recorded retrieval date",
+   "result": "PASS",
+   "detail": {
+    "not_recorded": [
+     "openFDA drug labels",
+     "Open Targets Platform",
+     "Hetionet v1.0"
+    ]
+   }
+  },
+  {
+   "check": "28 trial links awaiting human review shown with the review link",
+   "result": "PASS",
+   "detail": {
+    "n": 28
+   }
+  },
+  {
+   "check": "Overview signal chart = approved top 10 in rank order",
+   "result": "PASS",
+   "detail": {
+    "bars": [
+     "Donepezil",
+     "Zonisamide",
+     "Quetiapine"
+    ]
+   }
+  },
+  {
+   "check": "selecting a signal bar opens that candidate",
+   "result": "PASS",
+   "detail": {
+    "hash": "#drugs/Donepezil"
+   }
+  },
+  {
+   "check": "candidate table has score, plain profile, coverage, safety, mechanism, clinical, conflicts, outcome and limitation columns",
+   "result": "PASS",
+   "detail": {
+    "cols": [
+     "Rank",
+     "Compound",
+     "Score",
+     "What drives the score",
+     "Evidence coverage",
+     "Clinical (rank)",
+     "Safety (rank)",
+     "Mechanism (rank)",
+     "Conflicting evidence",
+     "New trial after 2020",
+     "Key limitation"
+    ]
+   }
+  },
+  {
+   "check": "search, filter and 'Clear filters' work together",
+   "result": "PASS",
+   "detail": {
+    "search": [
+     "Quetiapine",
+     "Clozapine",
+     "Isradipine"
+    ],
+    "with_filter": 1
+   }
+  },
+  {
+   "check": "sorting by score toggles direction and announces it (aria-sort)",
+   "result": "PASS",
+   "detail": {
+    "first": [
+     "descending",
+     "Donepezil"
+    ],
+    "second": [
+     "ascending",
+     "Remifentanil"
+    ]
+   }
+  },
+  {
+   "check": "imputed and not-measured values are marked in the table",
+   "result": "PASS",
+   "detail": {
+    "row": "38\tDeferiprone\t0.510\tStrong: literature independence.\t4 of 5 measured\t0.44\t0.33\tno known target\tInsufficient evidence\tno\tno known drug target, so mechanism is not measured; network proximity value imp"
+   }
+  },
+  {
+   "check": "candidate page: why it ranked, evidence for and against, mechanism chain, safety, trials, gaps, provenance",
+   "result": "PASS",
+   "detail": {}
+  },
+  {
+   "check": "'Compare with other candidates' opens Compare with this candidate",
+   "result": "PASS",
+   "detail": {
+    "hash": "#compare/Melatonin"
+   }
+  },
+  {
+   "check": "compare: add and remove a candidate",
+   "result": "PASS",
+   "detail": {
+    "added": [
+     "Melatonin",
+     "Donepezil"
+    ]
+   }
+  },
+  {
+   "check": "unknown compound gives one clear message",
+   "result": "PASS",
+   "detail": {}
+  },
+  {
+   "check": "evidence filters by basis and stance agree with the API (awaiting review, null or opposing)",
+   "result": "PASS",
+   "detail": {
+    "awaiting": "28 items",
+    "null_or_opposing": "13 items"
+   }
+  },
+  {
+   "check": "the stance/basis legend explains missing \u2260 negative and that the app never adjudicates",
+   "result": "PASS",
+   "detail": {}
+  },
+  {
+   "check": "candidate-scoped evidence link pre-filters the compound",
+   "result": "PASS",
+   "detail": {}
+  },
+  {
+   "check": "review queue: search narrows, counts equal the artefact, no decision control exists",
+   "result": "PASS",
+   "detail": {
+    "count": "3 of 28 shown"
+   }
+  },
+  {
+   "check": "Validation has a summary, the six sections in order, and the alternative-scoring section last",
+   "result": "PASS",
+   "detail": {
+    "sections": [
+     "1. Performance",
+     "2. Evaluation design",
+     "3. Baselines and ablations",
+     "4. Missing and imputed data",
+     "5. Reproducibility",
+     "6. Methods and limitations",
+     "7. Alternative scoring variant (not approved)"
+    ]
+   }
+  },
+  {
+   "check": "section links move focus to the section heading",
+   "result": "PASS",
+   "detail": {}
+  },
+  {
+   "check": "evaluation types are labelled (unfitted, in-sample, held-out, exploratory)",
+   "result": "PASS",
+   "detail": {}
+  },
+  {
+   "check": "ROC and PR curves drawn only from data that reproduces the report",
+   "result": "PASS",
+   "detail": {}
+  },
+  {
+   "check": "alternative scoring section is marked NOT APPROVED and shows the backend's comparison numbers",
+   "result": "PASS",
+   "detail": {
+    "alt_auroc": 0.6992481203007519
+   }
+  },
+  {
+   "check": "approved headline result unchanged by the alternative (summary still reports the approved AUROC)",
+   "result": "PASS",
+   "detail": {}
+  },
+  {
+   "check": "dependency graph: no state label overflows its box",
+   "result": "PASS",
+   "detail": {
+    "overflowing": []
+   }
+  },
+  {
+   "check": "refusals are distinguished: owner approval (protected data) vs command line only (live services)",
+   "result": "PASS",
+   "detail": {
+    "06": "06 VPS fusion + evaluation\tRecorded baseline (before run tracking)\tRecorded baseline (before run tracking)\tadopted-20261",
+    "04b": "04b Literature graph export (Figure 3 data)\tRecorded baseline (before run tracking)\tRecorded baseline (before run tracki"
+   }
+  },
+  {
+   "check": "a network stage needs a second, explicit confirmation; Back launches nothing",
+   "result": "PASS",
+   "detail": {}
+  },
+  {
+   "check": "opening every page and polling started no run",
+   "result": "PASS",
+   "detail": {
+    "history": [
+     49,
+     49
+    ]
+   }
+  },
+  {
+   "check": "rapid repeated clicks start exactly one run",
+   "result": "PASS",
+   "detail": {
+    "launches": 1,
+    "runs": 1
+   }
+  },
+  {
+   "check": "Run Center shows the completed run without reload",
+   "result": "PASS",
+   "detail": {}
+  },
+  {
+   "check": "losing the server is shown, and the page recovers by itself",
+   "result": "PASS",
+   "detail": {
+    "lost": true,
+    "recovered": true
+   }
+  },
+  {
+   "check": "no raw status codes, agent ids, file paths or the pending result-set id in researcher-facing text",
+   "result": "PASS",
+   "detail": {}
+  },
+  {
+   "check": "keyboard: Tab reaches the skip link and the sections in order; Enter opens the focused section",
+   "result": "PASS",
+   "detail": {
+    "focus": [
+     "Skip to content",
+     "Overview",
+     "Candidates",
+     "Evidence"
+    ],
+    "hash": "#evidence"
+   }
+  },
+  {
+   "check": "390 px: no horizontal page scroll on the five sections and a candidate page",
+   "result": "PASS",
+   "detail": {
+    "overview": 0,
+    "drugs": 0,
+    "drugs/Donepezil": 0,
+    "evidence": 0,
+    "validation": 0,
+    "run": 0
+   }
+  },
+  {
+   "check": "idle polling: one small status request every ~4 s, nothing else",
+   "result": "PASS",
+   "detail": {
+    "requests_in_20s": 5,
+    "urls": [
+     "/api/status"
+    ]
+   }
+  },
+  {
+   "check": "each section renders within 2 s on this machine",
+   "result": "PASS",
+   "detail": {
+    "overview": 0.77,
+    "drugs": 0.8,
+    "evidence": 0.89,
+    "validation": 0.81,
+    "run": 0.79,
+    "drugs/Donepezil": 1.03
+   }
+  },
+  {
+   "check": "no JavaScript exceptions or console errors (connection-refused during the deliberate restart excluded)",
+   "result": "PASS",
+   "detail": {
+    "n": 0,
+    "first": "[]"
+   }
+  }
+ ]
+}

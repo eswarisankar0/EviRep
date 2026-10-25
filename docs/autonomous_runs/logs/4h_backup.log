@@ -1,0 +1,9 @@
+{
+ "archive": "/Users/thrisha/EviRep_backups/evirep_data_20261020T075410Z.tar.gz",
+ "n_files": 1389,
+ "bytes": 277568556,
+ "verified": true,
+ "problems": []
+}
+./venv/bin/python scripts/backup_data.py --dest ~/EviRep_backups  13.62s user 0.33s system 98% cpu 14.199 total
+exit 0

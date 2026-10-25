@@ -1,0 +1,502 @@
+{
+ "approved_reference": {
+  "n": 90,
+  "positives": 14,
+  "prevalence": 0.1556,
+  "5d": {
+   "auroc": 0.7754,
+   "auroc_ci95": [
+    0.6559,
+    0.8809
+   ],
+   "auprc": 0.4243,
+   "auprc_ci95": [
+    0.2263,
+    0.6792
+   ]
+  },
+  "4d": {
+   "auroc": 0.7002,
+   "auroc_ci95": [
+    0.5674,
+    0.8343
+   ],
+   "auprc": 0.3582,
+   "auprc_ci95": [
+    0.1763,
+    0.6029
+   ]
+  },
+  "5d_minus_4d": {
+   "diff": 0.0752,
+   "ci95": [
+    -0.025,
+    0.1761
+   ]
+  }
+ },
+ "rebuilt_cohort/approved_rules": {
+  "n": 91,
+  "positives": 15,
+  "prevalence": 0.1648,
+  "5d": {
+   "auroc": 0.7868,
+   "auroc_ci95": [
+    0.6718,
+    0.884
+   ],
+   "auprc": 0.4398,
+   "auprc_ci95": [
+    0.2395,
+    0.6841
+   ]
+  },
+  "4d": {
+   "auroc": 0.7193,
+   "auroc_ci95": [
+    0.5773,
+    0.8408
+   ],
+   "auprc": 0.3973,
+   "auprc_ci95": [
+    0.1977,
+    0.6409
+   ]
+  },
+  "5d_minus_4d": {
+   "diff": 0.0675,
+   "ci95": [
+    -0.0254,
+    0.1671
+   ]
+  },
+  "vs_approved_on_shared_compounds": {
+   "n_shared": 90,
+   "labels_identical": true,
+   "diff": 0.0,
+   "ci95": [
+    -0.009,
+    0.0089
+   ]
+  },
+  "top10": [
+   "Donepezil",
+   "Zonisamide",
+   "Dexmedetomidine",
+   "Quetiapine",
+   "Lisuride",
+   "Melatonin",
+   "Droxidopa",
+   "Dopamine",
+   "Lidocaine",
+   "Methylphenidate"
+  ],
+  "top10_overlap_with_approved": 9
+ },
+ "rebuilt_cohort/td042": {
+  "n": 91,
+  "positives": 15,
+  "prevalence": 0.1648,
+  "5d": {
+   "auroc": 0.7158,
+   "auroc_ci95": [
+    0.5753,
+    0.8323
+   ],
+   "auprc": 0.3368,
+   "auprc_ci95": [
+    0.1865,
+    0.5984
+   ]
+  },
+  "4d": {
+   "auroc": 0.7193,
+   "auroc_ci95": [
+    0.5773,
+    0.8408
+   ],
+   "auprc": 0.3973,
+   "auprc_ci95": [
+    0.1977,
+    0.6409
+   ]
+  },
+  "5d_minus_4d": {
+   "diff": -0.0035,
+   "ci95": [
+    -0.0807,
+    0.0749
+   ]
+  },
+  "vs_approved_on_shared_compounds": {
+   "n_shared": 90,
+   "labels_identical": true,
+   "diff": -0.0761,
+   "ci95": [
+    -0.1591,
+    -0.0129
+   ]
+  },
+  "top10": [
+   "Droxidopa",
+   "Quetiapine",
+   "Dexmedetomidine",
+   "Lisuride",
+   "Melatonin",
+   "Zonisamide",
+   "Dopamine",
+   "Donepezil",
+   "Domperidone",
+   "Methylphenidate"
+  ],
+  "top10_overlap_with_approved": 9
+ },
+ "rebuilt_cohort/p1": {
+  "n": 77,
+  "positives": 14,
+  "prevalence": 0.1818,
+  "5d": {
+   "auroc": 0.7551,
+   "auroc_ci95": [
+    0.6193,
+    0.8715
+   ],
+   "auprc": 0.4182,
+   "auprc_ci95": [
+    0.2224,
+    0.6646
+   ]
+  },
+  "4d": {
+   "auroc": 0.6899,
+   "auroc_ci95": [
+    0.5309,
+    0.8361
+   ],
+   "auprc": 0.4036,
+   "auprc_ci95": [
+    0.1942,
+    0.651
+   ]
+  },
+  "5d_minus_4d": {
+   "diff": 0.0652,
+   "ci95": [
+    -0.0344,
+    0.1717
+   ]
+  },
+  "vs_approved_on_shared_compounds": {
+   "n_shared": 76,
+   "labels_identical": true,
+   "diff": 0.0073,
+   "ci95": [
+    -0.0141,
+    0.0299
+   ]
+  },
+  "top10": [
+   "Donepezil",
+   "Zonisamide",
+   "Dexmedetomidine",
+   "Quetiapine",
+   "Lisuride",
+   "Melatonin",
+   "Droxidopa",
+   "Dopamine",
+   "Aripiprazole",
+   "Methylphenidate"
+  ],
+  "top10_overlap_with_approved": 8
+ },
+ "rebuilt_cohort/maxphase": {
+  "n": 91,
+  "positives": 15,
+  "prevalence": 0.1648,
+  "5d": {
+   "auroc": 0.7807,
+   "auroc_ci95": [
+    0.663,
+    0.8792
+   ],
+   "auprc": 0.438,
+   "auprc_ci95": [
+    0.2369,
+    0.6842
+   ]
+  },
+  "4d": {
+   "auroc": 0.7202,
+   "auroc_ci95": [
+    0.5807,
+    0.8436
+   ],
+   "auprc": 0.4076,
+   "auprc_ci95": [
+    0.2038,
+    0.6443
+   ]
+  },
+  "5d_minus_4d": {
+   "diff": 0.0605,
+   "ci95": [
+    -0.0288,
+    0.1577
+   ]
+  },
+  "vs_approved_on_shared_compounds": {
+   "n_shared": 90,
+   "labels_identical": true,
+   "diff": -0.0075,
+   "ci95": [
+    -0.0222,
+    0.003
+   ]
+  },
+  "top10": [
+   "Donepezil",
+   "Zonisamide",
+   "Dexmedetomidine",
+   "Quetiapine",
+   "Lisuride",
+   "Melatonin",
+   "Dopamine",
+   "Droxidopa",
+   "Lidocaine",
+   "Methylphenidate"
+  ],
+  "top10_overlap_with_approved": 9
+ },
+ "rebuilt_cohort/dated": {
+  "n": 91,
+  "positives": 15,
+  "prevalence": 0.1648,
+  "5d": {
+   "auroc": 0.7088,
+   "auroc_ci95": [
+    0.5572,
+    0.8325
+   ],
+   "auprc": 0.4041,
+   "auprc_ci95": [
+    0.2052,
+    0.616
+   ]
+  },
+  "4d": {
+   "auroc": 0.6991,
+   "auroc_ci95": [
+    0.5557,
+    0.8228
+   ],
+   "auprc": 0.3505,
+   "auprc_ci95": [
+    0.1778,
+    0.5859
+   ]
+  },
+  "5d_minus_4d": {
+   "diff": 0.0096,
+   "ci95": [
+    -0.0417,
+    0.0667
+   ]
+  },
+  "vs_approved_on_shared_compounds": {
+   "n_shared": 90,
+   "labels_identical": true,
+   "diff": -0.0874,
+   "ci95": [
+    -0.2063,
+    0.0319
+   ]
+  },
+  "top10": [
+   "Melatonin",
+   "Dopamine",
+   "Zonisamide",
+   "Quetiapine",
+   "Sildenafil",
+   "Dextromethorphan",
+   "Dexmedetomidine",
+   "Aripiprazole",
+   "Droxidopa",
+   "Lisuride"
+  ],
+  "top10_overlap_with_approved": 6
+ },
+ "rebuilt_cohort/dated_td042": {
+  "n": 91,
+  "positives": 15,
+  "prevalence": 0.1648,
+  "5d": {
+   "auroc": 0.7053,
+   "auroc_ci95": [
+    0.5572,
+    0.8307
+   ],
+   "auprc": 0.3817,
+   "auprc_ci95": [
+    0.187,
+    0.5952
+   ]
+  },
+  "4d": {
+   "auroc": 0.6991,
+   "auroc_ci95": [
+    0.5557,
+    0.8228
+   ],
+   "auprc": 0.3505,
+   "auprc_ci95": [
+    0.1778,
+    0.5859
+   ]
+  },
+  "5d_minus_4d": {
+   "diff": 0.0061,
+   "ci95": [
+    -0.0447,
+    0.0639
+   ]
+  },
+  "vs_approved_on_shared_compounds": {
+   "n_shared": 90,
+   "labels_identical": true,
+   "diff": -0.0912,
+   "ci95": [
+    -0.2105,
+    0.026
+   ]
+  },
+  "top10": [
+   "Melatonin",
+   "Dopamine",
+   "Sildenafil",
+   "Zonisamide",
+   "Dextromethorphan",
+   "Dexmedetomidine",
+   "Quetiapine",
+   "Droxidopa",
+   "Lisuride",
+   "Aripiprazole"
+  ],
+  "top10_overlap_with_approved": 6
+ },
+ "rebuilt_cohort/dated_td042_p1": {
+  "n": 77,
+  "positives": 14,
+  "prevalence": 0.1818,
+  "5d": {
+   "auroc": 0.6689,
+   "auroc_ci95": [
+    0.5102,
+    0.8186
+   ],
+   "auprc": 0.4008,
+   "auprc_ci95": [
+    0.1952,
+    0.6293
+   ]
+  },
+  "4d": {
+   "auroc": 0.6961,
+   "auroc_ci95": [
+    0.5358,
+    0.8416
+   ],
+   "auprc": 0.4105,
+   "auprc_ci95": [
+    0.2022,
+    0.6574
+   ]
+  },
+  "5d_minus_4d": {
+   "diff": -0.0272,
+   "ci95": [
+    -0.0817,
+    0.0262
+   ]
+  },
+  "vs_approved_on_shared_compounds": {
+   "n_shared": 76,
+   "labels_identical": true,
+   "diff": -0.0904,
+   "ci95": [
+    -0.228,
+    0.0573
+   ]
+  },
+  "top10": [
+   "Melatonin",
+   "Dopamine",
+   "Zonisamide",
+   "Sildenafil",
+   "Quetiapine",
+   "Dextromethorphan",
+   "Lisuride",
+   "Dexmedetomidine",
+   "Droxidopa",
+   "Aripiprazole"
+  ],
+  "top10_overlap_with_approved": 6
+ },
+ "rebuilt_cohort/corrected_all": {
+  "n": 77,
+  "positives": 14,
+  "prevalence": 0.1818,
+  "5d": {
+   "auroc": 0.6667,
+   "auroc_ci95": [
+    0.5063,
+    0.8154
+   ],
+   "auprc": 0.4094,
+   "auprc_ci95": [
+    0.1994,
+    0.6349
+   ]
+  },
+  "4d": {
+   "auroc": 0.6927,
+   "auroc_ci95": [
+    0.5308,
+    0.8398
+   ],
+   "auprc": 0.4414,
+   "auprc_ci95": [
+    0.2163,
+    0.6747
+   ]
+  },
+  "5d_minus_4d": {
+   "diff": -0.0261,
+   "ci95": [
+    -0.0807,
+    0.0272
+   ]
+  },
+  "vs_approved_on_shared_compounds": {
+   "n_shared": 76,
+   "labels_identical": true,
+   "diff": -0.0928,
+   "ci95": [
+    -0.235,
+    0.058
+   ]
+  },
+  "top10": [
+   "Dopamine",
+   "Melatonin",
+   "Zonisamide",
+   "Quetiapine",
+   "Sildenafil",
+   "Dextromethorphan",
+   "Lisuride",
+   "Droxidopa",
+   "Dexmedetomidine",
+   "Aripiprazole"
+  ],
+  "top10_overlap_with_approved": 6
+ }
+}

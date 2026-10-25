@@ -30,15 +30,17 @@ print("Candidates WITHOUT CbG targets:", len(candidate_ids - cbg_compounds))
 
 print("\n========== DISEASE GENE CHECK ==========")
 
+# Hetionet disease-gene edges run Disease -> Gene (as in scripts/02_network_proximity.get_disease_genes):
+# the disease is the SOURCE and the gene the TARGET. The inverted filter reported 0 PD genes (TD-008).
 disease_edges = edges[
-    (edges["target"] == PD_DISEASE_ID) &
+    (edges["source"] == PD_DISEASE_ID) &
     (edges["metaedge"].isin(["DaG", "DuG", "DdG"]))
 ]
 
 print("PD disease-gene edges:", len(disease_edges))
 print(disease_edges.head())
 
-disease_genes = set(disease_edges["source"])
+disease_genes = set(disease_edges["target"])
 
 print("PD genes:", len(disease_genes))
 

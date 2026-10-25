@@ -1,0 +1,197 @@
+cache type list n 177
+
+=== 1. NCT00608231 | Dexmedetomidine | flag KEYWORD_DECIDED (KEYWORD_DECIDED) | auto=PROCEDURAL_CONTEXT | struct=THERAPEUTIC_TEST
+title: Dexmedetomidine Effects on Microelectrode Recording in Deep Brain Stimulation
+intervention_text: Dexmedetomidine Hydrochloride Infusion [DRUG] (other names: Precedex); Normal Saline [DRUG] (other names: Placebo control)
+arm_types: PD-STN: EXPERIMENTAL; PD - GPi: EXPERIMENTAL; ET - VIM: EXPERIMENTAL; Dystonia - GPi: EXPERIMENTAL; PD - STN Control: PLACEBO_COMPARATOR; PD - GPi Control: PLACEBO_COMPARATOR; ET - VIM Control: PLACEBO_COMPARATOR; Dystonia - GPi Control: PLACEBO_COMPARATOR
+reason: KEYWORD_DECIDED: briefTitle: 'Microelectrode'; officialTitle: 'Microelectrode'; structural reading THERAPEUTIC_TEST
+needed: Read the arm descriptions, interventions and primary outcome in the full registry record or protocol: is the drug given as procedural anaesthesia/sedation (e.g. during DBS surgery) or tested for a PD 
+
+=== 2. NCT01721460 | Dexmedetomidine | flag KEYWORD_DECIDED (KEYWORD_DECIDED) | auto=PROCEDURAL_CONTEXT | struct=THERAPEUTIC_TEST
+title: Effects of Dexmedetomidine on Activity in the Subthalamic Nucleus
+intervention_text: Dexmedetomidine [DRUG] (other names: Precedex)
+arm_types: Dexmedetomidine during MER: EXPERIMENTAL
+reason: KEYWORD_DECIDED: arm:Dexmedetomidine during MER: 'Microelectrode'; arm:Dexmedetomidine during MER: 'MER'; arm:Dexmedetomidine during MER: 'MER'; structural reading THERAPEUTIC_TEST
+needed: Read the arm descriptions, interventions and primary outcome in the full registry record or protocol: is the drug given as procedural anaesthesia/sedation (e.g. during DBS surgery) or tested for a PD 
+
+=== 3. NCT01789385 | Dexmedetomidine | flag KEYWORD_DECIDED (KEYWORD_DECIDED) | auto=PROCEDURAL_CONTEXT | struct=UNDETERMINED
+title: Anesthesia for Deep Brain Stimulation
+intervention_text: Dexmedetomidine [DRUG] (other names: Precedex 200 mcg 2 ml)
+arm_types: dexmedetomidine: OTHER
+reason: KEYWORD_DECIDED: briefTitle: 'Anesthesia'; officialTitle: 'Anesthesia'; primaryOutcome: 'sedative'; structural reading UNDETERMINED
+needed: Read the arm descriptions, interventions and primary outcome in the full registry record or protocol: is the drug given as procedural anaesthesia/sedation (e.g. during DBS surgery) or tested for a PD 
+
+=== 4. NCT02236260 | Lidocaine | flag KEYWORD_DECIDED (KEYWORD_DECIDED) | auto=PROCEDURAL_CONTEXT | struct=THERAPEUTIC_TEST
+title: Evaluation of the Benefit Provided by Acupuncture During a Surgery of Deep Brain Stimulation
+intervention_text: Electroacupuncture [PROCEDURE]; Local Anesthesia (lidocaine hydrochloride) [DRUG]
+arm_types: Local anesthesia alone: ACTIVE_COMPARATOR; Local Anesthesia + Electroacupuncture: EXPERIMENTAL
+reason: KEYWORD_DECIDED: briefTitle: 'Surgery of Deep Brain Stimulation'; officialTitle: 'Anesthesia'; officialTitle: 'Anesthesia'; structural reading THERAPEUTIC_TEST
+needed: Read the arm descriptions, interventions and primary outcome in the full registry record or protocol: is the drug given as procedural anaesthesia/sedation (e.g. during DBS surgery) or tested for a PD 
+
+=== 5. NCT04164758 | Quetiapine | flag KEYWORD_DECIDED (KEYWORD_DECIDED) | auto=PROCEDURAL_CONTEXT | struct=COMPARATOR_ONLY
+title: Study to Evaluate Safety and Daytime Sedation in Subjects With Parkinson's Disease With Neuropsychiatric Symptoms Treated With Pimavanserin or Low-Dose Quetiapine
+intervention_text: Pimavanserin [DRUG]; Placebo [OTHER]; Quetiapine [DRUG]
+arm_types: Drug - pimavanserin: EXPERIMENTAL; Placebo: PLACEBO_COMPARATOR; Quetiapine: ACTIVE_COMPARATOR
+reason: KEYWORD_DECIDED: briefTitle: 'Sedation'; officialTitle: 'Sedation'; structural reading COMPARATOR_ONLY
+needed: Read the arm descriptions, interventions and primary outcome in the full registry record or protocol: is the drug given as procedural anaesthesia/sedation (e.g. during DBS surgery) or tested for a PD 
+
+=== 6. NCT00605683 | Lisuride | flag ALIAS_GAP (ALIAS_GAP) | auto=BACKGROUND_OTHERNAME | struct=BACKGROUND_OTHERNAME
+title: MOTION, Safinamide in Early IPD, as add-on to Dopamine Agonist
+intervention_text: Safinamide (as add-on therapy) [DRUG] (other names: Apokyn, Parlodel, Mirapex, Requip, Cabergoline (not approved in US), Lisuride (not approved in US), Pergolide (withdrawn from US Market March 2007)); Safinamide (as add-on therapy) [DRUG] (other names: Apokyn, Parlodel, Mirapex, Requip, Cabergoline (not approved in US), Lisuride (not approved in US), Pergolide (withdrawn from US Market March 2007)); Safinamide (as add-on therapy) [DRUG] (other names: Apokyn, Parlodel, Mirapex, Requip, Cabergoline (not approved in US), Lisuride (not approved in US), Pergolide (withdrawn from US Market March 20
+arm_types: 1: ACTIVE_COMPARATOR; 2: ACTIVE_COMPARATOR; 3: PLACEBO_COMPARATOR
+reason: ALIAS_GAP: compound appears via ['Safinamide (as add-on therapy)']
+needed: Confirm whether the listed intervention name is the same active ingredient (brand, salt or spelling variant) or a different agent or drug class; if the same, identify its arm role.
+
+=== 7. NCT01340885 | Atomoxetine | flag ALIAS_GAP (ALIAS_GAP) | auto=BACKGROUND_OTHERNAME | struct=BACKGROUND_OTHERNAME
+title: Cognitive Decline in Non-demented PD
+intervention_text: Strattera [DRUG] (other names: atomoxetine); Exelon [DRUG] (other names: rivastigmine); Placebo [OTHER] (other names: sugar pill)
+arm_types: atomoxetine: ACTIVE_COMPARATOR; rivastigimine: ACTIVE_COMPARATOR; Placebo: PLACEBO_COMPARATOR
+reason: ALIAS_GAP: compound appears via ['Strattera']
+needed: Confirm whether the listed intervention name is the same active ingredient (brand, salt or spelling variant) or a different agent or drug class; if the same, identify its arm role.
+
+=== 8. NCT02174250 | Rifampicin | flag CHEMBL_ALIAS (CHEMBL_ALIAS) | auto=CO_ADMINISTERED | struct=CO_ADMINISTERED
+title: The Effect of Rifampin on the Metabolism of Istradefylline in Healthy Volunteers.
+intervention_text: Istradefylline 40 mg [DRUG] (other names: KW-6002); Rifampin 300mg BID + istradefylline 40mg Day 8 only [DRUG] (other names: rifadin)
+arm_types: Istradefylline 40mg: EXPERIMENTAL; Rifampin 300mg BID + istradefylline 40mg: EXPERIMENTAL
+reason: CHEMBL_ALIAS: verdict CO_ADMINISTERED with the ChEMBL name 'RIFAMPIN', BACKGROUND_OTHERNAME without it; the identity is source-backed, the trial role is not adjudicated
+needed: The compound is now recognised under its ChEMBL preferred name. Confirm from the protocol whether the trial tests it for a PD indication or uses it for another purpose (e.g. a drug-interaction study).
+
+=== 9. NCT00001365 | Dextromethorphan | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Dextromethorphan for the Treatment of Parkinson's Disease and Similar Conditions of the Nervous System
+intervention_text: dextromethorphan [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 10. NCT00004826 | Clozapine | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Study of Clozapine for the Treatment of Psychosis in Patients With Idiopathic Parkinson's Disease
+intervention_text: clozapine [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 11. NCT00006077 | Domperidone | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Effects of Monoamine Reuptake Inhibitor NS2330 in Parkinson's Disease
+intervention_text: NS2330 [DRUG]; Levodopa and Domperidone [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 12. NCT00030979 | Donepezil | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Donepezil to Treat Dementia in Parkinson's Disease
+intervention_text: Donepezil [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 13. NCT00043849 | Quetiapine | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Treatment of Agitation/Psychosis in Dementia/Parkinsonism (TAP/DAP)
+intervention_text: Quetiapine [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 14. NCT00063193 | Minocycline | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: National Institute of Neurological Disorders and Stroke (NINDS) Parkinson's Disease Neuroprotection Trial
+intervention_text: minocycline [DRUG]; creatine [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 15. NCT00089622 | Lisuride | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Lisuride Patch to Treat Parkinson's Disease
+intervention_text: Intravenous Levodopa [DRUG]; Lisuride Transdermal System [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 16. NCT00103597 | Domperidone | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Efficacy of Therapeutic Interventions for Orthostatic Hypotension in Parkinson's Disease and Multiple System Atrophy
+intervention_text: Fludrocortisone [DRUG]; Domperidone [DRUG]; Conservative Measures for Orthostatic Hypotension [BEHAVIORAL]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 17. NCT00160576 | Levetiracetam | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Levetiracetam Treatment in Adult Subjects With Parkinson's Disease Experiencing Troublesome Dyskinesias
+intervention_text: Levetiracetam [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 18. NCT00211588 | Galantamine | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Galantamine Executive Function in Parkinson's Disease
+intervention_text: galantamine [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 19. NCT00286949 | Atomoxetine | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Treatment of Executive Dysfunction in Parkinson's Disease
+intervention_text: Atomoxetine [DRUG] (other names: Strattera (Brand Name))
+arm_types: Atomoxetine (Strattera): OTHER
+reason: STRUCTURE_INSUFFICIENT: arm 'Atomoxetine (Strattera)' type OTHER with other drugs []
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 20. NCT00296946 | Ipratropium bromide | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Ipratropium Spray for Drooling Saliva in Parkinson's Disease
+intervention_text: ipratropium bromide (drug) [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 21. NCT00296959 | Topiramate | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Topiramate as a Treatment for Levodopa-Induced Dyskinesia in Parkinson's Disease
+intervention_text: topiramate (drug) [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 22. NCT00305331 | Domperidone | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Domperidone as a Treatment for Dopamine Agonist-induced Peripheral Edema in Patients With Parkinson's Disease
+intervention_text: Domperidone (drug) [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 23. NCT00307450 | Levetiracetam | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Efficacy and Safety of Levetiracetam Versus Placebo on Levodopa-induced Dyskinesias in Advanced Parkinson's Disease
+intervention_text: Levetiracetam [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 24. NCT00393562 | Methylphenidate | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Comparison of Modafinil and Methylphenidate in Treatment of Excessive Daytime Sleepiness in Patients With Parkinson's Disease
+intervention_text: modafinil [DRUG]; methylphenidate [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 25. NCT00408915 | Lisuride | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Continuous Application of Lisuride in Parkinson's Disease by Subcutaneous Infusion
+intervention_text: Continuous Subcutaneous Lisuride Infusion [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 26. NCT00640952 | Acamprosate | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Acamprosate for Treatment of Compulsive Behaviors and Craving in Parkinson's Disease
+intervention_text: acamprosate [DRUG]
+arm_types: nan
+reason: STRUCTURE_INSUFFICIENT: armsInterventionsModule lacks interventions or armGroups
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 27. NCT02066571 | Droxidopa | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Study to Assess the Clinical Benefit and Safety of Droxidopa in Parkinson's Disease
+intervention_text: Droxidopa [DRUG]; sugar pill [DRUG] (other names: placebo)
+arm_types: droxidopa, then sugar pill: OTHER; sugar pill, then droxidopa: OTHER
+reason: STRUCTURE_INSUFFICIENT: arm 'sugar pill, then droxidopa' type OTHER with other drugs []
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.
+
+=== 28. NCT03773796 | Nabilone | flag STRUCTURE_INSUFFICIENT (STRUCTURE_INSUFFICIENT) | auto=UNDETERMINED | struct=UNDETERMINED
+title: Nabilone for Non-motor Symptoms in Parkinson's Disease
+intervention_text: Nabilone 0.25 mg [DRUG] (other names: Canemes)
+arm_types: Treatment Group: OTHER
+reason: STRUCTURE_INSUFFICIENT: arm 'Treatment Group' type OTHER with other drugs []
+needed: The registry record has no usable arm/intervention structure: consult the protocol, the results publication or the registry history. Do not infer arm assignment.

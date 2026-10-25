@@ -1,0 +1,154 @@
+{
+ "note": "credential presence checked by name only; no values printed or stored",
+ "connectivity_smoke": "see logs/connectivity.txt",
+ "stages": [
+  {
+   "stage": "01",
+   "policy": "REFUSED",
+   "policy_reason": "rewrites protected/approved artefacts (data/pd_candidates.csv, data/pd_candidates_full.csv); owner decision - run from the command line in an isolated copy first",
+   "external": "Zenodo (Hetionet 155 MB)",
+   "credentials": "none required",
+   "timeout_s": null,
+   "expected_runtime": "155 MB download, held in memory",
+   "result": "BLOCKED",
+   "reason": "no cache; rewrites protected candidate pool files",
+   "unblock": "owner decision; run from the command line in an isolated copy first"
+  },
+  {
+   "stage": "03",
+   "policy": "REFUSED",
+   "policy_reason": "rewrites protected/approved artefacts (data/clinical_maturity_precutoff.csv, data/clinicaltrials_match_audit.csv, data/ground_truth_postcutoff.csv); owner decision - run from the command line in an isolated copy first",
+   "external": "ClinicalTrials.gov (~1,500 searches)",
+   "credentials": "none required",
+   "timeout_s": null,
+   "expected_runtime": "~1,500 requests (10-20 min)",
+   "result": "BLOCKED",
+   "reason": "can change labels; protected outputs",
+   "unblock": "owner decision; run from the command line in an isolated copy first"
+  },
+  {
+   "stage": "03c",
+   "policy": "REFUSED",
+   "policy_reason": "rewrites protected/approved artefacts (data/clinical_maturity_precutoff_clean.csv, data/ground_truth_postcutoff_clean.csv); owner decision - run from the command line in an isolated copy first",
+   "external": "ClinicalTrials.gov per NCT",
+   "credentials": "none required",
+   "timeout_s": null,
+   "expected_runtime": "one request per unique NCT ID",
+   "result": "BLOCKED",
+   "reason": "protected clean labels/features",
+   "unblock": "owner decision; run from the command line in an isolated copy first"
+  },
+  {
+   "stage": "04",
+   "policy": "REFUSED",
+   "policy_reason": "rewrites protected/approved artefacts (data/literature_independence.csv); owner decision - run from the command line in an isolated copy first",
+   "external": "PubMed + Semantic Scholar",
+   "credentials": {
+    "NCBI_API_KEY": "absent",
+    "S2_SLEEP": "absent"
+   },
+   "timeout_s": null,
+   "expected_runtime": "heaviest stage \u2014 hours",
+   "result": "BLOCKED",
+   "reason": "S2 API key absent (HTTP 429 without it); protected literature dimension",
+   "unblock": "owner decision; run from the command line in an isolated copy first"
+  },
+  {
+   "stage": "05",
+   "policy": "REFUSED",
+   "policy_reason": "rewrites protected/approved artefacts (data/safety_signal.csv); owner decision - run from the command line in an isolated copy first",
+   "external": "openFDA labels",
+   "credentials": "none required",
+   "timeout_s": null,
+   "expected_runtime": "~90 requests",
+   "result": "BLOCKED",
+   "reason": "protected safety dimension",
+   "unblock": "owner decision; run from the command line in an isolated copy first"
+  },
+  {
+   "stage": "08",
+   "policy": "REFUSED",
+   "policy_reason": "rewrites protected/approved artefacts (data/molecular_pathway.csv, data/molecular_pathway_evidence.jsonl); owner decision - run from the command line in an isolated copy first",
+   "external": "Open Targets GraphQL (cached)",
+   "credentials": "none required",
+   "timeout_s": null,
+   "expected_runtime": "batched + cached; same-cohort rerun issues no network calls",
+   "result": "BLOCKED",
+   "reason": "protected molecular dimension",
+   "unblock": "owner decision; run from the command line in an isolated copy first"
+  },
+  {
+   "stage": "04b",
+   "policy": "REFUSED",
+   "policy_reason": "re-runs stage-04 PubMed/Semantic Scholar queries; its provenance guard refuses content drift; run from the command line",
+   "external": "PubMed / Semantic Scholar",
+   "credentials": "none required",
+   "timeout_s": null,
+   "expected_runtime": "one compound's stage-04 queries",
+   "result": "BLOCKED",
+   "reason": "provenance guard; live-only",
+   "unblock": "owner decision; run from the command line in an isolated copy first"
+  },
+  {
+   "stage": "05h",
+   "policy": "CONFIRM",
+   "policy_reason": "may query DailyMed for labels without a cached version history",
+   "external": "DailyMed SPL history",
+   "credentials": "none required",
+   "timeout_s": 3600,
+   "expected_runtime": "about 3 requests per labelled compound; cached",
+   "result": "PASS",
+   "command": "./venv/bin/python scripts/run_stage.py 05h --root <isolated copy> (Lovastatin history cache removed -> live DailyMed)",
+   "evidence": "logs/live_05h.log",
+   "outcome": "SUCCESS in 4 s; Lovastatin row identical; parser 83/83 agree"
+  },
+  {
+   "stage": "04p",
+   "policy": "CONFIRM",
+   "policy_reason": "may query PubMed for compounds without a valid cache entry",
+   "external": "PubMed E-utilities",
+   "credentials": {
+    "NCBI_API_KEY": "absent"
+   },
+   "timeout_s": 7200,
+   "expected_runtime": "about 3 requests per compound; cached",
+   "result": "PASS",
+   "command": "./venv/bin/python scripts/run_stage.py 04p --root <isolated copy> -- --refresh --compound Acamprosate --compound Melatonin",
+   "evidence": "logs/live_04p.log",
+   "outcome": "SUCCESS in 12 s; 2 live network fetches, 0 cache; pre-cutoff PMID sets identical to persisted (2/2, 308/308)"
+  },
+  {
+   "stage": "diag",
+   "policy": "CONFIRM",
+   "policy_reason": "queries ClinicalTrials.gov once per linked trial (about 250 requests)",
+   "external": "ClinicalTrials.gov per linked trial (~250 requests)",
+   "credentials": "none required",
+   "timeout_s": 3600,
+   "expected_runtime": "one request per NCT ID",
+   "result": "NOT TESTED",
+   "reason": "~250 live requests; not needed to verify the runner/timeout path; unblock: run in an isolated copy with owner confirmation"
+  },
+  {
+   "stage": "10c",
+   "policy": "ALLOWED",
+   "policy_reason": "offline; outputs are not protected artefacts",
+   "external": "ClinicalTrials.gov (only with --fetch; registry runs offline)",
+   "credentials": "none required",
+   "timeout_s": 900,
+   "expected_runtime": "offline from cache; --fetch ~9 requests",
+   "result": "NOT TESTED",
+   "reason": "refetch validated earlier today: identical"
+  },
+  {
+   "stage": "10f",
+   "policy": "ALLOWED",
+   "policy_reason": "offline; outputs are not protected artefacts",
+   "external": "openFDA (only with --fetch; registry runs offline)",
+   "credentials": "none required",
+   "timeout_s": 900,
+   "expected_runtime": "offline from cache; --fetch ~4 requests per compound",
+   "result": "NOT TESTED",
+   "reason": "offline in the registry"
+  }
+ ]
+}

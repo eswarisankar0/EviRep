@@ -1,0 +1,356 @@
+[
+ {
+  "path": "data/cache/ctgov_precutoff_trials.json",
+  "sha256": "23b5fd74711bed267bf7fb948524efe60eee37f53653d28ce54310b123b58e89",
+  "bytes": 2955288,
+  "mtime_utc": "2026-10-15T01:15:24",
+  "top_level": [
+   "retrieved_utc",
+   "endpoint",
+   "fields",
+   "requested",
+   "studies",
+   "batches"
+  ]
+ },
+ {
+  "path": "data/clinical_maturity_precutoff.csv",
+  "sha256": "dc749e4f7c90ab00990cd69dfad9c08dbc50a45994abf9afe4b029b2498267d4",
+  "bytes": 26379,
+  "mtime_utc": "2026-10-05T10:10:25",
+  "rows": 207,
+  "columns": [
+   "compound_id",
+   "compound_name",
+   "nct_id",
+   "phase",
+   "status",
+   "enrollment",
+   "first_posted",
+   "match_type",
+   "matched_intervention",
+   "matched_alias",
+   "match_source"
+  ]
+ },
+ {
+  "path": "data/clinical_maturity_precutoff_clean.csv",
+  "sha256": "f7519c3343a404bd3ee3649b3d8f9129481835be57d461becf1ca67330d66ecf",
+  "bytes": 24894,
+  "mtime_utc": "2026-10-05T10:14:04",
+  "rows": 195,
+  "columns": [
+   "compound_id",
+   "compound_name",
+   "nct_id",
+   "phase",
+   "status",
+   "enrollment",
+   "first_posted",
+   "match_type",
+   "matched_intervention",
+   "matched_alias",
+   "match_source"
+  ]
+ },
+ {
+  "path": "data/clinicaltrials_match_audit.csv",
+  "sha256": "67e403c811d3bba9f037f07982a27ddec1444e5eee4926552facd0bebe146a26",
+  "bytes": 300125,
+  "mtime_utc": "2026-10-05T10:10:25",
+  "rows": 951,
+  "columns": [
+   "compound_name",
+   "compound_id",
+   "nct_id",
+   "brief_title",
+   "conditions",
+   "interventions",
+   "outcome",
+   "match_type",
+   "matched_intervention",
+   "matched_alias",
+   "match_source",
+   "qualifies",
+   "cohort",
+   "reason"
+  ]
+ },
+ {
+  "path": "data/conflict_claims_curated.json",
+  "sha256": "519c1a179e886c2ab451cd68011729b3b3c30a19d5a6ff02a53e2e3ea008e3d5",
+  "bytes": 13601,
+  "mtime_utc": "2026-10-14T13:48:42",
+  "top_level": [
+   "description",
+   "transcribed",
+   "claims",
+   "dates_verified"
+  ]
+ },
+ {
+  "path": "data/feature_trial_roles_td038.csv",
+  "sha256": "cfdd85ab4c27cb3e18836837d5e8a59946d189b26fe9b4f881f16e34b80f9c0d",
+  "bytes": 6264,
+  "mtime_utc": "2026-10-14T17:59:34",
+  "rows": 35,
+  "columns": [
+   "nct_id",
+   "compound_name",
+   "phase",
+   "annotator_verdict",
+   "category",
+   "combination_role",
+   "p1_qualifies",
+   "rationale"
+  ]
+ },
+ {
+  "path": "data/ground_truth_postcutoff.csv",
+  "sha256": "5e229417bd0904b27ee49f6f0690794063490dddeaee384c43ace5f791bc6720",
+  "bytes": 9082,
+  "mtime_utc": "2026-10-05T10:10:25",
+  "rows": 67,
+  "columns": [
+   "compound_id",
+   "compound_name",
+   "nct_id",
+   "phase",
+   "status",
+   "enrollment",
+   "first_posted",
+   "match_type",
+   "matched_intervention",
+   "matched_alias",
+   "match_source"
+  ]
+ },
+ {
+  "path": "data/ground_truth_postcutoff_clean.csv",
+  "sha256": "a3f8a5af2ab53e6b4dfb2d48aeaf7d0059e87033823650fa60c31b1b1c3c6647",
+  "bytes": 7708,
+  "mtime_utc": "2026-10-05T10:14:04",
+  "rows": 57,
+  "columns": [
+   "compound_id",
+   "compound_name",
+   "nct_id",
+   "phase",
+   "status",
+   "enrollment",
+   "first_posted",
+   "match_type",
+   "matched_intervention",
+   "matched_alias",
+   "match_source"
+  ]
+ },
+ {
+  "path": "data/label_role_exclusions.csv",
+  "sha256": "8d97a169becc9cbe5324c59d1ed5f9d27b6739444aa27fbeab659c93f2df1d4b",
+  "bytes": 494,
+  "mtime_utc": "2026-10-14T01:35:35",
+  "rows": 3,
+  "columns": [
+   "nct_id",
+   "compound_name",
+   "role_verdict",
+   "policy",
+   "approved",
+   "evidence"
+  ]
+ },
+ {
+  "path": "data/literature_independence.csv",
+  "sha256": "392272cab942fb071d8b3a4cd85a3d13855904a321e6bd6c19f344e8136d672b",
+  "bytes": 4970,
+  "mtime_utc": "2026-10-05T10:14:14",
+  "rows": 141,
+  "columns": [
+   "compound_name",
+   "raw_paper_count",
+   "effective_independent_count",
+   "independence_ratio",
+   "edges_shared_author",
+   "edges_citation",
+   "citation_lookup_failures",
+   "citation_coverage_complete"
+  ]
+ },
+ {
+  "path": "data/molecular_pathway.csv",
+  "sha256": "8bc0ea5664ea345434dcfc8a7ec3555bf64ca813c110c196ebcb4bbbf947d90e",
+  "bytes": 6822,
+  "mtime_utc": "2026-10-05T10:14:15",
+  "rows": 90,
+  "columns": [
+   "compound_name",
+   "chembl_id",
+   "resolved",
+   "molecular_plausibility_score",
+   "confidence",
+   "direct_component",
+   "pathway_component",
+   "n_targets",
+   "n_genes",
+   "n_pathways",
+   "n_pathways_in_disease_module",
+   "n_direct_disease_links",
+   "n_disease_link_rows",
+   "n_evidence_direct",
+   "n_evidence_indirect",
+   "n_evidence_inferred",
+   "n_evidence_missing",
+   "n_limitations"
+  ]
+ },
+ {
+  "path": "data/molecular_pathway_evidence.jsonl",
+  "sha256": "68102cf8691c0ffcb047a3487e428dd38ea807b7e6711927e9db46b2362e7233",
+  "bytes": 2012065,
+  "mtime_utc": "2026-10-05T10:14:15",
+  "rows": 90
+ },
+ {
+  "path": "data/network_proximity.csv",
+  "sha256": "bd08d4c164ff3e582f8b796531d12fd4b4bef9345512bb7b01ca5e6cc7732906",
+  "bytes": 131469,
+  "mtime_utc": "2026-10-04T19:51:56",
+  "rows": 1314,
+  "columns": [
+   "compound_id",
+   "compound_name",
+   "n_targets",
+   "n_targets_in_network",
+   "d_real",
+   "d_rand_mean",
+   "d_rand_std",
+   "proximity_z",
+   "n_random"
+  ]
+ },
+ {
+  "path": "data/pd_candidates.csv",
+  "sha256": "94b003bdb3e2dff154204e80cebbd1a9810387e425a7f1ab3e486ca041ec17f1",
+  "bytes": 130313,
+  "mtime_utc": "2026-10-04T19:43:12",
+  "rows": 1524,
+  "columns": [
+   "compound_id",
+   "compound_name",
+   "disease_id",
+   "disease_name",
+   "existing_edge_type"
+  ]
+ },
+ {
+  "path": "data/pd_candidates_filtered.csv",
+  "sha256": "e80c004bb7d285d65a68c967b922a6fcadd90a70f5b732b4a53e2fddfbe53e8e",
+  "bytes": 126866,
+  "mtime_utc": "2026-10-04T19:44:57",
+  "rows": 1483,
+  "columns": [
+   "compound_id",
+   "compound_name",
+   "disease_id",
+   "disease_name",
+   "existing_edge_type"
+  ]
+ },
+ {
+  "path": "data/pd_candidates_full.csv",
+  "sha256": "5b3c0f530d66056327e68e6a82bb23c15d5361ea0d736803e9dbe8e56aa541ea",
+  "bytes": 132372,
+  "mtime_utc": "2026-10-04T19:43:12",
+  "rows": 1552,
+  "columns": [
+   "compound_id",
+   "compound_name",
+   "disease_id",
+   "disease_name",
+   "existing_edge_type"
+  ]
+ },
+ {
+  "path": "data/safety_signal.csv",
+  "sha256": "5820a4864a4e34b04de4142de2aa79ab04e9283691b038b645f11b8e9646a6ae",
+  "bytes": 8219,
+  "mtime_utc": "2026-10-14T02:17:46",
+  "rows": 90,
+  "columns": [
+   "has_label",
+   "boxed_warning",
+   "serious_term_count",
+   "warning_fields",
+   "label_set_id",
+   "label_effective_time",
+   "compound_name"
+  ]
+ },
+ {
+  "path": "data/vps_evaluation_report.json",
+  "sha256": "d951970ac14dd6412cb1671459764d1906fbddebdf9f1be97a804caf17e1e9dd",
+  "bytes": 8384,
+  "mtime_utc": "2026-10-15T01:55:01",
+  "top_level": [
+   "ablation_5d",
+   "baselines",
+   "calibration",
+   "cohort",
+   "dimension_spearman",
+   "duplicate_evidence",
+   "grid_search",
+   "inputs",
+   "max_offdiagonal_abs_spearman",
+   "missing_data",
+   "n_boot",
+   "paired_5d_vs_4d",
+   "primary",
+   "report_version",
+   "reproduction",
+   "seed",
+   "temporal_validity"
+  ]
+ },
+ {
+  "path": "data/vps_scores_v2.csv",
+  "sha256": "718f2a7ccbd37647278d47f56cce68076a722bddda3a4479fd0b478c50c025e4",
+  "bytes": 28270,
+  "mtime_utc": "2026-10-14T02:20:56",
+  "rows": 90,
+  "columns": [
+   "compound_name",
+   "proximity_z",
+   "max_phase_rank",
+   "n_trials",
+   "raw_paper_count",
+   "effective_independent_count",
+   "independence_ratio",
+   "boxed_warning",
+   "serious_term_count",
+   "safety_label_missing",
+   "molecular_plausibility_score",
+   "molecular_confidence",
+   "direct_component",
+   "pathway_component",
+   "n_targets",
+   "n_pathways_in_disease_module",
+   "resolved",
+   "r_proximity",
+   "r_clinical",
+   "r_literature",
+   "r_safety",
+   "molecular_evidence_missing",
+   "r_molecular",
+   "dimensions_missing",
+   "n_dimensions_measured",
+   "label",
+   "VPS_equal",
+   "VPS_grid_4d",
+   "VPS_grid_3d",
+   "VPS_equal_5d",
+   "VPS_grid_5d",
+   "VPS_molecular_only"
+  ]
+ }
+]

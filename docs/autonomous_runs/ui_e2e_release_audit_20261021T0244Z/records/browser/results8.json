@@ -1,0 +1,57 @@
+[
+ {
+  "scenario": "one poll in flight: 3 visibility events start no second request",
+  "ok": true,
+  "detail": {
+   "held_before": 1,
+   "held_after": 1
+  }
+ },
+ {
+  "scenario": "coalesced follow-up poll issued promptly after the held one completes",
+  "ok": true,
+  "detail": {
+   "followups": 1,
+   "within_s": 2.1
+  }
+ },
+ {
+  "scenario": "corrupt manifest: pill says run records unreadable (never 'current')",
+  "ok": true,
+  "detail": {
+   "before": "Current against recorded inputs \u2014 some inputs not verifiable",
+   "after": "Run records unreadable"
+  }
+ },
+ {
+  "scenario": "corrupt manifest: VPS banner says UNKNOWN",
+  "ok": true,
+  "detail": {
+   "banner": "VPS run state is UNKNOWN: data/run_manifest.json unreadable (JSONDecodeError). The scores shown cannot be confirmed as c"
+  }
+ },
+ {
+  "scenario": "corrupt manifest: run table shows UNKNOWN with the reason",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "restored manifest: page recovers without reload",
+  "ok": true,
+  "detail": {
+   "after_restore": "Current against recorded inputs \u2014 some inputs not verifiable"
+  }
+ },
+ {
+  "scenario": "live: eval's untracked-input warning is visible on the pipeline page",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "no JS exceptions",
+  "ok": true,
+  "detail": {
+   "n": 0
+  }
+ }
+]

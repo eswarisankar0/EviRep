@@ -5,6 +5,10 @@ Keeps only INTERVENTIONAL trials with at least one DRUG/BIOLOGICAL arm.
 import pandas as pd
 
 checked = pd.read_csv("data/nct_studytype_check.csv")
+_errors = checked.loc[checked["study_type"] == "ERROR", "nct_id"].tolist()
+if _errors:
+    raise SystemExit(f"{len(_errors)} trial(s) have a failed study-type lookup (e.g. {_errors[:5]}); refusing to "
+                     "filter, because they would be dropped as non-interventional. Re-run scripts/check_studytype.py.")
 
 def keep_trial(row):
     if row["study_type"] != "INTERVENTIONAL":

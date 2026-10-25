@@ -1,0 +1,39 @@
+{
+ "approved_auroc": 0.7754,
+ "C1_boxed_multiplier": {
+  "0": {
+   "auroc_5d": 0.7669,
+   "r_safety_spearman_vs_k5": 0.9614
+  },
+  "1": {
+   "auroc_5d": 0.7688,
+   "r_safety_spearman_vs_k5": 0.9784
+  },
+  "3": {
+   "auroc_5d": 0.7726,
+   "r_safety_spearman_vs_k5": 0.9959
+  },
+  "5": {
+   "auroc_5d": 0.7754,
+   "r_safety_spearman_vs_k5": 1.0
+  },
+  "10": {
+   "auroc_5d": 0.7791,
+   "r_safety_spearman_vs_k5": 0.9977
+  }
+ },
+ "C1_check_k5_reproduces_approved": true,
+ "C2_phase": {
+  "links_with_multiple_phases": 18,
+  "links_where_max_differs_from_first": 18,
+  "compounds_whose_max_phase_changes": 6,
+  "trials_not_in_cache": 0,
+  "auroc_5d_with_max_phase": 0.7688
+ },
+ "C3_negation": {
+  "serious_term_hits": 635,
+  "preceded_by_negation_within_3_tokens": 12,
+  "share": 0.0189,
+  "labels_scanned": 83
+ }
+}

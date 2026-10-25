@@ -1,0 +1,19 @@
+probes 2026-10-21T17:33:23Z http://127.0.0.1:8765 (POST stage 'zz-nonexistent')
+GET / baseline                                 200
+traversal /../server.py                        404
+traversal %2e%2e                               404
+GET /.env                                      404
+GET /.git/config                               404
+doc path traversal                             404
+log run traversal                              404
+foreign Host                                   403
+DNS-rebind Host                                403
+POST no nonce/origin                           403
+POST cross-origin                              403
+POST bad nonce                                 403
+PUT /api/run                                   405
+DELETE /api/run                                405
+listen: 127.0.0.1:8765
+os.environ reads in ui/: ui/server.py:0 ui/live_runs.py:0 
+shell=True in ui/ + run_stage: ui/live_runs.py:0 scripts/run_stage.py:0 ui/server.py:0 
+credential pattern matches: staged 0, worktree diff 0, release folder 0

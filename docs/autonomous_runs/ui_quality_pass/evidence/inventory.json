@@ -1,0 +1,2990 @@
+{
+ "dashboard": {
+  "headings": [
+   "Next step",
+   "Current activity",
+   "Dashboard launches",
+   "Validated results",
+   "Evidence agents",
+   "Pipeline dependencies",
+   "Recent runs"
+  ],
+  "badges": [
+   "SUCCESS",
+   "ADOPTED"
+  ],
+  "buttons": [
+   "Run all 11 permitted stages"
+  ],
+  "links": [
+   [
+    "all stages",
+    "#live"
+   ],
+   [
+    "Validation",
+    "#validation"
+   ],
+   [
+    "Candidates",
+    "#drugs"
+   ],
+   [
+    "Evidence",
+    "#evidence"
+   ],
+   [
+    "Review queue",
+    "#review"
+   ],
+   [
+    "Validation",
+    "#validation"
+   ],
+   [
+    "10arunSUCCESS Literature Credibility diagnostic 89/90 compou",
+    "#agent/10a"
+   ],
+   [
+    "10brunADOPTED Molecular Plausibility VPS input 74/90 compoun",
+    "#agent/10b"
+   ],
+   [
+    "10crunADOPTED Clinical Evidence VPS input 90 compounds \u00b7 177",
+    "#agent/10c"
+   ],
+   [
+    "10drunSUCCESS Conflict & Context diagnostic 19/91 assessed \u00b7",
+    "#agent/10d"
+   ],
+   [
+    "10erunSUCCESS Reproducibility diagnostic 14 findings \u00b7 40 pu",
+    "#agent/10e"
+   ],
+   [
+    "10frunADOPTED Safety Evidence VPS input labels 83/90 \u00b7 at cu",
+    "#agent/10f"
+   ],
+   [
+    "10grunADOPTED Evidence Independence VPS input same study in ",
+    "#agent/10g"
+   ],
+   [
+    "10hrunSUCCESS Completeness & Gap annotation 90 compounds \u00d7 1",
+    "#agent/10h"
+   ]
+  ],
+  "th": [
+   "run",
+   "stage",
+   "state",
+   "duration",
+   "finished"
+  ],
+  "selects": [],
+  "chars": 3311,
+  "codes": 15,
+  "paths": 4,
+  "text": "PipelineAll results current 25 tracked stages \u00b7 state from scripts/run_stage.py \u00b7 checked 11:54:06 UTC 0running0failed0stale0never run / unknown25current Run all 11 permitted stages dependency order \u00b7 fresh stages skipped \u00b7 protected stages never run from here \u00b7 all stages Next stepowner Owner follow-up: eval: declared input(s) not fingerprinted at the last success (re-run to track them): data/reproducibility.json Current activityNo stage is running. Latest run: 10b SUCCESS 1 s \u00b7 3 h ago Dashboard launchesSUCCESS scripts/run_stage.py 10b \u00b7 3 h ago \u00b7 exit 0 Validated results ADOPTED Approved sc"
+ },
+ "live": {
+  "headings": [
+   "Live pipeline",
+   "Dashboard launches"
+  ],
+  "badges": [
+   "ADOPTED",
+   "SUCCESS",
+   "EXITED"
+  ],
+  "buttons": [
+   "Run all 11 permitted stages (dependency order; fresh ones skipped)",
+   "Run\u2026",
+   "Run\u2026",
+   "Run",
+   "Run\u2026",
+   "Run",
+   "Run",
+   "Run",
+   "Run",
+   "Run",
+   "Run",
+   "Run",
+   "Run",
+   "Run",
+   "Run"
+  ],
+  "links": [],
+  "th": [
+   "stage",
+   "state",
+   "activity",
+   "last success",
+   "upstream",
+   "dashboard policy",
+   "action"
+  ],
+  "selects": [],
+  "chars": 7998,
+  "codes": 33,
+  "paths": 32,
+  "text": "Live pipeline Runs go through scripts/run_stage.py: its lock refuses conflicting runs, failed runs restore the previous outputs, and stage 06 publishes only after independent verification. Stages that rewrite protected or approved artefacts (candidate pool, labels, score dimensions, approved score, evaluation report) cannot be started here. Progress is shown as elapsed time and the stage's latest log line; no stage reports a reliable percentage, so none is shown. not offered: stopping the runner mid-stage would skip its restore-on-failure step. Run all 11 permitted stages (dependency order; fr"
+ },
+ "drugs": {
+  "headings": [
+   "Candidate explorer",
+   "All compounds",
+   "Droxidopa",
+   "Summary",
+   "Supporting findings",
+   "Null or opposing findings",
+   "Safety concerns",
+   "Evidence state per dimension",
+   "Evidence completeness & gaps (agent 10h)",
+   "Gaps and what would close them (3)",
+   "Open research questions",
+   "Clinical trials: status, results and the drug's role (agent 10c)",
+   "Safety evidence: FDA label and FAERS reports (agent 10f)",
+   "FDA label retrieved",
+   "FAERS spontaneous reports retrieved",
+   "Evidence independence across sources (agent 10g)",
+   "Conflict & context (agent 10d) NO_DISAGREEMENT_DETECTED",
+   "Reproducibility (agent 10e)",
+   "Paper sample structure",
+   "Trials shared with other compounds",
+   "Network proximity",
+   "As used in VPS (data/vps_scores_v2.csv)",
+   "Clinical maturity & ground truth",
+   "Pre-cutoff trials (FEATURE) (data/clinical_maturity_precutoff_clean.csv)",
+   "Post-cutoff trials (LABEL only \u2014 never a feature) (data/ground_truth_postcutoff_clean.csv)",
+   "Intervention-matching audit (data/clinicaltrials_match_audit.csv)",
+   "Literature independence",
+   "As used in VPS (data/vps_scores_v2.csv)",
+   "Persisted paper graph (data/literature_graph_droxidopa.json, verified against data/_literature_checkpoint.jsonl)",
+   "Literature credibility (agent 10a, diagnostic) (data/literature_credibility_droxidopa.json)",
+   "Safety signal",
+   "As used in VPS (data/vps_scores_v2.csv)",
+   "Molecular / pathway plausibility",
+   "As used in VPS (data/vps_scores_v2.csv)",
+   "Targets (ChEMBL via Open Targets)",
+   "Target \u2192 PD links"
+  ],
+  "badges": [
+   "ADOPTED",
+   "CONTEXT_DIFFERENCE",
+   "INSUFFICIENT",
+   "CROSS_DOMAIN_TENSION",
+   "STATISTICAL_DISAGREEMENT",
+   "NO_DISAGREEMENT_DETECTED",
+   "NO_COMPARABLE_PAIR",
+   "measured",
+   "measured: zero",
+   "partial",
+   "absent at source",
+   "not retrieved",
+   "not computed",
+   "retrieval failed",
+   "insufficient",
+   "assessed",
+   "SUCCESS",
+   "retrieved",
+   "dependence found",
+   "none found",
+   "not assessable"
+  ],
+  "buttons": [
+   "rank",
+   "compound",
+   "label",
+   "VPS 5d",
+   "VPS 4d",
+   "prox",
+   "clin",
+   "lit",
+   "safety",
+   "mol",
+   "dims",
+   "10d status"
+  ],
+  "links": [
+   [
+    "Donepezil",
+    "#drugs/Donepezil"
+   ],
+   [
+    "Zonisamide",
+    "#drugs/Zonisamide"
+   ],
+   [
+    "Quetiapine",
+    "#drugs/Quetiapine"
+   ],
+   [
+    "Dexmedetomidine",
+    "#drugs/Dexmedetomidine"
+   ],
+   [
+    "Lisuride",
+    "#drugs/Lisuride"
+   ],
+   [
+    "Melatonin",
+    "#drugs/Melatonin"
+   ],
+   [
+    "Droxidopa",
+    "#drugs/Droxidopa"
+   ],
+   [
+    "Methylphenidate",
+    "#drugs/Methylphenidate"
+   ],
+   [
+    "Lidocaine",
+    "#drugs/Lidocaine"
+   ],
+   [
+    "Domperidone",
+    "#drugs/Domperidone"
+   ],
+   [
+    "Aripiprazole",
+    "#drugs/Aripiprazole"
+   ],
+   [
+    "Clonidine",
+    "#drugs/Clonidine"
+   ],
+   [
+    "Sildenafil",
+    "#drugs/Sildenafil"
+   ],
+   [
+    "Buspirone",
+    "#drugs/Buspirone"
+   ],
+   [
+    "Acetylcysteine",
+    "#drugs/Acetylcysteine"
+   ],
+   [
+    "Quinidine",
+    "#drugs/Quinidine"
+   ],
+   [
+    "Terazosin",
+    "#drugs/Terazosin"
+   ],
+   [
+    "Carvedilol",
+    "#drugs/Carvedilol"
+   ],
+   [
+    "Minocycline",
+    "#drugs/Minocycline"
+   ],
+   [
+    "Dextromethorphan",
+    "#drugs/Dextromethorphan"
+   ],
+   [
+    "Omeprazole",
+    "#drugs/Omeprazole"
+   ],
+   [
+    "Fesoterodine",
+    "#drugs/Fesoterodine"
+   ],
+   [
+    "Ioflupane I 123",
+    "#drugs/Ioflupane%20I%20123"
+   ],
+   [
+    "Solifenacin",
+    "#drugs/Solifenacin"
+   ],
+   [
+    "Glycopyrrolate",
+    "#drugs/Glycopyrrolate"
+   ],
+   [
+    "Topiramate",
+    "#drugs/Topiramate"
+   ],
+   [
+    "Yohimbine",
+    "#drugs/Yohimbine"
+   ],
+   [
+    "Tropicamide",
+    "#drugs/Tropicamide"
+   ],
+   [
+    "Pyridostigmine",
+    "#drugs/Pyridostigmine"
+   ],
+   [
+    "Propofol",
+    "#drugs/Propofol"
+   ],
+   [
+    "Mirabegron",
+    "#drugs/Mirabegron"
+   ],
+   [
+    "Venlafaxine",
+    "#drugs/Venlafaxine"
+   ],
+   [
+    "Escitalopram",
+    "#drugs/Escitalopram"
+   ],
+   [
+    "Galantamine",
+    "#drugs/Galantamine"
+   ],
+   [
+    "Agomelatine",
+    "#drugs/Agomelatine"
+   ],
+   [
+    "Duloxetine",
+    "#drugs/Duloxetine"
+   ],
+   [
+    "Trimethobenzamide",
+    "#drugs/Trimethobenzamide"
+   ],
+   [
+    "Deferiprone",
+    "#drugs/Deferiprone"
+   ],
+   [
+    "Paroxetine",
+    "#drugs/Paroxetine"
+   ],
+   [
+    "Naltrexone",
+    "#drugs/Naltrexone"
+   ],
+   [
+    "Clozapine",
+    "#drugs/Clozapine"
+   ],
+   [
+    "Acetaminophen",
+    "#drugs/Acetaminophen"
+   ],
+   [
+    "Varenicline",
+    "#drugs/Varenicline"
+   ],
+   [
+    "Tadalafil",
+    "#drugs/Tadalafil"
+   ],
+   [
+    "Midodrine",
+    "#drugs/Midodrine"
+   ],
+   [
+    "Isoflurane",
+    "#drugs/Isoflurane"
+   ],
+   [
+    "Atomoxetine",
+    "#drugs/Atomoxetine"
+   ],
+   [
+    "Levetiracetam",
+    "#drugs/Levetiracetam"
+   ],
+   [
+    "Lithium",
+    "#drugs/Lithium"
+   ],
+   [
+    "Sertraline",
+    "#drugs/Sertraline"
+   ],
+   [
+    "Naloxone",
+    "#drugs/Naloxone"
+   ],
+   [
+    "Ondansetron",
+    "#drugs/Ondansetron"
+   ],
+   [
+    "Rifaximin",
+    "#drugs/Rifaximin"
+   ],
+   [
+    "Ipratropium bromide",
+    "#drugs/Ipratropium%20bromide"
+   ],
+   [
+    "Hydrocortisone",
+    "#drugs/Hydrocortisone"
+   ],
+   [
+    "Acamprosate",
+    "#drugs/Acamprosate"
+   ],
+   [
+    "Rifampicin",
+    "#drugs/Rifampicin"
+   ],
+   [
+    "Isradipine",
+    "#drugs/Isradipine"
+   ],
+   [
+    "Nortriptyline",
+    "#drugs/Nortriptyline"
+   ],
+   [
+    "Simvastatin",
+    "#drugs/Simvastatin"
+   ],
+   [
+    "Lubiprostone",
+    "#drugs/Lubiprostone"
+   ],
+   [
+    "Citalopram",
+    "#drugs/Citalopram"
+   ],
+   [
+    "Nabilone",
+    "#drugs/Nabilone"
+   ],
+   [
+    "Doxepin",
+    "#drugs/Doxepin"
+   ],
+   [
+    "Lovastatin",
+    "#drugs/Lovastatin"
+   ],
+   [
+    "Darifenacin",
+    "#drugs/Darifenacin"
+   ],
+   [
+    "Ceftriaxone",
+    "#drugs/Ceftriaxone"
+   ],
+   [
+    "Nilotinib",
+    "#drugs/Nilotinib"
+   ],
+   [
+    "Oxybutynin",
+    "#drugs/Oxybutynin"
+   ],
+   [
+    "Pioglitazone",
+    "#drugs/Pioglitazone"
+   ],
+   [
+    "Flumazenil",
+    "#drugs/Flumazenil"
+   ],
+   [
+    "Amoxicillin",
+    "#drugs/Amoxicillin"
+   ],
+   [
+    "Erythromycin",
+    "#drugs/Erythromycin"
+   ],
+   [
+    "Repaglinide",
+    "#drugs/Repaglinide"
+   ],
+   [
+    "Rosuvastatin",
+    "#drugs/Rosuvastatin"
+   ],
+   [
+    "Methylprednisolone",
+    "#drugs/Methylprednisolone"
+   ],
+   [
+    "Midazolam",
+    "#drugs/Midazolam"
+   ],
+   [
+    "Moxifloxacin",
+    "#drugs/Moxifloxacin"
+   ],
+   [
+    "Clarithromycin",
+    "#drugs/Clarithromycin"
+   ],
+   [
+    "Sirolimus",
+    "#drugs/Sirolimus"
+   ]
+  ],
+  "th": [
+   "rank",
+   "compound",
+   "label",
+   "VPS 5d",
+   "VPS 4d",
+   "prox",
+   "clin",
+   "lit",
+   "safety",
+   "mol",
+   "dims",
+   "10d status",
+   "variant",
+   "score",
+   "dimension",
+   "raw",
+   "rank (0\u20131)",
+   "state",
+   "evidence",
+   "what it means here",
+   "effect on the score",
+   "trial",
+   "phase \u00b7 status",
+   "design",
+   "role of this drug",
+   "posted results (verbatim)",
+   "check",
+   "result",
+   "detail",
+   "direction",
+   "domain",
+   "source",
+   "date",
+   "temporal",
+   "endpoint",
+   "population",
+   "excerpt",
+   "provenance",
+   "note",
+   "file",
+   "compounds",
+   "compound_id",
+   "n_targets",
+   "n_targets_in_network",
+   "d_real",
+   "d_rand_mean",
+   "d_rand_std",
+   "proximity_z",
+   "n_random",
+   "r_proximity",
+   "max_phase_rank",
+   "n_trials",
+   "r_clinical",
+   "nct_id",
+   "phase",
+   "status",
+   "first_posted",
+   "matched_intervention",
+   "matched_alias",
+   "match_source",
+   "cohort",
+   "outcome",
+   "qualifies",
+   "brief_title",
+   "interventions",
+   "reason",
+   "raw_paper_count",
+   "effective_independent_count",
+   "independence_ratio",
+   "edges_shared_author",
+   "edges_citation",
+   "citation_lookup_failures",
+   "citation_coverage_complete",
+   "r_literature",
+   "component",
+   "pmid",
+   "year",
+   "title",
+   "n_authors",
+   "target",
+   "n_papers",
+   "n_design_known",
+   "coverage",
+   "mean_credibility_score_known",
+   "by_tier",
+   "by_design",
+   "by_population",
+   "n_human_tier_A_or_B",
+   "replication_indicator",
+   "conflict",
+   "n_direction_assessed",
+   "has_label",
+   "boxed_warning",
+   "serious_term_count",
+   "r_safety",
+   "chembl_id",
+   "resolved",
+   "molecular_plausibility_score",
+   "confidence",
+   "direct_component",
+   "pathway_component",
+   "n_genes",
+   "n_pathways",
+   "n_pathways_in_disease_module",
+   "n_direct_disease_links",
+   "n_disease_link_rows",
+   "n_evidence_direct",
+   "n_evidence_indirect",
+   "n_evidence_inferred",
+   "n_evidence_missing",
+   "r_molecular",
+   "gene_symbol",
+   "ensembl_id",
+   "mechanism_of_action",
+   "action_type",
+   "gene",
+   "permitted_score",
+   "used",
+   "excluded_for_leakage"
+  ],
+  "selects": [
+   "flabel",
+   "fmiss",
+   "fconf",
+   "q"
+  ],
+  "chars": 48823,
+  "codes": 76,
+  "paths": 49,
+  "text": "Candidate explorer The 90 compounds with an earlier Parkinson's trial, ordered by VPS_equal_5d (primary, unfitted). Click a name to see why it ranks where it does, the evidence for and against it, and what is missing. Click a column header to sort. Label allpositive (later PD trial)negative (none found) Evidence allall 5 dimensions measuredsome dimension not measuredsafety not measuredmolecular not measured Conflicts (10d) allassessed (not insufficient) 90 shown Dimension columns are percentile ranks (0\u20131, higher = more favourable evidence). Italic grey = not measured, placed at the neutral 0."
+ },
+ "drugs/Acetylcysteine": {
+  "headings": [
+   "Candidate explorer",
+   "All compounds",
+   "Acetylcysteine",
+   "Summary",
+   "Supporting findings",
+   "Null or opposing findings",
+   "Safety concerns",
+   "Evidence state per dimension",
+   "Evidence completeness & gaps (agent 10h)",
+   "Gaps and what would close them (5)",
+   "Open research questions",
+   "Clinical trials: status, results and the drug's role (agent 10c)",
+   "Safety evidence: FDA label and FAERS reports (agent 10f)",
+   "FDA label retrieved",
+   "FAERS spontaneous reports retrieved",
+   "Evidence independence across sources (agent 10g)",
+   "Conflict & context (agent 10d) INSUFFICIENT",
+   "Reproducibility (agent 10e)",
+   "Network proximity",
+   "As used in VPS (data/vps_scores_v2.csv)",
+   "Clinical maturity & ground truth",
+   "Pre-cutoff trials (FEATURE) (data/clinical_maturity_precutoff_clean.csv)",
+   "Post-cutoff trials (LABEL only \u2014 never a feature) (data/ground_truth_postcutoff_clean.csv)",
+   "Intervention-matching audit (data/clinicaltrials_match_audit.csv)",
+   "Literature independence",
+   "As used in VPS (data/vps_scores_v2.csv)",
+   "Literature credibility (agent 10a, diagnostic) (data/literature_credibility_all.json)",
+   "Safety signal",
+   "As used in VPS (data/vps_scores_v2.csv)",
+   "Molecular / pathway plausibility",
+   "As used in VPS (data/vps_scores_v2.csv)",
+   "Targets (ChEMBL via Open Targets)",
+   "Target \u2192 PD links"
+  ],
+  "badges": [
+   "ADOPTED",
+   "CONTEXT_DIFFERENCE",
+   "INSUFFICIENT",
+   "CROSS_DOMAIN_TENSION",
+   "STATISTICAL_DISAGREEMENT",
+   "NO_DISAGREEMENT_DETECTED",
+   "NO_COMPARABLE_PAIR",
+   "measured",
+   "measured: zero",
+   "partial",
+   "absent at source",
+   "not retrieved",
+   "not computed",
+   "retrieval failed",
+   "insufficient",
+   "assessed",
+   "SUCCESS",
+   "retrieved",
+   "none found",
+   "not assessable"
+  ],
+  "buttons": [
+   "rank",
+   "compound",
+   "label",
+   "VPS 5d",
+   "VPS 4d",
+   "prox",
+   "clin",
+   "lit",
+   "safety",
+   "mol",
+   "dims",
+   "10d status"
+  ],
+  "links": [
+   [
+    "Donepezil",
+    "#drugs/Donepezil"
+   ],
+   [
+    "Zonisamide",
+    "#drugs/Zonisamide"
+   ],
+   [
+    "Quetiapine",
+    "#drugs/Quetiapine"
+   ],
+   [
+    "Dexmedetomidine",
+    "#drugs/Dexmedetomidine"
+   ],
+   [
+    "Lisuride",
+    "#drugs/Lisuride"
+   ],
+   [
+    "Melatonin",
+    "#drugs/Melatonin"
+   ],
+   [
+    "Droxidopa",
+    "#drugs/Droxidopa"
+   ],
+   [
+    "Methylphenidate",
+    "#drugs/Methylphenidate"
+   ],
+   [
+    "Lidocaine",
+    "#drugs/Lidocaine"
+   ],
+   [
+    "Domperidone",
+    "#drugs/Domperidone"
+   ],
+   [
+    "Aripiprazole",
+    "#drugs/Aripiprazole"
+   ],
+   [
+    "Clonidine",
+    "#drugs/Clonidine"
+   ],
+   [
+    "Sildenafil",
+    "#drugs/Sildenafil"
+   ],
+   [
+    "Buspirone",
+    "#drugs/Buspirone"
+   ],
+   [
+    "Acetylcysteine",
+    "#drugs/Acetylcysteine"
+   ],
+   [
+    "Quinidine",
+    "#drugs/Quinidine"
+   ],
+   [
+    "Terazosin",
+    "#drugs/Terazosin"
+   ],
+   [
+    "Carvedilol",
+    "#drugs/Carvedilol"
+   ],
+   [
+    "Minocycline",
+    "#drugs/Minocycline"
+   ],
+   [
+    "Dextromethorphan",
+    "#drugs/Dextromethorphan"
+   ],
+   [
+    "Omeprazole",
+    "#drugs/Omeprazole"
+   ],
+   [
+    "Fesoterodine",
+    "#drugs/Fesoterodine"
+   ],
+   [
+    "Ioflupane I 123",
+    "#drugs/Ioflupane%20I%20123"
+   ],
+   [
+    "Solifenacin",
+    "#drugs/Solifenacin"
+   ],
+   [
+    "Glycopyrrolate",
+    "#drugs/Glycopyrrolate"
+   ],
+   [
+    "Topiramate",
+    "#drugs/Topiramate"
+   ],
+   [
+    "Yohimbine",
+    "#drugs/Yohimbine"
+   ],
+   [
+    "Tropicamide",
+    "#drugs/Tropicamide"
+   ],
+   [
+    "Pyridostigmine",
+    "#drugs/Pyridostigmine"
+   ],
+   [
+    "Propofol",
+    "#drugs/Propofol"
+   ],
+   [
+    "Mirabegron",
+    "#drugs/Mirabegron"
+   ],
+   [
+    "Venlafaxine",
+    "#drugs/Venlafaxine"
+   ],
+   [
+    "Escitalopram",
+    "#drugs/Escitalopram"
+   ],
+   [
+    "Galantamine",
+    "#drugs/Galantamine"
+   ],
+   [
+    "Agomelatine",
+    "#drugs/Agomelatine"
+   ],
+   [
+    "Duloxetine",
+    "#drugs/Duloxetine"
+   ],
+   [
+    "Trimethobenzamide",
+    "#drugs/Trimethobenzamide"
+   ],
+   [
+    "Deferiprone",
+    "#drugs/Deferiprone"
+   ],
+   [
+    "Paroxetine",
+    "#drugs/Paroxetine"
+   ],
+   [
+    "Naltrexone",
+    "#drugs/Naltrexone"
+   ],
+   [
+    "Clozapine",
+    "#drugs/Clozapine"
+   ],
+   [
+    "Acetaminophen",
+    "#drugs/Acetaminophen"
+   ],
+   [
+    "Varenicline",
+    "#drugs/Varenicline"
+   ],
+   [
+    "Tadalafil",
+    "#drugs/Tadalafil"
+   ],
+   [
+    "Midodrine",
+    "#drugs/Midodrine"
+   ],
+   [
+    "Isoflurane",
+    "#drugs/Isoflurane"
+   ],
+   [
+    "Atomoxetine",
+    "#drugs/Atomoxetine"
+   ],
+   [
+    "Levetiracetam",
+    "#drugs/Levetiracetam"
+   ],
+   [
+    "Lithium",
+    "#drugs/Lithium"
+   ],
+   [
+    "Sertraline",
+    "#drugs/Sertraline"
+   ],
+   [
+    "Naloxone",
+    "#drugs/Naloxone"
+   ],
+   [
+    "Ondansetron",
+    "#drugs/Ondansetron"
+   ],
+   [
+    "Rifaximin",
+    "#drugs/Rifaximin"
+   ],
+   [
+    "Ipratropium bromide",
+    "#drugs/Ipratropium%20bromide"
+   ],
+   [
+    "Hydrocortisone",
+    "#drugs/Hydrocortisone"
+   ],
+   [
+    "Acamprosate",
+    "#drugs/Acamprosate"
+   ],
+   [
+    "Rifampicin",
+    "#drugs/Rifampicin"
+   ],
+   [
+    "Isradipine",
+    "#drugs/Isradipine"
+   ],
+   [
+    "Nortriptyline",
+    "#drugs/Nortriptyline"
+   ],
+   [
+    "Simvastatin",
+    "#drugs/Simvastatin"
+   ],
+   [
+    "Lubiprostone",
+    "#drugs/Lubiprostone"
+   ],
+   [
+    "Citalopram",
+    "#drugs/Citalopram"
+   ],
+   [
+    "Nabilone",
+    "#drugs/Nabilone"
+   ],
+   [
+    "Doxepin",
+    "#drugs/Doxepin"
+   ],
+   [
+    "Lovastatin",
+    "#drugs/Lovastatin"
+   ],
+   [
+    "Darifenacin",
+    "#drugs/Darifenacin"
+   ],
+   [
+    "Ceftriaxone",
+    "#drugs/Ceftriaxone"
+   ],
+   [
+    "Nilotinib",
+    "#drugs/Nilotinib"
+   ],
+   [
+    "Oxybutynin",
+    "#drugs/Oxybutynin"
+   ],
+   [
+    "Pioglitazone",
+    "#drugs/Pioglitazone"
+   ],
+   [
+    "Flumazenil",
+    "#drugs/Flumazenil"
+   ],
+   [
+    "Amoxicillin",
+    "#drugs/Amoxicillin"
+   ],
+   [
+    "Erythromycin",
+    "#drugs/Erythromycin"
+   ],
+   [
+    "Repaglinide",
+    "#drugs/Repaglinide"
+   ],
+   [
+    "Rosuvastatin",
+    "#drugs/Rosuvastatin"
+   ],
+   [
+    "Methylprednisolone",
+    "#drugs/Methylprednisolone"
+   ],
+   [
+    "Midazolam",
+    "#drugs/Midazolam"
+   ],
+   [
+    "Moxifloxacin",
+    "#drugs/Moxifloxacin"
+   ],
+   [
+    "Clarithromycin",
+    "#drugs/Clarithromycin"
+   ],
+   [
+    "Sirolimus",
+    "#drugs/Sirolimus"
+   ]
+  ],
+  "th": [
+   "rank",
+   "compound",
+   "label",
+   "VPS 5d",
+   "VPS 4d",
+   "prox",
+   "clin",
+   "lit",
+   "safety",
+   "mol",
+   "dims",
+   "10d status",
+   "variant",
+   "score",
+   "dimension",
+   "raw",
+   "rank (0\u20131)",
+   "state",
+   "evidence",
+   "what it means here",
+   "effect on the score",
+   "trial",
+   "phase \u00b7 status",
+   "design",
+   "role of this drug",
+   "posted results (verbatim)",
+   "check",
+   "result",
+   "detail",
+   "direction",
+   "domain",
+   "source",
+   "date",
+   "temporal",
+   "endpoint",
+   "population",
+   "excerpt",
+   "provenance",
+   "note",
+   "compound_id",
+   "n_targets",
+   "n_targets_in_network",
+   "d_real",
+   "d_rand_mean",
+   "d_rand_std",
+   "proximity_z",
+   "n_random",
+   "r_proximity",
+   "max_phase_rank",
+   "n_trials",
+   "r_clinical",
+   "nct_id",
+   "phase",
+   "status",
+   "first_posted",
+   "matched_intervention",
+   "matched_alias",
+   "match_source",
+   "excluded_from_label",
+   "cohort",
+   "outcome",
+   "qualifies",
+   "brief_title",
+   "interventions",
+   "reason",
+   "raw_paper_count",
+   "effective_independent_count",
+   "independence_ratio",
+   "edges_shared_author",
+   "edges_citation",
+   "citation_lookup_failures",
+   "citation_coverage_complete",
+   "r_literature",
+   "by_design",
+   "by_population",
+   "by_tier",
+   "conflict",
+   "coverage",
+   "mean_credibility_score_known",
+   "n_design_known",
+   "n_direction_assessed",
+   "n_human_tier_A_or_B",
+   "n_papers",
+   "replication_indicator",
+   "has_label",
+   "boxed_warning",
+   "serious_term_count",
+   "r_safety",
+   "chembl_id",
+   "resolved",
+   "molecular_plausibility_score",
+   "confidence",
+   "direct_component",
+   "pathway_component",
+   "n_genes",
+   "n_pathways",
+   "n_pathways_in_disease_module",
+   "n_direct_disease_links",
+   "n_disease_link_rows",
+   "n_evidence_direct",
+   "n_evidence_indirect",
+   "n_evidence_inferred",
+   "n_evidence_missing",
+   "r_molecular"
+  ],
+  "selects": [
+   "flabel",
+   "fmiss",
+   "fconf",
+   "q"
+  ],
+  "chars": 36683,
+  "codes": 69,
+  "paths": 35,
+  "text": "Candidate explorer The 90 compounds with an earlier Parkinson's trial, ordered by VPS_equal_5d (primary, unfitted). Click a name to see why it ranks where it does, the evidence for and against it, and what is missing. Click a column header to sort. Label allpositive (later PD trial)negative (none found) Evidence allall 5 dimensions measuredsome dimension not measuredsafety not measuredmolecular not measured Conflicts (10d) allassessed (not insufficient) 90 shown Dimension columns are percentile ranks (0\u20131, higher = more favourable evidence). Italic grey = not measured, placed at the neutral 0."
+ },
+ "evidence": {
+  "headings": [
+   "Evidence explorer"
+  ],
+  "badges": [],
+  "buttons": [],
+  "links": [
+   [
+    "Erythromycin",
+    "#drugs/Erythromycin"
+   ],
+   [
+    "NCT02005029",
+    "https://clinicaltrials.gov/study/NCT02005029"
+   ],
+   [
+    "Sildenafil",
+    "#drugs/Sildenafil"
+   ],
+   [
+    "NCT02162979",
+    "https://clinicaltrials.gov/study/NCT02162979"
+   ],
+   [
+    "Sildenafil",
+    "#drugs/Sildenafil"
+   ],
+   [
+    "NCT01941732",
+    "https://clinicaltrials.gov/study/NCT01941732"
+   ],
+   [
+    "Midodrine",
+    "#drugs/Midodrine"
+   ],
+   [
+    "NCT02897063",
+    "https://clinicaltrials.gov/study/NCT02897063"
+   ],
+   [
+    "Midodrine",
+    "#drugs/Midodrine"
+   ],
+   [
+    "NCT02365012",
+    "https://clinicaltrials.gov/study/NCT02365012"
+   ],
+   [
+    "Midodrine",
+    "#drugs/Midodrine"
+   ],
+   [
+    "NCT04620382",
+    "https://clinicaltrials.gov/study/NCT04620382"
+   ],
+   [
+    "Citalopram",
+    "#drugs/Citalopram"
+   ],
+   [
+    "NCT04590612",
+    "https://clinicaltrials.gov/study/NCT04590612"
+   ],
+   [
+    "Citalopram",
+    "#drugs/Citalopram"
+   ],
+   [
+    "NCT04497168",
+    "https://clinicaltrials.gov/study/NCT04497168"
+   ],
+   [
+    "Moxifloxacin",
+    "#drugs/Moxifloxacin"
+   ],
+   [
+    "NCT03187301",
+    "https://clinicaltrials.gov/study/NCT03187301"
+   ],
+   [
+    "Moxifloxacin",
+    "#drugs/Moxifloxacin"
+   ],
+   [
+    "NCT01532115",
+    "https://clinicaltrials.gov/study/NCT01532115"
+   ],
+   [
+    "Moxifloxacin",
+    "#drugs/Moxifloxacin"
+   ],
+   [
+    "NCT00292227",
+    "https://clinicaltrials.gov/study/NCT00292227"
+   ],
+   [
+    "Moxifloxacin",
+    "#drugs/Moxifloxacin"
+   ],
+   [
+    "NCT04342273",
+    "https://clinicaltrials.gov/study/NCT04342273"
+   ],
+   [
+    "Lovastatin",
+    "#drugs/Lovastatin"
+   ],
+   [
+    "NCT03242499",
+    "https://clinicaltrials.gov/study/NCT03242499"
+   ],
+   [
+    "Isradipine",
+    "#drugs/Isradipine"
+   ],
+   [
+    "NCT00909545",
+    "https://clinicaltrials.gov/study/NCT00909545"
+   ],
+   [
+    "Isradipine",
+    "#drugs/Isradipine"
+   ],
+   [
+    "NCT02168842",
+    "https://clinicaltrials.gov/study/NCT02168842"
+   ],
+   [
+    "Isradipine",
+    "#drugs/Isradipine"
+   ],
+   [
+    "NCT00753636",
+    "https://clinicaltrials.gov/study/NCT00753636"
+   ],
+   [
+    "Topiramate",
+    "#drugs/Topiramate"
+   ],
+   [
+    "NCT01789047",
+    "https://clinicaltrials.gov/study/NCT01789047"
+   ],
+   [
+    "Topiramate",
+    "#drugs/Topiramate"
+   ],
+   [
+    "NCT00794313",
+    "https://clinicaltrials.gov/study/NCT00794313"
+   ],
+   [
+    "Topiramate",
+    "#drugs/Topiramate"
+   ],
+   [
+    "NCT00296959",
+    "https://clinicaltrials.gov/study/NCT00296959"
+   ],
+   [
+    "Lidocaine",
+    "#drugs/Lidocaine"
+   ],
+   [
+    "NCT02236260",
+    "https://clinicaltrials.gov/study/NCT02236260"
+   ],
+   [
+    "Venlafaxine",
+    "#drugs/Venlafaxine"
+   ],
+   [
+    "NCT00086190",
+    "https://clinicaltrials.gov/study/NCT00086190"
+   ],
+   [
+    "Conjugated Estrogens",
+    "#drugs/Conjugated%20Estrogens"
+   ],
+   [
+    "NCT00234676",
+    "https://clinicaltrials.gov/study/NCT00234676"
+   ],
+   [
+    "Atomoxetine",
+    "#drugs/Atomoxetine"
+   ],
+   [
+    "NCT00286949",
+    "https://clinicaltrials.gov/study/NCT00286949"
+   ],
+   [
+    "Atomoxetine",
+    "#drugs/Atomoxetine"
+   ],
+   [
+    "NCT00304161",
+    "https://clinicaltrials.gov/study/NCT00304161"
+   ],
+   [
+    "Atomoxetine",
+    "#drugs/Atomoxetine"
+   ],
+   [
+    "NCT02879136",
+    "https://clinicaltrials.gov/study/NCT02879136"
+   ],
+   [
+    "Atomoxetine",
+    "#drugs/Atomoxetine"
+   ],
+   [
+    "NCT01738191",
+    "https://clinicaltrials.gov/study/NCT01738191"
+   ],
+   [
+    "Atomoxetine",
+    "#drugs/Atomoxetine"
+   ],
+   [
+    "NCT01340885",
+    "https://clinicaltrials.gov/study/NCT01340885"
+   ],
+   [
+    "Acetaminophen",
+    "#drugs/Acetaminophen"
+   ],
+   [
+    "NCT02305017",
+    "https://clinicaltrials.gov/study/NCT02305017"
+   ],
+   [
+    "Ipratropium bromide",
+    "#drugs/Ipratropium%20bromide"
+   ],
+   [
+    "NCT00296946",
+    "https://clinicaltrials.gov/study/NCT00296946"
+   ],
+   [
+    "Omeprazole",
+    "#drugs/Omeprazole"
+   ],
+   [
+    "NCT00664209",
+    "https://clinicaltrials.gov/study/NCT00664209"
+   ],
+   [
+    "Clozapine",
+    "#drugs/Clozapine"
+   ],
+   [
+    "NCT00004826",
+    "https://clinicaltrials.gov/study/NCT00004826"
+   ],
+   [
+    "Eszopiclone",
+    "#drugs/Eszopiclone"
+   ],
+   [
+    "NCT00324896",
+    "https://clinicaltrials.gov/study/NCT00324896"
+   ],
+   [
+    "Methylphenidate",
+    "#drugs/Methylphenidate"
+   ],
+   [
+    "NCT00359723",
+    "https://clinicaltrials.gov/study/NCT00359723"
+   ],
+   [
+    "Methylphenidate",
+    "#drugs/Methylphenidate"
+   ],
+   [
+    "NCT00526630",
+    "https://clinicaltrials.gov/study/NCT00526630"
+   ],
+   [
+    "Methylphenidate",
+    "#drugs/Methylphenidate"
+   ],
+   [
+    "NCT01244269",
+    "https://clinicaltrials.gov/study/NCT01244269"
+   ],
+   [
+    "Methylphenidate",
+    "#drugs/Methylphenidate"
+   ],
+   [
+    "NCT02879136",
+    "https://clinicaltrials.gov/study/NCT02879136"
+   ],
+   [
+    "Methylphenidate",
+    "#drugs/Methylphenidate"
+   ],
+   [
+    "NCT00914095",
+    "https://clinicaltrials.gov/study/NCT00914095"
+   ],
+   [
+    "Methylphenidate",
+    "#drugs/Methylphenidate"
+   ],
+   [
+    "NCT00393562",
+    "https://clinicaltrials.gov/study/NCT00393562"
+   ],
+   [
+    "Zolpidem",
+    "#drugs/Zolpidem"
+   ],
+   [
+    "NCT03621046",
+    "https://clinicaltrials.gov/study/NCT03621046"
+   ],
+   [
+    "Zolpidem",
+    "#drugs/Zolpidem"
+   ],
+   [
+    "NCT01351168",
+    "https://clinicaltrials.gov/study/NCT01351168"
+   ]
+  ],
+  "th": [
+   "type",
+   "compound",
+   "identifier",
+   "date",
+   "role",
+   "detail",
+   "source file"
+  ],
+  "selects": [
+   "etype",
+   "ecomp",
+   "etext"
+  ],
+  "chars": 74482,
+  "codes": 243,
+  "paths": 400,
+  "text": "Evidence explorer Every persisted evidence item with its identifier, date and source file: trial registrations, curated outcome papers and the Droxidopa paper sample, FDA labels, and ChEMBL drug targets. Identifiers link to the public record (opens in a new tab). Type all (698)clinical (252)literature (46)safety (90)molecular (310) Compound Text 698 items (first 400 shown; narrow the filter) Every row is read from a persisted artefact. Identifier links open the public record in a new tab only when you click them; this page itself makes no external request. typecompoundidentifierdateroledetails"
+ },
+ "mechanism": {
+  "headings": [
+   "Molecular & mechanism explorer",
+   "Targets",
+   "Evidence chain (5 steps)",
+   "Target \u2192 PD association (leakage-controlled)",
+   "Pathways (3)"
+  ],
+  "badges": [
+   "measured"
+  ],
+  "buttons": [],
+  "links": [
+   [
+    "CHEMBL502",
+    "https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL502/"
+   ],
+   [
+    "Open Donepezil in the candidate explorer",
+    "#drugs/Donepezil"
+   ],
+   [
+    "ENSG00000087085",
+    "https://www.ensembl.org/id/ENSG00000087085"
+   ],
+   [
+    "CHEMBL502",
+    "https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL502/"
+   ],
+   [
+    "ENSG00000087085",
+    "https://www.ensembl.org/id/ENSG00000087085"
+   ],
+   [
+    "ENSG00000087085",
+    "https://www.ensembl.org/id/ENSG00000087085"
+   ],
+   [
+    "ENSG00000087085",
+    "https://www.ensembl.org/id/ENSG00000087085"
+   ],
+   [
+    "R-HSA-422085",
+    "https://reactome.org/content/detail/R-HSA-422085"
+   ],
+   [
+    "ENSG00000087085",
+    "https://www.ensembl.org/id/ENSG00000087085"
+   ],
+   [
+    "R-HSA-1483191",
+    "https://reactome.org/content/detail/R-HSA-1483191"
+   ],
+   [
+    "ENSG00000087085",
+    "https://www.ensembl.org/id/ENSG00000087085"
+   ],
+   [
+    "R-HSA-112311",
+    "https://reactome.org/content/detail/R-HSA-112311"
+   ]
+  ],
+  "th": [
+   "gene",
+   "Ensembl",
+   "action",
+   "mechanism",
+   "step",
+   "from",
+   "via",
+   "to",
+   "relation",
+   "tier",
+   "strength",
+   "source",
+   "score_used",
+   "datatypes_used",
+   "excluded_for_leakage",
+   "pathway",
+   "id",
+   "top_level",
+   "shares_PD_gene"
+  ],
+  "selects": [
+   "mechpick"
+  ],
+  "chars": 5396,
+  "codes": 5,
+  "paths": 1,
+  "text": "Molecular & mechanism explorer The molecular agent's (10b) chain from drug to target to gene to pathway to Parkinson's disease, read from data/molecular_pathway_evidence.jsonl. Scores measure how much mechanistic evidence links the target to PD, not whether the drug works. Candidate (sorted by molecular rank) Zonisamide \u2014 0.99Lidocaine \u2014 0.99Quinidine \u2014 0.99Acamprosate \u2014 0.96Donepezil \u2014 0.93Pyridostigmine \u2014 0.93Galantamine \u2014 0.93Mirabegron \u2014 0.91Terazosin \u2014 0.89Midodrine \u2014 0.89Quetiapine \u2014 0.86Carvedilol \u2014 0.85Topiramate \u2014 0.84Glycopyrrolate \u2014 0.82Fesoterodine \u2014 0.78Solifenacin \u2014 0.78Tropicami"
+ },
+ "conflicts": {
+  "headings": [
+   "Conflicting evidence",
+   "Aripiprazole",
+   "Conflict & context (agent 10d) CROSS_DOMAIN_TENSION",
+   "Comparisons (1)",
+   "Buspirone",
+   "Conflict & context (agent 10d) NO_COMPARABLE_PAIR",
+   "Citalopram",
+   "Conflict & context (agent 10d) NO_COMPARABLE_PAIR",
+   "Clozapine",
+   "Conflict & context (agent 10d) CROSS_DOMAIN_TENSION",
+   "Comparisons (1)",
+   "Domperidone",
+   "Conflict & context (agent 10d) CROSS_DOMAIN_TENSION",
+   "Comparisons (3)",
+   "Donepezil",
+   "Conflict & context (agent 10d) CONTEXT_DIFFERENCE",
+   "Comparisons (4)",
+   "Droxidopa",
+   "Conflict & context (agent 10d) NO_DISAGREEMENT_DETECTED",
+   "Duloxetine",
+   "Conflict & context (agent 10d) NO_COMPARABLE_PAIR",
+   "Escitalopram",
+   "Conflict & context (agent 10d) NO_COMPARABLE_PAIR",
+   "Galantamine",
+   "Conflict & context (agent 10d) CROSS_DOMAIN_TENSION",
+   "Comparisons (1)",
+   "Melatonin",
+   "Conflict & context (agent 10d) STATISTICAL_DISAGREEMENT",
+   "Comparisons (5)",
+   "Nortriptyline",
+   "Conflict & context (agent 10d) NO_COMPARABLE_PAIR",
+   "Ondansetron",
+   "Conflict & context (agent 10d) CROSS_DOMAIN_TENSION",
+   "Comparisons (1)",
+   "Oxybutynin",
+   "Conflict & context (agent 10d) CROSS_DOMAIN_TENSION",
+   "Comparisons (1)",
+   "Paroxetine",
+   "Conflict & context (agent 10d) NO_COMPARABLE_PAIR",
+   "Propranolol (not in the evaluable pool)",
+   "Conflict & context (agent 10d) CROSS_DOMAIN_TENSION",
+   "Comparisons (4)",
+   "Quetiapine",
+   "Conflict & context (agent 10d) CROSS_DOMAIN_TENSION",
+   "Comparisons (1)",
+   "Sertraline",
+   "Conflict & context (agent 10d) NO_COMPARABLE_PAIR",
+   "Venlafaxine",
+   "Conflict & context (agent 10d) NO_COMPARABLE_PAIR"
+  ],
+  "badges": [
+   "CONTEXT_DIFFERENCE",
+   "CROSS_DOMAIN_TENSION",
+   "INSUFFICIENT",
+   "NO_COMPARABLE_PAIR",
+   "NO_DISAGREEMENT_DETECTED",
+   "STATISTICAL_DISAGREEMENT",
+   "OPPOSES",
+   "SUPPORTS",
+   "NON_COMPARABLE",
+   "NULL_RESULT"
+  ],
+  "buttons": [],
+  "links": [
+   [
+    "all 19",
+    "#conflicts"
+   ],
+   [
+    "Aripiprazole",
+    "#conflicts/Aripiprazole"
+   ],
+   [
+    "Buspirone",
+    "#conflicts/Buspirone"
+   ],
+   [
+    "Citalopram",
+    "#conflicts/Citalopram"
+   ],
+   [
+    "Clozapine",
+    "#conflicts/Clozapine"
+   ],
+   [
+    "Domperidone",
+    "#conflicts/Domperidone"
+   ],
+   [
+    "Donepezil",
+    "#conflicts/Donepezil"
+   ],
+   [
+    "Droxidopa",
+    "#conflicts/Droxidopa"
+   ],
+   [
+    "Duloxetine",
+    "#conflicts/Duloxetine"
+   ],
+   [
+    "Escitalopram",
+    "#conflicts/Escitalopram"
+   ],
+   [
+    "Galantamine",
+    "#conflicts/Galantamine"
+   ],
+   [
+    "Melatonin",
+    "#conflicts/Melatonin"
+   ],
+   [
+    "Nortriptyline",
+    "#conflicts/Nortriptyline"
+   ],
+   [
+    "Ondansetron",
+    "#conflicts/Ondansetron"
+   ],
+   [
+    "Oxybutynin",
+    "#conflicts/Oxybutynin"
+   ],
+   [
+    "Paroxetine",
+    "#conflicts/Paroxetine"
+   ],
+   [
+    "Propranolol",
+    "#conflicts/Propranolol"
+   ],
+   [
+    "Quetiapine",
+    "#conflicts/Quetiapine"
+   ],
+   [
+    "Sertraline",
+    "#conflicts/Sertraline"
+   ],
+   [
+    "Venlafaxine",
+    "#conflicts/Venlafaxine"
+   ],
+   [
+    "Aripiprazole",
+    "#drugs/Aripiprazole"
+   ],
+   [
+    "Buspirone",
+    "#drugs/Buspirone"
+   ],
+   [
+    "Citalopram",
+    "#drugs/Citalopram"
+   ],
+   [
+    "Clozapine",
+    "#drugs/Clozapine"
+   ],
+   [
+    "Domperidone",
+    "#drugs/Domperidone"
+   ],
+   [
+    "Donepezil",
+    "#drugs/Donepezil"
+   ],
+   [
+    "Droxidopa",
+    "#drugs/Droxidopa"
+   ],
+   [
+    "Duloxetine",
+    "#drugs/Duloxetine"
+   ],
+   [
+    "Escitalopram",
+    "#drugs/Escitalopram"
+   ],
+   [
+    "Galantamine",
+    "#drugs/Galantamine"
+   ],
+   [
+    "Melatonin",
+    "#drugs/Melatonin"
+   ],
+   [
+    "Nortriptyline",
+    "#drugs/Nortriptyline"
+   ],
+   [
+    "Ondansetron",
+    "#drugs/Ondansetron"
+   ],
+   [
+    "Oxybutynin",
+    "#drugs/Oxybutynin"
+   ],
+   [
+    "Paroxetine",
+    "#drugs/Paroxetine"
+   ],
+   [
+    "Propranolol",
+    "#drugs/Propranolol"
+   ],
+   [
+    "Quetiapine",
+    "#drugs/Quetiapine"
+   ],
+   [
+    "Sertraline",
+    "#drugs/Sertraline"
+   ],
+   [
+    "Venlafaxine",
+    "#drugs/Venlafaxine"
+   ]
+  ],
+  "th": [
+   "classification",
+   "side A",
+   "side B",
+   "why",
+   "direction",
+   "domain",
+   "source",
+   "date",
+   "temporal",
+   "endpoint",
+   "population",
+   "excerpt",
+   "provenance",
+   "note"
+  ],
+  "selects": [],
+  "chars": 51806,
+  "codes": 113,
+  "paths": 133,
+  "text": "Conflicting evidence Agent 10d compares directional claims about the same drug (curated outcome papers, FDA labels, Open Targets) and classifies each disagreement \u2014 different populations, doses or endpoints, statistical vs real contradiction, or tension between domains (e.g. mechanism vs safety). It never averages them into a score. Source: data/conflict_context.json \u00b7 10d-0.1 \u00b7 diagnostic only; not read by scripts/06_vps_fusion.py. CONTEXT_DIFFERENCE 1CROSS_DOMAIN_TENSION 8INSUFFICIENT 72NO_COMPARABLE_PAIR 8NO_DISAGREEMENT_DETECTED 1STATISTICAL_DISAGREEMENT 1 INSUFFICIENT (72 candidates) mean"
+ },
+ "review": {
+  "headings": [
+   "Trial-role review queue",
+   "Awaiting adjudication (28)"
+  ],
+  "badges": [
+   "UNRESOLVED",
+   "ADJUDICATED",
+   "KEYWORD_DECIDED",
+   "ALIAS_GAP",
+   "CHEMBL_ALIAS",
+   "STRUCTURE_INSUFFICIENT"
+  ],
+  "buttons": [],
+  "links": [
+   [
+    "NCT00608231",
+    "https://clinicaltrials.gov/study/NCT00608231"
+   ],
+   [
+    "Dexmedetomidine",
+    "#drugs/Dexmedetomidine"
+   ],
+   [
+    "NCT01721460",
+    "https://clinicaltrials.gov/study/NCT01721460"
+   ],
+   [
+    "Dexmedetomidine",
+    "#drugs/Dexmedetomidine"
+   ],
+   [
+    "NCT01789385",
+    "https://clinicaltrials.gov/study/NCT01789385"
+   ],
+   [
+    "Dexmedetomidine",
+    "#drugs/Dexmedetomidine"
+   ],
+   [
+    "NCT02236260",
+    "https://clinicaltrials.gov/study/NCT02236260"
+   ],
+   [
+    "Lidocaine",
+    "#drugs/Lidocaine"
+   ],
+   [
+    "NCT04164758",
+    "https://clinicaltrials.gov/study/NCT04164758"
+   ],
+   [
+    "Quetiapine",
+    "#drugs/Quetiapine"
+   ],
+   [
+    "NCT00605683",
+    "https://clinicaltrials.gov/study/NCT00605683"
+   ],
+   [
+    "Lisuride",
+    "#drugs/Lisuride"
+   ],
+   [
+    "NCT01340885",
+    "https://clinicaltrials.gov/study/NCT01340885"
+   ],
+   [
+    "Atomoxetine",
+    "#drugs/Atomoxetine"
+   ],
+   [
+    "NCT02174250",
+    "https://clinicaltrials.gov/study/NCT02174250"
+   ],
+   [
+    "Rifampicin",
+    "#drugs/Rifampicin"
+   ],
+   [
+    "NCT00001365",
+    "https://clinicaltrials.gov/study/NCT00001365"
+   ],
+   [
+    "Dextromethorphan",
+    "#drugs/Dextromethorphan"
+   ],
+   [
+    "NCT00004826",
+    "https://clinicaltrials.gov/study/NCT00004826"
+   ],
+   [
+    "Clozapine",
+    "#drugs/Clozapine"
+   ],
+   [
+    "NCT00006077",
+    "https://clinicaltrials.gov/study/NCT00006077"
+   ],
+   [
+    "Domperidone",
+    "#drugs/Domperidone"
+   ],
+   [
+    "NCT00030979",
+    "https://clinicaltrials.gov/study/NCT00030979"
+   ],
+   [
+    "Donepezil",
+    "#drugs/Donepezil"
+   ],
+   [
+    "NCT00043849",
+    "https://clinicaltrials.gov/study/NCT00043849"
+   ],
+   [
+    "Quetiapine",
+    "#drugs/Quetiapine"
+   ],
+   [
+    "NCT00063193",
+    "https://clinicaltrials.gov/study/NCT00063193"
+   ],
+   [
+    "Minocycline",
+    "#drugs/Minocycline"
+   ],
+   [
+    "NCT00089622",
+    "https://clinicaltrials.gov/study/NCT00089622"
+   ],
+   [
+    "Lisuride",
+    "#drugs/Lisuride"
+   ],
+   [
+    "NCT00103597",
+    "https://clinicaltrials.gov/study/NCT00103597"
+   ],
+   [
+    "Domperidone",
+    "#drugs/Domperidone"
+   ],
+   [
+    "NCT00160576",
+    "https://clinicaltrials.gov/study/NCT00160576"
+   ],
+   [
+    "Levetiracetam",
+    "#drugs/Levetiracetam"
+   ],
+   [
+    "NCT00211588",
+    "https://clinicaltrials.gov/study/NCT00211588"
+   ],
+   [
+    "Galantamine",
+    "#drugs/Galantamine"
+   ],
+   [
+    "NCT00286949",
+    "https://clinicaltrials.gov/study/NCT00286949"
+   ],
+   [
+    "Atomoxetine",
+    "#drugs/Atomoxetine"
+   ],
+   [
+    "NCT00296946",
+    "https://clinicaltrials.gov/study/NCT00296946"
+   ],
+   [
+    "Ipratropium bromide",
+    "#drugs/Ipratropium%20bromide"
+   ],
+   [
+    "NCT00296959",
+    "https://clinicaltrials.gov/study/NCT00296959"
+   ],
+   [
+    "Topiramate",
+    "#drugs/Topiramate"
+   ],
+   [
+    "NCT00305331",
+    "https://clinicaltrials.gov/study/NCT00305331"
+   ],
+   [
+    "Domperidone",
+    "#drugs/Domperidone"
+   ],
+   [
+    "NCT00307450",
+    "https://clinicaltrials.gov/study/NCT00307450"
+   ],
+   [
+    "Levetiracetam",
+    "#drugs/Levetiracetam"
+   ],
+   [
+    "NCT00393562",
+    "https://clinicaltrials.gov/study/NCT00393562"
+   ],
+   [
+    "Methylphenidate",
+    "#drugs/Methylphenidate"
+   ],
+   [
+    "NCT00408915",
+    "https://clinicaltrials.gov/study/NCT00408915"
+   ],
+   [
+    "Lisuride",
+    "#drugs/Lisuride"
+   ],
+   [
+    "NCT00640952",
+    "https://clinicaltrials.gov/study/NCT00640952"
+   ],
+   [
+    "Acamprosate",
+    "#drugs/Acamprosate"
+   ],
+   [
+    "NCT02066571",
+    "https://clinicaltrials.gov/study/NCT02066571"
+   ],
+   [
+    "Droxidopa",
+    "#drugs/Droxidopa"
+   ],
+   [
+    "NCT03773796",
+    "https://clinicaltrials.gov/study/NCT03773796"
+   ],
+   [
+    "Nabilone",
+    "#drugs/Nabilone"
+   ],
+   [
+    "NCT00615472",
+    "https://clinicaltrials.gov/study/NCT00615472"
+   ],
+   [
+    "Isoflurane",
+    "#drugs/Isoflurane"
+   ],
+   [
+    "NCT00615472",
+    "https://clinicaltrials.gov/study/NCT00615472"
+   ],
+   [
+    "Propofol",
+    "#drugs/Propofol"
+   ],
+   [
+    "NCT00615472",
+    "https://clinicaltrials.gov/study/NCT00615472"
+   ],
+   [
+    "Remifentanil",
+    "#drugs/Remifentanil"
+   ],
+   [
+    "NCT02256319",
+    "https://clinicaltrials.gov/study/NCT02256319"
+   ],
+   [
+    "Dexmedetomidine",
+    "#drugs/Dexmedetomidine"
+   ],
+   [
+    "NCT02256319",
+    "https://clinicaltrials.gov/study/NCT02256319"
+   ],
+   [
+    "Propofol",
+    "#drugs/Propofol"
+   ],
+   [
+    "NCT01767129",
+    "https://clinicaltrials.gov/study/NCT01767129"
+   ],
+   [
+    "Dextromethorphan",
+    "#drugs/Dextromethorphan"
+   ],
+   [
+    "NCT01767129",
+    "https://clinicaltrials.gov/study/NCT01767129"
+   ],
+   [
+    "Quinidine",
+    "#drugs/Quinidine"
+   ],
+   [
+    "NCT00664209",
+    "https://clinicaltrials.gov/study/NCT00664209"
+   ],
+   [
+    "Amoxicillin",
+    "#drugs/Amoxicillin"
+   ],
+   [
+    "NCT00664209",
+    "https://clinicaltrials.gov/study/NCT00664209"
+   ],
+   [
+    "Omeprazole",
+    "#drugs/Omeprazole"
+   ]
+  ],
+  "th": [
+   "priority",
+   "flag",
+   "trial",
+   "compound",
+   "interventions \u00b7 arms",
+   "role readings",
+   "why flagged \u00b7 evidence needed",
+   "status"
+  ],
+  "selects": [],
+  "chars": 24606,
+  "codes": 110,
+  "paths": 11,
+  "text": "Trial-role review queue Read-only. Unresolved links keep their automated role in scoring and stay flagged until a human records a decision (D-020). Nothing on this page approves a match. Decisions are recorded in data/feature_trial_roles_td038.csv. Source: data/clinical_review_worklist.csv \u00b7 2026-10-20T07:52:55+00:00. UNRESOLVED 28 ADJUDICATED 9 ALIAS_GAP 4CHEMBL_ALIAS 1KEYWORD_DECIDED 10STRUCTURE_INSUFFICIENT 22 Awaiting adjudication (28)priorityflagtrialcompoundinterventions \u00b7 armsrole readingswhy flagged \u00b7 evidence neededstatus1KEYWORD_DECIDEDKEYWORD_DECIDED NCT00608231Dexmedetomidine Effec"
+ },
+ "compare": {
+  "headings": [
+   "Compare candidates"
+  ],
+  "badges": [
+   "ADOPTED",
+   "measured",
+   "partial",
+   "CONTEXT_DIFFERENCE",
+   "INSUFFICIENT",
+   "SINGLE_STUDY",
+   "SECONDARY_ONLY"
+  ],
+  "buttons": [
+   "\u00d7",
+   "\u00d7"
+  ],
+  "links": [
+   [
+    "Donepezil",
+    "#drugs/Donepezil"
+   ],
+   [
+    "Zonisamide",
+    "#drugs/Zonisamide"
+   ]
+  ],
+  "th": [
+   "",
+   "Donepezil",
+   "Zonisamide",
+   "rank (equal-weight 5d)",
+   "label",
+   "clinical maturity",
+   "literature independence",
+   "safety",
+   "molecular",
+   "network proximity",
+   "pre-cutoff trials",
+   "safety concerns",
+   "supporting / null-opposing claims",
+   "top targets",
+   "conflicts (10d)",
+   "replication (10e)",
+   "evidence gaps (10h)"
+  ],
+  "selects": [
+   "cmpadd"
+  ],
+  "chars": 2539,
+  "codes": 12,
+  "paths": 1,
+  "text": "Compare candidates Side-by-side view of up to 4 candidates from the saved artefacts. Ranks are percentiles within the 90-compound pool; the evidence state shows whether a value is measured, a measured zero, or missing. Pending candidate result set(s), not approved and not displayed: td042_v1 (independently verified).Approved baseline data/vps_scores_v2.csv \u00b7 scores from run adopted-20261015T015501Z-06 \u00b7 ADOPTED \u00b7 equal-weight 4d/5d percentile-rank fusion (D-002, D-004) \u00b7 rank convention legacy \u00b7 independent re-computation matched Add choose a candidate\u2026QuetiapineDexmedetomidineLisurideMelatoni"
+ },
+ "validation": {
+  "headings": [
+   "Methodology",
+   "Primary analysis (pre-specified as equal-weight; retrospective \u2014 D-002)",
+   "Evaluation report (reproduced from persisted artefacts)",
+   "Cohort",
+   "Primary (unfitted) discrimination",
+   "Reproduction of persisted AUROCs",
+   "Grid-searched models: held-out estimates",
+   "Dimension correlation (Spearman)",
+   "Missing data",
+   "Duplicate evidence",
+   "Calibration",
+   "Temporal validity",
+   "Historical corrected-cohort results (development_log/CHANGES.md, TECHNICAL_DEBT.md TD-020)",
+   "Data integrity (computed now from data/vps_scores_v2.csv)",
+   "VPS variants \u2014 in-sample AUROC for fitted rows; held-out = heldout_nested_cv_auroc (single split; see TD-036 for repeated-split ranges)",
+   "Baselines",
+   "Ablation (4 dimensions)",
+   "Ablation (5 dimensions)",
+   "Figures",
+   "data/figure1_auroc_comparison.png 2026-10-20T07:48:44+00:00",
+   "data/figure2_ablation.png 2026-10-20T07:48:44+00:00",
+   "data/figure2_ablation_5d.png 2026-10-20T07:48:44+00:00",
+   "data/figure3_droxidopa_literature_graph.png 2026-10-20T07:48:44+00:00",
+   "Tests"
+  ],
+  "badges": [],
+  "buttons": [],
+  "links": [],
+  "th": [
+   "estimate",
+   "type",
+   "AUROC",
+   "95% CI",
+   "model",
+   "AUROC [95% CI]",
+   "AUPRC [95% CI]",
+   "AUPRC / prevalence",
+   "persisted",
+   "recomputed",
+   "match",
+   "mean held-out AUROC (20 splits)",
+   "2.5%",
+   "97.5%",
+   "dimension",
+   "clinical",
+   "literature",
+   "molecular",
+   "proximity",
+   "safety",
+   "source",
+   "rows",
+   "positives",
+   "negatives",
+   "duplicate_compounds",
+   "missing_or_nonfinite_by_column",
+   "precision@10",
+   "precision@50",
+   "weights_fitted",
+   "heldout_nested_cv_auroc",
+   ""
+  ],
+  "selects": [],
+  "chars": 8185,
+  "codes": 23,
+  "paths": 14,
+  "text": "Methodology Candidates. Hetionet v1.0 compounds linked to PD, after excluding vitamins, electrolytes and basic metabolites; only compounds with an accepted PD interventional trial first posted before 2021-01-01 are evaluable (90). Outcome (label). Continued clinical investigation in PD (not therapeutic efficacy): a qualifying PD interventional trial first posted on/after 2021-01-01 in the ClinicalTrials.gov snapshot queried 2026-10-05, excluding data/label_role_exclusions.csv (D-010). Trials where the drug serves a procedure, is only a comparator, or actuates another therapy are excluded (poli"
+ },
+ "overview": {
+  "headings": [
+   "What EviRep does",
+   "Primary findings",
+   "Top-ranked candidates",
+   "Evidence coverage across the 90 candidates",
+   "Unresolved high-severity risks",
+   "Saved artefacts"
+  ],
+  "badges": [
+   "measured",
+   "measured: zero",
+   "partial",
+   "absent at source",
+   "not computed",
+   "not retrieved",
+   "insufficient",
+   "assessed",
+   "HIGH",
+   "BLOCKER"
+  ],
+  "buttons": [],
+  "links": [
+   [
+    "Validation & methodology",
+    "#validation"
+   ],
+   [
+    "Donepezil",
+    "#drugs/Donepezil"
+   ],
+   [
+    "Zonisamide",
+    "#drugs/Zonisamide"
+   ],
+   [
+    "Quetiapine",
+    "#drugs/Quetiapine"
+   ],
+   [
+    "Dexmedetomidine",
+    "#drugs/Dexmedetomidine"
+   ],
+   [
+    "Lisuride",
+    "#drugs/Lisuride"
+   ],
+   [
+    "Melatonin",
+    "#drugs/Melatonin"
+   ],
+   [
+    "Droxidopa",
+    "#drugs/Droxidopa"
+   ],
+   [
+    "Methylphenidate",
+    "#drugs/Methylphenidate"
+   ],
+   [
+    "Lidocaine",
+    "#drugs/Lidocaine"
+   ],
+   [
+    "Domperidone",
+    "#drugs/Domperidone"
+   ],
+   [
+    "Explore all candidates",
+    "#drugs"
+   ],
+   [
+    "Compare candidates",
+    "#compare"
+   ]
+  ],
+  "th": [
+   "evidence",
+   "measured",
+   "measured: zero",
+   "partial",
+   "absent at source",
+   "not computed",
+   "not retrieved",
+   "insufficient",
+   "assessed",
+   "file",
+   "modified (UTC)",
+   "size",
+   "records"
+  ],
+  "selects": [],
+  "chars": 5050,
+  "codes": 12,
+  "paths": 12,
+  "text": "What EviRep does EviRep ranks drugs that have already been tested in Parkinson's disease (PD) by how much independent, mechanistic, clinical and safety evidence exists for them, and shows every piece of that evidence with its source. It then checks, retrospectively, whether drugs ranked higher were more often taken into new PD trials after 1 January 2021. Continued clinical investigation in PD (not therapeutic efficacy): a qualifying PD interventional trial first posted on/after 2021-01-01 in the ClinicalTrials.gov snapshot queried 2026-10-05, excluding data/label_role_exclusions.csv (D-010). "
+ },
+ "technical": {
+  "headings": [
+   "Technical details",
+   "Agent status at a glance"
+  ],
+  "badges": [
+   "implemented + tested; diagnostic (not in VPS)",
+   "SUCCESS",
+   "integrated in VPS",
+   "ADOPTED",
+   "implemented + tested; stage 03 output in VPS, agent layer diagnostic",
+   "implemented + tested; stage 05 output in VPS, agent layer diagnostic",
+   "implemented + tested; stage 04 output in VPS, agent layer diagnostic"
+  ],
+  "buttons": [],
+  "links": [
+   [
+    "Pipeline stages, artefacts and test runs",
+    "#pipeline"
+   ],
+   [
+    "Evidence agents and data sources",
+    "#agents"
+   ],
+   [
+    "Case studies and project documents",
+    "#cases"
+   ]
+  ],
+  "th": [
+   "id",
+   "agent",
+   "status",
+   "tracked freshness",
+   "last run"
+  ],
+  "selects": [],
+  "chars": 2406,
+  "codes": 2,
+  "paths": 2,
+  "text": "Technical details Secondary pages for checking how the results were produced. Nothing here runs a stage or a test. Pipeline stages, artefacts and test runs \u2014 what each stage reads and writes, file freshness, last recorded test run. Evidence agents and data sources \u2014 the 10a\u201310h agent inventory with status derived from files on disk, connectors, endpoints, environment-variable names. Case studies and project documents \u2014 verification ledger and the canonical logs (technical debt, decisions, errors). Agent status at a glanceidagentstatustracked freshnesslast run 10aLiterature Credibilityimplement"
+ },
+ "pipeline": {
+  "headings": [
+   "Tracked runs and freshness",
+   "Run & audit status",
+   "Pipeline stages and artefacts",
+   "01 \u00b7 Candidate extraction ADOPTED files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "00 \u00b7 Exclusion filter ADOPTED files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "02 \u00b7 Network proximity (dimension 1) ADOPTED files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "03 \u00b7 ClinicalTrials.gov ground truth (dimension 2 + labels) ADOPTED files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "03c \u00b7 Study-type filter (mandatory) ADOPTED files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "04 \u00b7 Literature independence (dimension 3) ADOPTED files: available",
+   "Inputs",
+   "Outputs",
+   "Checkpoint",
+   "Linked issues (from the canonical logs)",
+   "05 \u00b7 Safety signal (dimension 4) ADOPTED files: available",
+   "Inputs",
+   "Outputs",
+   "Checkpoint",
+   "Linked issues (from the canonical logs)",
+   "08 \u00b7 Molecular / pathway agent (dimension 5) ADOPTED files: available",
+   "Inputs",
+   "Outputs",
+   "Checkpoint",
+   "Linked issues (from the canonical logs)",
+   "06 \u00b7 VPS fusion + evaluation ADOPTED files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "04b \u00b7 Literature graph export (Figure 3 data) ADOPTED files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "05h \u00b7 Safety label at the cutoff (DailyMed version history) SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Checkpoint",
+   "Linked issues (from the canonical logs)",
+   "04p \u00b7 Literature provenance (PMIDs, dates, cutoff status) SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Checkpoint",
+   "Linked issues (from the canonical logs)",
+   "07 \u00b7 Figures SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "diag \u00b7 Intervention-match diagnostic ADOPTED files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "10d \u00b7 Conflict & Context Agent (diagnostic) SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "10e \u00b7 Reproducibility Agent (diagnostic) SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "eval \u00b7 VPS evaluation report ADOPTED files: input_newer",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "10b \u00b7 Molecular agent run record (offline re-validation) SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "10c \u00b7 Clinical Evidence Agent (diagnostic layer) SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "10f \u00b7 Safety Evidence Agent (diagnostic layer) SUCCESS files: input_newer",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "10g \u00b7 Evidence Independence Agent (diagnostic layer) SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "10a \u00b7 Literature Credibility Agent (curated PMIDs) SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "10a-all \u00b7 Literature Credibility Agent (all compounds) SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "review \u00b7 Clinical trial-role review worklist (human adjudication queue) SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)",
+   "10h \u00b7 Completeness & Gap Agent SUCCESS files: available",
+   "Inputs",
+   "Outputs",
+   "Linked issues (from the canonical logs)"
+  ],
+  "badges": [
+   "ADOPTED",
+   "SUCCESS",
+   "available",
+   "input_newer",
+   "partial",
+   "missing",
+   "unknown"
+  ],
+  "buttons": [],
+  "links": [],
+  "th": [
+   "stage",
+   "status",
+   "last success",
+   "latest attempt",
+   "upstream",
+   "why",
+   "exit_code",
+   "finished_utc",
+   "run_id",
+   "started_utc",
+   "module",
+   "tests",
+   "failures",
+   "errors",
+   "skipped",
+   "file",
+   "modified (UTC)",
+   "size",
+   "records"
+  ],
+  "selects": [],
+  "chars": 37507,
+  "codes": 130,
+  "paths": 196,
+  "text": "Tracked runs and freshness From data/run_manifest.json (written only by scripts/run_stage.py). Freshness compares content fingerprints of each stage's inputs and outputs with those recorded at its last success, and propagates along dependencies \u2014 a timestamp alone never counts as fresh. ADOPTED = outputs that existed before tracking began (fingerprinted, not re-run). Run a stage from the repository root: ./venv/bin/python scripts/run_stage.py <stage id> \u00b7 status: ./venv/bin/python scripts/run_stage.py --status. Live monitoring: this page polls the local run manifest and artefact fingerprints e"
+ },
+ "agents": {
+  "headings": [
+   "Specialised evidence agents (architecture 10a\u201310h)",
+   "Inspect agent outputs for one candidate",
+   "10b Molecular plausibility (data/molecular_pathway_evidence.jsonl)",
+   "10a Literature credibility",
+   "Conflict & context (agent 10d) STATISTICAL_DISAGREEMENT",
+   "Comparisons (5)",
+   "Reproducibility (agent 10e)",
+   "Connectors & data sources",
+   "01 \u00b7 Candidate extraction",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "00 \u00b7 Exclusion filter",
+   "Output schemas",
+   "02 \u00b7 Network proximity (dimension 1)",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "03 \u00b7 ClinicalTrials.gov ground truth (dimension 2 + labels)",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "03c \u00b7 Study-type filter (mandatory)",
+   "Output schemas",
+   "04 \u00b7 Literature independence (dimension 3)",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "05 \u00b7 Safety signal (dimension 4)",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "08 \u00b7 Molecular / pathway agent (dimension 5)",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "06 \u00b7 VPS fusion + evaluation",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "04b \u00b7 Literature graph export (Figure 3 data)",
+   "Output schemas",
+   "05h \u00b7 Safety label at the cutoff (DailyMed version history)",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "04p \u00b7 Literature provenance (PMIDs, dates, cutoff status)",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "07 \u00b7 Figures",
+   "Output schemas",
+   "diag \u00b7 Intervention-match diagnostic",
+   "Output schemas",
+   "10d \u00b7 Conflict & Context Agent (diagnostic)",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "10e \u00b7 Reproducibility Agent (diagnostic)",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "eval \u00b7 VPS evaluation report",
+   "Output schemas",
+   "10b \u00b7 Molecular agent run record (offline re-validation)",
+   "Output schemas",
+   "10c \u00b7 Clinical Evidence Agent (diagnostic layer)",
+   "Output schemas",
+   "10f \u00b7 Safety Evidence Agent (diagnostic layer)",
+   "Output schemas",
+   "10g \u00b7 Evidence Independence Agent (diagnostic layer)",
+   "Output schemas",
+   "10a \u00b7 Literature Credibility Agent (curated PMIDs)",
+   "Output schemas",
+   "10a-all \u00b7 Literature Credibility Agent (all compounds)",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "review \u00b7 Clinical trial-role review worklist (human adjudication queue)",
+   "Limitations / temporal concerns",
+   "Output schemas",
+   "10h \u00b7 Completeness & Gap Agent",
+   "Output schemas"
+  ],
+  "badges": [
+   "implemented + tested; diagnostic (not in VPS)",
+   "SUCCESS",
+   "integrated in VPS",
+   "ADOPTED",
+   "implemented + tested; stage 03 output in VPS, agent layer diagnostic",
+   "implemented + tested; stage 05 output in VPS, agent layer diagnostic",
+   "implemented + tested; stage 04 output in VPS, agent layer diagnostic",
+   "STATISTICAL_DISAGREEMENT",
+   "NULL_RESULT",
+   "SUPPORTS",
+   "NON_COMPARABLE",
+   "SECONDARY_ONLY",
+   "available",
+   "input_newer"
+  ],
+  "buttons": [],
+  "links": [],
+  "th": [
+   "id",
+   "agent",
+   "status",
+   "tracked freshness",
+   "last run",
+   "module",
+   "tests",
+   "scope / source coverage",
+   "outputs & schema",
+   "gene_symbol",
+   "action_type",
+   "mechanism_of_action",
+   "n_papers",
+   "n_design_known",
+   "coverage",
+   "mean_credibility_score_known",
+   "by_tier",
+   "by_design",
+   "by_population",
+   "n_human_tier_A_or_B",
+   "replication_indicator",
+   "conflict",
+   "n_direction_assessed",
+   "classification",
+   "side A",
+   "side B",
+   "why",
+   "direction",
+   "domain",
+   "source",
+   "date",
+   "temporal",
+   "endpoint",
+   "population",
+   "excerpt",
+   "provenance",
+   "note",
+   "finding",
+   "independence",
+   "primary / secondary records",
+   "clusters by direction",
+   "stage",
+   "agent / step",
+   "external source",
+   "query",
+   "auth",
+   "env vars (names)",
+   "cache / checkpoint"
+  ],
+  "selects": [
+   "agentpick"
+  ],
+  "chars": 33039,
+  "codes": 63,
+  "paths": 105,
+  "text": "Specialised evidence agents (architecture 10a\u201310h) Statuses are derived from files on disk. Test counts are the number of test functions in the file; 'latest run' comes from data/test_run_metadata.json (scripts/record_test_run.py). The UI never executes tests. idagentstatustracked freshnesslast runmoduletestsscope / source coverageoutputs & schema 10aLiterature Credibilitydiagnostic (evidence-quality annotation; not in VPS)implemented + tested; diagnostic (not in VPS) SUCCESS10a SUCCESS \u00b7 2026-10-20T08:01:08+00:00 \u00b7 0 s10a-all SUCCESS \u00b7 2026-10-19T12:43:00+00:00 \u00b7 2 s SUCCESS2026-10-20T08:01:0"
+ },
+ "cases": {
+  "headings": [
+   "Case-study verification status",
+   "Case-study evidence ledger (agent 10d)",
+   "Domperidone CROSS_DOMAIN_TENSION",
+   "Donepezil CONTEXT_DIFFERENCE",
+   "Melatonin STATISTICAL_DISAGREEMENT",
+   "Propranolol CROSS_DOMAIN_TENSION (not in evaluable pool)",
+   "Case studies \u2014 verification of top-ranked candidates",
+   "1. Donepezil \u2014 rank 1 (VPS_grid_3d 0.883, label = 1)",
+   "2. Melatonin \u2014 rank 4 (VPS_grid_3d 0.828, label = 1)",
+   "3. Phenol / Norepinephrine / Dopamine \u2014 ranks 3, 2, 5: IDENTIFIER ARTEFACTS",
+   "4. Lisuride \u2014 rank 6, label = 0 (a instructive \"false positive\")",
+   "5. Summary",
+   "6. Corrected ranking (2026-10-05, after the Gate-2 fix)",
+   "7. Droxidopa \u2014 literature-independence verification (2026-10-12)",
+   "8. Seven shortlisted candidates \u2014 verification records (2026-10-12)",
+   "9. Label-trial role audit (2026-10-13)",
+   "10. Current state of the Parkinson's case study (2026-10-15)",
+   "11. Verification-status ledger and replication check (2026-10-15)"
+  ],
+  "badges": [
+   "VERIFIED",
+   "SINGLE_STUDY",
+   "SECONDARY_ONLY",
+   "PARTIAL",
+   "REPLICATED",
+   "CROSS_DOMAIN_TENSION",
+   "CONTEXT_DIFFERENCE",
+   "STATISTICAL_DISAGREEMENT"
+  ],
+  "buttons": [],
+  "links": [
+   [
+    "Donepezil",
+    "#drugs/Donepezil"
+   ],
+   [
+    "Melatonin",
+    "#drugs/Melatonin"
+   ],
+   [
+    "Domperidone",
+    "#drugs/Domperidone"
+   ],
+   [
+    "Propofol",
+    "#drugs/Propofol"
+   ],
+   [
+    "Norepinephrine",
+    "#drugs/Norepinephrine"
+   ],
+   [
+    "Dopamine",
+    "#drugs/Dopamine"
+   ],
+   [
+    "Propranolol",
+    "#drugs/Propranolol"
+   ],
+   [
+    "Droxidopa",
+    "#drugs/Droxidopa"
+   ],
+   [
+    "Domperidone",
+    "#drugs/Domperidone"
+   ],
+   [
+    "Donepezil",
+    "#drugs/Donepezil"
+   ],
+   [
+    "Melatonin",
+    "#drugs/Melatonin"
+   ],
+   [
+    "Propranolol",
+    "#drugs/Propranolol"
+   ],
+   [
+    "CASE_STUDIES",
+    "#cases/CASE_STUDIES"
+   ],
+   [
+    "REFERENCES",
+    "#cases/REFERENCES"
+   ],
+   [
+    "INTERVENTION_MATCHING",
+    "#cases/INTERVENTION_MATCHING"
+   ],
+   [
+    "MOLECULAR_AGENT",
+    "#cases/MOLECULAR_AGENT"
+   ],
+   [
+    "TECHNICAL_DEBT",
+    "#cases/TECHNICAL_DEBT"
+   ],
+   [
+    "ERRORS_AND_BLOCKERS",
+    "#cases/ERRORS_AND_BLOCKERS"
+   ],
+   [
+    "CHANGES",
+    "#cases/CHANGES"
+   ],
+   [
+    "README",
+    "#cases/README"
+   ],
+   [
+    "35860451",
+    "https://pubmed.ncbi.nlm.nih.gov/35860451/"
+   ],
+   [
+    "31675664",
+    "https://pubmed.ncbi.nlm.nih.gov/31675664/"
+   ],
+   [
+    "35665915",
+    "https://pubmed.ncbi.nlm.nih.gov/35665915/"
+   ],
+   [
+    "40588412",
+    "https://pubmed.ncbi.nlm.nih.gov/40588412/"
+   ],
+   [
+    "40387966",
+    "https://pubmed.ncbi.nlm.nih.gov/40387966/"
+   ],
+   [
+    "40288252",
+    "https://pubmed.ncbi.nlm.nih.gov/40288252/"
+   ]
+  ],
+  "th": [
+   "compound",
+   "rank / label",
+   "documented status",
+   "ids verified",
+   "trial roles checked",
+   "evidence both sides",
+   "temporal stated",
+   "overlap checked",
+   "safety noted",
+   "gaps listed",
+   "replication (10e)",
+   "Study",
+   "Design",
+   "Primary outcome result",
+   "Outcome",
+   "Result",
+   "Ranked compound",
+   "NCT inspected",
+   "What the trial actually tests",
+   "",
+   "Candidate",
+   "Rank",
+   "Identifier",
+   "Clinical evidence verified",
+   "Efficacy demonstrated?",
+   "#",
+   "Compound",
+   "VPS_equal_5d",
+   "label",
+   "molecular score",
+   "Quantity",
+   "JSON",
+   "Checkpoint",
+   "CSV",
+   "IDs",
+   "In pool? rank (5d / 4d equal) \u00b7 label",
+   "Claim checked",
+   "Verdict",
+   "Status",
+   "Trials",
+   "Compounds",
+   "Scenario",
+   "Positives",
+   "VPS_equal (4d)",
+   "Decisive trial(s)",
+   "Basis",
+   "Policy",
+   "n / pos",
+   "4d AUROC / AUPRC",
+   "5d AUROC / AUPRC",
+   "5d \u2212 4d AUROC [95% CI], P(>0)",
+   "Trial(s)",
+   "Therapeutic intent",
+   "Cutoff eligibility (first posted)",
+   "Evidence source",
+   "Effective label",
+   "Unresolved question",
+   "Model (D-002)",
+   "Kind",
+   "AUROC [95% CI]",
+   "AUPRC",
+   "Label",
+   "Dimensions measured",
+   "Case",
+   "Documented status",
+   "Checklist"
+  ],
+  "selects": [],
+  "chars": 47792,
+  "codes": 108,
+  "paths": 22,
+  "text": "Case-study verification status Seven shortlisted candidates plus Droxidopa. Documented status is the verdict recorded in CASE_STUDIES.md; the criteria columns apply a fixed checklist (hover a header for its definition). A trial's existence is never evidence of benefit. data/case_study_status.json compoundrank / labeldocumented statusids verifiedtrial roles checkedevidence both sidestemporal statedoverlap checkedsafety notedgaps listedreplication (10e) Donepezil\u00a71, \u00a78.1, \u00a79.1 1 / 1VERIFIED \u2713\u2713\u2713\u2713partial\u2713\u2713 cognition: SINGLE_STUDYdementia_incidence: SINGLE_STUDYfalls: SECONDARY_ONLYgait_balance: SI"
+ },
+ "agent/10b": {
+  "headings": [
+   "10b \u00b7 Molecular Plausibility VPS input",
+   "Output validation",
+   "Stage 08 ADOPTED Molecular / pathway agent (dimension 5)",
+   "Stage 10b SUCCESS Molecular agent run record (offline re-validation)"
+  ],
+  "badges": [
+   "SUCCESS",
+   "ADOPTED"
+  ],
+  "buttons": [
+   "Run 10b"
+  ],
+  "links": [
+   [
+    "Dashboard",
+    "#dashboard"
+   ]
+  ],
+  "th": [
+   "input",
+   "state",
+   "modified",
+   "output"
+  ],
+  "selects": [],
+  "chars": 2440,
+  "codes": 7,
+  "paths": 13,
+  "text": "Dashboard \u203a agent 10b 10b \u00b7 Molecular Plausibility VPS input Stage 08: ChEMBL targets -> Open Targets PD associations + Reactome overlap = VPS dimension 5.Role in the score: score-contributing (stage 08 = VPS molecular dimension)Sources: Open Targets GraphQL (ChEMBL, Reactome); STRING not used Implementation scripts/molecular_agent.py \u00b7 tests tests/test_molecular_agent.py \u00b7 output data/molecular_agent_run.json Output validationSUCCESS envelope valid \u00b7 generated 3 h ago \u00b7 version unrecorded \u00b7 inputs unchanged 74/90 compounds with targets \u00b7 16 unmeasured No diagnostics. Limitations (2)Open Targe"
+ }
+}

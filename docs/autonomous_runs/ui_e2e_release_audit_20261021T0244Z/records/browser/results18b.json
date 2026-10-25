@@ -1,0 +1,14 @@
+{
+ "full_rows": 90,
+ "filtered_rows": 1,
+ "count_when_filtered": "1 of 90 shown",
+ "after_clear": {
+  "rows": 90,
+  "q": "",
+  "flabel": "",
+  "fmiss": "",
+  "fconf": "",
+  "count": "90 of 90 shown"
+ },
+ "result": "PASS"
+}

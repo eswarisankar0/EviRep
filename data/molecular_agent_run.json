@@ -1,0 +1,27 @@
+{
+ "agent": "Molecular Plausibility",
+ "agent_id": "10b",
+ "agent_version": "unrecorded",
+ "coverage": {
+  "evidence_records_valid": 90,
+  "invalid_records": 0,
+  "pool_compounds": 90,
+  "resolved": 90,
+  "with_targets": 74,
+  "with_unretrievable_evidence_items": 16,
+  "without_targets": 16
+ },
+ "diagnostics": [],
+ "generated_utc": "2026-10-23T06:00:09+00:00",
+ "inputs": {
+  "data/molecular_pathway.csv": "37d53391d5c98862085d9df7eb59248d",
+  "data/molecular_pathway_evidence.jsonl": "7e0fdbe513a558011bf9ec87b4f4f7c3",
+  "data/vps_scores_v2.csv": "8f414c59800c24627d4dec88ae56c2bd"
+ },
+ "limitations": [
+  "Open Targets is a current snapshot (not cutoff-bounded, B-001); clinical and literature association datatypes are excluded from the score.",
+  "This record re-validates persisted output; it does not re-run retrieval."
+ ],
+ "run_status": "SUCCESS",
+ "schema_version": "1.0"
+}

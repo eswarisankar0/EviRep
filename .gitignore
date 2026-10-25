@@ -9,9 +9,6 @@ venv/
 # Environment / secrets
 .env
 
-# Generated datasets
-data/*.csv
-
 # Generated results
 results/*.csv
 
@@ -21,4 +18,17 @@ results/*.csv
 # OS files
 .DS_Store
 Thumbs.db
-data/
+
+# Data: commit final results; ignore caches, run logs, checkpoints, backups
+# and the raw Hetionet edge download (85 MB, re-fetched by the pipeline)
+# Frozen API snapshots the agents/tests read are committed; the large
+# OpenTargets and DailyMed downloads stay local.
+data/cache/*
+!data/cache/ctgov_*.json
+!data/cache/pubmed_efetch_*.xml
+!data/cache/pubmed_lit/
+!data/cache/openfda_faers/
+!data/cache/openfda_labels/
+!data/cache/molecular/
+data/_*
+data/hetionet_edges.csv

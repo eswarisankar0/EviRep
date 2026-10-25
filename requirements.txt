@@ -1,0 +1,28 @@
+# EviRep dependencies.
+#
+# The repository previously carried no dependency metadata; these are the
+# direct imports found across scripts/ plus the versions actually installed and
+# tested in venv/ (Python 3.13.9) on 2026-10-05.
+#
+#   ./venv/bin/pip install -r requirements.txt
+#
+# Direct imports by script:
+#   01,03,04,05,check_studytype,test_openfda  requests
+#   01,00,02,03,04,05,06,07,...               pandas
+#   02,06,07                                  numpy
+#   02,04,07                                  networkx
+#   03,04,05,check_studytype                  tqdm
+#   06                                        scikit-learn
+#   07                                        matplotlib
+#   molecular_agent, 08                       requests  (stdlib otherwise)
+#
+# scipy is a transitive requirement of scikit-learn and was already present.
+
+pandas==3.0.6
+numpy==2.5.3
+networkx==3.7
+requests==2.34.2
+tqdm==4.70.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+scipy==1.18.1

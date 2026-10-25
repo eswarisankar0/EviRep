@@ -1,0 +1,164 @@
+{
+ "routes": {
+  "overview": {
+   "controls_by_role": {
+    "link": 10,
+    "button": 15
+   },
+   "unnamed_controls": [],
+   "charts": 2,
+   "charts_missing_label_or_table": []
+  },
+  "drugs": {
+   "controls_by_role": {
+    "link": 1330,
+    "button": 40,
+    "searchbox": 1,
+    "combobox": 3
+   },
+   "unnamed_controls": [],
+   "charts": 1,
+   "charts_missing_label_or_table": []
+  },
+  "drugs/Donepezil": {
+   "controls_by_role": {
+    "link": 27,
+    "button": 5
+   },
+   "unnamed_controls": [],
+   "charts": 2,
+   "charts_missing_label_or_table": []
+  },
+  "compare": {
+   "controls_by_role": {
+    "link": 5,
+    "button": 7,
+    "combobox": 1
+   },
+   "unnamed_controls": [],
+   "charts": 1,
+   "charts_missing_label_or_table": []
+  },
+  "evidence": {
+   "controls_by_role": {
+    "link": 205,
+    "button": 6,
+    "combobox": 3,
+    "searchbox": 2,
+    "checkbox": 1
+   },
+   "unnamed_controls": [],
+   "charts": 0,
+   "charts_missing_label_or_table": []
+  },
+  "mechanism": {
+   "controls_by_role": {
+    "link": 17,
+    "button": 5,
+    "combobox": 1
+   },
+   "unnamed_controls": [],
+   "charts": 1,
+   "charts_missing_label_or_table": []
+  },
+  "conflicts": {
+   "controls_by_role": {
+    "link": 44,
+    "button": 5
+   },
+   "unnamed_controls": [],
+   "charts": 0,
+   "charts_missing_label_or_table": []
+  },
+  "review": {
+   "controls_by_role": {
+    "link": 79,
+    "button": 5,
+    "searchbox": 1,
+    "combobox": 1
+   },
+   "unnamed_controls": [],
+   "charts": 1,
+   "charts_missing_label_or_table": []
+  },
+  "validation": {
+   "controls_by_role": {
+    "link": 8,
+    "button": 5
+   },
+   "unnamed_controls": [],
+   "charts": 9,
+   "charts_missing_label_or_table": []
+  },
+  "run": {
+   "controls_by_role": {
+    "link": 18,
+    "button": 6
+   },
+   "unnamed_controls": [],
+   "charts": 4,
+   "charts_missing_label_or_table": []
+  },
+  "live": {
+   "controls_by_role": {
+    "link": 4,
+    "button": 20
+   },
+   "unnamed_controls": [],
+   "charts": 2,
+   "charts_missing_label_or_table": []
+  },
+  "technical": {
+   "controls_by_role": {
+    "link": 15,
+    "button": 5
+   },
+   "unnamed_controls": [],
+   "charts": 0,
+   "charts_missing_label_or_table": []
+  },
+  "pipeline": {
+   "controls_by_role": {
+    "link": 4,
+    "button": 5
+   },
+   "unnamed_controls": [],
+   "charts": 0,
+   "charts_missing_label_or_table": []
+  },
+  "agents": {
+   "controls_by_role": {
+    "link": 4,
+    "button": 5,
+    "combobox": 1
+   },
+   "unnamed_controls": [],
+   "charts": 0,
+   "charts_missing_label_or_table": []
+  },
+  "cases": {
+   "controls_by_role": {
+    "link": 30,
+    "button": 5
+   },
+   "unnamed_controls": [],
+   "charts": 0,
+   "charts_missing_label_or_table": []
+  },
+  "agent/10b": {
+   "controls_by_role": {
+    "link": 5,
+    "button": 6
+   },
+   "unnamed_controls": [],
+   "charts": 0,
+   "charts_missing_label_or_table": []
+  }
+ },
+ "document": {
+  "lang": "en",
+  "main": true,
+  "skip": true,
+  "title": "EviRep \u00b7 Run Center \u00b7 Pipeline health"
+ }
+}

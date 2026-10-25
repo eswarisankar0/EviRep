@@ -1,0 +1,15 @@
+approved top10: Donepezil*, Zonisamide, Quetiapine*, Dexmedetomidine, Lisuride, Melatonin*, Droxidopa, Methylphenidate*, Lidocaine*, Domperidone
+td042 (approved cohort) top10: Droxidopa, Quetiapine*, Dexmedetomidine, Lisuride, Melatonin*, Zonisamide, Donepezil*, Domperidone, Methylphenidate*, Aripiprazole
+dated (approved cohort) top10: Melatonin*, Zonisamide, Quetiapine*, Sildenafil, Dextromethorphan, Dexmedetomidine, Droxidopa, Aripiprazole, Lisuride, Domperidone
+corrected_all (rebuilt) top10: Dopamine*, Melatonin*, Zonisamide, Quetiapine*, Sildenafil, Dextromethorphan, Lisuride, Droxidopa, Dexmedetomidine, Aripiprazole
+                approved td042 (approved cohort) dated (approved cohort) corrected_all (rebuilt)
+Donepezil      1/90 (L1)               7/90 (L1)              15/90 (L1)              14/77 (L1)
+Melatonin      6/90 (L1)               5/90 (L1)               1/90 (L1)               2/77 (L1)
+Domperidone   10/90 (L0)               8/90 (L0)              10/90 (L0)              23/77 (L0)
+Propranolol  not in pool             not in pool             not in pool             not in pool
+Droxidopa      7/90 (L0)               1/90 (L0)               7/90 (L0)               8/77 (L0)
+Dopamine     not in pool             not in pool             not in pool               1/77 (L1)
+Lidocaine      9/90 (L1)              18/90 (L1)              19/90 (L1)             not in pool
+Galantamine   34/90 (L1)              67/90 (L1)              72/90 (L1)              65/77 (L1)
+Lithium       49/90 (L0)              47/90 (L0)              47/90 (L0)              45/77 (L0)
+TD-042: molecular score changed for 21 compounds; 6 positives: ['Donepezil', 'Galantamine', 'Lidocaine', 'Pyridostigmine', 'Quetiapine', 'Terazosin']

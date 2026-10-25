@@ -1,0 +1,10 @@
+PASS Dashboard shows a 'Next step' derived from real state :: {"next": "Next stepowner Stage 00's code changed after its last successful run; re-run it to apply the change.owner Stage 10d's code changed after its last successful run"}
+PASS agent cards separate run status from output validity ('run' badge + 'output contract valid') :: {"first": " Literature CredibilityRun completed Diagnostic, not in the score 89/90 compounds assessed \u00b7 4191 papers rated Output ch"}
+PASS results panel states that process success is not scientific validation :: {}
+PASS upstream change -> Next step says what is out of date and how to refresh it (no reload) :: {"next": "Next stepyou Out of date: 10d, 10e, 10g, 10a, 10h. Use 'Run all permitted stages'.owner Out of date and protected or network-bound: eval. Owner decision: review, then run from the command line in an i"}
+PASS frozen server: the page says 'connection lost — retrying' after the 15 s request timeout (stale data not presented as live) :: {"seconds": 19.2, "pill": "Connection to the local server lost \u2014 retrying"}
+PASS frozen server: polling stays single-flight with backoff (no request pile-up) :: {"status_requests_in_25s": 2}
+PASS server unfrozen: the page recovers by itself and re-renders current state :: {"pill": "6 stage(s) stale"}
+PASS 390px: Dashboard with Next step has no horizontal overflow :: {"overflow": 0}
+PASS no JS exceptions or console errors (aborted requests during the freeze are handled) :: {"exceptions": 0, "console": 0}
+SUMMARY 9 / 9

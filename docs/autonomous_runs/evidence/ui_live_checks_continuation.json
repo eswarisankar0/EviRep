@@ -1,0 +1,53 @@
+[
+ {
+  "scenario": "safety panel shows label at the cutoff and change flag",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "unknown label-at-cutoff is stated as unknown, not as no label",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "compound page shows 10a-all literature credibility",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "review queue still 28 unresolved",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "approved baseline shown; candidate pending, not displayed",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "pipeline lists 05h",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "390px: no horizontal page scroll",
+  "ok": true,
+  "detail": {
+   "drugs/Methylphenidate": 0,
+   "review": 0,
+   "pipeline": 0
+  }
+ },
+ {
+  "scenario": "no JS exceptions",
+  "ok": true,
+  "detail": {
+   "n": 0
+  }
+ },
+ {
+  "scenario": "viewing pages started no stage",
+  "ok": true,
+  "detail": {}
+ }
+]

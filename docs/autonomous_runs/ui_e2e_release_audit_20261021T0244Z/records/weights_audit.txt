@@ -1,0 +1,5 @@
+VPS_grid_4d: 35 weight vectors; sums in [1.000000,1.000000]; negative weights 0; max |recomputed in-sample AUROC - logged| 0.00e+00; selected {'proximity': 0.0, 'clinical': 0.5, 'literature': 0.25, 'safety': 0.25}; max|score - saved| 0.00e+00; in-sample AUROC 0.7246; logged held-out 0.6072
+VPS_grid_3d: 66 weight vectors; sums in [1.000000,1.000000]; negative weights 0; max |recomputed in-sample AUROC - logged| 0.00e+00; selected {'clinical': 0.6000000000000001, 'literature': 0.2, 'safety': 0.2}; max|score - saved| 0.00e+00; in-sample AUROC 0.7199; logged held-out 0.5840
+VPS_grid_5d: 70 weight vectors; sums in [1.000000,1.000000]; negative weights 0; max |recomputed in-sample AUROC - logged| 0.00e+00; selected {'proximity': 0.0, 'clinical': 0.5, 'literature': 0.25, 'safety': 0.0, 'molecular': 0.25}; max|score - saved| 0.00e+00; in-sample AUROC 0.7740; logged held-out 0.6392
+equal 5d weights 0.2x5 sum 1.0; max|mean(ranks)-saved| 1.6653345369377348e-16
+molecular-only == r_molecular: 0.0 AUROC 0.6273

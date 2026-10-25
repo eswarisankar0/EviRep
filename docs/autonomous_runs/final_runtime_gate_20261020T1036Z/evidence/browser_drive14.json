@@ -1,0 +1,83 @@
+[
+ {
+  "check": "Dashboard shows a 'Next step' derived from real state",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "next": "Next stepowner Owner follow-up: eval: declared input(s) not fingerprinted at the last success (re-run to track them): data/reproducibility.json"
+  },
+  "real_process": true
+ },
+ {
+  "check": "agent cards separate run status from output validity ('run' badge + 'output contract valid')",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "first": " 10arunSUCCESS Literature Credibility diagnostic 89/90 compounds assessed \u00b7 4191 papers rated output contract valid last"
+  },
+  "real_process": true
+ },
+ {
+  "check": "results panel states that process success is not scientific validation",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {},
+  "real_process": true
+ },
+ {
+  "check": "upstream change -> Next step says what is out of date and how to refresh it (no reload)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "next": "Next stepanyone Out of date: 10d, 10e, 10g, 10a, 10h. Use 'Run all permitted stages'.owner Out of date and protected or network-bound: eval. Owner decision: review, then run from the command line in a"
+  },
+  "real_process": true
+ },
+ {
+  "check": "frozen server: the page says 'connection lost \u2014 retrying' after the 15 s request timeout (stale data not presented as live)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "seconds": 19.2,
+   "pill": "Connection to the local server lost \u2014 retrying"
+  },
+  "real_process": true
+ },
+ {
+  "check": "frozen server: polling stays single-flight with backoff (no request pile-up)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "status_requests_in_25s": 2
+  },
+  "real_process": true
+ },
+ {
+  "check": "server unfrozen: the page recovers by itself and re-renders current state",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "pill": "6 stage(s) stale"
+  },
+  "real_process": true
+ },
+ {
+  "check": "390px: Dashboard with Next step has no horizontal overflow",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "overflow": 0
+  },
+  "real_process": true
+ },
+ {
+  "check": "no JS exceptions or console errors (aborted requests during the freeze are handled)",
+  "result": "PASS",
+  "browser_action": "",
+  "detail": {
+   "exceptions": 0,
+   "console": 0
+  },
+  "real_process": true
+ }
+]

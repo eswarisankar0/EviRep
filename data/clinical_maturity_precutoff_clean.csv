@@ -1,0 +1,196 @@
+compound_id,compound_name,nct_id,phase,status,enrollment,first_posted,match_type,matched_intervention,matched_alias,match_source
+Compound::DB00199,Erythromycin,NCT02005029,,COMPLETED,18,2013-12-09,exact_name,Erythromycin,Erythromycin,compound_name
+Compound::DB00203,Sildenafil,NCT02162979,PHASE2,TERMINATED,2,2014-06-13,exact_name,sildenafil,Sildenafil,compound_name
+Compound::DB00203,Sildenafil,NCT01941732,PHASE4,COMPLETED,8,2013-09-13,exact_name,Sildenafil,Sildenafil,compound_name
+Compound::DB00211,Midodrine,NCT02897063,PHASE1,RECRUITING,34,2016-09-12,exact_name,Midodrine,Midodrine,compound_name
+Compound::DB00211,Midodrine,NCT02365012,,UNKNOWN,50,2015-02-18,exact_name,Midodrine,Midodrine,compound_name
+Compound::DB00211,Midodrine,NCT04620382,EARLY_PHASE1,COMPLETED,31,2020-11-09,exact_name,Midodrine,Midodrine,compound_name
+Compound::DB00215,Citalopram,NCT04590612,,UNKNOWN,30,2020-10-19,exact_name,Citalopram,Citalopram,compound_name
+Compound::DB00215,Citalopram,NCT04497168,PHASE2,COMPLETED,58,2020-08-04,token_name,Citalopram 20mg,Citalopram,compound_name
+Compound::DB00218,Moxifloxacin,NCT03187301,PHASE2,COMPLETED,48,2017-06-14,exact_name,Moxifloxacin,Moxifloxacin,compound_name
+Compound::DB00218,Moxifloxacin,NCT01532115,PHASE1,COMPLETED,64,2012-02-14,exact_name,moxifloxacin,Moxifloxacin,compound_name
+Compound::DB00218,Moxifloxacin,NCT00292227,PHASE1,COMPLETED,130,2006-02-15,token_name,Moxifloxacin infusion,Moxifloxacin,compound_name
+Compound::DB00218,Moxifloxacin,NCT04342273,PHASE1,COMPLETED,128,2020-04-13,exact_name,Moxifloxacin,Moxifloxacin,compound_name
+Compound::DB00227,Lovastatin,NCT03242499,PHASE2,UNKNOWN,80,2017-08-08,exact_name,Lovastatin,Lovastatin,compound_name
+Compound::DB00270,Isradipine,NCT00909545,PHASE2,COMPLETED,99,2009-05-28,synonym_exact_othername,Isradipine CR 5mg,Dynacirc cr,chembl_trade_name
+Compound::DB00270,Isradipine,NCT02168842,PHASE3,COMPLETED,336,2014-06-20,exact_name,Isradipine,Isradipine,compound_name
+Compound::DB00270,Isradipine,NCT00753636,PHASE2,COMPLETED,31,2008-09-16,exact_othername,Dynacirc CR (Isradipine),Isradipine,compound_name
+Compound::DB00273,Topiramate,NCT01789047,PHASE2,TERMINATED,42,2013-02-11,exact_name,Topiramate,Topiramate,compound_name
+Compound::DB00273,Topiramate,NCT00794313,,TERMINATED,3,2008-11-20,exact_name,Topiramate,Topiramate,compound_name
+Compound::DB00273,Topiramate,NCT00296959,PHASE2,TERMINATED,20,2006-02-27,token_name,topiramate (drug),Topiramate,compound_name
+Compound::DB00281,Lidocaine,NCT02236260,,COMPLETED,20,2014-09-10,token_name,Local Anesthesia (lidocaine hydrochloride),Lidocaine,compound_name
+Compound::DB00285,Venlafaxine,NCT00086190,PHASE3,COMPLETED,115,2004-06-29,exact_name,venlafaxine,Venlafaxine,compound_name
+Compound::DB00286,Conjugated Estrogens,NCT00234676,PHASE2,COMPLETED,23,2005-10-07,synonym_exact_name,Premarin ®,Premarin,chembl_trade_name
+Compound::DB00289,Atomoxetine,NCT00286949,,COMPLETED,12,2006-02-06,exact_name,Atomoxetine,Atomoxetine,compound_name
+Compound::DB00289,Atomoxetine,NCT00304161,PHASE4,COMPLETED,55,2006-03-17,exact_name,Atomoxetine,Atomoxetine,compound_name
+Compound::DB00289,Atomoxetine,NCT02879136,EARLY_PHASE1,COMPLETED,23,2016-08-25,exact_name,Atomoxetine,Atomoxetine,compound_name
+Compound::DB00289,Atomoxetine,NCT01738191,PHASE2,COMPLETED,30,2012-11-30,exact_name,Atomoxetine,Atomoxetine,compound_name
+Compound::DB00289,Atomoxetine,NCT01340885,PHASE4,COMPLETED,9,2011-04-25,exact_othername,Strattera,Atomoxetine,compound_name
+Compound::DB00316,Acetaminophen,NCT02305017,PHASE1,COMPLETED,28,2014-12-02,synonym_exact_name,Paracetamol,Paracetamol,chembl_synonym
+Compound::DB00332,Ipratropium bromide,NCT00296946,PHASE2,COMPLETED,20,2006-02-27,token_name,ipratropium bromide (drug),Ipratropium bromide,compound_name
+Compound::DB00338,Omeprazole,NCT00664209,PHASE3,TERMINATED,64,2008-04-22,token_name,"clartihromycin, amoxicillin, and omeprazole",Omeprazole,compound_name
+Compound::DB00363,Clozapine,NCT00004826,,COMPLETED,60,2000-02-25,exact_name,clozapine,Clozapine,compound_name
+Compound::DB00402,Eszopiclone,NCT00324896,PHASE3,COMPLETED,30,2006-05-11,exact_name,eszopiclone,Eszopiclone,compound_name
+Compound::DB00422,Methylphenidate,NCT00359723,PHASE2,COMPLETED,13,2006-08-02,exact_name,methylphenidate,Methylphenidate,compound_name
+Compound::DB00422,Methylphenidate,NCT00526630,PHASE4,COMPLETED,23,2007-09-10,token_name,Methylphenidate (MPD),Methylphenidate,compound_name
+Compound::DB00422,Methylphenidate,NCT01244269,PHASE4,TERMINATED,6,2010-11-19,exact_name,Methylphenidate,Methylphenidate,compound_name
+Compound::DB00422,Methylphenidate,NCT02879136,EARLY_PHASE1,COMPLETED,23,2016-08-25,exact_name,Methylphenidate,Methylphenidate,compound_name
+Compound::DB00422,Methylphenidate,NCT00914095,PHASE4,COMPLETED,69,2009-06-04,exact_name,methylphenidate,Methylphenidate,compound_name
+Compound::DB00422,Methylphenidate,NCT00393562,,WITHDRAWN,0,2006-10-30,exact_name,methylphenidate,Methylphenidate,compound_name
+Compound::DB00425,Zolpidem,NCT03621046,PHASE2,COMPLETED,28,2018-08-08,exact_name,Zolpidem,Zolpidem,compound_name
+Compound::DB00425,Zolpidem,NCT01351168,PHASE2,WITHDRAWN,0,2011-05-10,token_name,Zolpidem first dose,Zolpidem,compound_name
+Compound::DB00476,Duloxetine,NCT01504178,PHASE3,COMPLETED,28,2012-01-05,exact_name,duloxetine,Duloxetine,compound_name
+Compound::DB00476,Duloxetine,NCT02857244,PHASE2,WITHDRAWN,0,2016-08-05,exact_name,Duloxetine,Duloxetine,compound_name
+Compound::DB00476,Duloxetine,NCT00437125,PHASE4,COMPLETED,151,2007-02-19,token_name,Duloxetine hydrochloride,Duloxetine,compound_name
+Compound::DB00486,Nabilone,NCT03773796,PHASE3,COMPLETED,22,2018-12-12,token_name,Nabilone 0.25 mg,Nabilone,compound_name
+Compound::DB00486,Nabilone,NCT03769896,PHASE2,COMPLETED,48,2018-12-10,token_name,Nabilone 0.25 mg,Nabilone,compound_name
+Compound::DB00490,Buspirone,NCT02803749,PHASE2,COMPLETED,21,2016-06-17,exact_name,Buspirone,Buspirone,compound_name
+Compound::DB00490,Buspirone,NCT02617017,PHASE3,COMPLETED,99,2015-11-30,exact_name,Buspirone,Buspirone,compound_name
+Compound::DB00490,Buspirone,NCT02589340,PHASE1,TERMINATED,6,2015-10-28,exact_name,Buspirone,Buspirone,compound_name
+Compound::DB00496,Darifenacin,NCT00892450,,COMPLETED,12,2009-05-04,token_name,Oxybutynin and darifenacin,Darifenacin,compound_name
+Compound::DB00497,Oxycodone,NCT02601586,PHASE2,COMPLETED,67,2015-11-10,synonym_exact_name,PR Oxycodone,pr oxycodone,chembl_synonym
+Compound::DB00497,Oxycodone,NCT01439100,PHASE3,COMPLETED,172,2011-09-22,token_name,Oxycodone/Naloxone Prolonged Release tablets,Oxycodone,compound_name
+Compound::DB00514,Dextromethorphan,NCT00001365,PHASE2,COMPLETED,42,2002-12-10,exact_name,dextromethorphan,Dextromethorphan,compound_name
+Compound::DB00514,Dextromethorphan,NCT01767129,PHASE2,COMPLETED,14,2013-01-14,token_othername,AVP-923-45,Dextromethorphan,compound_name
+Compound::DB00540,Nortriptyline,NCT03652870,PHASE3,COMPLETED,52,2018-08-29,exact_name,Nortriptyline,Nortriptyline,compound_name
+Compound::DB00540,Nortriptyline,NCT00062738,PHASE2,COMPLETED,52,2003-06-13,exact_name,Nortriptyline,Nortriptyline,compound_name
+Compound::DB00545,Pyridostigmine,NCT01993680,PHASE2,COMPLETED,18,2013-11-25,token_name,Pyridostigmine bromide,Pyridostigmine,compound_name
+Compound::DB00575,Clonidine,NCT03552068,PHASE2,COMPLETED,38,2018-06-11,exact_name,Clonidine,Clonidine,compound_name
+Compound::DB00589,Lisuride,NCT00605683,PHASE3,COMPLETED,679,2008-01-31,token_othername,Safinamide (as add-on therapy),Lisuride,compound_name
+Compound::DB00589,Lisuride,NCT00408915,PHASE3,COMPLETED,60,2006-12-07,token_name,Continuous Subcutaneous Lisuride Infusion,Lisuride,compound_name
+Compound::DB00589,Lisuride,NCT00089622,PHASE2,COMPLETED,40,2004-08-09,token_name,Lisuride Transdermal System,Lisuride,compound_name
+Compound::DB00633,Dexmedetomidine,NCT02982512,PHASE4,UNKNOWN,12,2016-12-05,exact_name,Dexmedetomidine,Dexmedetomidine,compound_name
+Compound::DB00633,Dexmedetomidine,NCT02256319,PHASE4,COMPLETED,12,2014-10-03,exact_name,Dexmedetomidine,Dexmedetomidine,compound_name
+Compound::DB00633,Dexmedetomidine,NCT00608231,PHASE2,WITHDRAWN,0,2008-02-06,token_name,Dexmedetomidine Hydrochloride Infusion,Dexmedetomidine,compound_name
+Compound::DB00633,Dexmedetomidine,NCT01789385,PHASE4,COMPLETED,26,2013-02-12,exact_name,Dexmedetomidine,Dexmedetomidine,compound_name
+Compound::DB00633,Dexmedetomidine,NCT01721460,PHASE4,COMPLETED,6,2012-11-05,exact_name,Dexmedetomidine,Dexmedetomidine,compound_name
+Compound::DB00641,Simvastatin,NCT02787590,PHASE2,COMPLETED,235,2016-06-01,exact_name,Simvastatin,Simvastatin,compound_name
+Compound::DB00659,Acamprosate,NCT00640952,,WITHDRAWN,0,2008-03-21,exact_name,acamprosate,Acamprosate,compound_name
+Compound::DB00662,Trimethobenzamide,NCT01770145,PHASE4,COMPLETED,127,2013-01-17,exact_name,Trimethobenzamide,Trimethobenzamide,compound_name
+Compound::DB00662,Trimethobenzamide,NCT02373072,PHASE1,COMPLETED,18,2015-02-26,token_name,Trimethobenzamide Hydrochloride,Trimethobenzamide,compound_name
+Compound::DB00674,Galantamine,NCT00211588,,UNKNOWN,90,2005-09-21,exact_name,galantamine,Galantamine,compound_name
+Compound::DB00682,Warfarin,NCT02305030,PHASE1,COMPLETED,20,2014-12-02,exact_name,Warfarin,Warfarin,compound_name
+Compound::DB00682,Warfarin,NCT02169440,PHASE1,COMPLETED,20,2014-06-23,exact_name,Warfarin,Warfarin,compound_name
+Compound::DB00683,Midazolam,NCT03970798,PHASE1,COMPLETED,50,2019-06-03,exact_name,Midazolam,Midazolam,compound_name
+Compound::DB00704,Naltrexone,NCT01052831,PHASE4,COMPLETED,50,2010-01-20,exact_name,Naltrexone,Naltrexone,compound_name
+Compound::DB00715,Paroxetine,NCT00062738,PHASE2,COMPLETED,52,2003-06-13,exact_name,paroxetine,Paroxetine,compound_name
+Compound::DB00715,Paroxetine,NCT00086190,PHASE3,COMPLETED,115,2004-06-29,exact_name,paroxetine,Paroxetine,compound_name
+Compound::DB00741,Hydrocortisone,NCT02230930,PHASE2,TERMINATED,13,2014-09-03,synonym_exact_othername,Subcutaneous hydrocortisone 10mg,solu-cortef,chembl_synonym
+Compound::DB00753,Isoflurane,NCT00615472,,TERMINATED,58,2008-02-14,exact_name,Isoflurane,Isoflurane,compound_name
+Compound::DB00809,Tropicamide,NCT00761137,PHASE2,COMPLETED,19,2008-09-29,token_name,0.3 mg tropicamide,Tropicamide,compound_name
+Compound::DB00818,Propofol,NCT00615472,,TERMINATED,58,2008-02-14,exact_name,Propofol,Propofol,compound_name
+Compound::DB00818,Propofol,NCT02256319,PHASE4,COMPLETED,12,2014-10-03,exact_name,Propofol,Propofol,compound_name
+Compound::DB00820,Tadalafil,NCT02225548,PHASE4,UNKNOWN,10,2014-08-26,exact_name,Tadalafil,Tadalafil,compound_name
+Compound::DB00843,Donepezil,NCT02206620,PHASE2,COMPLETED,49,2014-08-01,exact_name,Donepezil,Donepezil,compound_name
+Compound::DB00843,Donepezil,NCT00912808,,COMPLETED,23,2009-06-03,exact_name,Donepezil,Donepezil,compound_name
+Compound::DB00843,Donepezil,NCT02857244,PHASE2,WITHDRAWN,0,2016-08-05,exact_name,Donepezil,Donepezil,compound_name
+Compound::DB00843,Donepezil,NCT03599726,EARLY_PHASE1,COMPLETED,20,2018-07-26,exact_name,Donepezil,Donepezil,compound_name
+Compound::DB00843,Donepezil,NCT01327859,PHASE3,COMPLETED,357,2011-04-04,token_name,Prior Donepezil 5mg,Donepezil,compound_name
+Compound::DB00843,Donepezil,NCT01014858,PHASE3,TERMINATED,64,2009-11-17,exact_name,Donepezil,Donepezil,compound_name
+Compound::DB00843,Donepezil,NCT03011476,PHASE4,UNKNOWN,20,2017-01-05,exact_name,Donepezil,Donepezil,compound_name
+Compound::DB00843,Donepezil,NCT00030979,PHASE4,COMPLETED,28,2002-02-18,exact_name,Donepezil,Donepezil,compound_name
+Compound::DB00843,Donepezil,NCT01521117,PHASE4,COMPLETED,21,2012-01-30,exact_name,Donepezil,Donepezil,compound_name
+Compound::DB00843,Donepezil,NCT02415062,PHASE2,UNKNOWN,150,2015-04-14,exact_name,Donepezil,Donepezil,compound_name
+Compound::DB00843,Donepezil,NCT02450786,PHASE2,UNKNOWN,80,2015-05-21,exact_name,Donepezil,Donepezil,compound_name
+Compound::DB00877,Sirolimus,NCT04127578,PHASE1,ACTIVE_NOT_RECRUITING,32,2019-10-15,exact_name,Sirolimus,Sirolimus,compound_name
+Compound::DB00887,Bumetanide,NCT03899324,PHASE2,UNKNOWN,40,2019-04-02,token_name,"Bumetanide white, oblong, scored tablet",Bumetanide,compound_name
+Compound::DB00899,Remifentanil,NCT00615472,,TERMINATED,58,2008-02-14,exact_name,Remifentanil,Remifentanil,compound_name
+Compound::DB00904,Ondansetron,NCT04167813,PHASE2,UNKNOWN,168,2019-11-19,token_name,Ondansetron 8mg or matched placebo tablets,Ondansetron,compound_name
+Compound::DB00908,Quinidine,NCT01767129,PHASE2,COMPLETED,14,2013-01-14,token_othername,AVP-923-45,Quinidine,compound_name
+Compound::DB00909,Zonisamide,NCT03034538,PHASE4,SUSPENDED,20,2017-01-27,synonym_exact_name,Zonegran,Zonegran,chembl_trade_name
+Compound::DB00909,Zonisamide,NCT01766128,PHASE2,WITHDRAWN,0,2013-01-11,exact_name,Zonisamide,Zonisamide,compound_name
+Compound::DB00909,Zonisamide,NCT04182399,,COMPLETED,69,2019-12-02,token_name,Zonisamide Capsules,Zonisamide,compound_name
+Compound::DB00912,Repaglinide,NCT01536366,PHASE1,COMPLETED,27,2012-02-22,exact_name,Repaglinide,Repaglinide,compound_name
+Compound::DB01017,Minocycline,NCT00063193,PHASE2,COMPLETED,195,2003-06-25,exact_name,minocycline,Minocycline,compound_name
+Compound::DB01045,Rifampicin,NCT02174250,PHASE1,COMPLETED,20,2014-06-25,synonym_exact_othername,Rifampin 300mg BID + istradefylline 40mg Day 8 only,Rifadin,chembl_trade_name
+Compound::DB01045,Rifampicin,NCT04070495,PHASE1,COMPLETED,20,2019-08-28,exact_name,Rifampicin,Rifampicin,compound_name
+Compound::DB01046,Lubiprostone,NCT00669461,,TERMINATED,1,2008-04-30,exact_name,Lubiprostone,Lubiprostone,compound_name
+Compound::DB01046,Lubiprostone,NCT00908076,PHASE4,COMPLETED,78,2009-05-25,exact_name,LUBIPROSTONE,Lubiprostone,compound_name
+Compound::DB01060,Amoxicillin,NCT00664209,PHASE3,TERMINATED,64,2008-04-22,token_name,"clartihromycin, amoxicillin, and omeprazole",Amoxicillin,compound_name
+Compound::DB01062,Oxybutynin,NCT00892450,,COMPLETED,12,2009-05-04,token_name,Oxybutynin and darifenacin,Oxybutynin,compound_name
+Compound::DB01065,Melatonin,NCT03258294,PHASE4,UNKNOWN,82,2017-08-23,token_name,Melatonin(Circadin®),Melatonin,compound_name
+Compound::DB01065,Melatonin,NCT04287543,PHASE2,WITHDRAWN,0,2020-02-27,exact_name,Melatonin,Melatonin,compound_name
+Compound::DB01065,Melatonin,NCT02359448,PHASE2,UNKNOWN,20,2015-02-10,exact_name,Melatonin,Melatonin,compound_name
+Compound::DB01065,Melatonin,NCT02789592,PHASE2,UNKNOWN,30,2016-06-03,synonym_exact_othername,Melatonin PR,Circadin,chembl_trade_name
+Compound::DB01065,Melatonin,NCT02768077,PHASE4,UNKNOWN,100,2016-05-11,token_name,Melatonin(Circadin®),Melatonin,compound_name
+Compound::DB01098,Rosuvastatin,NCT03970798,PHASE1,COMPLETED,50,2019-06-03,exact_name,Rosuvastatin,Rosuvastatin,compound_name
+Compound::DB01104,Sertraline,NCT01437189,,COMPLETED,35,2011-09-20,exact_name,Sertraline,Sertraline,compound_name
+Compound::DB01104,Sertraline,NCT02917122,PHASE1,TERMINATED,15,2016-09-28,exact_name,Sertraline,Sertraline,compound_name
+Compound::DB01132,Pioglitazone,NCT01280123,PHASE2,COMPLETED,210,2011-01-20,exact_name,Pioglitazone,Pioglitazone,compound_name
+Compound::DB01136,Carvedilol,NCT03775096,PHASE2,ACTIVE_NOT_RECRUITING,15,2018-12-13,exact_name,Carvedilol,Carvedilol,compound_name
+Compound::DB01136,Carvedilol,NCT04218968,PHASE2,ACTIVE_NOT_RECRUITING,15,2020-01-06,exact_name,Carvedilol,Carvedilol,compound_name
+Compound::DB01142,Doxepin,NCT01489982,EARLY_PHASE1,COMPLETED,20,2011-12-12,token_name,Doxepin and Zopiclone,Doxepin,compound_name
+Compound::DB01162,Terazosin,NCT04386317,PHASE2,ACTIVE_NOT_RECRUITING,15,2020-05-13,exact_name,Terazosin,Terazosin,compound_name
+Compound::DB01162,Terazosin,NCT03905811,PHASE1,COMPLETED,13,2019-04-05,token_name,Terazosin 5 MG,Terazosin,compound_name
+Compound::DB01175,Escitalopram,NCT03652870,PHASE3,COMPLETED,52,2018-08-29,exact_name,Escitalopram,Escitalopram,compound_name
+Compound::DB01175,Escitalopram,NCT00070941,PHASE2,COMPLETED,29,2003-10-13,token_name,oral escitalopram,Escitalopram,compound_name
+Compound::DB01183,Naloxone,NCT01439100,PHASE3,COMPLETED,172,2011-09-22,token_name,Oxycodone/Naloxone Prolonged Release tablets,Naloxone,compound_name
+Compound::DB01184,Domperidone,NCT00103597,PHASE1,COMPLETED,50,2005-02-14,exact_name,Domperidone,Domperidone,compound_name
+Compound::DB01184,Domperidone,NCT00006077,PHASE2,COMPLETED,50,2000-08-07,token_name,Levodopa and Domperidone,Domperidone,compound_name
+Compound::DB01184,Domperidone,NCT00305331,PHASE2,TERMINATED,25,2006-03-21,token_name,Domperidone (drug),Domperidone,compound_name
+Compound::DB01184,Domperidone,NCT03022201,PHASE4,COMPLETED,40,2017-01-16,exact_name,Domperidone,Domperidone,compound_name
+Compound::DB01198,Zopiclone,NCT01489982,EARLY_PHASE1,COMPLETED,20,2011-12-12,token_name,Doxepin and Zopiclone,Zopiclone,compound_name
+Compound::DB01202,Levetiracetam,NCT00307450,PHASE4,COMPLETED,34,2006-03-28,exact_name,Levetiracetam,Levetiracetam,compound_name
+Compound::DB01202,Levetiracetam,NCT04643327,PHASE2,UNKNOWN,28,2020-11-25,exact_name,Levetiracetam,Levetiracetam,compound_name
+Compound::DB01202,Levetiracetam,NCT00584025,PHASE4,WITHDRAWN,0,2008-01-02,exact_name,levetiracetam,Levetiracetam,compound_name
+Compound::DB01202,Levetiracetam,NCT00160576,PHASE2,COMPLETED,30,2005-09-12,exact_name,Levetiracetam,Levetiracetam,compound_name
+Compound::DB01205,Flumazenil,NCT03440112,PHASE1,COMPLETED,34,2018-02-20,token_name,Transdermal flumazenil (Added 4/2020),Flumazenil,compound_name
+Compound::DB01205,Flumazenil,NCT03462641,PHASE1,COMPLETED,36,2018-03-12,exact_name,Flumazenil,Flumazenil,compound_name
+Compound::DB01211,Clarithromycin,NCT03440112,PHASE1,COMPLETED,34,2018-02-20,synonym_exact_othername,Clarithromycin (Not used as of 4/2020),Biaxin,chembl_trade_name
+Compound::DB01211,Clarithromycin,NCT04070495,PHASE1,COMPLETED,20,2019-08-28,exact_name,Clarithromycin,Clarithromycin,compound_name
+Compound::DB01212,Ceftriaxone,NCT03413384,PHASE2,COMPLETED,100,2018-01-29,exact_name,Ceftriaxone,Ceftriaxone,compound_name
+Compound::DB01220,Rifaximin,NCT03958708,PHASE1,UNKNOWN,20,2019-05-22,token_name,Rifaximin 550 MG,Rifaximin,compound_name
+Compound::DB01220,Rifaximin,NCT01662791,PHASE3,COMPLETED,49,2012-08-10,exact_name,Rifaximin,Rifaximin,compound_name
+Compound::DB01220,Rifaximin,NCT02470780,PHASE2,COMPLETED,4,2015-06-12,exact_name,Rifaximin,Rifaximin,compound_name
+Compound::DB01220,Rifaximin,NCT03575195,PHASE1,SUSPENDED,86,2018-07-02,exact_name,Rifaximin,Rifaximin,compound_name
+Compound::DB01224,Quetiapine,NCT00043849,PHASE4,COMPLETED,60,2002-08-15,exact_name,Quetiapine,Quetiapine,compound_name
+Compound::DB01224,Quetiapine,NCT04164758,PHASE2,TERMINATED,11,2019-11-15,exact_name,Quetiapine,Quetiapine,compound_name
+Compound::DB01224,Quetiapine,NCT04373317,PHASE4,RECRUITING,358,2020-05-04,exact_name,Quetiapine,Quetiapine,compound_name
+Compound::DB01238,Aripiprazole,NCT00095810,PHASE4,COMPLETED,50,2004-11-09,exact_name,aripiprazole,Aripiprazole,compound_name
+Compound::DB01273,Varenicline,NCT04403399,PHASE2,COMPLETED,34,2020-05-27,exact_name,Varenicline,Varenicline,compound_name
+Compound::DB01273,Varenicline,NCT01341080,PHASE2,COMPLETED,40,2011-04-25,exact_name,Varenicline,Varenicline,compound_name
+Compound::DB01273,Varenicline,NCT02473562,PHASE4,TERMINATED,22,2015-06-16,exact_name,Varenicline,Varenicline,compound_name
+Compound::DB01273,Varenicline,NCT02933372,PHASE2,COMPLETED,25,2016-10-14,exact_name,Varenicline,Varenicline,compound_name
+Compound::DB01356,Lithium,NCT04273932,PHASE1,COMPLETED,19,2020-02-18,exact_name,Lithium,Lithium,compound_name
+Compound::DB01392,Yohimbine,NCT04346394,EARLY_PHASE1,WITHDRAWN,0,2020-04-15,token_name,Yohimbine HCl,Yohimbine,compound_name
+Compound::DB01586,Ursodeoxycholic acid,NCT02967250,PHASE1,COMPLETED,5,2016-11-18,exact_name,ursodeoxycholic acid,Ursodeoxycholic acid,compound_name
+Compound::DB01586,Ursodeoxycholic acid,NCT03840005,PHASE2,COMPLETED,31,2019-02-15,synonym_exact_name,Ursonorm,Ursonorm,chembl_synonym
+Compound::DB01591,Solifenacin,NCT03149809,PHASE3,COMPLETED,77,2017-05-11,exact_name,solifenacin,Solifenacin,compound_name
+Compound::DB01591,Solifenacin,NCT00584090,PHASE4,WITHDRAWN,0,2008-01-02,token_name,Solifenacin Succinate (VESIcare),Solifenacin,compound_name
+Compound::DB01591,Solifenacin,NCT01018264,PHASE4,COMPLETED,23,2009-11-23,token_name,solifenacin succinate (VESIcare),Solifenacin,compound_name
+Compound::DB04868,Nilotinib,NCT02954978,PHASE2,COMPLETED,75,2016-11-04,token_name,Nilotinib 150mg oral capsule [Tasigna],Nilotinib,compound_name
+Compound::DB04868,Nilotinib,NCT02281474,PHASE1,COMPLETED,12,2014-11-03,exact_name,Nilotinib,Nilotinib,compound_name
+Compound::DB04868,Nilotinib,NCT03205488,PHASE2,COMPLETED,76,2017-07-02,token_name,Cohort 1:Nilotinib Oral Capsules (150mg or 300mg),Nilotinib,compound_name
+Compound::DB06151,Acetylcysteine,NCT01470027,PHASE1,COMPLETED,50,2011-11-10,synonym_exact_name,N-acetylcysteine,n-acetylcysteine,chembl_synonym
+Compound::DB06151,Acetylcysteine,NCT04459052,PHASE2,ACTIVE_NOT_RECRUITING,50,2020-07-07,synonym_exact_name,N acetyl cysteine,n-acetyl cysteine,chembl_synonym
+Compound::DB06151,Acetylcysteine,NCT02212678,PHASE2,COMPLETED,8,2014-08-08,token_name,N-acetylcysteine capsule,Acetylcysteine,compound_name
+Compound::DB06151,Acetylcysteine,NCT03104725,PHASE1,TERMINATED,6,2017-04-07,synonym_exact_name,N-Acetylcysteine,n-acetylcysteine,chembl_synonym
+Compound::DB06151,Acetylcysteine,NCT01427517,PHASE1,COMPLETED,9,2011-09-01,synonym_exact_name,N-acetylcysteine,n-acetylcysteine,chembl_synonym
+Compound::DB06262,Droxidopa,NCT03567447,PHASE2,UNKNOWN,10,2018-06-25,exact_name,Droxidopa,Droxidopa,compound_name
+Compound::DB06262,Droxidopa,NCT02897063,PHASE1,RECRUITING,34,2016-09-12,exact_name,Droxidopa,Droxidopa,compound_name
+Compound::DB06262,Droxidopa,NCT03173781,,COMPLETED,21,2017-06-02,exact_name,droxidopa,Droxidopa,compound_name
+Compound::DB06262,Droxidopa,NCT03115827,PHASE4,COMPLETED,15,2017-04-14,exact_name,Droxidopa,Droxidopa,compound_name
+Compound::DB06262,Droxidopa,NCT03034564,PHASE4,TERMINATED,1,2017-01-27,synonym_exact_name,Northera,Northera,chembl_trade_name
+Compound::DB06262,Droxidopa,NCT01927055,PHASE3,TERMINATED,61,2013-08-22,exact_name,Droxidopa,Droxidopa,compound_name
+Compound::DB06262,Droxidopa,NCT04510922,PHASE4,COMPLETED,9,2020-08-12,token_name,Droxidopa 100 MG [Northera],Droxidopa,compound_name
+Compound::DB06262,Droxidopa,NCT03446807,PHASE2,WITHDRAWN,0,2018-02-27,exact_name,Droxidopa,Droxidopa,compound_name
+Compound::DB06262,Droxidopa,NCT01176240,PHASE3,COMPLETED,225,2010-08-05,exact_name,Droxidopa,Droxidopa,compound_name
+Compound::DB06262,Droxidopa,NCT00547911,PHASE1,TERMINATED,14,2007-10-23,exact_name,Droxidopa,Droxidopa,compound_name
+Compound::DB06262,Droxidopa,NCT03229174,PHASE4,COMPLETED,17,2017-07-25,exact_name,Droxidopa,Droxidopa,compound_name
+Compound::DB06262,Droxidopa,NCT02812147,PHASE2,UNKNOWN,20,2016-06-24,synonym_exact_name,L-DOPS,L-DOPS,chembl_synonym
+Compound::DB06262,Droxidopa,NCT02066571,PHASE2,UNKNOWN,20,2014-02-19,exact_name,Droxidopa,Droxidopa,compound_name
+Compound::DB06594,Agomelatine,NCT03977441,PHASE4,UNKNOWN,240,2019-06-06,token_name,Agomelatine or PIacebo,Agomelatine,compound_name
+Compound::DB06702,Fesoterodine,NCT02385500,PHASE4,TERMINATED,5,2015-03-11,exact_name,Fesoterodine,Fesoterodine,compound_name
+Compound::DB08824,Ioflupane I 123,NCT01950468,PHASE3,WITHDRAWN,0,2013-09-25,synonym_exact_name,DaTscan,Datscan,chembl_trade_name
+Compound::DB08824,Ioflupane I 123,NCT01141023,PHASE2,COMPLETED,952,2010-06-10,synonym_exact_name,DaTscan,Datscan,chembl_trade_name
+Compound::DB08826,Deferiprone,NCT02728843,PHASE2,COMPLETED,140,2016-04-05,exact_name,Deferiprone,Deferiprone,compound_name
+Compound::DB08826,Deferiprone,NCT01539837,PHASE2,COMPLETED,22,2012-02-28,synonym_exact_othername,Deferiprone 20mg,Ferriprox,chembl_trade_name
+Compound::DB08826,Deferiprone,NCT00943748,PHASE2,COMPLETED,40,2009-07-22,exact_name,deferiprone,Deferiprone,compound_name
+Compound::DB08826,Deferiprone,NCT02880033,,COMPLETED,90,2016-08-26,exact_name,deferiprone,Deferiprone,compound_name
+Compound::DB08826,Deferiprone,NCT02655315,PHASE2,COMPLETED,372,2016-01-14,exact_name,Deferiprone,Deferiprone,compound_name
+Compound::DB08893,Mirabegron,NCT03412513,PHASE4,UNKNOWN,144,2018-01-26,exact_name,Mirabegron,Mirabegron,compound_name
+Compound::DB08893,Mirabegron,NCT02092181,PHASE4,COMPLETED,30,2014-03-20,exact_name,Mirabegron,Mirabegron,compound_name
+Compound::DB08893,Mirabegron,NCT02536976,PHASE4,COMPLETED,7,2015-09-01,exact_name,mirabegron,Mirabegron,compound_name
+Compound::DB08909,Glycerol Phenylbutyrate,NCT02046434,PHASE1,COMPLETED,38,2014-01-27,exact_name,Glycerol Phenylbutyrate,Glycerol Phenylbutyrate,compound_name
+Compound::DB00959,Methylprednisolone,NCT04127578,PHASE1,ACTIVE_NOT_RECRUITING,32,2019-10-15,exact_name,Methylprednisolone,Methylprednisolone,compound_name
+Compound::DB00986,Glycopyrrolate,NCT02382198,PHASE2,UNKNOWN,28,2015-03-06,exact_name,Glycopyrrolate,Glycopyrrolate,compound_name

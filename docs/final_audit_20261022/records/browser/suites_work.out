@@ -1,0 +1,11 @@
+drive16: SUMMARY 47 / 47 0 fail(s)
+drive15: SUMMARY 24 / 24 0 fail(s)
+drive11: SUMMARY 16 / 16 0 fail(s)
+drive12: SUMMARY 10 / 10 0 fail(s)
+drive14: SUMMARY 9 / 9 0 fail(s)
+drive8: SUMMARY 8 / 8 0 fail(s)
+drive9: SUMMARY 15 / 15 0 fail(s)
+drive19: SUMMARY unnamed 0 charts 23 bad_charts 0 doc {'lang': 'en', 'main': True, 'skip': True, 'title': 'EviRep · Run Center · Pipeline health'} 0 fail(s)
+drive13: SUMMARY 9 / 9 0 fail(s)
+/private/tmp/claude-501/-Users-thrisha-Drup-Rep-PF-EviRep/e6733d36-fdb7-40b2-a548-915362746462/scratchpad/run_suites_work.sh: line 10: 53466 Terminated: 15          nohup /Users/thrisha/EviRep_work_20261022T1504Z/venv/bin/python ui/server.py --port 8799 > $SP/server_gate.log 2>&1
+leftover runners:        0

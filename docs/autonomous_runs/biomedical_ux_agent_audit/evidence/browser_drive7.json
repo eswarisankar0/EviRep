@@ -1,0 +1,179 @@
+[
+ {
+  "scenario": "agents panel shows tracked freshness column",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "all eight agents listed with a tracked status",
+  "ok": true,
+  "detail": {
+   "rows": [
+    "10a|SUCCESS",
+    "10b|ADOPTED",
+    "10c|ADOPTED",
+    "10d|SUCCESS",
+    "10e|SUCCESS",
+    "10f|ADOPTED",
+    "10g|ADOPTED",
+    "10h|SUCCESS"
+   ]
+  }
+ },
+ {
+  "scenario": "agents show their VPS role",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "desktop #live renders",
+  "ok": true,
+  "detail": {
+   "len": 19435
+  }
+ },
+ {
+  "scenario": "desktop #agents renders",
+  "ok": true,
+  "detail": {
+   "len": 35637
+  }
+ },
+ {
+  "scenario": "desktop #overview renders",
+  "ok": true,
+  "detail": {
+   "len": 6861
+  }
+ },
+ {
+  "scenario": "desktop #drugs renders",
+  "ok": true,
+  "detail": {
+   "len": 37702
+  }
+ },
+ {
+  "scenario": "desktop #drugs/Droxidopa renders",
+  "ok": true,
+  "detail": {
+   "len": 37154
+  }
+ },
+ {
+  "scenario": "desktop #pipeline renders",
+  "ok": true,
+  "detail": {
+   "len": 43456
+  }
+ },
+ {
+  "scenario": "desktop #review renders",
+  "ok": true,
+  "detail": {
+   "len": 28143
+  }
+ },
+ {
+  "scenario": "desktop #validation renders",
+  "ok": true,
+  "detail": {
+   "len": 16977
+  }
+ },
+ {
+  "scenario": "desktop #technical renders",
+  "ok": true,
+  "detail": {
+   "len": 2915
+  }
+ },
+ {
+  "scenario": "every table: header cells match row cells (all views)",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "compound page states ranking is not an efficacy claim",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "review queue: 28 awaiting adjudication, none auto-decided",
+  "ok": true,
+  "detail": {}
+ },
+ {
+  "scenario": "keyboard Tab moves focus through links with a visible focus indicator",
+  "ok": true,
+  "detail": {
+   "focus": [
+    [
+     "A",
+     "All evidence",
+     true
+    ],
+    [
+     "A",
+     "Mechanism",
+     true
+    ],
+    [
+     "A",
+     "Conflicting evidence",
+     true
+    ],
+    [
+     "A",
+     "Trial-role review",
+     true
+    ]
+   ]
+  }
+ },
+ {
+  "scenario": "basic semantics: lang, main, nav, labelled inputs, img alt",
+  "ok": true,
+  "detail": {
+   "imgs_no_alt": 0,
+   "unlabeled_inputs": 0,
+   "th_no_scope": 0,
+   "lang": "en",
+   "main": true,
+   "nav": true
+  }
+ },
+ {
+  "scenario": "390px: no horizontal page scroll",
+  "ok": true,
+  "detail": {
+   "live": 0,
+   "agents": 0,
+   "pipeline": 0,
+   "overview": 0,
+   "drugs/Droxidopa": 0,
+   "review": 0,
+   "validation": 0
+  }
+ },
+ {
+  "scenario": "no failed HTTP requests during ordinary use",
+  "ok": true,
+  "detail": {
+   "failed": []
+  }
+ },
+ {
+  "scenario": "no JS exceptions or console errors",
+  "ok": true,
+  "detail": {
+   "exceptions": 0,
+   "console": []
+  }
+ },
+ {
+  "scenario": "viewing pages started no stage",
+  "ok": true,
+  "detail": {}
+ }
+]

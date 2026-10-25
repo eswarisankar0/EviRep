@@ -1,0 +1,1645 @@
+{
+ "version": "td038-1.0",
+ "seed": 42,
+ "n_boot": 2000,
+ "inputs": {
+  "data/clinical_maturity_precutoff_clean.csv": "54a99dce1e173ef5c693031bac71cd1d",
+  "data/vps_scores_v2.csv": "8f414c59800c24627d4dec88ae56c2bd",
+  "data/ground_truth_postcutoff_clean.csv": "c83e30bbb44f37e5aeb51a6010d7af5e",
+  "data/label_role_exclusions.csv": "e9ba11aa99309f82cd0cfc301839d10e",
+  "data/feature_trial_roles_td038.csv": "7a2081fff93c3fe1b7c0c4b883c32cdb",
+  "data/cache/ctgov_td038_shared_trials.json": "606b9793da8159bb289195e35eea97f3"
+ },
+ "status": "SENSITIVITY ONLY - primary outputs unchanged; policy pending owner decision (D-020)",
+ "shared_trials": 17,
+ "shared_links": 35,
+ "affected_compounds": 31,
+ "adjudication_tally": [
+  {
+   "category": "ALTERNATIVES_IN_ONE_ARM",
+   "p1_qualifies": "YES",
+   "links": 2
+  },
+  {
+   "category": "AUXILIARY_AGENT",
+   "p1_qualifies": "NO",
+   "links": 6
+  },
+  {
+   "category": "DRUG_SPECIFIC_ARM",
+   "p1_qualifies": "YES",
+   "links": 14
+  },
+  {
+   "category": "FIXED_COMBINATION",
+   "p1_qualifies": "UNDECIDED",
+   "links": 6
+  },
+  {
+   "category": "PROCEDURAL",
+   "p1_qualifies": "NO",
+   "links": 5
+  },
+  {
+   "category": "UNVERIFIABLE",
+   "p1_qualifies": "UNDECIDED",
+   "links": 2
+  }
+ ],
+ "reproduces_persisted_scores": true,
+ "scenarios": {
+  "S0_current": {
+   "definition": "persisted inputs (no exclusion)",
+   "excluded_links": 0,
+   "compounds_leaving_pool": [],
+   "n": 90,
+   "positives": 14,
+   "4d": {
+    "auroc": 0.7,
+    "auroc_ci": [
+     0.567,
+     0.834
+    ],
+    "auprc": 0.358,
+    "auprc_ci": [
+     0.176,
+     0.603
+    ]
+   },
+   "5d": {
+    "auroc": 0.775,
+    "auroc_ci": [
+     0.656,
+     0.881
+    ],
+    "auprc": 0.424,
+    "auprc_ci": [
+     0.226,
+     0.679
+    ]
+   },
+   "5d_minus_4d": {
+    "diff": 0.075,
+    "ci_diff": [
+     -0.025,
+     0.176
+    ],
+    "p_diff_gt_0": 0.935
+   }
+  },
+  "S1_exclude_P1_NO": {
+   "definition": "exclude PROCEDURAL and AUXILIARY_AGENT links (P1 criterion); compounds left with no link leave the pool",
+   "excluded_links": 11,
+   "compounds_leaving_pool": [
+    "Isoflurane",
+    "Methylprednisolone",
+    "Midazolam",
+    "Propofol",
+    "Remifentanil",
+    "Rosuvastatin",
+    "Sirolimus"
+   ],
+   "labels_of_leaving": {
+    "Isoflurane": 0,
+    "Methylprednisolone": 0,
+    "Midazolam": 0,
+    "Propofol": 0,
+    "Remifentanil": 0,
+    "Rosuvastatin": 0,
+    "Sirolimus": 0
+   },
+   "n": 83,
+   "positives": 14,
+   "4d": {
+    "auroc": 0.684,
+    "auroc_ci": [
+     0.516,
+     0.824
+    ],
+    "auprc": 0.36,
+    "auprc_ci": [
+     0.172,
+     0.615
+    ]
+   },
+   "5d": {
+    "auroc": 0.765,
+    "auroc_ci": [
+     0.628,
+     0.876
+    ],
+    "auprc": 0.407,
+    "auprc_ci": [
+     0.207,
+     0.66
+    ]
+   },
+   "5d_minus_4d": {
+    "diff": 0.081,
+    "ci_diff": [
+     -0.019,
+     0.184
+    ],
+    "p_diff_gt_0": 0.946
+   },
+   "cohort_effect_only": {
+    "n": 83,
+    "positives": 14,
+    "4d": {
+     "auroc": 0.678,
+     "auroc_ci": [
+      0.507,
+      0.819
+     ],
+     "auprc": 0.36,
+     "auprc_ci": [
+      0.17,
+      0.615
+     ]
+    },
+    "5d": {
+     "auroc": 0.762,
+     "auroc_ci": [
+      0.618,
+      0.878
+     ],
+     "auprc": 0.428,
+     "auprc_ci": [
+      0.218,
+      0.681
+     ]
+    },
+    "5d_minus_4d": {
+     "diff": 0.084,
+     "ci_diff": [
+      -0.024,
+      0.187
+     ],
+     "p_diff_gt_0": 0.94
+    }
+   },
+   "vs_current_same_compounds": {
+    "score": "VPS_equal_5d",
+    "n_common": 83,
+    "paired_new_minus_old": {
+     "n": 83,
+     "n_positive": 14,
+     "n_boot": 2000,
+     "n_used": 2000,
+     "n_skipped": 0,
+     "seed": 42,
+     "alpha": 0.05,
+     "rng": "numpy.random.default_rng",
+     "interval": "percentile",
+     "auroc_a": 0.7650103519668738,
+     "auroc_b": 0.7619047619047619,
+     "diff": 0.0031055900621119736,
+     "ci_a": [
+      0.6283218211527035,
+      0.8757803084731622
+     ],
+     "ci_b": [
+      0.6179963841017118,
+      0.8777816901408451
+     ],
+     "ci_diff": [
+      -0.011769733534439377,
+      0.019178082191780747
+     ],
+     "p_diff_gt_0": 0.63
+    },
+    "positives_rank": [
+     {
+      "compound": "Donepezil",
+      "rank_old": 1,
+      "rank_new": 1
+     },
+     {
+      "compound": "Quetiapine",
+      "rank_old": 3,
+      "rank_new": 5
+     },
+     {
+      "compound": "Melatonin",
+      "rank_old": 6,
+      "rank_new": 6
+     },
+     {
+      "compound": "Methylphenidate",
+      "rank_old": 8,
+      "rank_new": 8
+     },
+     {
+      "compound": "Lidocaine",
+      "rank_old": 9,
+      "rank_new": 10
+     },
+     {
+      "compound": "Acetylcysteine",
+      "rank_old": 15,
+      "rank_new": 15
+     },
+     {
+      "compound": "Terazosin",
+      "rank_old": 17,
+      "rank_new": 18
+     },
+     {
+      "compound": "Mirabegron",
+      "rank_old": 31,
+      "rank_new": 29
+     },
+     {
+      "compound": "Pyridostigmine",
+      "rank_old": 29,
+      "rank_new": 30
+     },
+     {
+      "compound": "Galantamine",
+      "rank_old": 34,
+      "rank_new": 34
+     },
+     {
+      "compound": "Varenicline",
+      "rank_old": 43,
+      "rank_new": 40
+     },
+     {
+      "compound": "Atomoxetine",
+      "rank_old": 47,
+      "rank_new": 43
+     },
+     {
+      "compound": "Levetiracetam",
+      "rank_old": 48,
+      "rank_new": 45
+     },
+     {
+      "compound": "Rifaximin",
+      "rank_old": 53,
+      "rank_new": 48
+     }
+    ],
+    "moved_3_or_more_ranks": [
+     {
+      "compound": "Omeprazole",
+      "label": 0,
+      "rank_old": 21,
+      "rank_new": 16
+     },
+     {
+      "compound": "Dextromethorphan",
+      "label": 0,
+      "rank_old": 20,
+      "rank_new": 17
+     },
+     {
+      "compound": "Ioflupane I 123",
+      "label": 0,
+      "rank_old": 23,
+      "rank_new": 20
+     },
+     {
+      "compound": "Quinidine",
+      "label": 0,
+      "rank_old": 16,
+      "rank_new": 21
+     },
+     {
+      "compound": "Minocycline",
+      "label": 0,
+      "rank_old": 19,
+      "rank_new": 24
+     },
+     {
+      "compound": "Agomelatine",
+      "label": 0,
+      "rank_old": 35,
+      "rank_new": 32
+     },
+     {
+      "compound": "Clozapine",
+      "label": 0,
+      "rank_old": 41,
+      "rank_new": 37
+     },
+     {
+      "compound": "Varenicline",
+      "label": 1,
+      "rank_old": 43,
+      "rank_new": 40
+     },
+     {
+      "compound": "Deferiprone",
+      "label": 0,
+      "rank_old": 38,
+      "rank_new": 42
+     },
+     {
+      "compound": "Atomoxetine",
+      "label": 1,
+      "rank_old": 47,
+      "rank_new": 43
+     },
+     {
+      "compound": "Levetiracetam",
+      "label": 1,
+      "rank_old": 48,
+      "rank_new": 45
+     },
+     {
+      "compound": "Naloxone",
+      "label": 0,
+      "rank_old": 51,
+      "rank_new": 47
+     },
+     {
+      "compound": "Rifaximin",
+      "label": 1,
+      "rank_old": 53,
+      "rank_new": 48
+     },
+     {
+      "compound": "Hydrocortisone",
+      "label": 0,
+      "rank_old": 55,
+      "rank_new": 51
+     },
+     {
+      "compound": "Isradipine",
+      "label": 0,
+      "rank_old": 58,
+      "rank_new": 52
+     },
+     {
+      "compound": "Nortriptyline",
+      "label": 0,
+      "rank_old": 59,
+      "rank_new": 56
+     },
+     {
+      "compound": "Lubiprostone",
+      "label": 0,
+      "rank_old": 61,
+      "rank_new": 57
+     },
+     {
+      "compound": "Nabilone",
+      "label": 0,
+      "rank_old": 63,
+      "rank_new": 58
+     },
+     {
+      "compound": "Oxybutynin",
+      "label": 0,
+      "rank_old": 69,
+      "rank_new": 66
+     },
+     {
+      "compound": "Amoxicillin",
+      "label": 0,
+      "rank_old": 72,
+      "rank_new": 69
+     },
+     {
+      "compound": "Erythromycin",
+      "label": 0,
+      "rank_old": 73,
+      "rank_new": 70
+     },
+     {
+      "compound": "Moxifloxacin",
+      "label": 0,
+      "rank_old": 78,
+      "rank_new": 73
+     },
+     {
+      "compound": "Clarithromycin",
+      "label": 0,
+      "rank_old": 79,
+      "rank_new": 74
+     },
+     {
+      "compound": "Zolpidem",
+      "label": 0,
+      "rank_old": 81,
+      "rank_new": 75
+     },
+     {
+      "compound": "Eszopiclone",
+      "label": 0,
+      "rank_old": 83,
+      "rank_new": 76
+     },
+     {
+      "compound": "Warfarin",
+      "label": 0,
+      "rank_old": 82,
+      "rank_new": 77
+     },
+     {
+      "compound": "Glycerol Phenylbutyrate",
+      "label": 0,
+      "rank_old": 84,
+      "rank_new": 78
+     },
+     {
+      "compound": "Ursodeoxycholic acid",
+      "label": 0,
+      "rank_old": 86,
+      "rank_new": 79
+     },
+     {
+      "compound": "Conjugated Estrogens",
+      "label": 0,
+      "rank_old": 85,
+      "rank_new": 80
+     },
+     {
+      "compound": "Zopiclone",
+      "label": 0,
+      "rank_old": 87,
+      "rank_new": 81
+     },
+     {
+      "compound": "Oxycodone",
+      "label": 0,
+      "rank_old": 88,
+      "rank_new": 82
+     },
+     {
+      "compound": "Bumetanide",
+      "label": 0,
+      "rank_old": 89,
+      "rank_new": 83
+     }
+    ]
+   },
+   "max_phase_changes_in_pool": []
+  },
+  "S2_S1_plus_combination_adjuncts": {
+   "definition": "S1 and also the adjunct component of fixed-dose combinations (naloxone, quinidine)",
+   "excluded_links": 13,
+   "compounds_leaving_pool": [
+    "Isoflurane",
+    "Methylprednisolone",
+    "Midazolam",
+    "Naloxone",
+    "Propofol",
+    "Quinidine",
+    "Remifentanil",
+    "Rosuvastatin",
+    "Sirolimus"
+   ],
+   "labels_of_leaving": {
+    "Isoflurane": 0,
+    "Methylprednisolone": 0,
+    "Midazolam": 0,
+    "Naloxone": 0,
+    "Propofol": 0,
+    "Quinidine": 0,
+    "Remifentanil": 0,
+    "Rosuvastatin": 0,
+    "Sirolimus": 0
+   },
+   "n": 81,
+   "positives": 14,
+   "4d": {
+    "auroc": 0.68,
+    "auroc_ci": [
+     0.529,
+     0.821
+    ],
+    "auprc": 0.362,
+    "auprc_ci": [
+     0.17,
+     0.625
+    ]
+   },
+   "5d": {
+    "auroc": 0.765,
+    "auroc_ci": [
+     0.644,
+     0.874
+    ],
+    "auprc": 0.414,
+    "auprc_ci": [
+     0.215,
+     0.667
+    ]
+   },
+   "5d_minus_4d": {
+    "diff": 0.085,
+    "ci_diff": [
+     -0.024,
+     0.19
+    ],
+    "p_diff_gt_0": 0.95
+   },
+   "cohort_effect_only": {
+    "n": 81,
+    "positives": 14,
+    "4d": {
+     "auroc": 0.678,
+     "auroc_ci": [
+      0.525,
+      0.824
+     ],
+     "auprc": 0.363,
+     "auprc_ci": [
+      0.17,
+      0.627
+     ]
+    },
+    "5d": {
+     "auroc": 0.764,
+     "auroc_ci": [
+      0.639,
+      0.877
+     ],
+     "auprc": 0.435,
+     "auprc_ci": [
+      0.222,
+      0.682
+     ]
+    },
+    "5d_minus_4d": {
+     "diff": 0.086,
+     "ci_diff": [
+      -0.022,
+      0.192
+     ],
+     "p_diff_gt_0": 0.944
+    }
+   },
+   "vs_current_same_compounds": {
+    "score": "VPS_equal_5d",
+    "n_common": 81,
+    "paired_new_minus_old": {
+     "n": 81,
+     "n_positive": 14,
+     "n_boot": 2000,
+     "n_used": 2000,
+     "n_skipped": 0,
+     "seed": 42,
+     "alpha": 0.05,
+     "rng": "numpy.random.default_rng",
+     "interval": "percentile",
+     "auroc_a": 0.7654584221748401,
+     "auroc_b": 0.7643923240938166,
+     "diff": 0.0010660980810234255,
+     "ci_a": [
+      0.6435122863247863,
+      0.87408876367576
+     ],
+     "ci_b": [
+      0.6388582251082251,
+      0.876545214045214
+     ],
+     "ci_diff": [
+      -0.012121212121212088,
+      0.016356371252204578
+     ],
+     "p_diff_gt_0": 0.5485
+    },
+    "positives_rank": [
+     {
+      "compound": "Donepezil",
+      "rank_old": 1,
+      "rank_new": 1
+     },
+     {
+      "compound": "Quetiapine",
+      "rank_old": 3,
+      "rank_new": 5
+     },
+     {
+      "compound": "Melatonin",
+      "rank_old": 6,
+      "rank_new": 6
+     },
+     {
+      "compound": "Lidocaine",
+      "rank_old": 9,
+      "rank_new": 8
+     },
+     {
+      "compound": "Methylphenidate",
+      "rank_old": 8,
+      "rank_new": 9
+     },
+     {
+      "compound": "Acetylcysteine",
+      "rank_old": 15,
+      "rank_new": 15
+     },
+     {
+      "compound": "Terazosin",
+      "rank_old": 17,
+      "rank_new": 18
+     },
+     {
+      "compound": "Mirabegron",
+      "rank_old": 31,
+      "rank_new": 28
+     },
+     {
+      "compound": "Pyridostigmine",
+      "rank_old": 29,
+      "rank_new": 29
+     },
+     {
+      "compound": "Galantamine",
+      "rank_old": 34,
+      "rank_new": 32
+     },
+     {
+      "compound": "Varenicline",
+      "rank_old": 43,
+      "rank_new": 41
+     },
+     {
+      "compound": "Atomoxetine",
+      "rank_old": 47,
+      "rank_new": 42
+     },
+     {
+      "compound": "Levetiracetam",
+      "rank_old": 48,
+      "rank_new": 45
+     },
+     {
+      "compound": "Rifaximin",
+      "rank_old": 53,
+      "rank_new": 46
+     }
+    ],
+    "moved_3_or_more_ranks": [
+     {
+      "compound": "Dextromethorphan",
+      "label": 0,
+      "rank_old": 20,
+      "rank_new": 16
+     },
+     {
+      "compound": "Omeprazole",
+      "label": 0,
+      "rank_old": 21,
+      "rank_new": 17
+     },
+     {
+      "compound": "Solifenacin",
+      "label": 0,
+      "rank_old": 24,
+      "rank_new": 20
+     },
+     {
+      "compound": "Minocycline",
+      "label": 0,
+      "rank_old": 19,
+      "rank_new": 24
+     },
+     {
+      "compound": "Mirabegron",
+      "label": 1,
+      "rank_old": 31,
+      "rank_new": 28
+     },
+     {
+      "compound": "Agomelatine",
+      "label": 0,
+      "rank_old": 35,
+      "rank_new": 30
+     },
+     {
+      "compound": "Trimethobenzamide",
+      "label": 0,
+      "rank_old": 37,
+      "rank_new": 34
+     },
+     {
+      "compound": "Clozapine",
+      "label": 0,
+      "rank_old": 41,
+      "rank_new": 36
+     },
+     {
+      "compound": "Naltrexone",
+      "label": 0,
+      "rank_old": 40,
+      "rank_new": 37
+     },
+     {
+      "compound": "Acetaminophen",
+      "label": 0,
+      "rank_old": 42,
+      "rank_new": 39
+     },
+     {
+      "compound": "Atomoxetine",
+      "label": 1,
+      "rank_old": 47,
+      "rank_new": 42
+     },
+     {
+      "compound": "Levetiracetam",
+      "label": 1,
+      "rank_old": 48,
+      "rank_new": 45
+     },
+     {
+      "compound": "Rifaximin",
+      "label": 1,
+      "rank_old": 53,
+      "rank_new": 46
+     },
+     {
+      "compound": "Sertraline",
+      "label": 0,
+      "rank_old": 50,
+      "rank_new": 47
+     },
+     {
+      "compound": "Isradipine",
+      "label": 0,
+      "rank_old": 58,
+      "rank_new": 48
+     },
+     {
+      "compound": "Hydrocortisone",
+      "label": 0,
+      "rank_old": 55,
+      "rank_new": 49
+     },
+     {
+      "compound": "Nortriptyline",
+      "label": 0,
+      "rank_old": 59,
+      "rank_new": 53
+     },
+     {
+      "compound": "Lubiprostone",
+      "label": 0,
+      "rank_old": 61,
+      "rank_new": 55
+     },
+     {
+      "compound": "Nabilone",
+      "label": 0,
+      "rank_old": 63,
+      "rank_new": 56
+     },
+     {
+      "compound": "Citalopram",
+      "label": 0,
+      "rank_old": 62,
+      "rank_new": 59
+     },
+     {
+      "compound": "Doxepin",
+      "label": 0,
+      "rank_old": 64,
+      "rank_new": 60
+     },
+     {
+      "compound": "Darifenacin",
+      "label": 0,
+      "rank_old": 66,
+      "rank_new": 61
+     },
+     {
+      "compound": "Lovastatin",
+      "label": 0,
+      "rank_old": 65,
+      "rank_new": 62
+     },
+     {
+      "compound": "Ceftriaxone",
+      "label": 0,
+      "rank_old": 67,
+      "rank_new": 63
+     },
+     {
+      "compound": "Oxybutynin",
+      "label": 0,
+      "rank_old": 69,
+      "rank_new": 64
+     },
+     {
+      "compound": "Nilotinib",
+      "label": 0,
+      "rank_old": 68,
+      "rank_new": 65
+     },
+     {
+      "compound": "Pioglitazone",
+      "label": 0,
+      "rank_old": 70,
+      "rank_new": 66
+     },
+     {
+      "compound": "Amoxicillin",
+      "label": 0,
+      "rank_old": 72,
+      "rank_new": 67
+     },
+     {
+      "compound": "Erythromycin",
+      "label": 0,
+      "rank_old": 73,
+      "rank_new": 68
+     },
+     {
+      "compound": "Repaglinide",
+      "label": 0,
+      "rank_old": 74,
+      "rank_new": 70
+     },
+     {
+      "compound": "Moxifloxacin",
+      "label": 0,
+      "rank_old": 78,
+      "rank_new": 71
+     },
+     {
+      "compound": "Clarithromycin",
+      "label": 0,
+      "rank_old": 79,
+      "rank_new": 72
+     },
+     {
+      "compound": "Zolpidem",
+      "label": 0,
+      "rank_old": 81,
+      "rank_new": 73
+     },
+     {
+      "compound": "Warfarin",
+      "label": 0,
+      "rank_old": 82,
+      "rank_new": 74
+     },
+     {
+      "compound": "Eszopiclone",
+      "label": 0,
+      "rank_old": 83,
+      "rank_new": 75
+     },
+     {
+      "compound": "Ursodeoxycholic acid",
+      "label": 0,
+      "rank_old": 86,
+      "rank_new": 76
+     },
+     {
+      "compound": "Glycerol Phenylbutyrate",
+      "label": 0,
+      "rank_old": 84,
+      "rank_new": 77
+     },
+     {
+      "compound": "Conjugated Estrogens",
+      "label": 0,
+      "rank_old": 85,
+      "rank_new": 78
+     },
+     {
+      "compound": "Zopiclone",
+      "label": 0,
+      "rank_old": 87,
+      "rank_new": 79
+     },
+     {
+      "compound": "Oxycodone",
+      "label": 0,
+      "rank_old": 88,
+      "rank_new": 80
+     },
+     {
+      "compound": "Bumetanide",
+      "label": 0,
+      "rank_old": 89,
+      "rank_new": 81
+     }
+    ]
+   },
+   "max_phase_changes_in_pool": []
+  },
+  "S3_S1_plus_all_combinations_and_unverifiable": {
+   "definition": "S1 and every FIXED_COMBINATION and UNVERIFIABLE link",
+   "excluded_links": 19,
+   "compounds_leaving_pool": [
+    "Amoxicillin",
+    "Isoflurane",
+    "Methylprednisolone",
+    "Midazolam",
+    "Naloxone",
+    "Omeprazole",
+    "Propofol",
+    "Quinidine",
+    "Remifentanil",
+    "Rosuvastatin",
+    "Sirolimus"
+   ],
+   "labels_of_leaving": {
+    "Amoxicillin": 0,
+    "Isoflurane": 0,
+    "Methylprednisolone": 0,
+    "Midazolam": 0,
+    "Naloxone": 0,
+    "Omeprazole": 0,
+    "Propofol": 0,
+    "Quinidine": 0,
+    "Remifentanil": 0,
+    "Rosuvastatin": 0,
+    "Sirolimus": 0
+   },
+   "n": 79,
+   "positives": 14,
+   "4d": {
+    "auroc": 0.679,
+    "auroc_ci": [
+     0.523,
+     0.819
+    ],
+    "auprc": 0.365,
+    "auprc_ci": [
+     0.171,
+     0.611
+    ]
+   },
+   "5d": {
+    "auroc": 0.767,
+    "auroc_ci": [
+     0.639,
+     0.879
+    ],
+    "auprc": 0.42,
+    "auprc_ci": [
+     0.216,
+     0.689
+    ]
+   },
+   "5d_minus_4d": {
+    "diff": 0.088,
+    "ci_diff": [
+     -0.014,
+     0.202
+    ],
+    "p_diff_gt_0": 0.951
+   },
+   "cohort_effect_only": {
+    "n": 79,
+    "positives": 14,
+    "4d": {
+     "auroc": 0.678,
+     "auroc_ci": [
+      0.521,
+      0.82
+     ],
+     "auprc": 0.368,
+     "auprc_ci": [
+      0.172,
+      0.612
+     ]
+    },
+    "5d": {
+     "auroc": 0.765,
+     "auroc_ci": [
+      0.632,
+      0.882
+     ],
+     "auprc": 0.439,
+     "auprc_ci": [
+      0.221,
+      0.7
+     ]
+    },
+    "5d_minus_4d": {
+     "diff": 0.087,
+     "ci_diff": [
+      -0.016,
+      0.2
+     ],
+     "p_diff_gt_0": 0.948
+    }
+   },
+   "vs_current_same_compounds": {
+    "score": "VPS_equal_5d",
+    "n_common": 79,
+    "paired_new_minus_old": {
+     "n": 79,
+     "n_positive": 14,
+     "n_boot": 2000,
+     "n_used": 2000,
+     "n_skipped": 0,
+     "seed": 42,
+     "alpha": 0.05,
+     "rng": "numpy.random.default_rng",
+     "interval": "percentile",
+     "auroc_a": 0.767032967032967,
+     "auroc_b": 0.7648351648351648,
+     "diff": 0.00219780219780219,
+     "ci_a": [
+      0.6386946386946387,
+      0.8788096414455109
+     ],
+     "ci_b": [
+      0.6320528505015904,
+      0.8822843822843822
+     ],
+     "ci_diff": [
+      -0.009374999999999804,
+      0.01538819875776401
+     ],
+     "p_diff_gt_0": 0.609
+    },
+    "positives_rank": [
+     {
+      "compound": "Donepezil",
+      "rank_old": 1,
+      "rank_new": 1
+     },
+     {
+      "compound": "Quetiapine",
+      "rank_old": 3,
+      "rank_new": 5
+     },
+     {
+      "compound": "Melatonin",
+      "rank_old": 6,
+      "rank_new": 6
+     },
+     {
+      "compound": "Methylphenidate",
+      "rank_old": 8,
+      "rank_new": 8
+     },
+     {
+      "compound": "Lidocaine",
+      "rank_old": 9,
+      "rank_new": 9
+     },
+     {
+      "compound": "Acetylcysteine",
+      "rank_old": 15,
+      "rank_new": 15
+     },
+     {
+      "compound": "Terazosin",
+      "rank_old": 17,
+      "rank_new": 17
+     },
+     {
+      "compound": "Pyridostigmine",
+      "rank_old": 29,
+      "rank_new": 27
+     },
+     {
+      "compound": "Mirabegron",
+      "rank_old": 31,
+      "rank_new": 28
+     },
+     {
+      "compound": "Galantamine",
+      "rank_old": 34,
+      "rank_new": 30
+     },
+     {
+      "compound": "Varenicline",
+      "rank_old": 43,
+      "rank_new": 40
+     },
+     {
+      "compound": "Atomoxetine",
+      "rank_old": 47,
+      "rank_new": 42
+     },
+     {
+      "compound": "Levetiracetam",
+      "rank_old": 48,
+      "rank_new": 44
+     },
+     {
+      "compound": "Rifaximin",
+      "rank_old": 53,
+      "rank_new": 45
+     }
+    ],
+    "moved_3_or_more_ranks": [
+     {
+      "compound": "Dextromethorphan",
+      "label": 0,
+      "rank_old": 20,
+      "rank_new": 16
+     },
+     {
+      "compound": "Ioflupane I 123",
+      "label": 0,
+      "rank_old": 23,
+      "rank_new": 19
+     },
+     {
+      "compound": "Solifenacin",
+      "label": 0,
+      "rank_old": 24,
+      "rank_new": 20
+     },
+     {
+      "compound": "Glycopyrrolate",
+      "label": 0,
+      "rank_old": 25,
+      "rank_new": 22
+     },
+     {
+      "compound": "Minocycline",
+      "label": 0,
+      "rank_old": 19,
+      "rank_new": 23
+     },
+     {
+      "compound": "Mirabegron",
+      "label": 1,
+      "rank_old": 31,
+      "rank_new": 28
+     },
+     {
+      "compound": "Venlafaxine",
+      "label": 0,
+      "rank_old": 32,
+      "rank_new": 29
+     },
+     {
+      "compound": "Galantamine",
+      "label": 1,
+      "rank_old": 34,
+      "rank_new": 30
+     },
+     {
+      "compound": "Agomelatine",
+      "label": 0,
+      "rank_old": 35,
+      "rank_new": 31
+     },
+     {
+      "compound": "Trimethobenzamide",
+      "label": 0,
+      "rank_old": 37,
+      "rank_new": 33
+     },
+     {
+      "compound": "Naltrexone",
+      "label": 0,
+      "rank_old": 40,
+      "rank_new": 34
+     },
+     {
+      "compound": "Clozapine",
+      "label": 0,
+      "rank_old": 41,
+      "rank_new": 35
+     },
+     {
+      "compound": "Acetaminophen",
+      "label": 0,
+      "rank_old": 42,
+      "rank_new": 39
+     },
+     {
+      "compound": "Varenicline",
+      "label": 1,
+      "rank_old": 43,
+      "rank_new": 40
+     },
+     {
+      "compound": "Tadalafil",
+      "label": 0,
+      "rank_old": 44,
+      "rank_new": 41
+     },
+     {
+      "compound": "Atomoxetine",
+      "label": 1,
+      "rank_old": 47,
+      "rank_new": 42
+     },
+     {
+      "compound": "Levetiracetam",
+      "label": 1,
+      "rank_old": 48,
+      "rank_new": 44
+     },
+     {
+      "compound": "Rifaximin",
+      "label": 1,
+      "rank_old": 53,
+      "rank_new": 45
+     },
+     {
+      "compound": "Sertraline",
+      "label": 0,
+      "rank_old": 50,
+      "rank_new": 46
+     },
+     {
+      "compound": "Hydrocortisone",
+      "label": 0,
+      "rank_old": 55,
+      "rank_new": 48
+     },
+     {
+      "compound": "Isradipine",
+      "label": 0,
+      "rank_old": 58,
+      "rank_new": 49
+     },
+     {
+      "compound": "Ipratropium bromide",
+      "label": 0,
+      "rank_old": 54,
+      "rank_new": 51
+     },
+     {
+      "compound": "Nabilone",
+      "label": 0,
+      "rank_old": 63,
+      "rank_new": 52
+     },
+     {
+      "compound": "Nortriptyline",
+      "label": 0,
+      "rank_old": 59,
+      "rank_new": 53
+     },
+     {
+      "compound": "Lubiprostone",
+      "label": 0,
+      "rank_old": 61,
+      "rank_new": 55
+     },
+     {
+      "compound": "Simvastatin",
+      "label": 0,
+      "rank_old": 60,
+      "rank_new": 57
+     },
+     {
+      "compound": "Citalopram",
+      "label": 0,
+      "rank_old": 62,
+      "rank_new": 58
+     },
+     {
+      "compound": "Doxepin",
+      "label": 0,
+      "rank_old": 64,
+      "rank_new": 59
+     },
+     {
+      "compound": "Darifenacin",
+      "label": 0,
+      "rank_old": 66,
+      "rank_new": 60
+     },
+     {
+      "compound": "Lovastatin",
+      "label": 0,
+      "rank_old": 65,
+      "rank_new": 61
+     },
+     {
+      "compound": "Oxybutynin",
+      "label": 0,
+      "rank_old": 69,
+      "rank_new": 62
+     },
+     {
+      "compound": "Ceftriaxone",
+      "label": 0,
+      "rank_old": 67,
+      "rank_new": 63
+     },
+     {
+      "compound": "Nilotinib",
+      "label": 0,
+      "rank_old": 68,
+      "rank_new": 64
+     },
+     {
+      "compound": "Pioglitazone",
+      "label": 0,
+      "rank_old": 70,
+      "rank_new": 65
+     },
+     {
+      "compound": "Flumazenil",
+      "label": 0,
+      "rank_old": 71,
+      "rank_new": 66
+     },
+     {
+      "compound": "Erythromycin",
+      "label": 0,
+      "rank_old": 73,
+      "rank_new": 67
+     },
+     {
+      "compound": "Repaglinide",
+      "label": 0,
+      "rank_old": 74,
+      "rank_new": 68
+     },
+     {
+      "compound": "Moxifloxacin",
+      "label": 0,
+      "rank_old": 78,
+      "rank_new": 69
+     },
+     {
+      "compound": "Clarithromycin",
+      "label": 0,
+      "rank_old": 79,
+      "rank_new": 70
+     },
+     {
+      "compound": "Zolpidem",
+      "label": 0,
+      "rank_old": 81,
+      "rank_new": 71
+     },
+     {
+      "compound": "Eszopiclone",
+      "label": 0,
+      "rank_old": 83,
+      "rank_new": 72
+     },
+     {
+      "compound": "Warfarin",
+      "label": 0,
+      "rank_old": 82,
+      "rank_new": 73
+     },
+     {
+      "compound": "Ursodeoxycholic acid",
+      "label": 0,
+      "rank_old": 86,
+      "rank_new": 74
+     },
+     {
+      "compound": "Conjugated Estrogens",
+      "label": 0,
+      "rank_old": 85,
+      "rank_new": 75
+     },
+     {
+      "compound": "Glycerol Phenylbutyrate",
+      "label": 0,
+      "rank_old": 84,
+      "rank_new": 76
+     },
+     {
+      "compound": "Zopiclone",
+      "label": 0,
+      "rank_old": 87,
+      "rank_new": 77
+     },
+     {
+      "compound": "Oxycodone",
+      "label": 0,
+      "rank_old": 88,
+      "rank_new": 78
+     },
+     {
+      "compound": "Bumetanide",
+      "label": 0,
+      "rank_old": 89,
+      "rank_new": 79
+     }
+    ]
+   },
+   "max_phase_changes_in_pool": [
+    {
+     "compound": "Oxycodone",
+     "max_phase_rank_old": 4.0,
+     "max_phase_rank_new": 3.0
+    }
+   ]
+  },
+  "S1k_exclude_P1_NO_keep_in_pool": {
+   "definition": "as S1, but compounds with no remaining link stay in the pool with max_phase_rank 0",
+   "excluded_links": 11,
+   "compounds_leaving_pool": [],
+   "n": 90,
+   "positives": 14,
+   "4d": {
+    "auroc": 0.704,
+    "auroc_ci": [
+     0.562,
+     0.835
+    ],
+    "auprc": 0.36,
+    "auprc_ci": [
+     0.166,
+     0.597
+    ]
+   },
+   "5d": {
+    "auroc": 0.779,
+    "auroc_ci": [
+     0.654,
+     0.886
+    ],
+    "auprc": 0.427,
+    "auprc_ci": [
+     0.217,
+     0.681
+    ]
+   },
+   "5d_minus_4d": {
+    "diff": 0.075,
+    "ci_diff": [
+     -0.027,
+     0.184
+    ],
+    "p_diff_gt_0": 0.935
+   },
+   "vs_current_same_compounds": {
+    "score": "VPS_equal_5d",
+    "n_common": 90,
+    "paired_new_minus_old": {
+     "n": 90,
+     "n_positive": 14,
+     "n_boot": 2000,
+     "n_used": 2000,
+     "n_skipped": 0,
+     "seed": 42,
+     "alpha": 0.05,
+     "rng": "numpy.random.default_rng",
+     "interval": "percentile",
+     "auroc_a": 0.7791353383458647,
+     "auroc_b": 0.775375939849624,
+     "diff": 0.003759398496240629,
+     "ci_a": [
+      0.6604599399459895,
+      0.8831659230241521
+     ],
+     "ci_b": [
+      0.6559117720760206,
+      0.8809429295366793
+     ],
+     "ci_diff": [
+      -0.007148109243697562,
+      0.02067737277977562
+     ],
+     "p_diff_gt_0": 0.653
+    },
+    "positives_rank": [
+     {
+      "compound": "Donepezil",
+      "rank_old": 1,
+      "rank_new": 1
+     },
+     {
+      "compound": "Quetiapine",
+      "rank_old": 3,
+      "rank_new": 3
+     },
+     {
+      "compound": "Melatonin",
+      "rank_old": 6,
+      "rank_new": 6
+     },
+     {
+      "compound": "Lidocaine",
+      "rank_old": 9,
+      "rank_new": 8
+     },
+     {
+      "compound": "Methylphenidate",
+      "rank_old": 8,
+      "rank_new": 9
+     },
+     {
+      "compound": "Acetylcysteine",
+      "rank_old": 15,
+      "rank_new": 15
+     },
+     {
+      "compound": "Terazosin",
+      "rank_old": 17,
+      "rank_new": 17
+     },
+     {
+      "compound": "Pyridostigmine",
+      "rank_old": 29,
+      "rank_new": 29
+     },
+     {
+      "compound": "Mirabegron",
+      "rank_old": 31,
+      "rank_new": 30
+     },
+     {
+      "compound": "Galantamine",
+      "rank_old": 34,
+      "rank_new": 32
+     },
+     {
+      "compound": "Varenicline",
+      "rank_old": 43,
+      "rank_new": 44
+     },
+     {
+      "compound": "Atomoxetine",
+      "rank_old": 47,
+      "rank_new": 46
+     },
+     {
+      "compound": "Levetiracetam",
+      "rank_old": 48,
+      "rank_new": 48
+     },
+     {
+      "compound": "Rifaximin",
+      "rank_old": 53,
+      "rank_new": 52
+     }
+    ],
+    "moved_3_or_more_ranks": [
+     {
+      "compound": "Clozapine",
+      "label": 0,
+      "rank_old": 41,
+      "rank_new": 37
+     },
+     {
+      "compound": "Midodrine",
+      "label": 0,
+      "rank_old": 45,
+      "rank_new": 42
+     },
+     {
+      "compound": "Isoflurane",
+      "label": 0,
+      "rank_old": 46,
+      "rank_new": 43
+     },
+     {
+      "compound": "Propofol",
+      "label": 0,
+      "rank_old": 30,
+      "rank_new": 71
+     },
+     {
+      "compound": "Clarithromycin",
+      "label": 0,
+      "rank_old": 79,
+      "rank_new": 75
+     },
+     {
+      "compound": "Warfarin",
+      "label": 0,
+      "rank_old": 82,
+      "rank_new": 77
+     },
+     {
+      "compound": "Rosuvastatin",
+      "label": 0,
+      "rank_old": 75,
+      "rank_new": 78
+     },
+     {
+      "compound": "Eszopiclone",
+      "label": 0,
+      "rank_old": 83,
+      "rank_new": 80
+     },
+     {
+      "compound": "Glycerol Phenylbutyrate",
+      "label": 0,
+      "rank_old": 84,
+      "rank_new": 81
+     },
+     {
+      "compound": "Methylprednisolone",
+      "label": 0,
+      "rank_old": 76,
+      "rank_new": 82
+     },
+     {
+      "compound": "Midazolam",
+      "label": 0,
+      "rank_old": 77,
+      "rank_new": 83
+     },
+     {
+      "compound": "Sirolimus",
+      "label": 0,
+      "rank_old": 80,
+      "rank_new": 84
+     }
+    ]
+   }
+  }
+ }
+}

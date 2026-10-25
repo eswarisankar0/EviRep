@@ -1,0 +1,11 @@
+PASS double/triple click on Run sends one request and creates one launch :: {"requests": 1, "launches": 1}
+PASS two tabs launching at the same moment: one 202, one 409, one launch :: {"codes": [202, 409]}
+PASS browser back/forward re-render the right views :: {"back": ["#agent/10d", true], "back2": ["#dashboard", true], "fwd": ["#agent/10d", true]}
+PASS run all with a failed prerequisite: 10d FAILED, dependants BLOCKED (not run), shown on the Dashboard :: {"summary": "skipped (fresh): 07, 10b, 10c, 10f, 10a-all, review \u00b7 failed: 10d, 10g, 10a \u00b7 blocked by a failed prerequisite: 10e, 10h", "hero": "Last run failed; previous results retained"}
+PASS runner killed mid-stage: the agent page shows the interrupted run and the orphaned stage process (never RUNNING forever) :: {"status": "FAILED", "reasons": ["attempt 20261020T202232Z-10g-aa16 was interrupted (runner process gone)", "its stage process (pid 9923) is still running orphaned: outputs may still change; stop it before restoring"]}
+PASS --restore verifies the validated output (restored if damaged); the page updates without refresh: attempt FAILED, retained result shown :: {"restore": "10g: RESTORED - restored nothing; already valid ['data/evidence_independence.json']", "status": "FAILED"}
+PASS structurally malformed manifest: Dashboard shows 'Run records unreadable' with the reason; /api/live 200 :: {"status": 200}
+PASS HTML injected into a log renders as text (no element, no script) :: {"xss": 0, "imgs": 0}
+PASS 390px: no horizontal overflow on dashboard, agent and stages views :: {"dashboard": 0, "agent/10g": 0, "live": 0}
+PASS no JS exceptions or console errors; the only non-2xx responses are the intentional 409 :: {"bad": []}
+SUMMARY 10 / 10

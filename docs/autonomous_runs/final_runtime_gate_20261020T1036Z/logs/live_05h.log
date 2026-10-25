@@ -1,0 +1,2 @@
+20261020T105436Z-05h-0a02: SUCCESS (exit 0); validation ok; log data/_runs/20261020T105436Z-05h-0a02/log.txt
+./venv/bin/python scripts/run_stage.py 05h --root "$N"  0.70s user 0.09s system 21% cpu 3.793 total

@@ -1,0 +1,3 @@
+2026-10-22T16:23:00+00:00 compound removed from molecular_pathway.csv: Acamprosate
+OLD verifier (primary tree) r_molecular: 0.5
+NEW verifier (work copy)    r_molecular: 0.398649 (stage-06 / D-004 median rule)

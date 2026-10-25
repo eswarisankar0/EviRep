@@ -1,0 +1,7 @@
+PASS 2 (corrected class-phrase matcher), live ClinicalTrials.gov, 2026-10-22
+pre links 195 -> 197 | post links 57 -> 58
+pool 90 -> 91 | added: ['Dopamine'] | removed: []
+positives frozen window: 14 -> 15 | unfrozen: 14 -> 15
+  Dopamine: label None->1, max phase None->2
+pre links + [('NCT04193527', 'Ioflupane I 123'), ('NCT04332276', 'Dopamine')]  - []
+post links + [('NCT07214285', 'Dopamine')]  - []
